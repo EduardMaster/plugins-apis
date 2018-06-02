@@ -1,0 +1,238 @@
+#######################################################
+#                                                     #
+#             CAIXA BASICA / BASIC BOX                #
+#          MAXIMO 17 ITEMS / MAX 17 ITEMS             #
+#                                                     #
+#######################################################
+items_cxb:
+  # Basic Box Item
+  item1:
+    # Item Name
+    Nome: ''
+    # Enchantment, if you do not use false enchantment
+    # Available Enchantments
+    # sharpness-unbreaking-protection-fireprotection-blastprotection-fireaspect-fortune-efficiency-smite-looting
+    # baneofarthropods-knockback-silktouch-projectileprotection-thorns-featherfalling-respiration-aquaaffinity
+    # power-flame-punch-infity
+    Encantamento: false
+    # Item ID
+    Item_ID: 42
+    # Item Data, ex Golden apple -> 322: 1 = Item_ID: 322 Item_Data: 1
+    # If you do not date, place 0
+    Item_Data: 0 
+    # Amount of items
+    Quantidade: 16
+    # Chance item out in the box
+    # NOTE: the sum of the chances should be equal to 200, can not pass
+    # the chances are divided by 2, that is, if you put 20, resulted in 10% ...
+    Chance: 70
+    # Add the item drawn in the box to the inventory?
+    Adicionar_Item: true
+    # Run a command when this item was chosen in the box?
+    # Variable for the player's name -> % player%
+    # Util in MobSpawners, ex: ss give %player% slime 1
+    Ativar_Comando: false
+    Comando: ''
+    # If you want me to send a message to all online players, leave true
+    Broadcast: false
+    # If broadcast is true, this message will be sent to all players online
+    # variables avaible: 
+    # %player%   - get the name of player that opened the box
+    # %boxtype%  - get the name of mystery box
+    # %nameitem% - get the name of item
+    Broadcast_msg: ''
+  item2:
+    Nome: ''
+    Encantamento: false
+    Item_ID: 57
+    Item_Data: 0
+    Quantidade: 16 
+    Chance: 20
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+    Broadcast: true
+    Broadcast_msg: '&dThe Player &f%player% &dhas found a 16x &bDIAMOND &din &f%boxtype%'
+  item3:
+    Nome: ''
+    Encantamento: false
+    Item_ID: 133
+    Item_Data: 0
+    Quantidade: 16 
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item4:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      protection: 4
+      fireprotection: 3
+      unbreaking: 4
+      blastprotection: 3
+    Item_ID: 310
+    Item_Data: 0
+    Quantidade: 1
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''    
+  item5:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      protection: 4
+      fireprotection: 3
+      unbreaking: 4
+      blastprotection: 3
+    Item_ID: 311
+    Item_Data: 0
+    Quantidade: 1
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item6:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      protection: 4
+      fireprotection: 3
+      unbreaking: 4
+      blastprotection: 3
+    Item_ID: 312
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''    
+  item7:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      protection: 4
+      fireprotection: 3
+      unbreaking: 4
+      blastprotection: 3
+    Item_ID: 313
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''    
+  item8:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      sharpness: 5
+      unbreaking: 4
+      fireaspect: 2
+    Item_ID: 276
+    Item_Data: 0
+    Quantidade: 1
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item9:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      power: 5
+      unbreaking: 4
+      flame: 1
+      infity: 1
+    Item_ID: 261
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item10:
+    Nome: ''
+    Encantamento: true
+    Lista_de_Encantamentos:
+      efficiency: 4
+      unbreaking: 4
+      fortune: 3
+    Item_ID: 278
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 10
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item11:
+    Nome: ''
+    Encantamento: false
+    Item_ID: 322
+    Item_Data: 1
+    Quantidade: 5
+    Chance: 6
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item12:
+    Nome: ''
+    Encantamento: false
+    Item_ID: 384
+    Item_Data: 0
+    Quantidade: 64
+    Chance: 4
+    Adicionar_Item: true
+    Ativar_Comando: false
+    Comando: ''
+  item13:
+    Nome: '&eSpider &fSpawner'
+    Encantamento: false
+    Item_ID: 52
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 4 
+    Adicionar_Item: false
+    Ativar_Comando: true
+    Comando: 'ss give %player% spider 1'
+  item14:
+    Nome: '&eCave-Spider &fSpawner'
+    Encantamento: false
+    Item_ID: 52
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 4 
+    Adicionar_Item: false
+    Ativar_Comando: true
+    Comando: 'ss give %player% spider 1'
+  item15:
+    Nome: '&eSkeleton &fSpawner'
+    Encantamento: false
+    Item_ID: 52
+    Item_Data: 0
+    Quantidade: 1
+    Chance: 4
+    Adicionar_Item: false
+    Ativar_Comando: true
+    Comando: 'ss give %player% spider 1'    
+  item16:
+    Nome: '&eZombie &fSpawner'
+    Encantamento: false
+    Item_ID: 52
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 4
+    Adicionar_Item: false
+    Ativar_Comando: true
+    Comando: 'ss give %player% spider 1'
+  item17:
+    Nome: '&eSlime &fSpawner'
+    Encantamento: false
+    Item_ID: 52
+    Item_Data: 0
+    Quantidade: 1 
+    Chance: 4
+    Adicionar_Item: false
+    Ativar_Comando: true
+    Comando: 'ss give %player% spider 1'

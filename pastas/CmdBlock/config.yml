@@ -1,0 +1,17 @@
+Blocked Cmds:
+  Non Recursive:
+  - /pl
+  - /w
+  - /helper
+  - /help
+  - /clan regroup
+  - /?
+  - /plugin
+  Recursive: []
+Password Protection:
+  Enabled: false
+  Logout Time: 5
+  Password: examplePassword
+General:
+  Messages:
+    Error Message: 'Error: Command is blocked!'

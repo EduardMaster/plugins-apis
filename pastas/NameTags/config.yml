@@ -1,0 +1,6 @@
+setDisplayName: true
+setTabName: true
+refreshAutomatically: false
+noChangeForLongNames: false
+onlySeeSame: false
+baseColor: white

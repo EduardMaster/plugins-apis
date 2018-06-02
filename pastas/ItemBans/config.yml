@@ -1,0 +1,6 @@
+BannedList:
+- 29
+- 333
+- 328
+MessageForPlayer:
+- This item is banned! It was confiscated!

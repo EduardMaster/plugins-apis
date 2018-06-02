@@ -1,0 +1,45 @@
+CustomServerMessages:
+  Event:
+    join:
+      enable: false
+      message: '&8[&dMine&apvp&8] &b%Player &3entrou no server!'
+    quit:
+      enable: false
+      message: '&8[&dMine&apvp&8] &b%Player &3saiu no server!'
+    whitelist:
+      enable: true
+      message: '&6Voce nao está na whitelist!'
+    serverfull:
+      enable: true
+      message: '&1Desculpe. &6O server está Cheio!'
+  Command:
+    say:
+      enable: true
+      message: '&6[&eConsole&6]&f:&f &message'
+      consoleemessage: '&6[&eConsole&6]&f:&f &message'
+    plugins:
+      enable: true
+      message: '&4Só &lAdmins&r&4 podem ver os plugins!'
+    version:
+      enable: false
+      message: 'Versao: &6MeuServer 1.5.2!'
+    seed:
+      enable: true
+      message: '&fYou &4dont have Permissions&r to see the Seed!'
+  Death:
+    enable: true
+    fall: '&player tentou voar'
+    burn: '&player morreu queimado'
+    infire: '&player pego fogo'
+    lava: '&player tentou nadar na lava'
+    fireball: '&player Foi queimado &killer'
+    killByEntity: '&player Morreu pra &killer'
+    magic: '&player morreu pra magia'
+    outOfWorld: '&player caiu pra fora do mundo'
+    suffocated: '&player morreu sufocado na parede'
+    cactus: '&player foi picado por um cactus'
+    drowned: '&player se afogou'
+    starve: '&player morreu'
+    explosion: '&player explodiu'
+    shot: '&player tomou um tiro para  &killer'
+    pummeled: '&player foi pummeled &killer'

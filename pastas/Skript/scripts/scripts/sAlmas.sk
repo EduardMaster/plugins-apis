@@ -1,0 +1,414 @@
+# #!============[   Almas   ]============!# #
+# #!    | Skript Feito Por: S1NGL3 |    !# #
+# #!============[   Almas   ]============!# #
+# Skript : Almas
+# Versão : 3.0     
+# Autor  : S1NGL3                       
+ 
+Options:
+    Item: head:3
+    Preco: 1
+    Prefix: &8&l➜
+   
+    # Permissão Admin #
+    almas.acesso: comando.almasadmin
+ 
+    # Mensagens de Erro #
+    Erro1: &aUse /daralmas NICK QUANTIA
+    Erro2: &aUse /enviaralmas NICK QUANTIA
+    Erro3: &cVocê não tem permissão para esse comando!
+    SuasAlmas: &aVocê tem &f%{almas.%player%}% &aAlmas
+    Msg1: &cIsto não são cabeças de jogadores
+    Msg2: &cVocê não tem almas suficientes!  
+   
+    # Preços Mercado Negro #
+    EspadaDiamante: 50
+    PicaretaDiamante: 45
+    MachadoDiamante: 30
+    Arco: 30
+    CapaceteDiamante: 45
+    PeitoralDiamante: 45
+    PerneirasDiamante: 45
+    BotasDiamante: 45
+    50kDinheiro: 20
+    CSpawner: 100
+    BSpawner: 100
+    ZSpawner: 100
+    ISpawner: 100
+   
+    # Quantidade de Itens #
+    QEspadaDiamante: 1
+    QPicaretaDiamante: 1
+    QMachadoDiamante: 1
+    QArco: 1
+    QCapaceteDiamante: 1
+    QPeitoralDiamante: 1
+    QPerneirasDiamante: 1
+    QBotasDiamante: 1
+    Q50kDinheiro: 50000
+    QCSpawner: 1
+    QBSpawner: 1
+    QZSpawner: 1
+    QISpawner: 1
+   
+   
+variables:
+    {almas.%player%} = 0
+    {money.%player%} = 0
+   
+       
+command /almas [<text>] [<integer>]:
+    trigger:
+        if arg 1 is set:
+            send "{@Prefix} &aAlmas de %arg 1%: &f%{almas.%arg 1%}%"
+        if arg 1 is not set:
+            send "{@SuasAlmas}"
+       
+command /daralmas [<player>] [<integer>]:
+    trigger:
+        if player have permission "{@almas.acesso}":
+            if arg 1 is set:
+                if arg 2 is set:
+                    add arg 2 to {almas.%arg 1%}
+                    send "&aVocê enviou %arg 2% para %arg 1%"
+                else:
+                    send "&aVocê precisa escolher uma quantidade de almas!"
+            else:
+                send "&aSelecione um player para enviar as almas"
+        else:
+            send "{@Prefix}{@Erro3}"
+            stop
+           
+command /delalmas [<player>] [<integer>]:
+    trigger:
+        if player have permission "{@almas.acesso}":
+            if arg 1 is set:
+                if arg 2 is set:
+                    remove arg 2 from {almas.%arg 1%}
+                    send "&aVocê retirou %arg 2% Almas de %arg 1%"
+                else:
+                    send "&aVocê precisa escolher uma quantidade de almas!"
+            else:
+                send "&aSelecione um player para retirar as almas"
+        else:
+            send "{@Prefix}{@Erro3}"
+            stop
+           
+command /enviaralmas [<player>] [<integer>]:
+    trigger:
+        if {almas.%player%} is more or equal to arg 2:
+            if arg 1 is set:
+                if arg 2 is set:
+                    add arg 2 to {almas.%arg 1%}
+                    send "&aVocê enviou %arg 2% Almas para %arg 1%"
+                    remove arg 2 from {almas.%player%}
+                else:
+                    send "&aVocê precisa escolher uma quantidade de almas!"
+            else:
+                send "&aSelecione um player para retirar as almas"
+        else:
+            send "&aVocê não tem essas almas!"
+            stop
+           
+#   SISTEMA DE DROPAR CABEÇA #
+ 
+on death:
+    chance of 30%:
+        give the victim's skull to the attacker
+        stop
+       
+# SISTEMA DE LOJA #
+ 
+# Itens PvP #
+ 
+command /item1:
+    trigger:
+        if {almas.%player%} is more or equal to {@EspadaDiamante}:
+            remove {@EspadaDiamante} from {almas.%player%}
+            give {@QEspadaDiamante} diamond sword of Sharpness 5 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QEspadaDiamante} Espada de Diamante por {@EspadaDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QEspadaDiamante} &eEspada de Diamante por &f{@EspadaDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item2:
+    trigger:
+        if {almas.%player%} is more or equal to {@PicaretaDiamante}:
+            remove {@PicaretaDiamante} from {almas.%player%}
+            give {@QPicaretaDiamante} diamond pickaxe of Efficiency 5 and Fortune 3 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QPicaretaDiamante} Picareta de Diamante por {@PicaretaDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QPicaretaDiamante} &ePicareta de Diamante por &f{@PicaretaDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item3:
+    trigger:
+        if {almas.%player%} is more or equal to {@MachadoDiamante}:
+            remove {@MachadoDiamante} from {almas.%player%}
+            give {@QMachadoDiamante} diamond axe of Sharpness 5 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QMachadoDiamante} Machado de Diamante por {@MachadoDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QMachadoDiamante} &eMachado de Diamante por &f{@MachadoDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item4:
+    trigger:
+        if {almas.%player%} is more or equal to {@Arco}:
+            remove {@Arco} from {almas.%player%}
+            give {@QArco} bow of Power 5 and Flame 1 and Infinity 1 to the player
+            send "&aVocê comprou {@QArco} Arco por {@Arco} Almas"
+            broadcast "&f%player% &ecomprou &f{@QArco} &eArco por &f{@Arco} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item5:
+    trigger:
+        if {almas.%player%} is more or equal to {@CapaceteDiamante}:
+            remove {@CapaceteDiamante} from {almas.%player%}
+            give {@QCapaceteDiamante} diamond helmet of Protection 4 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QCapaceteDiamante} Capacete de Diamante por {@CapaceteDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QCapaceteDiamante} &eCapacete de Diamante por &f{@CapaceteDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item6:
+    trigger:
+        if {almas.%player%} is more or equal to {@PeitoralDiamante}:
+            remove {@PeitoralDiamante} from {almas.%player%}
+            give {@QPeitoralDiamante} diamond chestplate of Protection 4 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QPeitoralDiamante} Peitoral de Diamante por {@PeitoralDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QPeitoralDiamante} &ePeitoral de Diamante por &f{@PeitoralDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item7:
+    trigger:
+        if {almas.%player%} is more or equal to {@PerneirasDiamante}:
+            remove {@PerneirasDiamante} from {almas.%player%}
+            give {@QPerneirasDiamante} diamond leggings of Protection 4 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QPerneirasDiamante} Perneiras de Diamante &apor {@PerneirasDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QPerneirasDiamante} &ePerneiras de Diamante por &f{@PerneirasDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item8:
+    trigger:
+        if {almas.%player%} is more or equal to {@BotasDiamante}:
+            remove {@BotasDiamante} from {almas.%player%}
+            give {@QBotasDiamante} diamond boots of Protection 4 and Unbreaking 3 to the player
+            send "&aVocê comprou {@QBotasDiamante} Botas de Diamante &apor {@BotasDiamante} Almas"
+            broadcast "&f%player% &ecomprou &f{@QBotasDiamante} &eBotas de Diamante por &f{@BotasDiamante} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+command /item9:
+    trigger:
+        if {almas.%player%} is more or equal to {@50kDinheiro}:
+            remove {@50kDinheiro} from {almas.%player%}
+            add {@Q50kDinheiro} to player's balance
+            send "&aVocê comprou 50k &apor {@50kDinheiro} Almas"
+            broadcast "&f%player% &ecomprou &f{@Q50kDinheiro} &ede dinheiro por &f{@50kDinheiro} &eAlmas!"
+            play level up at player with pitch 1
+        else:
+            send "{@Msg2}"
+           
+           
+# Spawners #
+ 
+command /sp1:
+    trigger:
+        if {almas.%player%} is more or equal to {@CSpawner}:
+            remove {@CSpawner} from {almas.%player%}
+            execute console command "spawner give %player% creeper {@QCSpawner}"
+            play level up at player with pitch 1
+            send "&aVocê comprou {@QCSpawner} Spawner de Creeper &apor {@CSpawner} Almas"
+            broadcast "&f%player% &ecomprou &f{@QCSpawner} &eSpawner de Creeper por &f{@CSpawner} &eAlmas!"
+        else:
+            send "{@Msg2}"
+           
+command /sp2:
+    trigger:
+        if {almas.%player%} is more or equal to {@BSpawner}:
+            remove {@BSpawner} from {almas.%player%}
+            execute console command "spawner give %player% blaze {@QBSpawner}"
+            play level up at player with pitch 1
+            send "&aVocê comprou {@QBSpawner} Spawner de Blaze &apor {@BSpawner} Almas"
+            broadcast "&f%player% &ecomprou &f{@QBSpawner} &eSpawner de Blaze por &f{@BSpawner} &eAlmas!"
+        else:
+            send "{@Msg2}"
+           
+command /sp3:
+    trigger:
+        if {almas.%player%} is more or equal to {@ZSpawner}:
+            remove {@ZSpawner} from {almas.%player%}
+            execute console command "spawner give %player% zombiepigman {@QZSpawner}"
+            play level up at player with pitch 1
+            send "&aVocê comprou {@QZSpawner} Spawner de ZombiePigman por {@ZSpawner} Almas"
+            broadcast "&f%player% &ecomprou &f{@QZSpawner} &eSpawner de ZombiePigman por &f{@ZSpawner} &eAlmas!"
+        else:
+            send "{@Msg2}"
+           
+command /sp4:
+    trigger:
+        if {almas.%player%} is more or equal to {@ISpawner}:
+            remove {@ISpawner} from {almas.%player%}
+            execute console command "spawner give %player% irongolem {@QISpawner}"
+            play level up at player with pitch 1
+            send "&aVocê comprou {@QISpawner} Spawner de IronGolem &apor {@ISpawner} Almas"
+            broadcast "&f%player% &ecomprou &f{@QISpawner} &eSpawner de IronGolem por &f{@ISpawner} &eAlmas!"
+        else:
+            send "{@Msg2}"
+ 
+           
+           
+           
+# Menus Gui #
+ 
+command /ashop:
+    trigger:
+        open chest with 3 rows named "&8Mercado Negro" to player
+        wait 1 ticks
+        play level up at player with pitch 1
+        format slot 12 of player with a Ender Chest named "&e* Itens" with lore "&7Aqui você pode trocar suas||&7almas por itens especiais" to run [make player execute command "/compraritens"]
+        format slot 14 of player with a Ender Pearl named "&e* Resgatar Almas" with lore "&7Clique para resgatar suas Almas||&7que estão no seu inventário!" to run [make player execute command "/venderalmas1"]
+        stop
+       
+command /compraritens:
+    trigger:
+        open chest with 6 rows named "&8Mercado Negro - LOJA" to player
+        wait 1 ticks
+        play chest open at player with pitch 1
+        format slot 12 of player with a Diamond Sword of Sharpness 5 and Unbreaking 3 named "&bEspada de Diamante" with lore "&ePreço: {@EspadaDiamante} Almas" to run [make player execute command "/sconfirma1"]
+        format slot 30 of player with a Diamond Pickaxe of Efficiency 5 and Fortune 3 and Unbreaking 3 named "&bPicareta de Diamante" with lore "&ePreço: {@PicaretaDiamante} Almas" to run [make player execute command "/sconfirma2"]
+        format slot 21 of player with a Diamond Axe of Sharpness 5 and Unbreaking 3 named "&bMachado de Diamante" with lore "&ePreço: {@MachadoDiamante} Almas" to run [make player execute command "/sconfirma3"]
+        format slot 39 of player with a Bow of Power 5 and Flame 1 and Infinity 1 named "&bArco" with lore "&ePreço: {@Arco} Almas" to run [make player execute command "/sconfirma4"]
+        format slot 16 of player with a Mob Spawner named "&bSpawner Creeper" with lore "&ePreço: {@CSpawner} Almas" to run [make player execute command "/sconfirma5"]
+        format slot 25 of player with a Mob Spawner named "&bSpawner Blaze" with lore "&ePreço: {@BSpawner} Almas" to run [make player execute command "/sconfirma6"]
+        format slot 34 of player with a Mob Spawner named "&bSpawner ZombiePigman" with lore "&ePreço: {@ZSpawner} Almas" to run [make player execute command "/sconfirma7"]
+        format slot 43 of player with a Mob Spawner named "&bSpawner IronGolem" with lore "&ePreço: {@ISpawner} Almas" to run [make player execute command "/sconfirma8"]
+        format slot 10 of player with a Diamond Helmet of Protection 4 and Unbreaking 3 named "&bCapacete Diamante" with lore "&ePreço: {@CapaceteDiamante} Almas" to run [make player execute command "/sconfirma9"]
+        format slot 19 of player with a Diamond Chestplate of Protection 4 and Unbreaking 3 named "&bPeitoral Diamante" with lore "&ePreço: {@PeitoralDiamante} Almas" to run [make player execute command "/sconfirma10"]
+        format slot 28 of player with a Diamond Leggings of Protection 4 and Unbreaking 3 named "&bPerneiras Diamante" with lore "&ePreço: {@PerneirasDiamante} Almas" to run [make player execute command "/sconfirma11"]
+        format slot 37 of player with a Diamond Boots of Protection 4 and Unbreaking 3 named "&bBotas Diamante" with lore "&ePreço: {@BotasDiamante} Almas" to run [make player execute command "/sconfirma12"]
+        format slot 14 of player with a Paper named "&a50k de Dinheiro" with lore "&ePreço: {@50kDinheiro} Almas" to run [make player execute command "/sconfirma13"]
+        format slot 49 of player with a Arrow named "&eVoltar" with lore "&7Clique para Voltar" to run [make player execute command "/ashop"]
+       
+command /venderalmas1:
+    trigger:
+        if player's inventory has {@Item}:
+            set {nb.itemSell.%player%} to 0
+            while player has {@Item}:
+                remove {@Item} from player
+                set {nb.itemSell.%player%} to {nb.itemSell.%player%} + 1
+            set {nb.itemSell.money.%player%} to {nb.itemSell.%player%} * {@Preco}
+            add {nb.itemSell.money.%player%} to {almas.%player%}
+            send "&aVocê resgatou %{nb.itemSell.%player%}% Almas"
+            show mob spawner flames at player
+        else:
+            send "&cVocê não tem cabeças de jogadores!"
+ 
+# Confirmação #
+ 
+command /sconfirma1:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item1"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma2:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item2"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma3:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item3"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma4:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item4"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma5:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/sp1"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma6:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/sp2"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma7:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/sp3"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma8:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/sp4"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma9:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item5"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma10:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item6"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma11:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item7"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma12:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item8"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+command /sconfirma13:
+    trigger:
+        open chest with 3 rows named "&8Confirmação" to player
+        play chest open at player with pitch 1
+        wait 1 ticks
+        format slot 11 of player with a stained hardened clay:13 named "&a&lConfirmar" with lore "&7Deseja &aConfirmar &7a Compra?" to close then run [make player execute command "/item9"]
+        format slot 15 of player with a stained hardened clay:14 named "&c&lNegar" with lore "&7Deseja &cNegar &7a Compra ?" to close then run [make player execute command "/negar123a"]
+       
+command /negar123a:
+    trigger:
+        send "&cVocê &cnegou a compra!"

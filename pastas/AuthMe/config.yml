@@ -1,0 +1,174 @@
+DataSource:
+  mySQLColumnName: username
+  mySQLTablename: authme
+  mySQLUsername: authme
+  backend: file
+  mySQLColumnLastLogin: lastlogin
+  mySQLDatabase: authme
+  mySQLPort: '3306'
+  mySQLColumnIp: ip
+  mySQLHost: 127.0.0.1
+  mySQLColumnPassword: password
+  mySQLPassword: '12345'
+  caching: true
+  mySQLlastlocX: x
+  mySQLlastlocY: y
+  mySQLlastlocZ: z
+  mySQLlastlocWorld: world
+  mySQLColumnEmail: email
+  mySQLColumnId: id
+  mySQLColumnLogged: isLogged
+GroupOptions:
+  UnregisteredPlayerGroup: ''
+  RegisteredPlayerGroup: ''
+  Permissions:
+    PermissionsOnJoin: []
+settings:
+  sessions:
+    enabled: false
+    timeout: 10
+    sessionExpireOnIpChange: false
+  restrictions:
+    allowChat: false
+    allowCommands:
+    - /login
+    - /register
+    - /l
+    - /reg
+    - /passpartu
+    - /email
+    - /captcha
+    maxRegPerIp: 1
+    maxNicknameLength: 20
+    ForceSingleSession: true
+    ForceSpawnLocOnJoinEnabled: false
+    SaveQuitLocation: false
+    AllowRestrictedUser: false
+    AllowedRestrictedUser:
+    - playername;127.0.0.1
+    kickNonRegistered: false
+    kickOnWrongPassword: false
+    teleportUnAuthedToSpawn: false
+    minNicknameLength: 3
+    allowMovement: false
+    timeout: 30
+    allowedNicknameCharacters: '[a-zA-Z0-9_]*'
+    allowedMovementRadius: 100
+    enablePasswordVerifier: true
+    ProtectInventoryBeforeLogIn: true
+    displayOtherAccounts: true
+    ForceSpawnOnTheseWorlds:
+    - world
+    - world_nether
+    - world_the_end
+    banUnsafedIP: false
+    spawnPriority: authme,essentials,multiverse,default
+    maxLoginPerIp: 0
+    maxJoinPerIp: 0
+    noTeleport: false
+  GameMode:
+    ForceSurvivalMode: false
+    ResetInventoryIfCreative: false
+    ForceOnlyAfterLogin: false
+  security:
+    minPasswordLength: 4
+    unLoggedinGroup: unLoggedinGroup
+    passwordHash: SHA256
+    doubleMD5SaltLength: 8
+    supportOldPasswordHash: false
+    unsafePasswords: []
+  registration:
+    enabled: true
+    messageInterval: 5
+    force: true
+    enableEmailRegistrationSystem: false
+    doubleEmailCheck: false
+    forceKickAfterRegister: false
+    forceLoginAfterRegister: false
+  unrestrictions:
+    UnrestrictedName: []
+  messagesLanguage: en
+  forceCommands: []
+  forceCommandsAsConsole: []
+  useWelcomeMessage: true
+  broadcastWelcomeMessage: false
+  delayJoinMessage: false
+ExternalBoardOptions:
+  mySQLColumnSalt: ''
+  mySQLColumnGroup: ''
+  nonActivedUserGroup: -1
+  mySQLOtherUsernameColumns: []
+  bCryptLog2Round: 10
+  phpbbTablePrefix: phpbb_
+  phpbbActivatedGroupId: 2
+  wordpressTablePrefix: wp_
+permission:
+  EnablePermissionCheck: false
+BackupSystem:
+  ActivateBackup: false
+  OnServerStart: false
+  OnServerStop: true
+  MysqlWindowsPath: C:\\Program Files\\MySQL\\MySQL Server 5.1\\
+Passpartu:
+  enablePasspartu: false
+Security:
+  SQLProblem:
+    stopServer: true
+  ReloadCommand:
+    useReloadCommandSupport: true
+  console:
+    noConsoleSpam: false
+    removePassword: true
+  captcha:
+    useCaptcha: false
+    maxLoginTry: 5
+    captchaLength: 5
+Converter:
+  Rakamak:
+    fileName: users.rak
+    useIP: false
+    ipFileName: UsersIp.rak
+Email:
+  mailSMTP: smtp.gmail.com
+  mailPort: 465
+  mailAccount: ''
+  mailPassword: ''
+  mailSenderName: ''
+  RecoveryPasswordLength: 8
+  mailSubject: Your new AuthMe Password
+  mailText: 'Dear <playername>, <br /><br /> This is your new AuthMe password for
+    the server <br /><br /> <servername> : <br /><br /> <generatedpass><br /><br />Do
+    not forget to change password after login! <br /> /changepassword <generatedpass>
+    newPassword'
+  maxRegPerEmail: 1
+  recallPlayers: false
+  delayRecall: 5
+Hooks:
+  multiverse: true
+  chestshop: true
+  bungeecord: false
+  notifications: true
+  disableSocialSpy: true
+  useEssentialsMotd: false
+Performances:
+  useMultiThreading: true
+Purge:
+  useAutoPurge: false
+  daysBeforeRemovePlayer: 60
+  removePlayerDat: false
+  removeEssentialsFile: false
+  defaultWorld: world
+  removeLimitedCreativesInventories: false
+  removeAntiXRayFile: false
+Protection:
+  enableProtection: false
+  countries:
+  - US
+  - GB
+  countriesBlacklist:
+  - A1
+  enableAntiBot: false
+  antiBotSensibility: 5
+  antiBotDuration: 10
+VeryGames:
+  enableIpCheck: false

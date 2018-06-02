@@ -1,0 +1,64 @@
+name: ZeyPvP
+main: Zey.PvP.Main.Main
+author: OwZey
+version: 1.0
+commands:
+  admin:
+  autosoup:
+  bc:
+  build:
+  cage:
+  cc:
+  chat:
+  darcoins:
+  finalizar:
+  fly:
+  gm:
+  head:
+  iniciar:
+  inv:
+  kit:
+  liga:
+   aliases: [rank]
+  testmacro:
+  ping:
+  pvp:
+  score:
+  setarena:
+  setgroup:
+  setvip:
+  skit:
+  sortearkit:
+  sortearvip:
+  tag:
+  tpall:
+  tp:
+  tphere:
+   aliases: [here]
+  vis:
+  limpartela:
+  recraft:
+  tell:
+   aliases: [r]
+  aplicar:
+  ajuda:
+   aliases: [discord]
+   aliases: [site]
+   aliases: [informacao]
+  report:
+  fps:
+  challenge:
+  evento:
+  parkour:
+  rdmset:
+  fpsset:
+  challengeset:
+  eventoset:
+  parkourset:
+  mainset:
+  spawnset:
+  main:
+  spawn:
+  lojakits:
+  rdm:
+  lojaextras:

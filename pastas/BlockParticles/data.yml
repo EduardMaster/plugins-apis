@@ -1,0 +1,19 @@
+Locations:
+  meio:
+    World: FactionSpawn
+    X: -312
+    Y: 20
+    Z: 214
+    Particle: volcano
+  esquerda:
+    World: FactionSpawn
+    X: -310
+    Y: 20
+    Z: 209
+    Particle: witch
+  direita:
+    World: FactionSpawn
+    X: -310
+    Y: 20
+    Z: 219
+    Particle: magic

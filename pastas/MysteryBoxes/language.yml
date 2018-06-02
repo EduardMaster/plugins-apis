@@ -1,0 +1,34 @@
+global:
+  invalid-command-args: '&cOs argumentos especificados sao invalidos!!'
+  command-error: '&cOcorreu um erro ao processar este comando!'
+  config-reloaded: '&aOs arquivos de configuracao foram recarregados!'
+  no-permissions: '&cVoce precisa do grupo Gerente ou superior para executar este
+    comando.'
+  must-be-player: '&cVoce deve ser um jogador!'
+  player-is-offline: '&cO jogador esta offline!'
+other:
+  mystery-box-set: '&aAs Caixas Misteriosas do jogador foram definidas!'
+  mystery-box-add: '&aCaixas Misteriosas do jogador foram adicionadas!'
+  mystery-box-remove: '&aAs Caixas Misteriosas do jogador foram removidas!'
+  mystery-box-reset: '&aAs Caixas Misteriosas do jogador foram resetadas!'
+  mystery-box-check: '&aCaixas Misteriosas do jogador: &b{AMOUNT}'
+  mystery-box-no-boxes: "&cO jogador n\xc3\u0192\xc2\xa3o tem Caixas Misteriosas!"
+  mystery-box-already-opening: '&cVoce ja esta abrindo a Caixas Misteriosas!'
+  selecting-mode-enter: '&aYou have entered the &eSELECTING &amode!'
+  selecting-mode-exit: '&cYou have exited the &eSELECTING &cmode!'
+  removing-mode-enter: '&aYou have entered the &eREMOVING &amode!'
+  removing-mode-exit: '&cYou have exited the &eREMOVING &cmode!'
+  mystery-vault-added: '&aThe block is now the Mystery Vault!'
+  mystery-vault-removed: '&aThe block is no longer the Mystery Vault!'
+  mystery-vault-in-use: '&cEssa Caixa Misteriosa ja esta em uso!'
+  mystery-vault-already: '&cThis block is already the Mystery Vault!'
+  mystery-vault-not-vault: '&cThis block isn''t the Mystery Vault!'
+inventory:
+  mystery-vault-title: Caixas Misteriosas
+  confirmation-title: Voce tem certeza?
+  confirmation-yes-item-name: '&aSim'
+  confirmation-yes-item-lore:
+  - '&7Clique para &aconfirmar&7!'
+  confirmation-no-item-name: '&cNao'
+  confirmation-no-item-lore:
+  - '&7Clique para &cnegar&7!'

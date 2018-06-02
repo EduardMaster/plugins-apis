@@ -1,0 +1,4 @@
+Config:
+  Messages:
+    JoinMessage: §6[§2+§6] §6
+    QuitMessage: §6[§4-§6] §6

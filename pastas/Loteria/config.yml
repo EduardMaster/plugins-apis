@@ -1,0 +1,75 @@
+﻿################################################################################################
+# OS PARAMETROS SÃO EXCLUSIVOS PARA CADA MENSAGEM. NÃO FUNCIONARÃO SE COLOCADOS EM OUTRO CAMPO #
+################################################################################################
+
+### Mensagens que serão executadas quando o evento for inicializado
+### Inicio: Primeira mensagem à aparecer no chat quando o criador for um Staffer.   Parametros: <admin> = Staffer que iniciou o evento
+### InicioConsole: Primeira mensagem à aparecer no chat quando o criador for o ConsoleMensagem
+### Inicio2: Segunda mensagem à aparecer no chat quando o evento for iniciado.   Parametros: <valor> = Prêmio da loteria
+### Inicio3: Terceira mensagem à aparecer no chat quando o evento for iniciado.   Parametros: <chances> = Quantidade de chances que cada player terá
+### Inicio4: Quarta mensagem à aparecer no chat quando o evento for iniciado. 
+### Inicio5: Quinta mensagem à aparecer no chat quando o evento for iniciado.   Parametros: <valor> = Valor máximo que pode ser utilizado no palpite
+
+Inicio: '&0&l[&2&lLoteria&0&l] &6Evento Aberto!'
+InicioConsole: '&0&l[&2&lLoteria&0&l] &6Evento Aberto!'
+Inicio2: '&2Valendo &a<valor> &2Reais'
+Inicio3: '&4<chances> &2Chances Por Jogador'
+Inicio4: '&6Digite &2/Loteria &4[Numero] &2Para Participar'
+Inicio5: '&6O Valor Esta Entre &a0&6 e &2<valor>'
+
+### Vencedor: Primeira mensagem à aparecer no chat quando alguém vencer a loteria.   Parametros: <player> = Player que venceu o evento
+### VencedorMensagem2: Segunda mensagem à aparecer no chat quando alguém vencer a loteria    Parametros: <quantidade> = Quantidade de players participantes do evento
+Vencedor: '&0&l[&2&lLoteria&0&l] &2<player> &6Venceu a Loteria!'
+VencedorMensagem2: '&0&l[&2&lLoteria&0&l] &2<quantidade> &6Jogadores Participaram'
+
+### Premiopago: Mensagem privada que o vencedor do evento receberá.   Parametros: <valor> = Valor em coins que o vencedor do evento recebeu
+PremioPago: '&0&l[&2&lLoteria&0&l] &6Voce Recebeu &2<valor> &aReais Por Vencer a Loteria'
+
+### SemPalpites: Mensagem enviada quando o player já utilizou todos os seus palpites
+SemPalpites: '&0&l[&2&lLoteria&0&l] &4Voce Nao Tem Mais Palpites!'
+
+### ComandoIncorreto: Mensagem enviada quando um player sem a permissão de realização do evento utiliza o comando de forma incorreta
+### ComandoIncorretAdmin: Mensagem enviada quando um player com a permissão de realização do evento utiliza o comando de forma incorreta
+Comando Incorreto: '&0&l[&2&lLoteria&0&l] &cUse: &a/Loteria [Numero] &6Para Participar'
+Comando Incorreto Admin: '&0&l[&2&lLoteria&0&l] &cUse: &a/Loteria Iniciar &c[Dinheiro] [Resposta] [Valor Maximo] [Tentativas]'
+
+###ValorInteiro: Mensagem enviada quando é utilizado algum valor não inteiro.
+ValorInteiro: '&0&l[&2&lLoteria&0&l] &4Use apenas valores inteiros na loteria'
+
+#Encerrada: Mensagem enviada quando um staffer encerra a loteria.    Parametros: <admin> = Nome do staffer que encerrou o evento.
+#EncerradaConsole: Mensagem enviada quando o evento é encerrado pelo console.
+Encerrada: '&0&l[&2&lLoteria&0&l]&6 Evento Cancelado!'
+EncerradaConsole: '&6O Evento Foi Encerrado Pela &4Staff'
+
+#NumeroErrado: Mensagem enviada quando um player não acerta o número da loteria.   Parametros: <tentativas> = Número de tentativas restantes que o player tem.
+NumeroErrado: '&0&l[&2&lLoteria&0&l] &4Voce Rrrou! &2Tentativas Restantes: &a<tentativas>'
+
+#SemPermissao: Mensagem enviada quando o utilizado do comando não tem permissão para utiliza-lo
+SemPermissao: '&d[Loteria] &4Sem permissao para usar este comando'
+
+#ValorForaDaMargem: Mensagem enviada quando uma loteria é iniciada com um valor correto maior que o valor máximo
+#ValorMenorQueZero: Mensagem enviada quando o número de tentativas é menor do que zero
+#PremioMenorQueZero: Mensagem enviada quando o prêmio da loteria é menor do que zero
+ValorForaDaMargem: '&d[Loteria] &4O valor correto precisa ser menor que o valor maximo'
+ValorMenorQueZero: '&d[Loteria] &4A quantidade de tentativas nao pode ser menor que zero'
+PremioMenorQueZero: '&d[Loteria] &4O premio nao pode ser menor que zero'
+
+#JaAberta: Mensagem enviada quando uma loteria já está aberta e um Staffer tenta iniciar outra.
+#JaFechada: Mensagem enviada quando a loteria já está fechada e um Staffer tenta fechar.
+JaAberta: '&d[Loteria] &4A loteria ja esta aberta'
+JaFechada: '&d[Loteria] &4A loteria ja esta fechada'
+
+#PalpiteForaDaMargem: Mensagem enviada quando um palpite é realizado com um número maior que o máximo estabelecido.   Parametros: <valorMaximo> = Valor máximo definido na realização do evento
+PalpiteForaDaMargem: '&d[Loteria] &4O valor esta entre 0 e <valorMaximo>'
+
+#ConsoleMensagem: Mensagem enviada ao console quando um comando inválido é realizado
+ConsoleMensagem: '&4O console nao pode participar do evento (:'
+
+#LoteriaFechada: Mensagem enviada ao player que tenta participar de uma loteria fechada.
+LoteriaFechada: '&d[Loteria] &4A loteria esta fechada'
+
+#TenteNovamente: Mensagem enviada ao player quando sua aposta não é realizada
+TenteNovamente: '&d[Loteria] &4Por favor, tente novamente'
+
+#Log: Mensagem que será salva no arquivo vencedores.log.   Parametros: <valor> = Prêmio da loteria    <vencedor> = Player que venceu a loteria     <data> = Data + Horário no qual a loteria foi realizada
+Log: '<data> <vencedor> venceu a loteria e recebeu <valor> coins'

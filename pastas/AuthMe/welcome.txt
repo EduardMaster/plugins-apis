@@ -1,0 +1,2 @@
+§9Bem vindo §f{PLAYER} §9ao {SERVER} §9server
+§6Sua conta esta sobe §cPROTECAO

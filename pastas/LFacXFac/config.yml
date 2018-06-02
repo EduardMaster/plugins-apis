@@ -1,0 +1,7 @@
+FactionXFactionValor: 5000
+PremioAtivar: true
+Premio: 10000
+PremioWinner: leader
+#Quem ira receber o premio, tipos: 
+#leader (somente o líder da faction) 
+#all (todos da faction recebem o premio dividido)

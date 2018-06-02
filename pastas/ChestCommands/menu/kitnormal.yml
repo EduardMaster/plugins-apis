@@ -1,0 +1,56 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&7Kits - Básicos'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  command: 'kitnormal'
+
+  # open-with-item - OPTIONAL (you can remove this or
+  # set the item-id/data-value to 0)
+  # In this case it will open with a book (right click)
+  open-with-item:
+    item-id: 1
+    left-click: false
+    right-click: true
+#   data-value: 0
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+slot3de5:
+  COMMAND: 'kit noob'
+  NAME: '&7Kit Noob'
+  LORE:
+    - '&e'
+    - '&6'
+  ID: 270
+  KEEP-OPEN: false
+  POSITION-X: 7
+  POSITION-Y: 2
+  
+  
+slot2de5:
+  COMMAND: 'kit Pvp'
+  NAME: '&7Kit PvP'
+  LORE:
+    - ''
+  ID: 268
+  KEEP-OPEN: false
+  POSITION-X: 3
+  POSITION-Y: 2
+  
+  

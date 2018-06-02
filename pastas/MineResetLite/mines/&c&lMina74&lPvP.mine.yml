@@ -1,0 +1,17 @@
+mine:
+  ==: com.koletar.jj.mineresetlite.Mine
+  minZ: 2185
+  resetDelay: 0
+  surface: ''
+  resetClock: 0
+  maxZ: 2219
+  maxY: 50
+  maxX: 218
+  minX: 182
+  minY: 38
+  resetWarnings: []
+  fillMode: false
+  name: '&c&lMina74&lPvP'
+  isSilent: false
+  composition: {}
+  world: SPAWN

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://njol.ch/projects/skript/doc/strings/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="author" content="Peter Güttinger">
+<title>Skript: Text &amp; Variable Names</title>
+<link rel="shortcut icon" type="image/png" href="http://njol.ch/favicon.png">
+<link rel="stylesheet" type="text/css" href="./text_files/normalize.css">
+<link rel="stylesheet" type="text/css" href="./text_files/general.css">
+<link rel="stylesheet" type="text/css" href="./text_files/syntax_elements.css">
+<link rel="stylesheet" type="text/css" href="./text_files/geshi.css">
+<link rel="top" title="Home" href="http://njol.ch/">
+<link rel="author" title="About" href="http://njol.ch/about/">
+<link rel="copyright" title="Copyright" href="http://njol.ch/legal/#license">
+<link rel="license" title="Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Switzerland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+<script src="./text_files/js.js" type="text/javascript"></script>
+<style type="text/css"></style></head>
+<body>
+<div id="header">
+<div id="header-content">
+<div id="breadcrumb">
+<div class="item n1">
+<a href="http://njol.ch/">Njol.ch</a>
+</div>»<div class="item n1">
+<a href="http://njol.ch/projects/">Projects</a> </div>»<div class="item n3">
+<a href="http://njol.ch/projects/skript/">Skript</a><a href="http://njol.ch/projects/yggdrasil/">Yggdrasil</a><a href="http://njol.ch/projects/markup/">Markup</a> </div>»<div class="item n4">
+<a href="http://njol.ch/projects/skript/doc/">Documentation</a><a href="http://njol.ch/projects/skript/tutorial/">Tutorial</a><a href="http://njol.ch/projects/skript/API/">API</a><a href="http://njol.ch/projects/skript/stats/">Statistics</a> </div>» </div>
+<h1 id="title">Skript: Text &amp; Variable Names</h1>
+<div id="navi">
+<a href="http://njol.ch/projects/skript/doc/events/">Events</a><a href="http://njol.ch/projects/skript/doc/conditions/">Conditions</a><a href="http://njol.ch/projects/skript/doc/effects/">Effects</a><a href="http://njol.ch/projects/skript/doc/expressions/">Expressions</a><a href="http://njol.ch/projects/skript/doc/loops/">Loops</a><a href="http://njol.ch/projects/skript/doc/commands/">Custom Commands</a><a href="http://njol.ch/projects/skript/doc/classes/">Types</a><a href="./text_files/text.html" class="current">Text</a><a href="http://njol.ch/projects/skript/doc/variables/">Variables</a> </div>
+</div>
+</div>
+<div id="content">
+Using text in scripts can be really simple, e.g. to send ‘Hello!’ to some player you can use <code class="code-text">send "Hello!" to player</code>. As you can see you have to put double quotes around whatever text you want to use (to include a double quote you'll have to double it: <code class="code-text">"What's this ""thing"" you're talking about?"</code>). Often you'll want to include e.g. the player's name in a text which can be done by inserting <code class="code-text">%player%</code> where you want the player's name to appear, e.g. <code class="code-text">send "Hello %player%!" to player</code> would send ‘Hello Njol!’ to me. You can put all <a href="http://njol.ch/projects/skript/doc/expressions/">expressions</a> between such percent signs, e.g. <code class="code-text">message "The block above the block you're looking at is a %block above targeted block%"</code>. Similar to quotes you have to double the percent sign if you want to use one in a text: <code class="code-text">"100%%!"</code>.<br>
+<a name="chat_colours_and_styles"></a><h3>Chat Colours and Styles</h3>
+Colours and chat styles can be included in messages in two different ways: Either with the common ‘&amp;x’/‘§x’ colour codes or by using Skript's &lt;colour&gt; codes, e.g. <code class="code-text">broadcast "&lt;red&gt;&lt;bold&gt;Important Information:&lt;reset&gt; &lt;blue&gt;&lt;u&gt;This server needs more mods!"</code>. You can also use the colour of an item in a message, e.g. <code class="code-text">message "&lt;%colour of tool%&gt;this text is coloured depending on the player's held item!"</code>.<br>
+<br>
+The default english colours and chat styles are:<br>
+<ul class="bull"><li>colours: black, dark grey/dark gray, grey/light grey/gray/light gray/silver, white, blue/dark blue, cyan/aqua/dark cyan/dark aqua, light blue/light cyan/light aqua, green/dark green, light green/lime/lime green, yellow/light yellow, orange/gold/dark yellow, red/dark red, pink/light red, purple/dark purple, magenta/light purple, brown/indigo</li>
+<li>chat styles: bold/b, italics/italic/i, strikethrough/strike/s, underlined/underline/u, magic, reset/r</li>
+</ul>Other languages may use other colours, but those are only used rarely, e.g. by the <a href="http://njol.ch/projects/skript/doc/expressions/#ExprColoured">colour</a> expression (useful to colour command arguments), as scripts always use the english colour codes.<br>
+<a name="advanced_syntax"></a><h3>Advanced Syntax</h3>
+Skript version 2.0 and above can handle nouns more advanced than by simply inserting them into the text:<br>
+<ul class="bull"><li><code class="code-text">"a %expression"</code> or <code class="code-text">"an %expression"</code> will add the appropriate indefinite article to the expression, e.g. “a fish”, “an apple”, or “a pickaxe and an emerald”. The same applies to the definite article ‘the’ (<code class="code-text">"the %expression%"</code>), though this is barely noticeable in the english language, only some nouns like ‘air’ will completely remove the article in this case. Please note that for other languages you'll have to use that language's articles, e.g. <code class="code-text">"der %expression"</code> or <code class="code-text">"ein %expression%"</code> in german.</li>
+<li><code class="code-text">"%expression%s"</code> as well as <code class="code-text">"&lt;number&gt; %expression%"</code> (for numbers other than 1) causes the expression to be displayed as plural, e.g. <code class="code-text">"2 %block%"</code> can result in “2 logs” (the number can also be another expression, e.g. <code class="code-text">"%number-argument% %item-argument%"</code> could turn into “5 pickaxes” or “1 pickaxe”). Unlike articles this syntax is the same for all languages.</li>
+</ul><a name="variable_names"></a><h2>Variable Names</h2>
+Variable names are very similar to text, except that you have to enclose them in curly brackets instead of double quotes: <code class="code-text">{variable}</code>. Expressions also do not use the advanced syntax described above as that's useless in a variable's name.
+</div>
+<div id="footer">
+<div id="footer-content">
+<div id="about">
+<a href="http://njol.ch/about/">About</a>
+</div>
+<div id="credits">
+~ njol.ch created by <a href="http://njol.ch/legal/">Peter Güttinger</a>
+~ icons by <a href="http://p.yusukekamiyamane.com/" target="_blank">Yusuke Kamiyamane</a> ~
+</div>
+</div>
+</div>
+
+</body></html>

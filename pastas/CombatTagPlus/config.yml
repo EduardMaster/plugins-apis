@@ -1,0 +1,327 @@
+# Don't touch this. It's here to determine whether you need to refresh your config.
+config-version: 20
+
+# The duration in seconds that both the attacker and victim should be tagged in combat.
+tag-duration: 15
+
+# This message is displayed to both the attacker and victim when newly tagged. Set this to '' to display nothing.
+tag-message: ''
+
+# This message is displayed the player when their tag expires. Set this to '' to display nothing.
+untag-message: ''
+
+# Resets the tag time when the tagged player throws an enderpearl.
+reset-tag-on-pearl: false
+
+# Plays an effect when a player logs off during combat.
+play-effect: true
+
+# Always spawns the NPC even without combat tagged to prevent any chance of running away.
+always-spawn: false
+
+# Allows mobs to combat tag players.
+mob-tagging: false
+
+# Duration in seconds the player must wait without movement to safely logout using the /logout command.
+logout-wait-time: 10
+
+# This message is displayed when the player has attempted to safely log out but moved or entered pvp.
+logout-cancelled-message: '&cVoce entrou em combate, aguarde 20 segundos para deslogar.'
+
+# This message is displayed when the player has successfully performed a safe logout.
+logout-success-message: '&aVoce &a&lNAO &aesta mais em combate, pode deslogar sem perigo.'
+
+# This message is displayed every second when the player is pending a logout. {remaining} is the time remaining.
+logout-pending-message: 'Voce esta em combate por {remaining}'
+
+# Instantly kills the player when logged in PvP.
+instantly-kill: true
+
+# Untags the player if they are kicked from combat rather than logging.
+untag-on-kick: true
+
+# Only the attacker will be tagged if this is set to true.
+only-tag-attacker: false
+
+# Disables players being able to tag themselves.
+disable-self-tagging: true
+
+# Prevent block editing while tagged.
+disable-block-edit: false
+
+# This message is displayed when a player attempts to edit blocks within pvp if block editing is disabled in pvp.
+disable-block-edit-message: '&cVoce esta em combate.'
+
+# Prevent players in creative from getting tagged.
+disable-creative-tags: true
+
+# Prevent tagged players throwing enderpearls while tagged.
+disable-enderpearls: true
+
+# This message is displayed when a player attempts to enderpearl within pvp if enderpearls are disabled in pvp.
+disable-enderpearls-message: '&cA enderpearl foi desabilitada em PvP.'
+
+# Prevent tagged players from flying during combat.
+disable-flying: true
+
+# This message is displayed when a player attempts to fly within pvp if flying is disabled in pvp.
+disable-flying-message: '&cO fly foi desabilitado em PvP'
+
+# Prevent tagged players from teleporting during combat.
+disable-teleportation: false
+
+# This message is displayed when a player attempts to teleport within pvp if teleportation is disabled in pvp.
+disable-teleportation-message: '&bTeleportation &cis disabled in combat.'
+
+# Prevents tagged players from crafting during combat.
+disable-crafting: false
+
+# This message is displayed when a player attempts to craft an item while in combat if crafting is disabled.
+disable-crafting-message: '&bCrafting &cis disabled in combat.'
+
+# The duration in seconds to despawn the combat logger's NPC if it hasn't died.
+npc-despawn-time: 60
+
+# Should we reset the NPC despawn time when it gets hit?
+reset-despawn-time-on-hit: true
+
+# Generates a random name for the NPC. Turn this off to use the player name (potentially unsafe!)
+generate-random-name: false
+
+# This is the prefix to use for the random name. 12 characters max.
+random-name-prefix: FactionMania
+
+# This message is displayed when a player is killed by another player. Set this to '' to display nothing.
+kill-message: ''
+
+# Same as above, this is displayed when a player is killed by another player with an item in hand.
+kill-message-item: ''
+
+# Enables BarAPI integration for displaying a boss bar counting down with the remaining tag time.
+barapi: true
+
+# Message to be displayed on BarAPI when players' pvp timer has ended.
+barapi-ended-message: '&aVoce &a&lNAO &aesta mais em combate.'
+
+# Message to be displayed on BarAPI when the player is still in pvp.
+barapi-countdown-message: '&cVoce esta em combate por {remaining}'
+
+# Deny movement into safezones from PVP enabled areas while combat tagged.
+deny-safezone: true
+
+# Deny teleporting with enderpearls into safezones from PVP enabled areas while combat tagged.
+deny-safezone-enderpearl: true
+
+# Enables force fields around Anti-PvP zones while in combat.
+force-fields: true
+
+# Radius in blocks around the player that should be checked for forcefields (Higher numbers = more laggy)
+force-field-radius: 10
+
+# Material of the forcefield block type.
+force-field-material: STAINED_GLASS
+
+# Damage value of the material specified above.
+force-field-material-damage: 14
+
+# Enables Factions integration for disabling combat tagging in regions with PVP disabled.
+factions: true
+
+# Enables WorldGuard integration for disabling combat tagging in regions with PVP disabled.
+worldguard: true
+
+# Enables Towny integration for disabling combat tagging in regions with PVP disabled.
+towny: true
+
+# This is a list of worlds where combat tagging should be disabled.
+disabled-worlds: [world_the_end]
+
+# This message is displayed when the player tries to execute a disabled command whilst in combat.
+disabled-command-message: '&c{command} desabilitado em pvp.'
+
+# These commands are unusable by players who are combat tagged.
+disabled-commands:
+
+  # CombatTagPlus
+  - ctlog
+  - logout
+  - ctlogout
+  - ctpluslogout
+  - 'combattagplus:ctlog'
+  - 'combattagplus:logout'
+  - 'combattagplus:ctlogout'
+  - 'combattagplus:ctpluslogout'
+
+  # Factions
+  - f home
+  - f sair
+
+  # LibsDisguises
+  - d
+  - disguise
+  - 'libsdisguises:d'
+  - 'libsdisguises:disguise'
+
+  # PlayerVaults
+  - pv
+  - vault
+  - chest
+  - playervaults
+  - bau
+  - 'playervaults:pv'
+  - 'playervaults:vault'
+  - 'playervaults:chest'
+  - 'playervaults:playervaults'
+
+  # FBasics
+  - wild
+  - wilderness
+  - 'fbasics:wild'
+  - 'fbasics:wilderness'
+
+  # mcMMO
+  - ptp
+  - 'mcmmo:ptp'
+
+  # BattleArena
+  - arena
+  - a
+  - 'battlearena:arena'
+  - 'battlearena:a'
+
+  # MobArena
+  - mobarena
+  - ma
+  - 'mobarena:mobarena'
+  - 'mobarena:ma'
+
+  # PlotMe
+  - plotme
+  - plot
+  - p
+  - 'plotme:plotme'
+  - 'plotme:plot'
+  - 'plotme:p'
+
+  # floAuction
+  - auction
+  - auc
+  - sauction
+  - sauc
+  - bid
+  - 'floauction:auction'
+  - 'floauction:auc'
+  - 'floauction:sauction'
+  - 'floauction:sauc'
+  - 'floauction:bid'
+
+  # Essentials
+  - spawn
+  - home
+  - homes
+  - warp
+  - warps
+  - back
+  - return
+  - call
+  - tpa
+  - tpask
+  - tpahere
+  - tpaccept
+  - tpyes
+  - clearinventory
+  - clearinvent
+  - clean
+  - clear
+  - ci
+  - fix
+  - repair
+  - suicide
+  - espawn
+  - ec
+  - enderchest
+  - endersee
+  - echest
+  - sell
+  - ehome
+  - ehomes
+  - ewarp
+  - ewarps
+  - eback
+  - ereturn
+  - ecall
+  - etpa
+  - etpask
+  - etpahere
+  - etpaccept
+  - etpyes
+  - eclearinventory
+  - eclearinvent
+  - eclean
+  - eclear
+  - eci
+  - esuicide
+  - efix
+  - erepair
+  - eec
+  - eenderchest
+  - eechest
+  - eendersee
+  - esell
+  - 'essentials:spawn'
+  - 'essentials:home'
+  - 'essentials:homes'
+  - 'essentials:warp'
+  - 'essentials:warps'
+  - 'essentials:back'
+  - 'essentials:return'
+  - 'essentials:call'
+  - 'essentials:tpa'
+  - 'essentials:tpask'
+  - 'essentials:tpahere'
+  - 'essentials:tpaccept'
+  - 'essentials:tpyes'
+  - 'essentials:clearinventory'
+  - 'essentials:clearinvent'
+  - 'essentials:clean'
+  - 'essentials:clear'
+  - 'essentials:ci'
+  - 'essentials:fix'
+  - 'essentials:repair'
+  - 'essentials:suicide'
+  - 'essentials:ec'
+  - 'essentials:enderchest'
+  - 'essentials:endersee'
+  - 'essentials:echest'
+  - 'essentials:sell'
+  - 'essentials:espawn'
+  - 'essentials:ehome'
+  - 'essentials:ehomes'
+  - 'essentials:ewarp'
+  - 'essentials:ewarps'
+  - 'essentials:eback'
+  - 'essentials:ereturn'
+  - 'essentials:ecall'
+  - 'essentials:etpa'
+  - 'essentials:etpask'
+  - 'essentials:etpahere'
+  - 'essentials:etpaccept'
+  - 'essentials:etpyes'
+  - 'essentials:eclearinventory'
+  - 'essentials:eclearinvent'
+  - 'essentials:eclean'
+  - 'essentials:eclear'
+  - 'essentials:eci'
+  - 'essentials:esuicide'
+  - 'essentials:efix'
+  - 'essentials:erepair'
+  - 'essentials:eec'
+  - 'essentials:eenderchest'
+  - 'essentials:eechest'
+  - 'essentials:eendersee'
+  - 'essentials:esell'
+
+  - 'vip'
+  - 'spawn'
+  - 'tpa'
+  - 'clear'

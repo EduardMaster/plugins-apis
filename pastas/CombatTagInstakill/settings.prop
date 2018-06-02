@@ -1,0 +1,20 @@
+#
+#Fri Jul 17 14:35:05 BRT 2015
+tagMessageDamaged=You have been hit by [player]. Type /ct to check your remaining tag time.
+blockEditWhileTagged=true
+blockCreativeTagging=true
+Enable-Debugging=false
+onlyDamagerTagged=false
+Version=1.1.0
+commandMessageTagged=You are in combat for [time] seconds.
+commandMessageNotTagged=You are not currently in combat\!
+disabledCommands=[]
+sendMessageWhenTagged=true
+blockTeleport=true
+Tag-Duration=10
+disabledWorlds=[exampleWorld,exampleWorld2]
+mobTag=false
+blockEnderPearl=true
+tagMessageDamager=You have hit [player]. Type /ct to check your remaining tag time.
+DropTagOnKick=true
+playerTag=true

@@ -1,0 +1,4 @@
+minElevation: 3
+maxElevation: 14
+elevatorMaterial: IRON_BLOCK
+elevatorWhoosh: IRONGOLEM_THROW

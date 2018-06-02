@@ -1,0 +1,33 @@
+# PerWorldTablist v0.2 - Configuration
+Configuration:
+# Should players with the permission 'pwtl.exempt' see players of an other group/world in the playerlist [TAB]?
+  EnableExemptPermission: true
+# Should this plugin use groups? Worlds won't hide players of worlds which are in their group.
+  EnableGroups: true
+# Should this plugin replace other lists (Example: Essentials /list)?
+  ReplaceOtherLists:
+    Enable: false
+    # Commands to replace - lower case!
+    Replace:
+    - list
+    - elist
+    - who
+    - online
+    # The replacement
+    Run: wlist
+  # Should this plugin show players without the permission pwtl.glist the worldlist?
+  ShowWorldlistIfNoGloballistPermissions: false
+  # Should worlds without players be hidden in the global list?
+  HideWorldsWithoutPlayers: true
+  # Worlds not to show in the global list
+  # Case sensitive!!
+  HiddenWorldsInGloballist:
+  - exampleWorld
+  - anotherExample
+  # Should this plugin use the displayname (from Essentials or other plugins) instead of the playername?
+  # Recommended if you use EssentialsChat (Awesome prefixes!)
+  UseDisplaynameInsteadOfPlayername: false
+  # Should this plugin have prefixes of PermissionsEx before the player's name? (Requires PermissionsEx)
+  DisplayPermissionsExPrefixes: false
+# Do NOT touch
+ConfigVersion: 02

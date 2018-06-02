@@ -1,0 +1,45 @@
+# Configuration for EasyTrading
+
+General-options:
+  
+  # Add worldnames here to disable trading in this worlds (Case sensitive)
+  world-blacklist: []
+  
+  # Format: "itemid:ITEMID subid:SUBID name:ITEMNAME" (subid and name are not needed, name spaces with _)
+  item-blacklist:
+  - "itemid:1 subid:0 name:&cBlacklisted_Item"
+
+Request-options:
+
+  # Time until request timeout, time in seconds
+  Request-timeout: 15
+
+  # Allow command /trade <Playername>
+  Enable-command: false
+  
+  # Set this to true if you want to make a request by leftclicking a player
+  Leftclick: false
+  
+  # Set this to true if you want to make a request by shifting + leftclicking a player
+  Shift-Leftclick: false
+  
+  # Set this to true if you want to make a request by rightclicking a player
+  Rightclick: false
+  
+  # Set this to true if you want to make a request by shifting +  rightclicking a player
+  Shift-Rightclick: true
+  
+  # Set Enabled to true if you want to make a request with this special item
+  # If Enabled is true all options from above are only compatible with this item
+  Item:
+    Enabled: false
+    Material: NAME_TAG
+    Data: 0
+    DisplayName: '&6Trade Requester'
+
+###################
+#   DO NOT EDIT   #
+###################
+
+Config-version: 4
+Message-version: 3

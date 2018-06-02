@@ -1,0 +1,29 @@
+NOT_PLAYER: '&cVoce nao e um jogador!'
+NOT_ONLINE: '&cEsse jogador nao esta online!'
+SKIN_COOLDOWN: '&cVoce so pode alterar sua skin novamente em &e%s &csegundos.'
+SKIN_CHANGE_SUCCESS: '&aVoce alterou sua skin com sucesso.'
+PLAYER_HAS_NO_PERMISSION: '&cVoce precisa do grupo Vip ou superior para executar este comando.'
+SKIN_DISABLED: '&cTodas as skins foram desabilitadas.'
+UNKNOWN_COMMAND: '&cVoce precisa do grupo Moderador ou superior para executar este comando.'
+ALT_API_FAILED: '&Tente novamente mais tarde!'
+NOT_PREMIUM: '&cNao existe nenhuma skin com esse nick.'
+RATE_LIMITED: "&cVoce ultrapassou o limite de troca de skin! \n&cAguarde 10 minutos e tente novamente."
+GENERIC_ERROR: '&cParece que ocorreu um erro, contate a algum staff!'
+SKIN_DATA_DROPPED: '&a%player teve skin alterada.'
+SKIN_DATA_SAVED: '&aTodas as skins foram salvas.'
+SKIN_DATA_UPDATED: '&aSkin alterada.'
+PLAYER_HELP: |-
+  &e 
+   &6/skin <nick> &f- &7 Utilizar a skin de outro jogador.
+  &a 
+ADMIN_SET_SKIN: '&aYou set %player''s skin.'
+ADMIN_HELP: |-
+  &a 
+   &9/skinsrestorer set <player> <skin name> &9-&a Sets Player's skin.
+  &9/skinsrestorer drop <player> &9-&a Drops player skin data.
+   &9/skinsrestorer reload &9- &aReloads the config and locale
+   &9/skinsrestorer props [player] &9- &aDisplays the players actual skin as properties
+RELOAD: '&aConfig and Locale has been reloaded!'
+NO_SKIN_DATA: '&cNo skin data acquired! Does this player have a skin?'
+OUTDATED: "&4You are running an outdated version of SKINSRESTORER!\n&cPlease update\
+  \ to latest version on Spigot: \n&ehttps://www.spigotmc.org/resources/skinsrestorer.2124/"

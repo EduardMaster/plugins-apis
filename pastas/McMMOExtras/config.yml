@@ -1,0 +1,95 @@
+# Welcome to the McMMOExtras configuration file!
+
+bar:
+    # Text format above the bar
+    # It supports the following variables
+    # @skill - Skill name
+    # @level - current level
+    # @nextLevel - next level
+    # @exp - Current exp
+    # @remainingExp - Remain exp for the next level
+    # @gainedExp - Gained exp from the last action
+    # @reqExp - Required exp for the next level
+    # @percent - Percent for the next level
+    format: '@skill (Level @level)'
+    # Seconds until the bar will disappear
+    # This number will decrease for each skill
+    # So that the last used skill will disappear first
+    disappear: 15
+    # Colorize the skill name
+    color:
+        mining: '3'
+        woodcutting: 'a'
+        herbalism: '2'
+        excavation: '6'
+        fishing: '1'
+        unarmed: 'd'
+        swords: 'c'
+        taming: 'f'
+        archery: '5'
+        axes: '4'
+        repair: 'd'
+        acrobatics: 'c'
+        smelting: '7'
+        alchemy: '9'
+    # 1.9+ only settings
+    # If the value is empty it will be ignored
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+    barColor:
+        mining: 'BLUE'
+        woodcutting: 'GREEN'
+        herbalism: 'PINK'
+        excavation: 'PURPLE'
+        fishing: 'RED'
+        unarmed: 'WHITE'
+        swords: 'YELLOW'
+        taming: 'BLUE'
+        archery: 'GREEN'
+        axes: 'PINK'
+        repair: 'PURPLE'
+        acrobatics: 'RED'
+        smelting: 'WHITE'
+        alchemy: 'YELLOW'
+    # 1.9+ only settings
+    # If the value is empty it will be ignored
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
+    segments:
+        mining: 'SEGMENTED_10'
+        woodcutting: 'SEGMENTED_12'
+        herbalism: 'SEGMENTED_20'
+        excavation: 'SEGMENTED_6'
+        fishing: 'SOLID'
+        unarmed: 'SEGMENTED_10'
+        swords: 'SEGMENTED_12'
+        taming: 'SEGMENTED_20'
+        archery: 'SEGMENTED_6'
+        axes: 'SOLID'
+        repair: 'SEGMENTED_10'
+        acrobatics: 'SEGMENTED_12'
+        smelting: 'SEGMENTED_20'
+        alchemy: 'SEGMENTED_6'
+
+# Should the bar always show up
+alwaysShow: false
+
+# Checks the region the player is in a region and shows only if the skill is listed in a flag "show-skill" there
+useWorldGuardFlags: false
+
+# permission based max levels
+permissions:
+    # permission group
+    guest:
+        # skill type: max level to show the level in the bar
+        unarmed: 100
+
+# 1.9+ only settings
+# This is value is used if no specific segments style is set (See above)
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
+segments: SOLID
+
+# This is value is used if no specific color is set (See above)
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+color: PURPLE
+
+# How many bars should be displayed at the same time
+concurrentBars: 2

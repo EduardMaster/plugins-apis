@@ -1,0 +1,55 @@
+# Sistema de tags no tab, e em cima da cabeça.
+# Criado por: Viiict0r
+# * Compativel com algumas scoreboards!
+# * OBS: A organizacao so funcionara em versoes 1.8.x.
+# * Em versoes inferiores a organizacao nao ira funcionar, somente os prefixos.
+
+# Grupos de acordo com o PermissionsEx
+
+# Grupo:
+#   prefix: '@clan &7' - Prefixo do jogador.
+#   position: a - Posicao onde este grupo ficara no tab.
+# Utilize a organizacao em ordem alfabetica.
+
+options:
+  tempo_update: 1
+  mostrar_erros: true
+
+pex_tags:
+
+  default:
+    prefix: '&7 '
+    position: l
+  lendario:
+    prefix: '&2[Lendario] &7'
+    position: k
+  campeao:
+    prefix: '&3[Campeão] &7'
+    position: x
+  supremo:
+    prefix: '&4[Supremo] &7'
+    position: j
+  heroi:
+    prefix: '&5[Heroi] &7'
+    position: n
+  miniyt:
+    prefix: '&d[MiniYT] &7'
+    position: g
+  yt:
+    prefix: '&c[YT] &7'
+    position: f
+  ajudante:
+    prefix: '&a[Helper] &7'
+    position: e
+  moderador:
+    prefix: '&2[Moderador] &2'
+    position: d
+  admin:
+    prefix: '&c[Admin] &7'
+    position: c
+  master:
+    prefix: '&6[Master] &7'
+    position: a
+  gerente:
+    prefix: '&4[Gerente] &7'
+    position: z

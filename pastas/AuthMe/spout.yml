@@ -1,0 +1,9 @@
+Spout GUI enabled: true
+LoginScreen:
+  enabled: true
+  exit button: Quit
+  exit message: Good Bye
+  login button: Login
+  title: LOGIN
+  text:
+  - Almacraft is Protected

@@ -1,0 +1,1971 @@
+command /encantar:
+	permission: enchant.vip
+	permission message: &cVocê não tem permissão para executar este comando.
+	trigger:
+		set {xp.%player%} to xp of player
+		open virtual chest inventory with size 3 named "Feiticeiro" to player
+		create a gui slot 10 of player with experience bottle named "&ePoção de Experiência" with lore "&7Custo: &f500 XP||&7XP: &f500" to run player command "exp1" with left click
+		create a gui slot 11 of player with experience bottle named "&ePoção de Experiência" with lore "&7Custo: &f1000 XP||&7XP: &f1000" to run player command "exp2" with left click
+		create a gui slot 12 of player with experience bottle named "&ePoção de Experiência" with lore "&7Custo: &f5000 XP||&7XP: &f5000" to run player command "exp3" with left click
+		create a gui slot 14 of player with book named "&eLivro de encantamentos" with lore "&7Tipo: &fSimples||&7Custo: &f1500 XP|| ||&7Botão esquerdo: &fComprar||&7Botão direito: &FVer encantamentos" to run player command "book1" with left click
+		create a gui slot 14 of player with book named "&eLivro de encantamentos" with lore "&7Tipo: &fSimples||&7Custo: &f1500 XP|| ||&7Botão esquerdo: &fComprar||&7Botão direito: &FVer encantamentos" to run player command "simples" with right click
+		create a gui slot 15 of player with book named "&eLivro de encantamentos" with lore "&7Tipo: &fNormal||&7Custo: &f3000 XP|| ||&7Botão esquerdo: &fComprar||&7Botão direito: &FVer encantamentos" to run player command "book2" with left click
+		create a gui slot 15 of player with book named "&eLivro de encantamentos" with lore "&7Tipo: &fNormal||&7Custo: &f3000 XP|| ||&7Botão esquerdo: &fComprar||&7Botão direito: &FVer encantamentos" to run player command "normal" with right click
+		create a gui slot 16 of player with book named "&eLivro de encantamentos" with lore "&7Tipo: &fAvançado||&7Custo: &f5500 XP|| ||&7Botão esquerdo: &fComprar||&7Botão direito: &FVer encantamentos" to run player command "book3" with left click
+		create a gui slot 16 of player with book named "&eLivro de encantamentos" with lore "&7Tipo: &fAvançado||&7Custo: &f5500 XP|| ||&7Botão esquerdo: &fComprar||&7Botão direito: &FVer encantamentos" to run player command "avancado" with right click
+		create a gui slot 26 of player with experience bottle named "&eSua experiência" with lore "&7XP: &f%{xp.%player%}%" to do nothing
+command /simples:
+	trigger:
+		open chest with 6 rows named "Encantamentos - Livro Simples" to player
+		wait 5 tick
+		format slot 10 of player with enchanted book named "&eLivro Simples" with lore "&7Proteção I" to be unstealable
+		format slot 11 of player with enchanted book named "&eLivro Simples" with lore "&7Proteção II" to be unstealable
+		format slot 12 of player with enchanted book named "&eLivro Simples" with lore "&7Proteção Contra Fogo I" to be unstealable
+		format slot 13 of player with enchanted book named "&eLivro Simples" with lore "&7Proteção Contra Fogo II" to be unstealable
+		format slot 14 of player with enchanted book named "&eLivro Simples" with lore "&7Respiração I" to be unstealable
+		format slot 15 of player with enchanted book named "&eLivro Simples" with lore "&7Peso Pena I" to be unstealable
+		format slot 16 of player with enchanted book named "&eLivro Simples" with lore "&7Peso Pena II" to be unstealable
+		format slot 19 of player with enchanted book named "&eLivro Simples" with lore "&7Passos Profundos I" to be unstealable
+		format slot 20 of player with enchanted book named "&eLivro Simples" with lore "&7Afiação I" to be unstealable
+		format slot 21 of player with enchanted book named "&eLivro Simples" with lore "&7Afiação II" to be unstealable
+		format slot 22 of player with enchanted book named "&eLivro Simples" with lore "&7Pilhagem I" to be unstealable
+		format slot 23 of player with enchanted book named "&eLivro Simples" with lore "&7Eficiência I" to be unstealable
+		format slot 24 of player with enchanted book named "&eLivro Simples" with lore "&7Eficiência II" to be unstealable
+		format slot 25 of player with enchanted book named "&eLivro Simples" with lore "&7Inquebrável I" to be unstealable
+		format slot 28 of player with enchanted book named "&eLivro Simples" with lore "&7Inquebrável II" to be unstealable
+		format slot 29 of player with enchanted book named "&eLivro Simples" with lore "&7Fortuna I" to be unstealable
+		format slot 30 of player with enchanted book named "&eLivro Simples" with lore "&7Força I" to be unstealable
+		format slot 31 of player with enchanted book named "&eLivro Simples" with lore "&7Força II" to be unstealable
+		format slot 49 of player with arrow named "&aVoltar" to run [make player execute command "/encantar"]
+command /normal:
+	trigger:
+		open chest with 6 rows named "Encantamentos - Livro Normal" to player
+		wait 5 tick
+		format slot 10 of player with enchanted book named "&eLivro Normal" with lore "&7Proteção III" to be unstealable
+		format slot 11 of player with enchanted book named "&eLivro Normal" with lore "&7Proteção IV" to be unstealable
+		format slot 12 of player with enchanted book named "&eLivro Normal" with lore "&7Proteção Contra Fogo III" to be unstealable
+		format slot 13 of player with enchanted book named "&eLivro Normal" with lore "&7Respiração II" to be unstealable
+		format slot 14 of player with enchanted book named "&eLivro Normal" with lore "&7Peso Pena III" to be unstealable
+		format slot 15 of player with enchanted book named "&eLivro Normal" with lore "&7Passos Profundos II" to be unstealable
+		format slot 16 of player with enchanted book named "&eLivro Normal" with lore "&7Afiação III" to be unstealable
+		format slot 19 of player with enchanted book named "&eLivro Normal" with lore "&7Afiação IV" to be unstealable
+		format slot 20 of player with enchanted book named "&eLivro Normal" with lore "&7Pilhagem II" to be unstealable
+		format slot 21 of player with enchanted book named "&eLivro Normal" with lore "&7Eficiência III" to be unstealable
+		format slot 22 of player with enchanted book named "&eLivro Normal" with lore "&7Eficiência IV" to be unstealable
+		format slot 23 of player with enchanted book named "&eLivro Normal" with lore "&7Inquebrável III" to be unstealable
+		format slot 24 of player with enchanted book named "&eLivro Normal" with lore "&7Inquebrável IV" to be unstealable
+		format slot 25 of player with enchanted book named "&eLivro Normal" with lore "&7Fortuna II" to be unstealable
+		format slot 28 of player with enchanted book named "&eLivro Normal" with lore "&7Força III" to be unstealable
+		format slot 29 of player with enchanted book named "&eLivro Normal" with lore "&7Força IV" to be unstealable
+		format slot 30 of player with enchanted book named "&eLivro Normal" with lore "&7Aspecto Flamejante I" to be unstealable
+		format slot 31 of player with enchanted book named "&eLivro Normal" with lore "&7Impacto I" to be unstealable
+		format slot 49 of player with arrow named "&aVoltar" to run [make player execute command "/encantar"]
+command /avancado:
+	trigger:
+		open chest with 6 rows named "Encantamentos - Livro Avançado" to player
+		wait 5 tick
+		format slot 10 of player with enchanted book named "&eLivro Avançado" with lore "&7Proteção V" to be unstealable
+		format slot 11 of player with enchanted book named "&eLivro Avançado" with lore "&7Proteção contra fogo IV" to be unstealable
+		format slot 12 of player with enchanted book named "&eLivro Avançado" with lore "&7Respiração III" to be unstealable
+		format slot 13 of player with enchanted book named "&eLivro Avançado" with lore "&7Peso Pena IV" to be unstealable
+		format slot 14 of player with enchanted book named "&eLivro Avançado" with lore "&7Passos Profundos III" to be unstealable
+		format slot 15 of player with enchanted book named "&eLivro Avançado" with lore "&7Afiação V" to be unstealable
+		format slot 16 of player with enchanted book named "&eLivro Avançado" with lore "&7Pilhagem III" to be unstealable
+		format slot 19 of player with enchanted book named "&eLivro Avançado" with lore "&7Eficiência V" to be unstealable
+		format slot 20 of player with enchanted book named "&eLivro Avançado" with lore "&7Inquebrável V" to be unstealable
+		format slot 21 of player with enchanted book named "&eLivro Avançado" with lore "&7Fortuna III" to be unstealable
+		format slot 22 of player with enchanted book named "&eLivro Avançado" with lore "&7Força V" to be unstealable
+		format slot 23 of player with enchanted book named "&eLivro Avançado" with lore "&7Infinidade I" to be unstealable
+		format slot 24 of player with enchanted book named "&eLivro Avançado" with lore "&7Aspecto Flamejante II" to be unstealable
+		format slot 25 of player with enchanted book named "&eLivro Avançado" with lore "&7Chama I" to be unstealable
+		format slot 28 of player with enchanted book named "&eLivro Avançado" with lore "&7Toque Suave I" to be unstealable
+		format slot 29 of player with enchanted book named "&eLivro Avançado" with lore "&7Impacto II" to be unstealable
+		format slot 30 of player with enchanted book named "&eLivro Avançado" with lore "&7Afinidade Aquática I" to be unstealable
+		format slot 49 of player with arrow named "&aVoltar" to run [make player execute command "/encantar"]
+command /exp1:
+    trigger:
+        if xp of player is more than 500:
+            remove 500 from xp of player
+            give 1 experience bottle named "&ePoção de experiência" with lore "&7XP: &f500" to player
+            send "&aCompra feita com sucesso!"
+        else:
+            send "&cVocê não tem experiência suficiente"
+command /exp2:
+    trigger:
+        if xp of player is more than 1000:
+            remove 1000 from xp of player
+            give 1 experience bottle named "&ePoção de experiência" with lore "&7XP: &f1000" to player
+            send "&aCompra feita com sucesso!"
+        else:
+            send "&cVocê não tem experiência suficiente"
+command /exp3:
+    trigger:
+        if xp of player is more than 5000:
+            remove 5000 from xp of player
+            give 1 experience bottle named "&ePoção de experiência" with lore "&7XP: &f5000" to player
+            send "&aCompra feita com sucesso!"
+        else:
+            send "&cVocê não tem experiência suficiente"
+command /book1:
+    trigger:
+        if xp of player is more than 1500:
+            remove 1500 from xp of player
+            give 1 book named "&eLivro de encantamentos" with lore "&7Tipo: &fSimples" to player
+            send "&aCompra feita com sucesso!"
+        else:
+            send "&cVocê não tem experiência suficiente"
+command /book2:
+    trigger:
+        if xp of player is more than 3000:
+            remove 3000 from xp of player
+            give 1 book named "&eLivro de encantamentos" with lore "&7Tipo: &fNormal" to player
+            send "&aCompra feita com sucesso!"
+        else:
+            send "&cVocê não tem experiência suficiente"
+command /book3:
+    trigger:
+        if xp of player is more than 5500:
+            remove 5500 from xp of player
+            give 1 book named "&eLivro de encantamentos" with lore "&7Tipo: &fAvançado" to player
+            send "&aCompra feita com sucesso!"
+        else:
+            send "&cVocê não tem experiência suficiente"
+#=====================================================================# 
+# Clique com o botão direito com os itens especiais                   #
+#=====================================================================#
+on right click with a book:    
+	name of held item is "&eLivro de encantamentos"
+	lore of held item is "&7Tipo: &fSimples"
+	remove 1 book named "&eLivro de encantamentos" with lore "&7Tipo: &fSimples" from player
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Eficiência II|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Eficiência I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Proteção contra fogo I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Proteção contra fogo II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Peso Pena I|| ||&aChance de sucesso: 50*||&7Encanta: Botas" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Peso Pena II|| ||&aChance de sucesso: 50*||&7Encanta: Botas" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&ELivro simples" with lore "&7Proteção contra explosões II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&ELivro simples" with lore "&7Proteção contra explosões I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&ELivro simples" with lore "&7Proteção contra fogo I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&ELivro simples" with lore "&7Proteção contra fogo II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 8%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Proteção I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 7.8%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Proteção II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 3%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Proteção contra explosões I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 2.5%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Proteção contra explosões II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Respiração I|| ||&aChance de sucesso: 50*||&7Encanta: Elmos" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Força I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Força II|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Afiação I|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Afiação II|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Respiração I|| ||&aChance de sucesso: 50*||&7Encanta: Elmos" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Espinhos I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Julgamento I|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Julgamento II|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Ruína de Artrópodes II|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Ruína de Artrópodes I|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Força I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Força II|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 8%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Inquebrável I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas" to player
+		stop
+	chance of 7.5%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Inquebrável II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Pilhagem I|| ||&aChance de sucesso: 50*||&7Encanta: Espadas" to player
+		stop
+	chance of 7%:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Fortune I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	else:
+		give 1 enchanted book named "&eLivro simples" with lore "&7Fortune I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+on right click with a book:    
+	name of held item is "&eLivro de encantamentos"
+	lore of held item is "&7Tipo: &fNormal"
+	remove 1 book named "&eLivro de encantamentos" with lore "&7Tipo: &fNormal" from player
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Proteção III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Proteção IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Respiração II|| ||&aChance de sucesso: 50*||&7Encanta: Elmos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Proteção contra fogo III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Peso Pena III|| ||&aChance de sucesso: 50*||&7Encanta: Botas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Afiação III|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Afiação IV|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Pilhagem II|| ||&aChance de sucesso: 50*||&7Encanta: Espadas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Eficiência III|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Eficiência IV|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Inquebrável III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Inquebrável IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Fortune II|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Força III|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Força IV|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Aspecto flamejante I|| ||&aChance de sucesso: 50*||&7Encanta: Espadas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Impacto I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	else:
+		give 1 enchanted book named "&eLivro normal" with lore "&7Impacto I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+on right click with a book:    
+	name of held item is "&eLivro de encantamentos"
+	lore of held item is "&7Tipo: &fAvançado"
+	remove 1 book named "&eLivro de encantamentos" with lore "&7Tipo: &fAvançado" from player
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Proteção V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Proteção contra fogo IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Respiração III|| ||&aChance de sucesso: 50*||&7Encanta: Elmos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Peso Pena IV|| ||&aChance de sucesso: 50*||&7Encanta: Botas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Passos profundos III|| ||&aChance de sucesso: 50*||&7Encanta: Botas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Afiação V|| ||&aChance de sucesso: 50*||&7Encanta: Armas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Pilhagem III|| ||&aChance de sucesso: 50*||&7Encanta: Espadas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Eficiência V|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Inquebrável V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Fortune III|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Força V|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Infinidade I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Aspecto flamejante II|| ||&aChance de sucesso: 50*||&7Encanta: Espadas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Chama I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Toque Suave I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Impacto II|| ||&aChance de sucesso: 50*||&7Encanta: Arcos" to player
+		stop
+	chance of 9%:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Afinidade Áquatica I|| ||&aChance de sucesso: 50*||&7Encanta: Elmos" to player
+		stop
+	else:
+		give 1 enchanted book named "&eLivro avançado" with lore "&7Afinidade Áquatica I|| ||&aChance de sucesso: 50*||&7Encanta: Elmos" to player
+on right click with a experience bottle:    
+	name of held item is "&ePoção de experiência"
+	lore of held item is "&7XP: &f500"
+	cancel event
+	remove 1 experience bottle named "&ePoção de experiência" with lore "&7XP: &f500" from player
+	give 500 xp to the player
+	stop
+on right click with a experience bottle:    
+	name of held item is "&ePoção de experiência"
+	lore of held item is "&7XP: &f1000"
+	cancel event
+	remove 1 experience bottle named "&ePoção de experiência" with lore "&7XP: &f1000" from player
+	give 1000 xp to the player
+	stop
+on right click with a experience bottle:    
+	name of held item is "&ePoção de experiência"
+	lore of held item is "&7XP: &f5000"
+	cancel event
+	remove 1 experience bottle named "&ePoção de experiência" with lore "&7XP: &f5000" from player
+	give 5000 xp to the player
+	stop
+#=====================================================================# 
+# Eficiência                                                          #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Eficiência I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel or hoe:
+			chance of 50%:
+				enchant clicked item with efficiency 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Eficiência II|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel or hoe:
+			chance of 50%:
+				clicked item is enchanted with efficiency 1
+				enchant clicked item with efficiency 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with efficiency 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Eficiência III|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel or hoe:
+			chance of 50%:
+				clicked item is enchanted with efficiency 2
+				enchant clicked item with efficiency 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with efficiency 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Eficiência IV|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel or hoe:
+			chance of 50%:
+				clicked item is enchanted with efficiency 3
+				enchant clicked item with efficiency 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with efficiency 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Eficiência V|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel or hoe:
+			chance of 50%:
+				clicked item is enchanted with efficiency 4
+				enchant clicked item with efficiency 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with efficiency 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Eficiência IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Proteção                                                            #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				enchant clicked item with protection 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with protection 1
+				enchant clicked item with protection 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with protection 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Proteção III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with protection 2
+				enchant clicked item with protection 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with protection 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Proteção IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with protection 3
+				enchant clicked item with protection 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with protection 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Proteção V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with protection 4
+				enchant clicked item with protection 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with protection 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Proteção contra fogo                                                #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra fogo I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				enchant clicked item with fire protection 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra fogo II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with fire protection 1
+				enchant clicked item with fire protection 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fire protection 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Proteção contra fogo III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with fire protection 2
+				enchant clicked item with fire protection 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fire protection 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Proteção contra fogo IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with fire protection 3
+				enchant clicked item with fire protection 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fire protection 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Proteção contra fogo V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with fire protection 4
+				enchant clicked item with fire protection 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fire protection 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra fogo IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Peso pena                                                           #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Peso Pena I|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+		if clicked item is boots:
+			chance of 50%:
+				enchant clicked item with feather falling 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Peso Pena II|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+		if clicked item is boots:
+			chance of 50%:
+				clicked item is enchanted with feather falling 1
+				enchant clicked item with feather falling 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with feather falling 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Peso Pena III|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+		if clicked item is boots:
+			chance of 50%:
+				clicked item is enchanted with feather falling 2
+				enchant clicked item with feather falling 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with feather falling 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Peso Pena IV|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+		if clicked item is boots:
+			chance of 50%:
+				clicked item is enchanted with feather falling 3
+				enchant clicked item with feather falling 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with feather falling 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Peso Pena V|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+		if clicked item is boots:
+			chance of 50%:
+				clicked item is enchanted with feather falling 4
+				enchant clicked item with feather falling 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with feather falling 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Peso Pena IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Proteção contra explosões                                           #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra explosões I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				enchant clicked item with blast protection 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra explosões II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with blast protection 1
+				enchant clicked item with blast protection 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with blast protection 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Proteção contra explosões III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with blast protection 2
+				enchant clicked item with blast protection 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with blast protection 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Proteção contra explosões IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with blast protection 3
+				enchant clicked item with blast protection 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with blast protection 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Proteção contra explosões V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with blast protection 4
+				enchant clicked item with blast protection 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with blast protection 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Proteção contra projéteis                                           #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra projéteis I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				enchant clicked item with projectile protection 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra explosões II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with projectile protection 1
+				enchant clicked item with projectile protection 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with projectile protection 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Proteção contra explosões III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with projectile protection 2
+				enchant clicked item with projectile protection 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with projectile protection 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Proteção contra explosões IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with projectile protection 3
+				enchant clicked item with projectile protection 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with projectile protection 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Proteção contra explosões V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with projectile protection 4
+				enchant clicked item with projectile protection 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with projectile protection 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Proteção contra explosões IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Respiração                                                          #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Respiração I|| ||&aChance de sucesso: 50*||&7Encanta: Elmos":
+		if clicked item is helmet:
+			chance of 50%:
+				enchant clicked item with respiration 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Respiração II|| ||&aChance de sucesso: 50*||&7Encanta: Elmos":
+		if clicked item is helmet:
+			chance of 50%:
+				clicked item is enchanted with respiration 1
+				enchant clicked item with respiration 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Respiração I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with respiration 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Respiração I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Respiração III|| ||&aChance de sucesso: 50*||&7Encanta: Elmos":
+		if clicked item is helmet:
+			chance of 50%:
+				clicked item is enchanted with respiration 2
+				enchant clicked item with respiration 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Respiração II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with respiration 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Respiração II."
+				cancel event
+				stop
+#=====================================================================# 
+# Afinidade Áquatica                                                  #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Afinidade Áquatica I|| ||&aChance de sucesso: 50*||&7Encanta: Elmos":
+		if clicked item is helmet:
+			chance of 50%:
+				enchant clicked item with respiration 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+#=====================================================================# 
+# Espinhos                                                            #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Espinhos I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				enchant clicked item with thorns 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Espinhos II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with thorns 1
+				enchant clicked item with thorns 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Espinhos I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with thorns 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Espinhos I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Espinhos III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras":
+		if clicked item is boots or chestplate or leggings or helmet:
+			chance of 50%:
+				clicked item is enchanted with thorns 2
+				enchant clicked item with thorns 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Espinhos II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with thorns 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Espinhos II."
+				cancel event
+				stop
+#=====================================================================# 
+# Passos profundos                                                    #
+#=====================================================================#
+#on inventory click:
+#	if cursor item is enchanted book named "&eLivro simples" with lore "&7Passos profundos I|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+#		if clicked item is boots:
+#			chance of 50%:
+#				enchant clicked item with depth strider 1
+#				set cursor item to air
+#				message "&aEncantamento aplicado com sucesso."
+#				stop
+#			chance of 50%:
+#				send "&cIhhh! Parece que não deu certo."
+#				set cursor item to air
+#				stop
+#on inventory click:
+#	if cursor item is enchanted book named "&eLivro simples" with lore "&7Passos profundos II|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+#		if clicked item is boots:
+#			chance of 50%:
+#				clicked item is enchanted with depth strider 1
+#				enchant clicked item with depth strider 2
+#				set cursor item to air
+#				message "&aEncantamento aplicado com sucesso."
+#				stop
+#			else:
+#				send "&cVocê precisa ter o encantamento Passos profundos I."
+#				cancel event
+#				stop
+#			chance of 50%:
+#				clicked item is enchanted with depth strider 1
+#				set cursor item to air
+#				send "&cIhhh! Parece que não deu certo."
+#				stop
+#			else:
+#				send "&cVocê precisa ter o encantamento Passos profundos I."
+#				cancel event
+#				stop
+#on inventory click:
+#	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Passos profundos III|| ||&aChance de sucesso: 50*||&7Encanta: Botas":
+#		if clicked item is boots:
+#			chance of 50%:
+#				clicked item is enchanted with depth strider 2
+#				enchant clicked item with depth strider 3
+#				set cursor item to air
+#				message "&aEncantamento aplicado com sucesso."
+#				stop
+#			else:
+#				send "&cVocê precisa ter o encantamento Passos profundos II."
+#				cancel event
+#				stop
+#			chance of 50%:
+#				clicked item is enchanted with depth strider 2
+#				set cursor item to air
+#				send "&cIhhh! Parece que não deu certo."
+#				stop
+#			else:
+#				send "&cVocê precisa ter o encantamento Passos profundos II."
+#				cancel event
+#				stop
+#=====================================================================# 
+# Afiação                                                             #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Afiação I|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				enchant clicked item with sharpness 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Afiação II|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with sharpness 1
+				enchant clicked item with sharpness 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with sharpness 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Afiação III|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with sharpness 2
+				enchant clicked item with sharpness 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with sharpness 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Afiação IV|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with sharpness 3
+				enchant clicked item with sharpness 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with sharpness 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Afiação V|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with sharpness 4
+				enchant clicked item with sharpness 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with sharpness 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Afiação IV."
+				cancel event
+				stop
+#=====================================================================# 
+# julgamento                                                             #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Julgamento I|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				enchant clicked item with smite 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Julgamento II|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with smite 1
+				enchant clicked item with smite 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with smite 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Julgamento III|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with smite 2
+				enchant clicked item with smite 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with smite 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Julgamento IV|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with smite 3
+				enchant clicked item with smite 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with smite 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Julgamento V|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with smite 4
+				enchant clicked item with smite 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with smite 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Julgamento IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Ruína de Artrópodes                                                 #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Ruína de Artrópodes I|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				enchant clicked item with bane of arthropods 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Ruína de Artrópodes II|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 1
+				enchant clicked item with bane of arthropods 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Ruína de Artrópodes III|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 2
+				enchant clicked item with bane of arthropods 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Ruína de Artrópodes IV|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 3
+				enchant clicked item with bane of arthropods 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Ruína de Artrópodes V|| ||&aChance de sucesso: 50*||&7Encanta: Armas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 4
+				enchant clicked item with bane of arthropods 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with bane of arthropods 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Ruína de Artrópodes IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Repulsão                                                            #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Repulsão I|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword:
+			chance of 50%:
+				enchant clicked item with knockback 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Repulsão II|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword:
+			chance of 50%:
+				clicked item is enchanted with knockback 1
+				enchant clicked item with knockback 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Repulsão I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with knockback 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Repulsão I."
+				cancel event
+				stop
+#=====================================================================# 
+# Aspecto flamejante                                                  #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Aspecto flamejante I|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword:
+			chance of 50%:
+				enchant clicked item with fire aspect 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Aspecto flamejante II|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword:
+			chance of 50%:
+				clicked item is enchanted with fire aspect 1
+				enchant clicked item with fire aspect 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Aspecto flamejante I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fire aspect 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Aspecto flamejante I."
+				cancel event
+				stop
+#=====================================================================# 
+# Pilhagem                                                            #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Pilhagem I|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword:
+			chance of 50%:
+				enchant clicked item with looting 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Pilhagem II|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword:
+			chance of 50%:
+				clicked item is enchanted with looting 1
+				enchant clicked item with looting 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Pilhagem I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with looting 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Pilhagem I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Pilhagem III|| ||&aChance de sucesso: 50*||&7Encanta: Espadas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with looting 2
+				enchant clicked item with looting 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Pilhagem II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with looting 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Pilhagem II."
+				cancel event
+				stop
+#=====================================================================# 
+# Toque suave                                                         #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Toque Suave I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is axe or pickaxe or shovel:
+			chance of 50%:
+				enchant clicked item with silk touch 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+#=====================================================================# 
+# Inquebrável                                                         #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Inquebrável I|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas":
+		if clicked item is boots or chestplate or leggings or helmet or sword or pickaxe or shovel or bow:
+			chance of 50%:
+				enchant clicked item with unbreaking 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Inquebrável II|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas":
+		if clicked item is boots or chestplate or leggings or helmet or sword or pickaxe or shovel or bow:
+			chance of 50%:
+				clicked item is enchanted with unbreaking 1
+				enchant clicked item with unbreaking 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with unbreaking 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Inquebrável III|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas":
+		if clicked item is boots or chestplate or leggings or helmet or sword or pickaxe or shovel or bow:
+			chance of 50%:
+				clicked item is enchanted with unbreaking 2
+				enchant clicked item with unbreaking 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with unbreaking 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Inquebrável IV|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas":
+		if clicked item is boots or chestplate or leggings or helmet or sword or pickaxe or shovel or bow:
+			chance of 50%:
+				clicked item is enchanted with unbreaking 3
+				enchant clicked item with unbreaking 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with unbreaking 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Inquebrável V|| ||&aChance de sucesso: 50*||&7Encanta: Armaduras||&7Ferramentas ou Armas":
+		if clicked item is boots or chestplate or leggings or helmet or sword or pickaxe or shovel or bow:
+			chance of 50%:
+				clicked item is enchanted with unbreaking 4
+				enchant clicked item with unbreaking 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with unbreaking 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Inquebrável IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Fortuna                                                             #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Fortune I|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel:
+			chance of 50%:
+				enchant clicked item with fortune 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Fortune II|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is pickaxe or axe or shovel:
+			chance of 50%:
+				clicked item is enchanted with fortune 1
+				enchant clicked item with fortune 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Fortune I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fortune 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Fortune I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Fortune III|| ||&aChance de sucesso: 50*||&7Encanta: Ferramentas":
+		if clicked item is sword or axe:
+			chance of 50%:
+				clicked item is enchanted with fortune 2
+				enchant clicked item with fortune 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Fortune II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with fortune 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Fortune II."
+				cancel event
+				stop
+#=====================================================================# 
+# Power                                                               #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Força I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				enchant clicked item with power 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro simples" with lore "&7Força II|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				clicked item is enchanted with power 1
+				enchant clicked item with power 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with power 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força I."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Força III|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				clicked item is enchanted with power 2
+				enchant clicked item with power 3
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força II."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with power 2
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força II."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Força IV|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				clicked item is enchanted with power 3
+				enchant clicked item with power 4
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força III."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with power 3
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força III."
+				cancel event
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Força V|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				clicked item is enchanted with power 4
+				enchant clicked item with power 5
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força IV."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with power 4
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento Força IV."
+				cancel event
+				stop
+#=====================================================================# 
+# Impacto                                                             #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro normal" with lore "&7Impacto I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				enchant clicked item with punch 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Impacto II|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				clicked item is enchanted with punch 1
+				enchant clicked item with punch 2
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento punch I."
+				cancel event
+				stop
+			chance of 50%:
+				clicked item is enchanted with punch 1
+				set cursor item to air
+				send "&cIhhh! Parece que não deu certo."
+				stop
+			else:
+				send "&cVocê precisa ter o encantamento punch I."
+				cancel event
+				stop
+#=====================================================================# 
+# Chama                                                               #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Chama I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				enchant clicked item with flame 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+#=====================================================================# 
+# Infinidade                                                          #
+#=====================================================================#
+on inventory click:
+	if cursor item is enchanted book named "&eLivro avançado" with lore "&7Infinidade I|| ||&aChance de sucesso: 50*||&7Encanta: Arcos":
+		if clicked item is bow:
+			chance of 50%:
+				enchant clicked item with infinity 1
+				set cursor item to air
+				message "&aEncantamento aplicado com sucesso."
+				stop
+			chance of 50%:
+				send "&cIhhh! Parece que não deu certo."
+				set cursor item to air
+				stop
+#=====================================================================# 
+# Admin                                                               #
+#=====================================================================#

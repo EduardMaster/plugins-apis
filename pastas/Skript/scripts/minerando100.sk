@@ -1,0 +1,10 @@
+options:
+
+	Chance.Premio: 0.1%
+	
+	Mensagem.Pegou: &7[&e&LGOD&f&lUP&7] O player &e%player% &7achou uma &eMystery&f&lUP &7minerando!
+	
+on break lapis ore or diamond ore or coal ore or iron ore or gold ore or emerald ore or redstone ore or obsidian or cobblestone or stone:
+	chance of {@Chance.Premio}:
+		execute console command "/givebox %player% 1"
+		broadcast "{@Mensagem.Pegou}"

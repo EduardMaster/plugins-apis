@@ -1,0 +1,30 @@
+name: EZKits
+main: Main.Main
+author: EzequiasSales
+version: 1.0
+commands:
+   sopas:
+   gm:
+   spawn:
+   coins:
+   score:
+   setfps:
+   surprise:
+   clicktest:
+   autosoup:
+   testmacro:
+   fps:
+   challenge:
+   setchallenge:
+   spawn:
+   setspawn:
+   menu:
+   kit:
+   kits:
+   build:
+   admin:
+   setarena:
+   clearchat:
+      aliases: [cc]
+   staffchat:
+      aliases: [sc]  

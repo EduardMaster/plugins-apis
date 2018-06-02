@@ -1,0 +1,121 @@
+# The default config. Check http://dev.bukkit.org/bukkit-plugins/instances-minigamesapi/#w-tutorials 
+# or https://github.com/instance01/MinigamesAPI/wiki/Default-Config-and-Item-Markup 
+# for more information if you don't understand a config entry. 
+# You can find classes (kits) in classes.yml, all saved arenas in arenas.yml, all messages in messages.yml. 
+# You can edit/disable achievements in achievements.yml.
+config:
+  selection_items:
+    classes_selection_item: 386
+    exit_item: 152
+    achievement_item: 160
+    spectator_item: 345
+    shop_selection_item: 388
+  GUI:
+    classes_gui_rows: 4
+    shop_gui_rows: 3
+  spectator:
+    spectator_after_fall_or_death: true
+    spectator_move_y_lock: true
+  defaults:
+    default_max_players: 4
+    default_min_players: 2
+    default_max_game_time_in_minutes: 30
+  countdowns:
+    lobby_countdown: 30
+    ingame_countdown: 10
+    ingame_countdown_enabled: true
+    skip_lobby: false
+    clearinv_while_ingamecountdown: false
+  classes_enabled: true
+  shop_enabled: false
+  use_credits_instead_of_money_for_kits: false
+  reset_inventory_when_players_leave_server: true
+  color_background_wool_of_signs: false
+  rewards:
+    economy: true
+    economy_reward: 10
+    item_reward: false
+    item_reward_ids: 264*1;11*1
+    command_reward: false
+    command: pex user <player> add SKILLZ.*
+    economy_for_kills: true
+    economy_reward_for_kills: 5
+    command_reward_for_kills: false
+    command_for_kills: pex user <player> add SKILLZ.*
+    economy_for_participation: false
+    economy_reward_for_participation: 5
+    command_reward_for_participation: false
+    command_for_participation: pex user <player> add SKILLZ.*
+  stats:
+    points_for_kill: 2
+    points_for_win: 10
+  arcade:
+    enabled: true
+    min_players: 1
+    max_players: 16
+    arena_to_prefer:
+      enabled: false
+      arena: arena1
+    lobby_countdown: 20
+    show_each_lobby_countdown: false
+    infinite_mode:
+      enabled: false
+      seconds_to_new_round: 10
+  bungee:
+    game_on_join: false
+    teleport_all_to_server_on_stop:
+      tp: false
+      server: lobby
+    whitelist_while_game_running: false
+  execute_cmds_on_stop: false
+  cmds: ''
+  cmds_after: say SERVER STOPPING;stop
+  map_rotation: false
+  broadcast_win: true
+  buy_classes_forever: true
+  disable_commands_in_arena: true
+  command_whitelist: /msg,/pm,/help
+  leave_command: /leave
+  spawn_fireworks_for_winners: true
+  powerup_spawning:
+    broadcast: false
+    spawn_firework: false
+  use_custom_scoreboard: false
+  delay:
+    enabled: false
+    amount_seconds: 5
+  send_game_started_msg: false
+  auto_add_default_kit: true
+  last_man_standing_wins: true
+  effects:
+    blood: true
+    damage_identifier_holograms: true
+    dead_in_fake_bed: true
+    1_8_titles: true
+    1_8_spectator_mode: false
+  sounds:
+    lobby_countdown: none
+    ingame_countdown: SUCCESSFUL_HIT
+  chat_per_arena_only: false
+  chat_show_score_in_arena: false
+  compass_tracking_enabled: true
+  allow_classes_selection_out_of_arenas: false
+  send_stats_on_stop: true
+  use_xp_bar_level: true
+  use_old_reset_method: false
+  extra_lobby_item:
+    item0:
+      enabled: false
+      item: 9
+      name: Custom Item
+      command: say This is a custom extra lobby item.
+  spawn_glass_blocks: true
+  version: 1
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  user: root
+  pw: root
+  database: mcminigames
+temp:
+  left_players: {}

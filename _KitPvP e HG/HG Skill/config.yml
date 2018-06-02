@@ -1,0 +1,35 @@
+ticksToKill: 10
+amountOfFakePlayers: 6
+invisibility: true
+aplicar: http://migre.me/pWR0d
+ip: 01.skill-hg.com
+
+ITEMS:
+  - '264,1,4,false'
+  - '310,1,2,true'
+  - '311,1,2,true'
+  - '312,1,2,true'
+  - '313,1,2,true'
+  - '276,1,3,true'
+  - '278,1,2,true'
+  - '327,1,1,false'
+  - '30,1,10,false'
+  - '368,1,4,true'
+  - '259,1,1,true'
+  - '320,1,20,true'
+  - '262,1,30,true'
+  - '364,1,20,false'
+  - '322,1,20,false'
+  - '297,1,20,false'
+  - '261,1,5,true'
+  - '46,1,20,true'
+  - '384,1,20,true'
+  - '373:16484,1,2,false'
+  - '373:16458,1,2,false'
+  - '373:16394,1,2,false'
+  - '373:16396,1,2,false'
+  - '373:16428,1,2,false'
+  - '373:16387,1,2,false'
+  - '373:16386,1,2,false'
+  - '373:16385,1,2,false'
+  - '373:16451,1,2,false'

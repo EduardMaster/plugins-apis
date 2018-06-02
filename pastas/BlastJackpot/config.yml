@@ -1,0 +1,21 @@
+invName: '&8Jackpot'
+enterMsg: '&aVoce entrou no jackpot com &e%amount% coins.'
+maxTime: 60
+MAXsecondMsg: '&6   * &eJackpot &eira sortear em 60 segundos.'
+30secondMsg: '&6   * &eJackpot &eira sortear em 30 segundos.'
+10secondMsg: '&6   * &eJackpot &eira sortear em 10 segundos.'
+3secondMsg: '&6   * &eJackpot &eira sortear em 3 segundos.'
+2secondMsg: '&6   * &eJackpot &eira sortear em 2 segundos.'
+1secondMsg: '&6   * &eJackpot &eira sortear em 1 segundos.'
+lowbalMsg: '&cVoce nao possue saldo nao e suficiente.'
+injackpotMsg: '&cVoce ja esta participando do Jackpot.'
+winjackpotMsg: '&6   * &eJackpot &eO vencedor foi &f&n%player%&6 &ee lucrou &f&n%total%&e
+  com %chance% chance.'
+price1: 50
+price2: 100
+price3: 500
+price4: 1000
+price5: 2000
+price6: 5000
+price7: 8000
+price8: 10000

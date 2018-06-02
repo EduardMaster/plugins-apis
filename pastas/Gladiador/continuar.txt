@@ -1,0 +1,6 @@
+&5==============================================
+
+&d Evento gladiador sendo INICIADO!
+&d Teleporte para o evento TRANCADO!
+
+&5==============================================

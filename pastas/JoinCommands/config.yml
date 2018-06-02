@@ -1,0 +1,32 @@
+##################################################################################################
+# Commands below are examples, don't forget to change them when using this plugin!      
+# This plugin has been updated to a Craftbukkit 1.8 Snapshot so things may be buggy              
+# Lots of things are being added to this plugin so stay tuned and dont forget to submit          
+# a request for something you would like to be added.                                            
+#
+# If the user does not have the correct permission, it will not run the command.
+#
+# Made by MrInspector, if you can, please donate by clicking the 'Donate' button, 
+# On the dev.bukkit.org project, Any amount helps, thank you!                                                               
+##################################################################################################
+
+JoinCommands:
+    - spawn
+
+LeaveCommands:
+    - spawn
+
+ConsoleJoinCommands:
+    - spawn
+    
+ConsoleLeaveCommands:
+    - spawn
+
+WorldChangeCommands:
+    - 
+    
+FirstPlayerJoinCommands:
+    - spawn
+    
+FirstPlayerConsoleJoinCommands:
+    - spawn

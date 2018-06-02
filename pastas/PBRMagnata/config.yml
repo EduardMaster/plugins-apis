@@ -1,0 +1,18 @@
+Tempo_De_Checagem: 10
+TAG: "&2[&2$]"
+Opcoes:
+    Logou: true
+    Deslogou: true
+    
+Mensagens:
+    Magnata_Logou: "&2&lMagnata: &a{Magnata} acaba de logar!"
+    Magnata_Deslogou: "&2&lMagnata: &a{Magnata} acaba de deslogar!"
+    Atual_Magnata: "&2&lMagnata: &a{Magnata}"
+    Sem_Magnata: "&2&lMagnata: &cSem magnata :/"
+    Novo_Magnata:
+    - '&2&lMagnata: &aParece que temos um novo magnata!'
+    - '&2&lMagnata: &aParabéns {Player}!'
+    
+    
+Titulo_Novo_Magnata: "&2Temos um novo magnata!"
+Subtitulo_Novo_Magnata: "&aParabéns {Magnata}"

@@ -1,0 +1,7 @@
+Jump:
+  Multiply: 2.0
+  Up: 1.0
+World: 'world'
+Enable:
+  '1': true
+  '2': true

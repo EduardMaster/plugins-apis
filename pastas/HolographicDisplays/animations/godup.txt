@@ -1,0 +1,13 @@
+speed: 0.3
+&e&lGOD&f&lUP
+&e&lGOD&f&lUP
+&e&lGOD&f&lUP
+&e&lGOD&f&lUP
+&e&lGOD&f&lUP
+&e&lGOD&f&lUP
+&e&lGOD&f&lUP
+&6&lG&e&lOD&f&lUP
+&e&lG&6&lO&e&lD&f&lUP
+&e&lGO&6&lD&f&lUP
+&e&lGOD&6&lU&f&lP
+&e&lGOD&f&lU&6&lP

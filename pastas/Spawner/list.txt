@@ -1,0 +1,15 @@
+# Spawner list file
+#
+# This file will be shown in-game when players type:
+# /spawner list
+#
+# You can also use color codes:
+# &4This line is red.
+#
+# While Minecraft chat is wrapped after 53 characters
+# wide, color codes are NOT included with this count.
+#####################################################
+&0-----------------------------------------------------
+                   &aValid Spawner Entity Types
+&0-----------------------------------------------------
+&fCreeper, Skeleton, Spider, Giant, Zombie, Slime, Ghast, PigZombie, Enderman, CaveSpider, Silverfish, Blaze, LavaSlime, EnderDragon, WitherBoss, Bat, Witch, Pig, Sheep, Cow, Chicken, Squid, Wolf, MushroomCow, SnowMan, Ozelot, VillagerGolem, EntityHorse, Villager, FireworksRocketEntity, Guardian, Endermite, Rabbit

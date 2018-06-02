@@ -1,0 +1,18 @@
+# Plugin feito por yM4ST3R
+# Obrigado por usar.
+# A permissão é masterlagg.use
+
+# Worlds que irá remover os itens do chão automaticamente
+worlds:
+   - world
+   - world_nether
+   - world_the_end
+
+# Tempo
+Tempo: 10
+Tempo_Mensagem: "&6(!) Lixeiro removendo os itens em {time} segundos."
+Comando_Limpar: "&6(!) %player% limpou o chão!."
+Mensagem_Removendo: "&6(!) Removendo..."
+
+# Recomendo não mexer! Atraso entre remoções (ticks)
+contagem_regressiva: 6000

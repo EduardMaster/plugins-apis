@@ -1,0 +1,5 @@
+This file logs all players that disconnected during combat
+You can disable the logging in the config
+
+MBN007 tried to escape combat and got punished!
+N1NJ4G4M3R tried to escape combat and got punished!

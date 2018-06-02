@@ -1,0 +1,264 @@
+# PicoMoedas - Criado por MrPowerGamerBR
+Comandos:
+    VerMoedas:
+        # Nem pense em tocar nesse "Class", se voce alterar, vai dar problema.
+        Class: CoinCommand
+        Comando: "cash"
+        Aliases:
+        - "cash"
+    EditarCoins:
+        Class: EditarCoinsCommand
+        Comando: "cashdefinir"
+        Aliases:
+        - "cashdefinir"
+        ComoUsa: "&c/{@comando} {quantidade}"
+    LojaGUI:
+        Class: LojaGUICommand
+        Comando: "lojacash"
+Mensagens:
+    Custo: " " # Isto aparece ao lado do nome do item na GUI em itens que custam grana
+    SuasMoedas: "&6Voce possui: &f{@moedas} Cash"
+    # {@artigo} = o, a.
+    # Se voce tem o MeninaAPI, ele irá alterar o artigo de acordo se o player é uma menina... ou nao.
+    # Se voce nao usa o MeninaAPI, ele irá trocar para "o"
+    MoedasDoPlayer: "&6Cash de &e{@player}&6: &f{@moedas}"
+    SemMoedas: "&cVoce nao tem cash suficientes!"
+    VoceAdicionouOP: "&aVoce adicionou {@moedas} cash na conta do {@player}"
+    VoceRemoveuOP: "&aVoce removeu {@moedas} cash da conta do {@player}"
+LojaPadrao: "Geral" # Quando alguém usar "/lojagui", ele irá abrir por padrao o menu "Geral"
+UsarEconomiaDoVault: false # Se voce colocar true, ele irá usar o Vault para usar como economia. (Ou seja, voce poderá usar o CraftConomy3 como economia em vez de usar a economia do PicoMoedas)
+Lojas:
+    Geral:
+        Nome: "&8Loja - Categorias" # Nome da GUI
+        Tamanho: 27 # Tamanho da GUI
+        Slots:
+            12:
+                Material: ENDER_CHEST
+                AbrirMenu: "Caixas"
+                Nome: "&eCaixas Misteriosas"
+            16:
+                Material: GOLDEN_APPLE
+                AbrirMenu: "Especiais"
+                Nome: "&eEspeciais"
+    Especiais:
+        Nome: "&8Loja - Especiais"
+        Tamanho: 54
+        Slots:
+            14:
+                Material: NETHER_STAR
+                Quantidade: 1
+                Nome: "&a+1 Poder Maximo"
+                Lore:
+                - "&7Adiciona +1 do seu poder maximo."
+                - " "
+                - "&8* Limite de poder maximo: 15"
+                - " "
+                - "&aCusto: &f10 Cash's"
+                Grana: 10
+                ExecutarComandoConsole:
+                - "sucesso {@player} poder"
+                - "sucesso {@player} messagem"
+            29:
+                Material: EXP_BOTTLE
+                Quantidade: 64
+                Nome: "&aXP"
+                Lore:
+                - "&764 Frascos de XP."
+                - " "
+                - "&aCusto: &f4 Cash's"
+                Grana: 4
+                ExecutarComandoConsole:
+                - "give {@player} minecraft:experience_bottle 64"
+                - "sucesso {@player} messagem"
+            32:
+                Material: CHEST
+                Quantidade: 1
+                Nome: "&aBau #2"
+                Lore:
+                - "&7Compre o Bau #2."
+                - " "
+                - "&aCusto: &f16 Cash's"
+                Grana: 16
+                ExecutarComandoConsole:
+                - "pex user {@player} add playervaults.amount.2"
+                - "sucesso {@player} messagem"
+            35:
+                Material:  FLINT_AND_STEEL
+                Quantidade: 5
+                Nome: "&aCreeper"
+                Lore:
+                - "&73 Ovo de Creeper."
+                - " "
+                - "&aCusto: &f14 Cash's"
+                Grana: 14
+                ExecutarComandoConsole:
+                - "give {@player} minecraft:spawn_egg 5 50"
+                - "sucesso {@player} messagem"
+            50:
+                Material: ARROW
+                Quantidade: 1
+                Nome: "&cVoltar"
+                Lore: []
+                Grana: 0
+                AbrirMenu: "Geral"
+    Caixas:
+        Nome: "&8Loja - Caixas Misteriosas"
+        Tamanho: 54
+        Slots:
+            12:
+                Material: ENDER_CHEST
+                Quantidade: 1
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &9Rara"
+                - " "
+                - "&aCusto: &f4 Cash's"
+                Grana: 4
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} messagem"
+            14:
+                Material: ENDER_CHEST
+                Quantidade: 1
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &5Epica"
+                - " "
+                - "&aCusto: &f8 Cash's"
+                Grana: 8
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} messagem"
+            16:
+                Material: ENDER_CHEST
+                Quantidade: 1
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &6Legendaria"
+                - " "
+                - "&aCusto: &f16 Cash's"
+                Grana: 16
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} messagem"
+            21:
+                Material: ENDER_CHEST
+                Quantidade: 3
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &9Rara"
+                - " "
+                - "&aCusto: &f10 Cash's"
+                Grana: 10
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} messagem"
+            23:
+                Material: ENDER_CHEST
+                Quantidade: 3
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &5Epica"
+                - " "
+                - "&aCusto: &f20 Cash's"
+                Grana: 20
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} messagem"
+            25:
+                Material: ENDER_CHEST
+                Quantidade: 3
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &6Legendaria"
+                - " "
+                - "&aCusto: &f40 Cash's"
+                Grana: 40
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} messagem"
+            30:
+                Material: ENDER_CHEST
+                Quantidade: 10
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &9Rara"
+                - " "
+                - "&aCusto: &f30 Cash's"
+                Grana: 30
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} caixarara"
+                - "sucesso {@player} messagem"
+            32:
+                Material: ENDER_CHEST
+                Quantidade: 10
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &5Epica"
+                - " "
+                - "&aCusto: &f60 Cash's"
+                Grana: 60
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} caixaepica"
+                - "sucesso {@player} messagem"
+            34:
+                Material: ENDER_CHEST
+                Quantidade: 10
+                Nome: "&aCaixa Misteriosa"
+                Lore:
+                - "&7Caixa Misteriosas"
+                - "&7Tipo: &6Legendaria"
+                - " "
+                - "&aCusto: &f120 Cash's"
+                Grana: 120
+                ExecutarComandoConsole:
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} caixalegendaria"
+                - "sucesso {@player} messagem"
+            50:
+                Material: ARROW
+                Quantidade: 1
+                Nome: "&cVoltar"
+                Lore: []
+                Grana: 0
+                AbrirMenu: "Geral"

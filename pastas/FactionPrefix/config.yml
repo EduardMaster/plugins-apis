@@ -1,0 +1,41 @@
+options:
+  tempo_update: 2
+  mostrar_erros: true
+
+pex_tags:
+  Membro:
+    prefix: '&7'
+    position: 18
+  Paladino:
+    prefix: '&3[Paladino] '
+    position: 17
+  Guerreiro:
+    prefix: '&5[Guerreiro] '
+    position: 16
+  Soberano:
+    prefix: '&c[Soberano] '
+    position: 15
+  MiniYT:
+    prefix: '&c[Mini-YT] '
+    position: 14
+  Youtuber:
+    prefix: '&c[Youtuber] '
+    position: 13
+  Helper:
+    prefix: '&e[Ajudante] '
+    position: 12
+  Construtor:
+    prefix: '&9[Construtor] '
+    position: 11
+  Moderador:
+    prefix: '&2[Moderador] '
+    position: 4
+  Administrador:
+    prefix: '&4[Admin] '
+    position: 3
+  Gerente:
+    prefix: '&4[Gerente] '
+    position: 2
+  Diretor:
+    prefix: '&6[Diretor] '
+    position: 1

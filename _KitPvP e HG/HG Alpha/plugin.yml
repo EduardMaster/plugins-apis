@@ -1,0 +1,21 @@
+name: AlphaHG
+version: 0.3
+main: br.com.alpha.MCAlpha
+author: IgaoDECOMPILER 
+softdepend: [TerrainControl]
+commands:
+  tag:
+  feast:
+  skit:
+  admin:
+  sc:
+  desistir:
+  fake:
+  tempo:
+  help:
+  kit:
+  fly:
+  iniciar:
+  cc:
+  tfake:
+  changeskin:

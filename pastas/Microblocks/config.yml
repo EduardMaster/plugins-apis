@@ -1,0 +1,2 @@
+# Enable 'safe-mode' to only allow 'safe' heads, which won't change.
+safe-mode: false

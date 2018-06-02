@@ -1,0 +1,8 @@
+DisablePlugin: false
+DebugMode: false
+Regen_Message: RegenChest has been regenerated
+RegenMsgEnabled: false
+checkForUpdate: false
+auto-update: false
+Default_RegenTime: 5
+ExactTime: false

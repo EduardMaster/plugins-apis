@@ -1,0 +1,4 @@
+Radius: 5
+Interval: 45
+BroadcastMessage: true
+Seconds_before_warn_message: 45

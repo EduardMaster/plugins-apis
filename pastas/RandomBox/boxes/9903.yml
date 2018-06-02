@@ -1,0 +1,283 @@
+# Full plugin documentation:
+# dev.bukkit.org/bukkit-plugins/random_box/pages/main/documentation/
+
+boxName: '&4Caixa Misteriosa'
+
+boxItem: MOB_SPAWNER
+
+lore:
+- '&7Tipo: &fGeradores de Monstros'
+
+checkPermission: false
+
+openWhenClicked: true
+
+addGlow: false
+
+unstackable: true
+
+cooldown: 5
+
+gui:
+  enabled: true
+  rolling:
+  - {delay: 1, iterations: 50}
+  - {delay: 2, iterations: 20}
+  - {delay: 3, iterations: 10}
+  - {delay: 4, iterations: 5}
+  window:
+    type: CHEST
+    format:
+    - '@@@@#@@@@'
+    - '@bcdEfgh@'
+    - '@@@@#@@@@'
+    fillers:
+      '@':
+        item: {id: 160, data: 14, delay: 20}
+        onStop:
+          item: {id: 0}
+      '#':
+        item: {id: 76, data: 0, delay: 20}
+        onStop:
+          item: {id: 0}
+
+effects:
+  open:
+    sound:
+      sound: CHEST_OPEN
+      volume: 1.0
+      pitch: 1.0
+  move:
+    sound: {sound: CLICK}
+  drop:
+    sound: {sound: ANVIL_LAND}
+  close:
+    sound: {sound: CHEST_CLOSE}
+
+itemsToSelectCount: 1
+
+items:
+  item1:
+    item: IRON_BLOCK
+    name: '&fBloco de Ferro'
+    dontAssignName: true
+    amount: 16
+    chance: 7
+  item2:
+    item: GOLD_BLOCK
+    name: '&fBloco de Ouro'
+    dontAssignName: true
+    amount: 16
+    chance: 7
+  item3:
+    item: DIAMOND_BLOCK
+    name: '&fBloco de Diamante'
+    dontAssignName: true
+    amount: 16
+    chance: 7
+  item4:
+    item: EMERALD_BLOCK
+    name: '&fBloco de Esmeralda'
+    dontAssignName: true
+    amount: 16
+    chance: 7
+  item5:
+    item: TNT
+    name: '&fDinamite'
+    dontAssignName: true
+    amount: 16
+    chance: 7
+  item6:
+    item: TNT
+    name: '&fDinamite'
+    dontAssignName: true
+    amount: 32
+    chance: 5
+  item7:
+    item: TNT
+    name: '&fDinamite'
+    dontAssignName: true
+    amount: 64
+    chance: 3
+  item8:
+    item: OBSIDIAN
+    name: '&fObsidian'
+    dontAssignName: true
+    amount: 32
+    chance: 5
+  item9:
+    item: OBSIDIAN
+    name: '&fObsidian'
+    dontAssignName: true
+    amount: 64
+    chance: 3
+  item10:
+    item: BEDROCK
+    name: '&fBedrock'
+    dontAssignName: true
+    amount: 32
+    chance: 5
+  item11:
+    item: BEDROCK
+    name: '&fBedrock'
+    dontAssignName: true
+    amount: 64
+    chance: 3
+  item12:
+    commands:
+      command1:
+        line: 'thor %player%'
+        fromConsole: true
+    item: 383
+    data: 50
+    name: '&fInvocar Creeper'
+    dontAssignName: true
+    amount: 1
+    chance: 5
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item13:
+    commands:
+      command1:
+        line: 'thor %player%'
+        fromConsole: true
+    item: 383
+    data: 50
+    name: '&fInvocar Creeper'
+    dontAssignName: true
+    amount: 5
+    chance: 4
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item14:
+    commands:
+      command1:
+        line: 'thor %player%'
+        fromConsole: true
+    item: 383
+    data: 50
+    name: '&fInvocar Creeper'
+    dontAssignName: true
+    amount: 10
+    chance: 3
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &6ULTRA RARO &ana Caixa Misteriosa!'
+  item15:
+    commands:
+      command1:
+        line: 'ss give %player% cow'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fCOW'
+    amount: 1
+    chance: 8
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item16:
+    commands:
+      command1:
+        line: 'ss give %player% spider'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fSPIDER'
+    amount: 1
+    chance: 6
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item17:
+    commands:
+      command1:
+        line: 'ss give %player% zombie'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fZOMBIE'
+    amount: 1
+    chance: 5
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item18:
+    commands:
+      command1:
+        line: 'ss give %player% skeleton'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fSKELETON'
+    amount: 1
+    chance: 4
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item19:
+    commands:
+      command1:
+        line: 'ss give %player% blaze'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fBLAZE'
+    amount: 1
+    chance: 3
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item20:
+    commands:
+      command1:
+        line: 'ss give %player% pigzombie'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fPIG_ZOMBIE'
+    amount: 1
+    chance: 2
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &5RARO &ana Caixa Misteriosa!'
+  item21:
+    commands:
+      command1:
+        line: 'ss give %player% irongolem'
+        fromConsole: true
+      command2:
+        line: 'thor %player%'
+        fromConsole: true
+    dontGiveItem: true
+    item: MOB_SPAWNER
+    name: '&eGerador de Monstros'
+    lore:
+    - '&7Tipo: &fIRON_GOLEM'
+    amount: 1
+    chance: 1
+    dropEffect:
+      broadcast: '&b[Caixa] &4%player% &aconseguiu um item &6ULTRA RARO &ana Caixa Misteriosa!'

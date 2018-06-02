@@ -1,0 +1,22 @@
+general:
+  title: '[Mine Reset]'
+  title-success: '&a[Mine Reset]'
+  title-error: '&4[Mine Reset]'
+error:
+  command: Invalid command! Use &e/mine help for help.
+  arguments: Invalid parameters. Check your argument count!
+  access: You do not have permission to do that
+  mine-name: Mine &c%MINE%&f does not exist!
+  mine-not-selected: Select a mine first with &e/mine edit <name>
+  block-does-not-exist: Block &c%BLOCK%&f does not exist
+  removing-air: This value is calculated automatically
+editing:
+  mine-selected-successfully: Mine &e%MINE%&f has been selected
+  mine-deselected-successfully: Mine &e%MINE%&f is no longer selected
+reset:
+  manual-reset-successful: Mine &6%MINENAME%&f has been reset!
+  automatic-reset-warning: Mine &6%MINENAME%&f will reset in &6%NEXT%&f minute(s).
+  automatic-reset-successful: Mine &6%MINENAME%&f has been reset! Next reset in &6%NEXT%&f minute(s).
+  mine-cooldown: Mine &6%MINENAME%&f can be reset in &6%COOL%&f minute(s).
+misc:
+  mine-teleport: You have been teleported to &6%MINENAME%&f

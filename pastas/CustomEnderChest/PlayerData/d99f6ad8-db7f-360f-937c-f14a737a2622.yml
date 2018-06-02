@@ -1,0 +1,524 @@
+PlayerLastName: blancoxyz
+EnderChestSize: 54
+EnderChestInventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 16
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa77KitPedra"
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 61
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa77KitPedra"
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa77KitPedra"
+      enchants:
+        DIG_SPEED: 4
+        DURABILITY: 5
+        LOOT_BONUS_BLOCKS: 1
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa77KitPedra"
+      enchants:
+        DAMAGE_ALL: 1
+        DURABILITY: 3
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 16
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 5
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+      enchants:
+        DIG_SPEED: 6
+        DURABILITY: 5
+        LOOT_BONUS_BLOCKS: 3
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: "\xa7cSpawner"
+      internal: H4sIAAAAAAAAAEWNWwrCMBBFr2mVEqgougDX4gPxoyJV/I92KMGYaGyxcYUuyzRVnJ87lzmc4QDHcK7M+bLSlazcQZQJkm7fFEiPUilRkl0bRVeGcSaaLQl7cgGR9MCAYZLTvZaWip0SjmwudEkYMfD9TTz1wtS6Qhyh18CPT/fNV5sJmCzAM3MKNFmG1H8JZUleGM1+pk4cM/TDAdMWlfqP4g18AIwVEDjTAAAA
+      blockMaterial: MOB_SPAWNER
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 5
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 5
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 5
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+      enchants:
+        DAMAGE_ALL: 4
+        DURABILITY: 4
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79KitLapis"
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 5
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 5
+        DURABILITY: 5
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 5
+        DURABILITY: 5
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 5
+        DURABILITY: 5
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHAINMAIL_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 5
+        DURABILITY: 5
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 16
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7cKitRedstone"
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 6
+        DURABILITY: 5
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 6
+        DURABILITY: 5
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+      enchants:
+        DAMAGE_ALL: 6
+        DURABILITY: 5
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 6
+        DURABILITY: 5
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa78KitFerro"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 6
+        DURABILITY: 5
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 8
+        DURABILITY: 5
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 8
+        DURABILITY: 5
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 8
+        DURABILITY: 5
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 8
+        DURABILITY: 5
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+      enchants:
+        DAMAGE_ALL: 8
+        DURABILITY: 5
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7aKitEsmeralda"
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        DURABILITY: 5
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        DURABILITY: 5
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        DURABILITY: 5
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        DURABILITY: 5
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+      enchants:
+        DAMAGE_ALL: 10
+        DURABILITY: 5
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+  '41':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+  '42':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa75KitObsidiana"
+  '43':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: "\xa7cSpawner"
+      internal: H4sIAAAAAAAAAEWNWwrCMBBFr2mVEqgougDX4gPxoyJV/I92KMGYaGyxcYUuyzRVnJ87lzmc4QDHcK7M+bLSlazcQZQJkm7fFEiPUilRkl0bRVeGcSaaLQl7cgGR9MCAYZLTvZaWip0SjmwudEkYMfD9TTz1wtS6Qhyh18CPT/fNV5sJmCzAM3MKNFmG1H8JZUleGM1+pk4cM/TDAdMWlfqP4g18AIwVEDjTAAAA
+      blockMaterial: MOB_SPAWNER
+  '44':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+  '45':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 12
+        DURABILITY: 5
+  '46':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 12
+        DURABILITY: 5
+  '47':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+      enchants:
+        DIG_SPEED: 20
+        DURABILITY: 10
+        LOOT_BONUS_BLOCKS: 20
+  '48':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 12
+        DURABILITY: 5
+  '49':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+  '50':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+      enchants:
+        DAMAGE_ALL: 12
+        DURABILITY: 5
+  '51':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 12
+        DURABILITY: 5
+  '52':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa76VIP"
+  '53':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    amount: 12
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: "\xa7cSpawner"
+      internal: H4sIAAAAAAAAAEWNWwrCMBBFr2mVEqgougDX4gPxoyJV/I92KMGYaGyxcYUuyzRVnJ87lzmc4QDHcK7M+bLSlazcQZQJkm7fFEiPUilRkl0bRVeGcSaaLQl7cgGR9MCAYZLTvZaWip0SjmwudEkYMfD9TTz1wtS6Qhyh18CPT/fNV5sJmCzAM3MKNFmG1H8JZUleGM1+pk4cM/TDAdMWlfqP4g18AIwVEDjTAAAA
+      blockMaterial: MOB_SPAWNER

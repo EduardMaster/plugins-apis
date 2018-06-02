@@ -1,0 +1,45 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 0
+npc:
+  '0':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0OTg3NTA4NjEyOTQsInByb2ZpbGVJZCI6IjQxMGUyNGRkMDE4ZTRmYjZiMDIxMmRhNDJkYzY0YjE2IiwicHJvZmlsZU5hbWUiOiJTaWx2ZXIiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzczMTdiMjgwNTY5N2U4MzY4NTYxM2RjZmZjOTRlOWI0Mzc0YWM2Zjk1YmE5YjE3YzQyMmYyZDY5ODc2NDE5YSJ9fX0=
+      cached-skin-uuid-name: silver
+      cached-skin-uuid: 410e24dd-018e-4fb6-b021-2da42dc64b16
+      player-skin-signature: ECkD+qapzDoMQdyHBR+04o84lgKx0hedQDWGZXStw7gIVMv3030cCYbUrVJdXdwvsrZhDcIFSe+AR29FXNoUY/Lww/f+s4UQj8HpJxB50Q3n7ZdE2uwZsPd04K3/I6SrjYT8JmoOUy/5JR5lJcKZ8+OfD+OELcosv58OVX8ZtcJuWaWgh8pZAs8ZjMVMeRGz/qWW/06hTLLpScgEs2eydHC6TEvV86pgZQ6GhPTy5LQmZg0OiVa3BpQ4+1Zzq4KP8Xauv8+5LZskkPzu5obD4+efc+LL8207Ong1E7XX5rRxnXtWV4sxBCnzbDLbPh8Q2NaFKmq2iW9AbUZiLI8GIfiwrjMKiqkRPthGEkK+opPPkXp2SR14vren6IWU8+uKInQrmIu1uuV1DWZenyKwMTAEgZaKxBoA1Ai3vtzhzr4spGNpXbLg6QEJfAICrHwT4cE+Scw68E9pVzniuLQ5P10depPnxYgOBK3eRojv8nDOPiHieaYueElEDCWpdhlvHS8WgOlMDuYKnw9NOqvIQ1J9MDQQ3Q5RFMGZzftVsCo+M0NAzShpaqhF5M1vkEgmN2roQ3NPkG66KFO1bLXQBlf77fiRksPMyDiPV8MvU7QeF8aoU5TUORIihlny9/9unVJnl3/uxyXrfennT/luxvO38uCI/5RwyEG56TJVZcE=
+    name: Silver
+    uuid: 0f7f4f17-14c4-48fc-800d-5ee3a075a144
+    traits:
+      spawned: true
+      inventory: {}
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Me venda todas suas almas =3
+      location:
+        world: world
+        x: '-421.2394454136536'
+        y: '194.0'
+        z: '823.8259027532924'
+        yaw: '169.7691650390625'
+        pitch: '-19.422527313232422'
+      speech: chat
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: J4ilson_dlc
+        uuid: b029f4a2-9aad-3619-9e25-3287f02f643d
+    traitnames: lookclose,type,owner,text,spawned,speech,inventory,location
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

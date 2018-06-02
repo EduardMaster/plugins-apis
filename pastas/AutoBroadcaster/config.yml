@@ -1,0 +1,5 @@
+#Who will be the announcer? Ex: [AutoBroadcaster]: Message
+announcerName: ''
+
+#Interval, in seconds
+interval: 120

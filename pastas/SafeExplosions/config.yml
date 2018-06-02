@@ -1,0 +1,12 @@
+TNT: true
+CREEPERS: true
+FIREBALLS: true
+Disable_Damage: false
+Disable_Sound: false
+Allow_Explosions_Below: 0
+Ignored_Worlds:
+- lorem
+- ipsum
+Disallow_Explosions_Everywhere_Worlds:
+- lorem2
+- ipsum2

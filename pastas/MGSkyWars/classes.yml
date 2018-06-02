@@ -1,0 +1,111 @@
+# Used for saving classes. Default class:
+config:
+  kits:
+    default:
+      name: Enderman
+      items: 368:0*1;
+      lore: 1 Ender Pearl.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.default
+    pro:
+      name: rush
+      items: 267*1;43:4*15;
+      lore: Espada de ferro mais 15 blocos.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.pro
+    extra_life:
+      name: Extra_Life
+      items: 351:1*1;
+      lore: The extra life class.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: false
+      permission_node: minigames.kits.extra_life
+    Cabum:
+      name: Cabum
+      items: 46:0*5;331:0*3;
+      lore: 5 TNT mais redstone.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Cabum
+    Troll:
+      name: Troll
+      items: 383:50*3
+      lore: 3 ovos de Creeper
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Troll
+    Faminto:
+      name: faminto
+      items: 364:0*8
+      lore: 8 carnes.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Faminto
+    Construtor:
+      name: Construtor
+      items: 1:0*32
+      lore: 32 blocos de pedras..
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Construtor
+    Esquimo:
+      name: Esquimo
+      items: 332:0*16;
+      lore: 16 bolas de neve.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Esquimo
+    Pescador:
+      name: Pescador
+      items: 346:0*1;350:0*5
+      lore: Vara de pescar mais 5 peixes.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Pescador
+    Encantador:
+      name: Encantador
+      items: 116:0*1;384:0*8
+      lore: Mesa de encantamento mais 8 pote de xp.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Encantador
+    Gladiador:
+      name: Gladiador
+      items: 307
+      lore: Peitoral de ferro.
+      requires_money: false
+      requires_permission: false
+      money_amount: 100
+      enabled: true
+      permission_node: minigames.kits.Gladiador
+    Arqueiro:
+      name: Arqueiro
+      items: 261:0*1;262:0*10;
+      lore: Arco mais 10 flechas.
+      requires_money: false
+      requires_permission: false
+      money_amount: 15
+      enabled: true
+      permission_node: minigames.kits.Arqueiro

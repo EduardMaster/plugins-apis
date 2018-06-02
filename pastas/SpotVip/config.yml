@@ -1,0 +1,29 @@
+#Plugin desenvolvido por SpotBR e continuado por Lendariof
+#PressioneStart: Lendariof
+#Skype: Lendariof
+#Jogue agora: jogar.minicookie.com.br
+
+#Se voce quer que os vips sejam
+#Todos permanentes, coloque true
+
+VipsPermanentes: false
+
+#Quantidade de keys que irao gerar
+#ao usar o comando /gerarkeys
+
+Keys: 10
+
+#Se voce quiser que as keys resetem
+#quando o servidor ligar coloque true
+#Se voce nao quiser isto coloque false
+
+ResetarKeysAoLigarServidor: false
+
+#Coloque EASY para keys geradas assim: 6372167236
+#Coloque NORMAL para keys geradas assim: yeq713q72
+#Coloque HARD para keys geradas assim: 6r3k2-uyj27-37oik
+
+KeyStyle: NORMAL
+
+
+

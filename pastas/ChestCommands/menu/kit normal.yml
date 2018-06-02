@@ -1,0 +1,76 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&f&lKits Basicos'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  command: 'kitnormal'
+
+  # open-with-item - OPTIONAL (you can remove this or
+  # set the item-id/data-value to 0)
+  # In this case it will open with a book (right click)
+  open-with-item:
+    item-id: 1
+    left-click: false
+    right-click: true
+#   data-value: 0
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+slot3de5:
+  COMMAND: 'kit membromensal'
+  NAME: '&7Kit Membro Mensal'
+  LORE:
+    - '&eClique com esquerdo ou direito para recolher '
+    - '&6Nao requer &bVIP'
+  ID: 42
+  KEEP-OPEN: false
+  POSITION-X: 5
+  POSITION-Y: 2
+  
+  
+slot2de5:
+  COMMAND: 'kit Membrosemanal'
+  NAME: '&7Kit Bonus Membro Semanal'
+  LORE:
+    - '&eClique com esquerdo ou direito para recolher'
+    - '&6Nao requer &bVIP'
+  ID: 378
+  KEEP-OPEN: false
+  POSITION-X: 5
+  POSITION-Y: 3
+  
+  
+slot2de3:
+  COMMAND: 'kit Membrodiario'
+  NAME: '&7Kit Membro Diario'
+  LORE:
+    - '&eClique com esquerdo ou direito para recolher '
+    - '&6Nao requer &bVIP'
+  ID: 265
+  KEEP-OPEN: false
+  POSITION-X: 5
+  POSITION-Y: 4
+
+
+slot2de4:
+  COMMAND: 'kits'
+  NAME: '&f&l[*] Voltar [*]'
+  ID: 262
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 6

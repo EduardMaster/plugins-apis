@@ -1,0 +1,8 @@
+# Use metrics. http://mcstats.org/plugin/RandomBox
+metrics: true
+
+# Enables randombox.infinitebox permission
+useInfinitePermission: false
+
+# Default locales: en (English), ru (Русский), zhtw (Traditional Chinese), zhcn (Simplified Chinese)
+locale: en

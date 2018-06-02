@@ -1,0 +1,556 @@
+{
+  "arena": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 150.0,
+        "y": 4.0,
+        "z": 1968.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": -90.42686733378417,
+        "y": 15.0,
+        "z": 1759.8558230875772,
+        "yaw": 0.8607483,
+        "pitch": 34.950012
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "arena2": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": -91.0,
+        "y": 16.0,
+        "z": 1756.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 151.5081687122179,
+        "y": 4.0,
+        "z": 1971.5696084692008,
+        "yaw": -358.38916,
+        "pitch": 3.6000192
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "arenax1": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 197.0,
+        "y": 15.0,
+        "z": 1730.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "castelo": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 149.0,
+        "y": 4.0,
+        "z": 1991.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": -116.70116147470662,
+        "y": 20.0,
+        "z": 1975.1445792447219,
+        "yaw": -359.73993,
+        "pitch": 15.600117
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "castelo2": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": -117.0,
+        "y": 20.0,
+        "z": 1973.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 151.4295517563382,
+        "y": 4.0,
+        "z": 1982.871519833446,
+        "yaw": -174.93951,
+        "pitch": 8.10002
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "loja": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 216.0,
+        "y": 4.0,
+        "z": 1978.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 321.03087849625786,
+        "y": 4.0,
+        "z": 1984.1524375173958,
+        "yaw": -3.9383168,
+        "pitch": 5.4000025
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "loja2": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 320.0,
+        "y": 5.0,
+        "z": 1979.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 211.11375157208067,
+        "y": 4.0,
+        "z": 1978.20594224112,
+        "yaw": -268.98932,
+        "pitch": 2.7000186
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "loja3": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 194.0,
+        "y": 15.0,
+        "z": 1752.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 321.0710195782774,
+        "y": 4.0,
+        "z": 1985.498966294914,
+        "yaw": 0.7116833,
+        "pitch": 4.200002
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "lojavip": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 196.0,
+        "y": 4.0,
+        "z": 1964.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 331.93109841704086,
+        "y": 10.0,
+        "z": 1883.250087976177,
+        "yaw": -358.844,
+        "pitch": 13.049998
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "lojavip2": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 332.0,
+        "y": 11.0,
+        "z": 1880.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 196.3998559969225,
+        "y": 4.0,
+        "z": 1967.9627964767403,
+        "yaw": -3.3392334,
+        "pitch": 0.4500191
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "lojavip3": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 187.0,
+        "y": 15.0,
+        "z": 1745.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 331.9154239154998,
+        "y": 10.0,
+        "z": 1885.023059314893,
+        "yaw": -358.844,
+        "pitch": 13.049998
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "Mina": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 173.0,
+        "y": 4.0,
+        "z": 2024.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 118.36346906441885,
+        "y": 26.0,
+        "z": 2151.154998461566,
+        "yaw": -88.9892,
+        "pitch": 0.9000407
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "Minacip": {
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "Minapvp": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 160.0,
+        "y": 4.0,
+        "z": 1999.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 290.5186643851445,
+        "y": 58.0,
+        "z": 2254.6346942348596,
+        "yaw": -357.789,
+        "pitch": 12.600018
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "Minapvp2": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 290.0,
+        "y": 59.0,
+        "z": 2251.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 164.53069579083254,
+        "y": 4.0,
+        "z": 1999.012231459722,
+        "yaw": -89.13934,
+        "pitch": 5.400019
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "MinaVip": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 179.0,
+        "y": 4.0,
+        "z": 1998.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 221.36500462705476,
+        "y": 26.0,
+        "z": 2152.7649933611992,
+        "yaw": -86.73944,
+        "pitch": 10.650029
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "pesca": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 187.0,
+        "y": 15.0,
+        "z": 1738.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 112.91768849976594,
+        "y": 21.0,
+        "z": 1754.5130050187322,
+        "yaw": -177.18886,
+        "pitch": 12.300018
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "pesca2": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 112.0,
+        "y": 22.0,
+        "z": 1756.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 189.34173824824128,
+        "y": 15.0,
+        "z": 1739.0763575564724,
+        "yaw": -92.43869,
+        "pitch": 12.90002
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "plotme": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 201.0,
+        "y": 15.0,
+        "z": 1752.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "plotworld",
+        "x": -38.57929566763221,
+        "y": 65.0,
+        "z": -35.33131655488731,
+        "yaw": 359.54993,
+        "pitch": 3.75001
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "plotme2": {
+    "froms": [
+      {
+        "world": "plotworld",
+        "x": -39.0,
+        "y": 65.0,
+        "z": -39.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 202.18387345971186,
+        "y": 15.0,
+        "z": 1750.4514437490914,
+        "yaw": -178.98877,
+        "pitch": 15.600015
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "portais": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 173.0,
+        "y": 4.0,
+        "z": 1932.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "tos": [
+      {
+        "world": "world2",
+        "x": 206.5142585659288,
+        "y": 17.0,
+        "z": 1732.4976292512954,
+        "yaw": -319.53882,
+        "pitch": 13.3500185
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  },
+  "portais4": {
+    "froms": [
+      {
+        "world": "world2",
+        "x": 173.0,
+        "y": 27.0,
+        "z": 1932.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  }
+}

@@ -1,0 +1,7 @@
+command /conquistas:
+    trigger:
+        send "&2&LHappy&6&lCraft: &eMuito Em Breve Fique Ligado..."
+
+command /site:
+    trigger:
+        send "&2&LHappy&6&lCraft: &e&lwww.happycraft.com.br"

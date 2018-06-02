@@ -1,0 +1,9 @@
+# More information at http://dev.bukkit.org/bukkit-plugins/votinginfo
+'1': '&a//*--*//*--*//*--*//*--*//*--*//'
+'2': '&5Voce pode votar 5 vezes ao dia'
+'3': '&aEm Breve'
+'4': '&bEm Breve'
+'5': '&cEm Breve'
+'6': '&5Click on "Vote for Server" and get your &6Reward&5!'
+no_perm_message: '&4You dont have permission to do that!'
+'7': '&a//*--*//*--*//*--*//*--*//*--*//'

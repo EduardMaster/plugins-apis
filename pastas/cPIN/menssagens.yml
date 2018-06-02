@@ -1,0 +1,4 @@
+Permissao: '&cSem Permissao'
+Conta_Ja_Possui_PIN: '&cEsta Conta Ja Possui PIN Ativo'
+Pin_NaoAtivoNaConta: '&cEsta Conta Nao Possui Um PIN Ativo'
+Pin_Invalido: '&cPin Invalido'

@@ -1,0 +1,24 @@
+AutoStart:
+  Hora1: 1000
+  Hora2: 1500
+  Hora3: 2000
+Premios:
+  Tag: '&8&l-=(&4&lKiller&8&l)=- '
+  Dinheiro: 50000
+Timers:
+  Preparar:
+    Avisos: 20
+    TempoEntre: 30
+  Iniciando:
+    Avisos: 10
+    TempoEntre: 30
+  Finalizando: 30
+Arena:
+  Entrada: SPAWN;-8752.524533731323;7.0;-7387.466908372919;316.68176;0.003844288
+  Saida: SPAWN;247.5;9.0;-551.5;-271.12402;-9.582087
+  Camarote: SPAWN;-8772.4946154745;29.0;-7358.0262464221705;271.79895;13.905487
+Vencedor: ''
+Bloquear:
+  Comandos: true
+  Teleporte: true
+Bans: {}

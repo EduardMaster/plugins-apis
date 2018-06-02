@@ -1,0 +1,11 @@
+name: bungeecord
+nickname: b
+format: '{bungeecord}'
+color: lightpurple
+shortcutAllowed: true
+needFocus: false
+distance: 0.0
+crossworlds: false
+delayPerMessage: 0
+costPerMessage: 0.0
+showCostMessage: true

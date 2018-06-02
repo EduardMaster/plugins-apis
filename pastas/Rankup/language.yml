@@ -1,0 +1,8 @@
+rankup-success-player: 'Voce Evoluiu Para %RANK%.'
+rankup-success-broadcast: '%PLAYER% Evoluiu Para %RANK%.'
+
+rankup-failed-money: 'Voce Precisa De %COST% Para Evoluir Para %RANK%'
+rankup-failed-next-group-not-allowed: 'VIPs Nao Podem Fazer RankUp.'
+rankup-failed-no-group-to-rank-up-to: 'Em Breve Mais Ranks.'
+
+do-not-edit-this: 2

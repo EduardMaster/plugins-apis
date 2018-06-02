@@ -1,0 +1,27 @@
+# The current version of the config (DO NOT CHANGE)
+config-version: 2
+
+updater:
+  # Whether or not to auto-update RandomTP.
+  auto-update: false
+
+# A list of biomes to prevent teleportation to.
+biome-blacklist:
+  - OCEAN
+  - RIVER
+  - DEEP_OCEAN
+
+# A list of blocks to prevent teleportation to.
+block-blacklist:
+  - CACTUS
+
+# max-x - The max X coordinate for teleport locations.
+# max-y - The max Y coordinate for teleport locations.
+# cost - The cost to teleport (requires Vault). Set to '0.0' to disable.
+# cooldown - The delay, in seconds, required between teleports. Set to '0' to disable.
+worlds:
+  worldgame:
+    max-x: 5000
+    max-z: 5000
+    cost: 0.0
+    cooldown: 906

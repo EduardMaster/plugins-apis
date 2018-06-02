@@ -1,0 +1,39 @@
+Save:
+  Interval: 60
+Debug:
+  Log: false
+  Permissions: false
+  Thread: false
+  Chunk: false
+EconomySystem: Vault
+Localization:
+  File: locale_EN.yml
+  Version: 2.82
+CreatePrice:
+  SellShop: 0.0
+  BuyShop: 0.0
+  Display: 0.0
+  Exchange: 0.0
+Display:
+  UseSigns: true
+  UseStorage: true
+DefaultUnit: 64
+CancelExplosions: false
+HideInactiveShops: false
+MaxAmountOnCreative: true
+Towny:
+  needsResident: true
+  needsToBeOwner: false
+  allowInWilderness: false
+BlockList:
+  BlackList: true
+  Blocks: []
+SellItemList:
+  BlackList: true
+  Items: []
+BuyItemList:
+  BlackList: true
+  Items: []
+WorldBlacklist: []
+Limitation:
+  MaxAmount: -1

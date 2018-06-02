@@ -1,0 +1,70 @@
+unknown_user: '&fNao esta no banco de dados'
+unsafe_spawn: "&fA sua localiza\xc3\xa7\xc3\xa3o na sa\xc3\xadda n\xc3\xa3o \xc3\xa9\
+  \ segura, voc\xc3\xaa ser\xc3\xa1 tele-portado para a Spawn"
+not_logged_in: "&cVoc\xc3\xaa nao esta autenticado!"
+reg_voluntarily: "&fVoc\xc3\xaa pode registrar o seu nickname no servidor com o comando\
+  \ \"/register password ConfirmePassword\""
+usage_log: '&cUse: /login password'
+wrong_pwd: '&cPassword incorreta'
+password_error_nick: '&fYou can''t use your name as password'
+password_error_unsafe: '&fYou can''t use unsafe passwords'
+unregistered: '&cRegistro eliminado com sucesso!'
+reg_disabled: '&cRegistro de novos utilizadores desativado'
+valid_session: "&cSess\xc3\xa3o v\xc3\xa1lida"
+login: '&cAutenticado com sucesso!'
+vb_nonActiv: "&fA sua conta ainda nao foi ativada, verifique o seu email, onde ir\xc3\
+  \xa1 receber instru\xc3\xa7\xc3\xb5es de como ativa-la."
+user_regged: "&cNome de usuario j\xc3\xa1 registrado"
+usage_reg: '&cUse: /register password ConfirmPassword'
+max_reg: "&fVoc\xc3\xaa atingiu o numero m\xc3\xa1ximo de registros permitidos"
+no_perm: "&cSem Permiss\xc3\xb5es"
+error: '&fOcorreu um erro; Por favor contacte um admin'
+login_msg: '&cIdentifique-se (logue) com "/login password"'
+reg_msg: '&cPor favor registre-se com "/register password confirmePassword"'
+reg_email_msg: '&cPor favor registre-se com "/register <email> <confirmarEmail>""'
+usage_unreg: '&cUse: /unregister password'
+pwd_changed: '&cPassword alterada!'
+user_unknown: "&cUsername n\xc3\xa3o registrado"
+password_error: "&fAs passwords n\xc3\xa3o coincidem"
+invalid_session: "&fDados de sess\xc3\xa3o n\xc3\xa3o correspondem. Por favor aguarde\
+  \ o fim da sess\xc3\xa3o"
+reg_only: '&fApenas jogadores registrados! Visite http://example.com para se registrar'
+logged_in: "&cJ\xc3\xa1 se encontra autenticado(logado)!"
+logout: '&cSaida com sucesso'
+same_nick: "&fO mesmo nickname j\xc3\xa1 se encontra a jogar no servidor"
+registered: '&cRegistrado com sucesso!'
+pass_len: '&fPassword ou muito curto, ou muito longo.'
+reload: "&fConfigura\xc3\xa7\xc3\xa3o e base de dados foram recarregadas"
+timeout: "&fExcedeu o tempo para autentica\xc3\xa7\xc3\xa3o"
+usage_changepassword: '&fUse: /changepassword PasswordAntiga PasswordNova'
+name_len: "&cO seu nickname \xc3\xa9 muito curto, ou muito longo."
+regex: "&cO seu nickname cont\xc3\xa9m caracteres n\xc3\xa3o permitidos. Permitido:\
+  \ REG_EX"
+add_email: '&cPor favor adicione o seu email com : /email add seuEmail confirmarSeuEmail'
+bad_database_email: "[AuthMe] O comando /email n\xc3\xa3o est\xc3\xa1 dispon\xc3\xad\
+  vel contacte o staff via ticket"
+recovery_email: '&cPerdeu/esqueceu a sua password(senha)? Para a recupera-la escreva
+  /email recovery <seuEmail>'
+usage_captcha: "&cVoc\xc3\xaa precisa digitar um captcha, escreva: /captcha <theCaptcha>"
+wrong_captcha: '&cCaptcha errado, por favor escreva: /captcha THE_CAPTCHA'
+valid_captcha: "&cO seu captcha \xc3\xa9 v\xc3\xa1lido!"
+kick_forvip: '&cUm jogador VIP entrou no servidor cheio!'
+kick_fullserver: "&cO servidor est\xc3\xa1 actualmente cheio, tente mais tarde :/\
+  \  !"
+usage_email_add: '&fUse: /email add <email> <confirmeEmail> '
+usage_email_change: '&fUse: /email change <EmailAntigo> <EmailNovo> '
+usage_email_recovery: '&fUse: /email recovery <Email>'
+new_email_invalid: '[AuthMe] Novo email invalido!'
+old_email_invalid: '[AuthMe] Antigo email invalido!'
+email_invalid: '[AuthMe] Email Invalido'
+email_added: '[AuthMe] Email adicionado!'
+email_confirm: '[AuthMe] Confirme o seu email!'
+email_changed: '[AuthMe] Email modificado!'
+email_send: "[AuthMe] Recupera\xc3\xa7\xc3\xa3o de email enviada!"
+email_exists: "[AuthMe] Um email j\xc3\xa1 existe na sua conta. Voc\xc3\xaa pode mudalo\
+  \ usando o comando abaixo."
+country_banned: "O seu pais \xc3\xa9 banido desse servidor"
+antibot_auto_enabled: "[AuthMe] AntiBotMod ativado automaticamente devido a um aumento\
+  \ anormal de tentativas de liga\xc3\xa7\xc3\xa3o!"
+antibot_auto_disabled: "[AuthMe] AntiBotMod desactivado automaticamente ap\xc3\xb3\
+  s %m minutos, esperamos que a invas\xc3\xa3o tenha parado"

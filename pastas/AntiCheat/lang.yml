@@ -1,0 +1,20 @@
+warning: {}
+ban: {}
+kick: {}
+chat: {}
+ALERT:
+- '&player has just entered the &level hack level.'
+- '&player''s last failed check was: &check.'
+- Type '/anticheat report &player' for more information.
+WARNING:
+- '[AntiCheat] Hacking is not permitted.'
+- '[AntiCheat] If you continue to hack, action will be taken.'
+BAN_REASON: Banned by AntiCheat
+BAN_BROADCAST: '[AntiCheat] &player was banned for hacking.'
+KICK_REASON: Kicked by AntiCheat
+KICK_BROADCAST: '[AntiCheat] &player was kicked for hacking.'
+SPAM_WARNING: Stop spamming the server or you will be kicked!
+SPAM_KICK_REASON: Kicked for spamming
+SPAM_KICK_BROADCAST: '[AntiCheat] &player was kicked for spamming'
+SPAM_BAN_REASON: Banned for spamming
+SPAM_BAN_BROADCAST: '[AntiCheat] &player was banned for spamming'

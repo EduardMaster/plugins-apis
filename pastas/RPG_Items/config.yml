@@ -1,0 +1,11 @@
+pluginVersion: '3.3'
+localeDownload: true
+autoupdate: true
+defaults:
+  hand: One handed
+  sword: Sword
+  damage: Damage
+  armour: Armour
+support:
+  worldguard: false
+version: '0.4'

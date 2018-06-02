@@ -1,0 +1,21 @@
+greencage:
+ name: "&aGreen Cage"
+ cost: 100
+ item-cage: "95,13"
+ location: 10
+ lore:
+ - "&r"
+orangecage:
+ name: "&eOrange Cage"
+ cost: 100
+ item-cage: "95,1"
+ location: 11
+ lore:
+ - "&r"
+purplecage:
+ name: "&5Purple Cage"
+ cost: 100
+ item-cage: "95,2"
+ location: 12
+ lore:
+ - "&r"

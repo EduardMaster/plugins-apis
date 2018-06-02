@@ -1,0 +1,212 @@
+{
+  "0": {
+    "relationWish": {},
+    "invites": [],
+    "open": false,
+    "tag": "§2Zona Livre",
+    "description": "",
+    "lastOnlineTime": 0,
+    "money": 0.0,
+    "powerBoost": 0.0,
+    "flagOverrides": {
+      "PERMANENT": true,
+      "INFPOWER": true,
+      "ENDERGRIEF": true
+    },
+    "permOverrides": {
+      "BUILD": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "DOOR": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "CONTAINER": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "BUTTON": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "LEVER": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ]
+    }
+  },
+  "1": {
+    "relationWish": {},
+    "invites": [],
+    "open": false,
+    "tag": "Vikings",
+    "description": "Descrição Padrão!",
+    "lastOnlineTime": 0,
+    "money": 0.0,
+    "powerBoost": 0.0,
+    "flagOverrides": {},
+    "permOverrides": {}
+  },
+  "-1": {
+    "relationWish": {},
+    "invites": [],
+    "open": false,
+    "tag": "Zona Protegida",
+    "description": "Zona totalmente protegida",
+    "lastOnlineTime": 0,
+    "money": 0.0,
+    "powerBoost": 0.0,
+    "flagOverrides": {
+      "PERMANENT": true,
+      "PEACEFUL": true,
+      "INFPOWER": true,
+      "POWERLOSS": false,
+      "PVP": false,
+      "MONSTERS": false,
+      "EXPLOSIONS": false,
+      "FIRESPREAD": false
+    },
+    "permOverrides": {
+      "DOOR": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "CONTAINER": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "BUTTON": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "LEVER": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "TERRITORY": [
+        "LEADER",
+        "MEMBER",
+        "OFFICER"
+      ]
+    }
+  },
+  "-2": {
+    "relationWish": {},
+    "invites": [],
+    "open": false,
+    "tag": "Zona de Guerra",
+    "description": "Zona não protegida, guerra a todo momento",
+    "lastOnlineTime": 0,
+    "money": 0.0,
+    "powerBoost": 0.0,
+    "flagOverrides": {
+      "PERMANENT": true,
+      "PEACEFUL": true,
+      "INFPOWER": true,
+      "FRIENDLYFIRE": true,
+      "ENDERGRIEF": true
+    },
+    "permOverrides": {
+      "DOOR": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "CONTAINER": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "BUTTON": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "LEVER": [
+        "LEADER",
+        "MEMBER",
+        "ENEMY",
+        "OFFICER",
+        "RECRUIT",
+        "ALLY",
+        "TRUCE",
+        "NEUTRAL"
+      ],
+      "TERRITORY": [
+        "LEADER",
+        "MEMBER",
+        "OFFICER"
+      ]
+    }
+  }
+}

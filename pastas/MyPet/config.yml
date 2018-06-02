@@ -1,0 +1,405 @@
+MyPet:
+  Leash:
+    Item: 287
+    Consume: false
+  OwnerCanAttackPet: false
+  DisablePetVersusPlayer: false
+  CheckForUpdates: false
+  DebugLogger: true
+  EnableEvents: false
+  RemovePetsAfterRelease: false
+  FollowStartDistance: 7.0
+  Backup:
+    Active: true
+    SaveInterval: 1440
+    DateFormat: yyyy_MM_dd_HH.mm
+  PetStorage:
+    AutoSaveTime: 60
+    OnPlayerQuit: true
+    OnPetLeash: true
+    OnPetRelease: true
+  Respawn:
+    Time:
+      Default:
+        Factor: 5
+        Fixed: 0
+      Player:
+        Factor: 5
+        Fixed: 0
+    EconomyCost:
+      Fixed: 0.0
+      Factor: 1.0
+  Permissions:
+    Enabled: true
+    UseExtendedPermissions: false
+  LevelSystem:
+    Active: true
+    CalculationMode: Default
+    Firework:
+      Enabled: true
+      Color: '#00FF00'
+  HungerSystem:
+    Active: true
+    Time: 60
+    HungerPointsPerFeed: 6
+  Skilltree:
+    AutomaticAssignment: true
+    InheritAlreadyInheritedSkills: true
+    ChooseOnce: true
+    PreventLevellingWithout: true
+    SwitchPenaltyFixed: 0.0
+    SwitchPenaltyPercent: 5
+    SwitchPenaltyAdmin: false
+  Support:
+    Towny: true
+    Heroes: true
+    Factions: true
+    WorldGuard: true
+    Citizens: true
+    mcMMO: true
+    Regios: true
+    MobArena:
+      PvP: true
+      DisablePetsInArena: false
+    Residence: true
+    AncientRPG: true
+    GriefPrevention: true
+    Minigames:
+      DisablePetsInGames: true
+    PvPArena:
+      DisablePetsInArena: true
+      PvP: true
+    SurvivalGames:
+      PvP: true
+      DisablePetsInGames: true
+    MyHungerGames:
+      DisablePetsInGames: true
+    BattleArena:
+      DisablePetsInArena: true
+    Vault:
+      Economy: true
+  Exp:
+    DamageWeightedExperienceDistribution: false
+    Passive:
+      PercentPerMonster: 25
+    Loss:
+      Percent: 0
+      Fixed: 0.0
+      Drop: true
+    Gain:
+      MonsterSpawner: true
+    Active:
+      Spider:
+        Min: 5.0
+        Max: 5.0
+      Squid:
+        Min: 1.0
+        Max: 3.0
+      Ozelot:
+        Min: 1.0
+        Max: 3.0
+      PigZombie:
+        Min: 5.0
+        Max: 5.0
+      LavaSlime:
+        Min: 1.0
+        Max: 4.0
+      Creeper:
+        Min: 5.0
+        Max: 5.0
+      WitherBoss:
+        Min: 100.0
+        Max: 100.0
+      Skeleton:
+        Min: 5.0
+        Max: 5.0
+      Wolf:
+        Min: 1.0
+        Max: 3.0
+      Slime:
+        Min: 1.0
+        Max: 4.0
+      Ghast:
+        Min: 5.0
+        Max: 5.0
+      Bat:
+        Min: 1.0
+        Max: 1.0
+      Silverfish:
+        Min: 5.0
+        Max: 5.0
+      Giant:
+        Min: 25.0
+        Max: 25.0
+      Villager:
+        Min: 0.0
+        Max: 0.0
+      Chicken:
+        Min: 1.0
+        Max: 3.0
+      VillagerGolem:
+        Min: 0.0
+        Max: 0.0
+      SnowMan:
+        Min: 0.0
+        Max: 0.0
+      Blaze:
+        Min: 10.0
+        Max: 10.0
+      Cow:
+        Min: 1.0
+        Max: 3.0
+      EnderDragon:
+        Min: 20000.0
+        Max: 20000.0
+      Zombie:
+        Min: 5.0
+        Max: 5.0
+      EnderCrystal:
+        Min: 10.0
+        Max: 10.0
+      Sheep:
+        Min: 1.0
+        Max: 3.0
+      Witch:
+        Min: 10.0
+        Max: 10.0
+      CaveSpider:
+        Min: 5.0
+        Max: 5.0
+      MushroomCow:
+        Min: 1.0
+        Max: 3.0
+      Enderman:
+        Min: 5.0
+        Max: 5.0
+      Pig:
+        Min: 1.0
+        Max: 3.0
+  Skill:
+    Control:
+      Item: 287
+    Ride:
+      Item: 287
+    Inventory:
+      Creative: true
+      DropWhenOwnerDies: false
+    Behavior:
+      Aggro: true
+      Farm: true
+      Friendly: true
+      Raid: true
+      Duel: true
+    Beacon:
+      HungerDecreaseTime: 100
+  Pets:
+    Chicken:
+      CanLayEggs: true
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '295'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Cow:
+      CanGiveMilk: true
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '296'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Sheep:
+      CanBeSheared: true
+      CanRegrowWool: true
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '296'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    IronGolem:
+      CanThrowUp: true
+      HP: 20
+      Speed: 0.35
+      Food: '265'
+      LeashFlags: UserCreated
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Mooshroom:
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '296'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Ocelot:
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '349'
+      LeashFlags: Tamed
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Pig:
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '391'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Villager:
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '260'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Wolf:
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: 363,365
+      LeashFlags: Tamed
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Zombie:
+      GrowUpItem: 373
+      HP: 20
+      Speed: 0.35
+      Food: '367'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Bat:
+      HP: 20
+      Speed: 0.35
+      Food: '375'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Blaze:
+      HP: 20
+      Speed: 0.35
+      Food: '289'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    CaveSpider:
+      HP: 20
+      Speed: 0.35
+      Food: '367'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Creeper:
+      HP: 20
+      Speed: 0.35
+      Food: '289'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Enderman:
+      HP: 20
+      Speed: 0.35
+      Food: '88'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Ghast:
+      HP: 20
+      Speed: 0.35
+      Food: '289'
+      LeashFlags: Impossible
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Giant:
+      HP: 20
+      Speed: 0.35
+      Food: '367'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    MagmaCube:
+      HP: 20
+      Speed: 0.35
+      Food: '331'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    PigZombie:
+      HP: 20
+      Speed: 0.35
+      Food: '367'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Silverfish:
+      HP: 20
+      Speed: 0.35
+      Food: '353'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Skeleton:
+      HP: 20
+      Speed: 0.35
+      Food: '352'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Slime:
+      HP: 20
+      Speed: 0.35
+      Food: '353'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Snowman:
+      HP: 20
+      Speed: 0.35
+      Food: 141,332
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Spider:
+      HP: 20
+      Speed: 0.35
+      Food: '367'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Witch:
+      HP: 20
+      Speed: 0.35
+      Food: '282'
+      LeashFlags: LowHp
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+    Wither:
+      HP: 20
+      Speed: 0.35
+      Food: '352'
+      LeashFlags: Impossible
+      CustomRespawnTimeFactor: 0
+      CustomRespawnTimeFixed: 0
+  Info:
+    AdminOnly:
+      PetName: false
+      PetOwner: false
+      PetHP: false
+      PetDamage: false
+      PetHunger: true
+      PetLevel: true
+      PetEXP: true
+      PetSkilltree: true
+    OverHead:
+      Name: true
+      Prefix: '%aqua%'
+      Suffix: ''

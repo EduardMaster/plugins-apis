@@ -1,0 +1,53 @@
+# EZRanksPro 1.5.0 main configuration file
+# Created by extended_clip
+check_updates: false
+debug: false
+check_primary_group_for_available_rankup: true
+chat_prefix_enabled: false
+log_rankups_to_file: false
+confirm_to_rankup:
+  enabled: true
+  time: 5
+rankup_cooldown:
+  enabled: true
+  time: 5
+ranks_command_enabled: true
+ranks:
+  use_custom_message: false
+  custom_message:
+  - '&8&m----------'
+  - '&aA&f: &a$&f100'
+  - '&bB&f: &a$&f200'
+  - '&cC&f: &a$&f300'
+  - '&8&m----------'
+  header:
+  - '&8&m----------'
+  format_previous_ranks: '&8%rank% &e>> %rankto%: &2Completado'
+  format_current_rank: '&f%rank% &a>> %rankto%: &e$&f%cost%'
+  format_incomplete_ranks: '&7%rank% &e>>&7 %rankto%: &e$&f%cost%'
+  format_last_rank: '&f%lastrank%: &eUltimo Rank!'
+  format_is_last_rank: '&f%lastrank%: &eVoce esta no ultimo rank!'
+  footer:
+  - '&8&m----------'
+money:
+  use_custom_format: true
+  custom_format: '#,###.00'
+  thousands_format: k
+  millions_format: M
+  billions_format: B
+  trillions_format: T
+  quadrillions_format: Q
+progress_bar:
+  has_color: '&a'
+  needs_color: '&8'
+  end_color: '&e'
+  left_character: '['
+  bar_character: ':'
+  right_character: ']'
+  is_full: '&a/rankup'
+placeholders:
+  rank_completed: Completado
+  rank_not_completed: incompleted
+autorankup:
+  enabled: false
+  check_interval: 60

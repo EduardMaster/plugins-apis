@@ -1,0 +1,90 @@
+# ----------------------------------------
+# - RandomTP (Original)                  -
+# ----------------------------------------
+# - Tnks for downloading this plugin!    -
+# ----------------------------------------
+# In Tp distances the recomended values are those:
+# ----------------------------------------
+# For Far Teleport Distance: 6000         -
+# For Tormal Teleport Distance: 3000      -
+# For Tiny Teleport Distance: 1000        -
+# BY DEFAULT IT WILL BE IN: 3000(Normal)  -
+# ----------------------------------------
+# AntiDamage time need to be in seconds   -
+# ----------------------------------------
+# You can use color codes in messages "&" ! :D
+# ----------------------------------------
+# Configuration:                         -
+# ----------------------------------------
+AntiDamageTime: 1
+Cooldown: 5
+EnabledInWorlds:
+- minerar
+TpDistances:
+  onCommand: 5000
+  FarSign: 6000
+  NormalSign: 3000
+  TinySign: 1000
+  FarGUI: 6000
+  NormalGUI: 3000
+  TinyGUI: 1000
+Messages:
+  Cooldown: "&eVoc\xc3\xaa Tem Que Esperar &fx &eSegundos Para Usar Esse Comando"
+  OnCommand: ''
+  OnSignFar: '&f[&c&lRandomTP&f]&7 You were teleported to a random &c&lfar distance!'
+  OnSignNormal: '&f[&c&lRandomTP&f]&7 You were teleported to a random &6&lnormal distance!'
+  OnSignTiny: '&f[&c&lRandomTP&f]&7 You were teleported to a random &e&lTiny distance!'
+  OnGUIFar: '&f[&c&lRandomTP &3&lGUI&f]&7 You were teleported to a random &c&lfar
+    distance!'
+  OnGUINormal: '&f[&c&lRandomTP &3&lGUI&f]&7 You were teleported to a random &6&lnormal
+    distance!'
+  OnGUITiny: '&f[&c&lRandomTP &3&lGUI&f]&7 You were teleported to a random &e&lTiny
+    distance!'
+  NoPermission: '&f[&c&lRandomTP&f]&c&l You dont have permission do this!'
+CustomSigns:
+  FarSign:
+    Line1: '&cRandomTP'
+    Line2: '&0TP far'
+    Line3: '&0randomly'
+  NormalSign:
+    Line1: '&6RandomTP'
+    Line2: '&0TP normal'
+    Line3: '&0randomly'
+  TinySign:
+    Line1: '&aRandomTP'
+    Line2: '&0TP tiny'
+    Line3: '&0randomly'
+  GuiSign:
+    Line1: '&aRandomTP'
+    Line2: Click to open
+    Line3: the gui menu
+InventoryGUI:
+  SlotFar:
+    Name: '&f[&c&lFar TP&f]'
+    InvSlot: 7
+  SlotNormal:
+    Name: '&f[&6&lNormal TP&f]'
+    InvSlot: 4
+  SlotTiny:
+    Name: '&f[&a&lTiny TP&f]'
+    InvSlot: 1
+  GuiLores:
+    Tiny:
+    - '&7Clic here to start'
+    - '&7the teleportation'
+    Normal:
+    - '&7Clic here to start'
+    - '&7the teleportation'
+    Far:
+    - '&7Clic here to start'
+    - '&7the teleportation'
+Sounds:
+  normalCMD: LEVEL_UP
+  signs:
+    tiny: ENDERMAN_TELEPORT
+    normal: ENDERMAN_TELEPORT
+    far: ENDERMAN_TELEPORT
+  gui:
+    tiny: ENDERMAN_TELEPORT
+    normal: ENDERMAN_TELEPORT
+    far: ENDERMAN_TELEPORT

@@ -1,0 +1,18 @@
+# This is the default bossbar.yml of SimpleBroadcast.
+# BarAPI originally made by confuserr.
+# Plugin made by KingDome24.
+# Messages get cut if they are longer than 64 characters!
+# If you want to use the boss bar, please download BarAPI (http://bit.ly/BarAPI).
+
+enabled: false
+
+delay: 60 # time in seconds
+
+reducehealthbar: false
+
+randomizemessages: false
+
+messages:
+- 'Have fun with the new boss bar!'
+- 'Please do not forget that too long messages get cut!'
+- 'You%sq%re now able to reduce the health bar based on the delay.'

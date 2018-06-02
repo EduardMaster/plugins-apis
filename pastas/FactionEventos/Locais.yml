@@ -1,0 +1,21 @@
+Lobby-Corrida:
+  X: -103.41120061296573
+  Y: 6.0
+  Z: -520.511300889392
+  Yaw: 270.14017
+  Pitch: -4.1926126
+  Mundo: SuperPlano
+Inicio-Corrida:
+  X: 4543.6630208271845
+  Y: 15.0
+  Z: 5090.509524867058
+  Yaw: -89.62202
+  Pitch: 1.782779
+  Mundo: SuperPlano
+Saida-Corrida:
+  X: 248.52913650035939
+  Y: 160.0
+  Z: -332.4446519615562
+  Yaw: -269.0976
+  Pitch: 3.000026
+  Mundo: world

@@ -1,0 +1,41 @@
+Buttons:
+  MyItens:
+    Enchant: false
+    Id: 130
+    Lore: 
+      - '&7Seus itens expirados...'
+    Name: '&eMeus Itens'
+  Update:
+    Enchant: false
+    Lore: 
+      - '&7Clique para atualizar...'
+    Name: '&eAtualizar'
+  Back:
+    Lore: 
+      - '&7Clique para voltar a pagina anterior...'
+    Id: 262
+    Enchant: false
+    Name: '&eVoltar'
+  Confirmed_No:
+    Lore: 
+      - '&7Clique para cancelar esta operacao.'
+    Name: '&cCancelar'
+  Confirmed_Yes:
+    Lore: 
+      - '&7Clique para confirmar a venda.'
+    Name: '&aConfirmar'
+Help:
+  - '&a/mercado ver &8- &7para ver os itens disponiveis no mercado.'
+  - '&a/mercado vender <preco> &8- &7para vender seus itens.'
+  - '&a/mercado coletar &8- &7para coletar seus itens expirados.'
+Time: 900
+Market_Name: Mercado
+Categorias: 
+  - Armas
+  - Armaduras
+  - Ferramentas
+  - Livros
+  - Mobs
+  - Pocoes
+  - Beacons
+Market_Size: 36

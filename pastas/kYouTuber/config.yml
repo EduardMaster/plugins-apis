@@ -1,0 +1,25 @@
+#Plugin kYouTuber
+#By
+#Critical_XxX
+
+
+#Comandos
+#/youtube
+#/youtuber
+#mostra os requisitos para ser youtuber
+#/kytreload
+#recarregue a config.yml
+
+#Permissao para poder usar o comando
+Permissao: 'kyoutuber.command'
+
+#Mensagem de sem permissao
+Sem_Permissao: '&cvoce nao tem permissao para poder executar esse comando'
+
+#Requisitos para se tornar youtuber
+YouTuber:
+ - '&6============&fYou&cTuber&6============'
+ - '&fPara se tornar youtuber precisa ter'
+ - '&f Video no servidor'
+ - '&b 500 &lSubs = Vip &eIMPERADOR'
+ - '&b 1k &fde Subs = &aTAG &fYou&cTuber'

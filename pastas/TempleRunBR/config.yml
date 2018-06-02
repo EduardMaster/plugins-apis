@@ -1,0 +1,13 @@
+Liguagem: BR
+Homes:
+  Thunderman: {}
+Statos:
+  Thunderman:
+    Desistiu: 4.0
+    Completou: 0.0
+    Tempo: false
+Blocos:
+  Thunderman: true
+  Odiim: true
+  Snouu_GamerBR: true
+  zGaaaws_: true

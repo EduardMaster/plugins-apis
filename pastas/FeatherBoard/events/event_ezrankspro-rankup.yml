@@ -1,0 +1,22 @@
+#----------------------------------------
+# EZRanksUp Rankup event
+# EZRanksPro player rankup event
+# https://www.spigotmc.org/resources/ezrankspro.10731/
+#----------------------------------------
+
+# DO NOT EDIT THIS CONFIG VERSION!
+config: 1
+
+
+# Do you want to enable this event hook?
+# Enabling this hook will trigger scoreboard
+# when the player ranks up
+# for the player that ranks up
+enabled: false
+
+# scoreboard to trigger
+scoreboard: 'default'
+
+
+# The time to display the scoreboard on the screen (in millseconds)
+onscreen-time: 5000

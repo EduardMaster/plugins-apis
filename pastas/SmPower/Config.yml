@@ -1,0 +1,76 @@
+#                                        #       #####  ###    ###     #                                        #
+#                                       #       #       #  #   # #      #                                       ##
+#                                      #         ###    #   # #  #       #                                      ###
+#                                       #           #   #    #   #      #                                       ##
+#                                        #     #####    #        #     #                                        #
+
+Personalizacao:
+
+  Power-max:
+    Valor: 1.0
+    ValorMaximo: 60
+    Nome: "&7Poder Máximo"
+    Lore:
+      - "&e&oClique com o botão direito para usar"
+      - "&7&oPrecisa de poder máximo? use!"
+
+  Power-adicional:
+    Valor: 1.0
+    Nome: "&7Poder Adicional"
+    Lore:
+      - "&e&oClique com o botão direito para usar"
+      - "&7&oEsta ficando com pouco poder? use!"
+
+
+Configuracoes:
+
+  aoUsar-Poder-max:
+    Play-sound: true
+    Sound: "VILLAGER_YES"
+    Envia-mensagem-para:
+      - "PLAYER QUE ATIVOU"
+      - "TODOS DO SERVIDOR"
+    Tipo-de-mensagem:
+      - "ACTION-BAR"
+      - "CHAT"
+
+  aoUsar-Poder-adicional:
+    Play-sound: true
+    Sound: "VILLAGER_YES"
+    Envia-mensagem-para:
+      - "PLAYER QUE ATIVOU"
+      - "TODOS DO SERVIDOR"
+    Tipo-de-mensagem:
+      - "ACTION-BAR"
+      - "CHAT"
+
+  aoUsar-Bigorna:
+    Bloquear-renomear-estrela: true
+
+
+Mensagens:
+
+  Ativacoes:
+    Player-usou-poder-max: "\n&2{player}&a utilizou uma estrela de poder maximo!\n"
+    Usou-poder-max: "&aParabéns! você utilizou uma estrela de poder maximo, seu poder maximo atual é: &e{podermaximo}"
+    Player-usou-poder-adicional: "\n&2{player}&a utilizou uma estrela de poder adicional!\n"
+    Usou-poder-adicional: "&aParabéns! você utilizou uma estrela de poder adicional, seu poder atual é: &e{poder}"
+
+  Erros:
+    Sem-permissao: "Você não tem permissão"
+    Apenas-numeros: "§cApenas numeros"
+    Player-offline: "§cPlayer offline"
+    Nenhum-player-online: "§cNenhum player online"
+    Nao-pode-renomear: "§cVocê não pode renomear"
+    Apenas-players: "§cApenas players"
+    Excedeu-o-limite-de-poder-maximo: "&cVocê já tem o maximo de poder maximo"
+    Ja-completou-poder: "&cVocê não pode usar este poder adicional, você ja chegou no limite"
+    Nao-pode-usar-bigorna: "&cVocê não pode renomear uma estrela de poder maximo/adicional."
+
+  Gives:
+    Ganhou-item-poder-adicional: "&7Você pegou &e{quantia}&7 estrela de poder adicional com sucesso!"
+    Ganhou-item-poder-adicional-para-player: "&7Você deu &e {quantia}&7 estrela de poder adicional para &e{alvo}&7 com sucesso!"
+    Ganhou-item-poder-adicional-para-todos: "&7Você deu &e{quantia}&7 estrela de poder adicional para todos do servidor com sucesso!"
+    Ganhou-item-poder-max: "&7Você pegou &e{quantia} &7estrela de poder maximo com sucesso!"
+    Ganhou-item-poder-max-para-player: "&7Você deu &e{quantia} &7estrela de poder maximo para &e{alvo}&7 com sucesso!"
+    Ganhou-item-poder-max-para-todos: "&7Você deu &e{quantia} &7estrela de poder maximo para todos do servidor com sucesso!"

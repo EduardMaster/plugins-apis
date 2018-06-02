@@ -1,0 +1,31 @@
+##Necessario reload para funcionar
+AutoStart:
+  Dia: sabado
+  Hora: 1700
+ClanTag: '[%tag%&r] '
+Format:
+  Ativar: false
+  default: '%clan%'
+  admin: '%clan%&4'
+Premios:
+  Mito:
+    Ativar: false
+    Cmd: 'setmito @player'
+  Tag: '&6[Gladiador] '
+  Dinheiro: 50000
+##Nao e mais necessario reload
+Timers:
+  Preparar:
+    Avisos: 20
+    TempoEntre: 30
+  Iniciando:
+    Avisos: 10
+    TempoEntre: 30
+  Finalizando: 30
+Arena:
+  Entrada: 'world;0;0;0;0;0'
+  Saida: 'world;0;0;0;0;0'
+  Camarote: 'world;0;0;0;0;0'
+Update: 60
+Vencedores: []
+Bans: {}

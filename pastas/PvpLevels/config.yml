@@ -1,0 +1,25 @@
+settings:
+  useFancyConsole: true
+  max lvl: 2000
+  MySQL:
+    use: false
+    host: localhost
+    port: 3306
+    database: craftbukkit
+    user: root
+    password: password
+  reward:
+    item:
+      use: true
+      id: 264
+      amount: 1
+    money:
+      use: true
+      amount: 2000
+    command:
+      use: true
+      command: say {Player} &a&lGanhou Tag &8&l-=(&6&lKingOfPvP&8&l)=- &a&lPor Chegar Ao LVL 500
+    lvl:
+      '500':
+        command: pex user {Player} group set kingofpvp
+

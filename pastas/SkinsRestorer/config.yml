@@ -1,0 +1,47 @@
+#This option disables automatic requesting & applying skins on join
+#Commands still work
+DisableOnJoinSkins: false
+
+#This is for preventing skin change spam
+SkinChangeCooldown: 30
+ 
+#Enable or disable default skins
+#If more nicknames will be in the list, server will
+#always choose a random one
+DefaultSkins:
+  Enabled: false
+  Names:
+    - Steve
+    
+#Disable skin names
+#Put skins you want to disable on the list
+#Player wont be able to set these skins
+DisabledSkins:
+  Enabled: false
+  Names:
+    - Steve
+    
+#Multi-Bungee support
+#If you use more proxy servers and you
+#experience issues with skin visibility between proxies
+#enable this option
+#
+#RedisBungee enables this option automatically
+MultiBungee:
+  Enabled: false
+
+# MySQL database for large servers
+# or just to boost the performance
+MySQL:
+  Enabled: false
+  Host: localhost
+  Port: 3306
+  Database: db
+  SkinTable: Skins
+  PlayerTable: Players
+  Username: root
+  Password: pass
+  
+Updater:
+  Enabled: true
+#Enable or disable the updater check on enable.

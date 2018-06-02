@@ -1,0 +1,37 @@
+name: Soul-KitPvP
+version: 1.0
+main: Pedrao.Main
+author: PedraoDEV
+descripition: Plugin Soul-KitPvP
+commands:
+  kit:
+  arena:
+  kits:
+  admin:
+  ban:
+  unban:
+  autosoup:
+  Kick:
+  Chat:
+  cc:
+  Youtuber:
+  tag:
+  sc:
+  feast:
+  rfeast:
+  setfeast:
+  setfps:
+  fps:
+  spawn:
+  setspawn:
+  setmlg:
+  mlg:
+  report:
+  arenaset:
+  Gm:
+  gamemode:
+  darxp:
+  warps:
+  xp:
+  Tp:
+  tell:

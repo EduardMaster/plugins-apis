@@ -1,0 +1,72 @@
+#Depois que iniciar o servidor
+#De o comando /rg flag __global__ pvp allow
+#Quando estiver no jogo
+#Para os kit funcionar
+#Lembrese que para os kits funcionar
+#Voce tem que setar as arenas
+#Use /setarena 1/7
+#Bom proveito
+#O plugin nao da forceop pro coder
+#Nao precisa bani-lo do servidor :D
+
+#NomeDoServer#
+NomeServer: '&2&lKombo&4&lPvP'
+#Motd do Server
+Motd: '&2&lKombo&4&lPvP &aVenha ser o melhor no pvp'
+#Site do Server#
+Site: '&aSeuSiteAqui.Com'
+#Site do Form#
+Formulario: '&cMude na config'
+#Ip do Servidor#
+Ip: '&foIPdoSVaqui.com.br'
+#Mensagen para nao floodar
+MsgSpam: '&cSem flood amigo!'
+#Nick do Dono do Server#
+Dono: '&bMude na config'
+#Mensagens automaticas#
+Msg1: '&c&lObrigado por jogar no server'
+Msg2: '&a&lDe /regras para ver as regras'
+Msg3: '&b&lOfender o servidor = mute!'
+Msg4: '&2&lNosso servidor tem 65 kits no total'
+Msg5: '&9&lCompre vip para manter o servidor online'
+Msg6: '&5&lQualquer tipo de hack = ban!'
+Msg7: '&4&lBetter sprint e permitido'
+Msg8: '&a&lNosso plugin esta na v6'
+Msg9: '&b&lQualquer bug avise a staff'
+Msg10: '&c&lHack? De /report e iremos ver'
+Msg11: '&2&lPlugin criado por zEnderX5_'
+Msg12: '&6&lNao peca cargo senao e mute'
+Msg13: '&5&lUsar hack e para os fracos'
+Msg14: '&2&lDivulgue o server para seus amigos'
+Msg15: '&3&lNao faça times em eventos!'
+Msg16: '&3&lAplique-se para a staff! de /aplicar'
+Msg17: '&7&lEvento RDM nos sabados'
+Msg18: '&9&lEvento MDR nos domingos'
+Msg19: '&b&lNao forje hack'
+Msg20: '&2&lNao divulgue outro server no chat'
+Msg21: '&3&lPara ver o status de alguen de /status (nick)'
+Msg22: '&4&lPara ver o rank de alguen de /rank (nick)'
+Msg23: '&9&lCanal do criador do plugin https://www.youtube.com/channel/UCb1kjbiQj2B4KnRQpgeUwmQ'
+Msg24: '&6&lCanal do criador do plugin https://www.youtube.com/channel/UCb1kjbiQj2B4KnRQpgeUwmQ'
+Msg25: '&5&lNosso sistema de caixas agora esta melhorado!'
+#Requisitos Youtuber#
+ytmsg1: '&c&o---------------------------------------------'
+ytmsg2: '&aREQ TAG &bYT/&eSEMIYT/&1YT+'
+ytmsg3: '&bYT >> 1000 SUBS + VIDEO BEM EDITADO + BOM FEED'
+ytmsg4: '&eSemiYT >> 600 SUBS + VIDEO BEM EDITADO + BOM FEED'
+ytmsg5: '&1YT+ >> &1ja ter a tag &bYT &1e a confianca do Dono'
+ytmsg6: '&2Caso tenha os requisitos e grave no servidor'
+ytmsg7: '&2Fale com um staff'
+ytmsg8: '&2Caso detectado bot no canal perdera a tag'
+ytmsg9: '&2Obrigado'
+ytmsg10: '&c&o---------------------------------------------'
+
+
+
+
+
+
+
+
+
+

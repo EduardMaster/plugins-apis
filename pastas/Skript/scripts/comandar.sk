@@ -1,0 +1,18 @@
+# ######################################################## #
+# +---------- Skript Desenvolvido by ViiictorXD ---------+ #
+# |      Quer mais skripts? Acesse: victordev.esy.es     | #
+# +-------------- ViiictorXD@hotmail.com ----------------+ #
+# '####################################################### #
+
+command /comandar [<offline player>] [<text>]:
+	trigger:
+		if player has permission "comandar.usar":
+			if arg 1 is set:
+				if arg 2 is set:
+					make arg 1 execute command "%arg 2%"
+				else:
+					send "&cVocê não selecionou o comando!"
+			else:
+				send "&cVocê não selecionou o player!"
+		else:
+			send "&cSem permissão!"

@@ -1,0 +1,87 @@
+name: FlyTrue
+main: Main.Main
+version: 1.0
+author: FlashDev_
+description: Plugin de kitpvp FlyTrue
+depend: [BarAPI]
+commands:
+  kit:
+     description: Pegue Kits
+  menu:
+     description: Abra o menu do servidor!
+  kits:
+     description: Pegue Kits
+  kits2:
+     description: Pegue Kits
+  build:
+     description: Comando para construir! 
+  parkour:
+     description: Parkour
+  head:
+     description: Pegue Cabecas!   
+  help:
+     description: Informacoes      
+  gm:
+     description: Altere seu modo de jogo    
+  tell:
+     description: Converse Privado       
+  tp:
+     description: De um tp      
+  warps:
+     description: Menu de warps do servidor
+  fisherman:
+     description: Warp Fisherman    
+  inv:
+     description: Veja o inventario       
+  youtuber:
+     aliases: [yt]
+     description: Requisitos youtuber!       
+  clearchat:
+     aliases: [cc]
+     description: Comando para staffs
+  testclick:
+     aliases: [ct]
+     description: ClickTeste   
+  spawn:
+     description: Spawn do servidor!
+  bc:
+     description: Mande uma mensagem a todos!
+  sumo:
+     description: Warp Sumo  
+  report:
+     description: Mande uma mensagem a todos!     
+  sc:
+     description: Fale com a staff!          
+  fps:
+     description: Arena FPS    
+  challenge:
+     description: Teste seu refil e recraft
+  main:
+     description: Arena Com Forca e velocidade        
+  admin:
+     description: Acesse o modo admin para banir hacks!       
+  tags:
+     description: Tags do servidor!  
+  tag:
+     description: Tags do servidor!            
+  arena:
+     description: Crie uma jaula!  
+  tpall:
+     description: Puxe todos   
+  met:
+     description: Veja algumas opcoes!     
+  score:
+     description: Ative e desative a scoreboard!        
+  morrer:
+     aliases: [suicide]
+     description: Se mate!       
+  voar:
+     aliases: [fly]
+     description: Voe como um passaro!    
+  lojakits:
+  SetArena:
+  staff:
+  ajuda:    
+  coins:
+  togglepvp:
+  ping:

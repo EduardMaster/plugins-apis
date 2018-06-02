@@ -1,0 +1,40 @@
+# [Clickwarp] Plugin by comniemeer | Color codes: http://ess.khhq.net/mc/ | Portugese translated by ksocially
+Warp:
+  NoWarps: '&7Nao existe nenhum warp de momento!'
+  List: '&7No momento temos estes warps:'
+  NoExist: '&7Nao existe nenhum warp com o nome &6{warp}&7!'
+  NotEnoughMoney: '&7Nao tens dinheiro suficiente para usar este warp: &6{price} {currency}&7!'
+  Success: '&7[&6Warp&7] Foi teletransportado para o warp &6{warp}&7.'
+  SuccessPrice: '&7[&6Warp&7] Foste Teletransportado por &6{price} {currency} &7para
+    o warp &6{warp}&7.'
+Setwarp:
+  InvalidName: '&cNome do warp Invalido!'
+  Success: '&7O warp &6{warp} &7foi criado com sucesso.'
+  NeedNumber: '&7Voce deve digitar um numero! exemplo: "&6/setwarp warp 1&7"'
+  InvalidItem: '&cItem Invalido!'
+  WrongItemFormat: '&7Apenas podes usar o formato: "&656&7" or "&635:4&7"!'
+Delwarp:
+  Success: '&7O Warp &6{warp} &7foi excluido com sucesso!'
+Editwarp:
+  ItemSuccess: '&7O warp &6{warp} &7vai ser mostrado com o item "&6{item}&7" em &6/invwarp&7!'
+  LoreSuccess: '&7O warp &6{warp} &7tem a submensagem "&6{lore}&7" em &6/invwarp&7!'
+  PriceSuccess: '&7O Warp &6{warp} &7foi adicionado com o preco &6{price} {currency}&7.'
+SignWarp:
+  SpecifyWarp: '&7[&6SignWarp&7] &cEscolha um warp especifico na &6linha 2&c!'
+  Success: '&7[&6SignWarp&7] Placa para o warp &6{warp} &7cridado com sucesso!'
+Invwarp:
+  TooManyWarps: '&7Existe muitos warps! :O'
+InvTP:
+  NoPlayers: '&7Actualmente nao existe jogadores online!'
+  TooManyPlayers: '&7Existe muitos players onlines! :O'
+  Success: '&7[&6TP&7] Foste teletransportado para o~player &6{player}&7.'
+  NotOnline: '&7[&6TP&7] O Jogador &6{player} &7ja nao esta online.'
+Delay:
+  Delay: '&7Vais ser teletranportador em &6{delay} segundos&7!'
+  DoNotMove: '&6Nao se mexa! &7vais ser teletransportado em &6{delay} segundos&7!'
+  TeleportCanceled: '&cO teleport foi cancelado por teres movido!'
+Various:
+  PluginReloaded: '&7[&6ClickWarp&7] Reload Completo.'
+  ErrorFileSaving: '&cErro ao gaurdar o ficheiro veja na consola para mais informacao!'
+  NoPermission: '&cComando protegido por permissao!'
+  OnlyPlayers: '&cApenas os jogadores podem usar este comando.'

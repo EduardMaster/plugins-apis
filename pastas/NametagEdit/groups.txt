@@ -1,0 +1,7 @@
+// This file declares custom permissions and ties prefixes and suffixes to them.
+// Players who possess these permissions will have the prefix and suffix assigned to the given permission.
+nametag.group.dono prefix = "&7[&9&lDono&7]  "
+nametag.group.mod prefix = "[&bMod&f] "
+nametag.group.member prefix = "[&eMember&f] "
+nametag.group.swag prefix = "&eThe &b"
+nametag.group.swag suffix = " &cSwagmaster"

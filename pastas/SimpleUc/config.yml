@@ -1,0 +1,20 @@
+# ------------------------------------
+# SimpleUc v1.4.5 - Configuration
+#    http://dev.bukkit.org/server-mods/simpleuc/pages/configuration/
+# ------------------------------------
+prevent-messages: false 
+message: '&8[&aFenix&fPvP&8] &fOops, esse comando nao existe no servidor =('
+random-messages: false
+messages:
+- '&8[&aFenix&fPvP&8] &fOops, esse comando nao existe no servidor =('
+command-correction:
+  enabled: false
+  success: '&6Did you mean: "&c%command%&6"?'
+  failed: ''
+  cmd-whitelist:
+  - help
+hide-commands:
+  enabled: false
+  commands:
+  - nick
+  - suc

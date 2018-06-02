@@ -1,0 +1,59 @@
+MySQL:
+  use: false
+  Host: localhost
+  Port: 3306
+  Username: test
+  Password: '123'
+  Database: minecraft
+language: br
+server_name: SeuServidor
+check_for_updates: true
+case_sensitive_for_flatfile: false
+key_length: 10
+one_vip_change: false
+usekey_global: false
+rvip_unlisted: true
+use_vault_for_permissions: false
+check_time: 10
+pagseguro:
+  use: false
+  email: suporte@lojamodelo.com.br
+  token: 95112EE828D94278BD394E91C4388F20
+  mode: 1
+  mysql_log: false
+paypal:
+  use: false
+  username: username
+  password: password
+  signature: signature
+  mode: 1
+  mysql_log: false
+logging:
+  usekey: false
+vip_groups:
+- vip
+default_group: default
+vip_items:
+- vip,0,264,1,none
+- vip,0,35:3,1,none
+- vip,0,35,1,none
+- vip,0,potion:poison:true:10:1,1,blindness-10:1
+- vip,0,$,200000,none
+- vip,0,xp,100,none
+- vip,0,cmd,broadcast &8-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+- vip,0,cmd,broadcast &eO jogador &c@player &eacaba de ativar o VIP
+- vip,0,cmd,broadcast &8-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+- vip,0,310,1,protection-10-unbreaking-10-name-&2&lKit OP
+- vip,0,311,1,protection-10-unbreaking-10-name-&2&lKit OP
+- vip,0,312,1,protection-10-unbreaking-10-name-&2&lKit OP
+- vip,0,313,1,protection-10-unbreaking-10-name-&2&lKit OP
+- vip,0,276,1,sharpness-10-knockback-10-name-&2Kit OP
+- vip,0,msg,&8-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+- vip,0,msg,Oi &c@player &fmuito obrigado pela sua contribuicao
+- vip,0,msg,&aVoce acaba de receber seus itens da Ativacao
+- vip,0,msg,&8-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+vips:
+  Pixeleiro:
+    inicio: 18/10/2014
+    usando: vip
+    vip: 3

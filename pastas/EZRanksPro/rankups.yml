@@ -1,0 +1,237 @@
+# EZRanksPro rankups.yml file
+# Create your rankups in this file.
+# If you need a default template, delete the rankups: section and
+# let it regenerate an example rankup.
+# 
+# rankup_actions are a list of 
+# actions which will be executed
+# when a player successfully ranks up
+# 
+# You must include required arguments
+# <required>, (optional)
+# rankup_action list:
+# [consolecommand] <command> - perform a console command
+# [playercommand] <command> - make the player perform a command
+# [message] <message> - send the player a message
+# [broadcast] <message> - send the server a message
+# [jsonmessage] <json>- send the player a json message
+# [jsonbroadcast] <json> - send the server a json message
+# [actionbarmessage] <message> - send the player an actionbar message
+# [actionbarbroadcast] <message> - send the server an actionbar message
+# [addgroup] <group> (world) - add the player to a permissions group
+# [removegroup] <group> (world) - remove the player from a permissions group
+# [addpermission] <permission> (world) - add a permission node to the player
+# [removepermission] <permission> (world) - remove a permission node from a player
+# [setprefix] <prefix> - set the players prefix
+# [setsuffix] <suffix> - set the players suffix
+# [effect] <effect> - play an effect at the players location
+# [sound] <sound> <volume> <pitch> - play a sound at the players location
+# 
+# You can delay any of the rankup actions being performed by ending the action with
+# <delay=(time in seconds)>
+# example:
+# [consolecommand] eco give %player% 100 <delay=10>
+# 
+# Placeholders can be used in your rankup actions and messages:
+# 
+# %player% - players name
+# %displayname% - players displayname
+# %world% - players current world
+# %rank% - players current rank
+# %rankup% - players next rank (if they have one)
+# %cost% - cost to rankup
+# %cost_formatted% - formatted cost to rankup
+# %balance% - players balance
+# %balance_formatted% - players formatted balance
+# %difference% - amount still needed
+# %difference_formatted% - formatted amount still needede
+# %progress% - rounded progress % based on cost - balance
+# %progressexact% - exact progress % based on cost - balance
+# %progressbar% - custom progressbar based on cost - balance
+# %rankprefix% - players current rank prefix defined in this file
+# %rankupprefix% - players next rank prefix defined in this file
+# %lastrank% - last rank available
+# %lastrankprefix% - last rank available prefix
+# %rankup_cost_<rankname>% - show the cost for a specific rank
+# %rankup_cost_formatted_<rankname>% - show the formatted cost for a specific rank
+# %rankup_is_completed_<rankname>% - show if a player has completed the specified rank
+
+last_rank:
+  rank: Obsdiana
+  prefix: '&8[&bObsidiana&8]'
+requirement_message:
+- '&8&m------------'
+- '&cVoce precisa &a$&f%cost% &cpara o rank %rankupprefix%'
+- '&8&m------------'
+rankups:
+  Default:
+    order: 1
+    prefix: '&8[&fDefault&8]'
+    rankup_to: PedraIII
+    cost: '10000'
+    rankup_actions:
+    - '[addgroup] PedraIII'
+    - '[removegroup] Default'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  PedraIII:
+    order: 2
+    prefix: '&8[&fPedraIII&8]'
+    rankup_to: PedraII
+    cost: '50000'
+    rankup_actions:
+    - '[addgroup] PedraII'
+    - '[removegroup] PedraIII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  PedraII:
+    order: 3
+    prefix: '&8[&fPedraII&8]'
+    rankup_to: PedraI
+    cost: '100000'
+    rankup_actions:
+    - '[addgroup] PedraI'
+    - '[removegroup] PedraII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  PedraI:
+    order: 4
+    prefix: '&8[&fPedraI&8]'
+    rankup_to: LapisIII
+    cost: '150000'
+    rankup_actions:
+    - '[addgroup] LapisIII'
+    - '[removegroup] PedraI'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  LapisIII:
+    order: 5
+    prefix: '&8[&fLapisIII&8]'
+    rankup_to: LapisII
+    cost: '250000'
+    rankup_actions:
+    - '[addgroup] LapisII'
+    - '[removegroup] LapisIII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  LapisII:
+    order: 6
+    prefix: '&8[&fLapisII&8]'
+    rankup_to: LapisI
+    cost: '500000'
+    rankup_actions:
+    - '[addgroup] LapisI'
+    - '[removegroup] LapisII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  LapisI:
+    order: 7
+    prefix: '&8[&fLapisI&8]'
+    rankup_to: RedstoneIII
+    cost: '800000'
+    rankup_actions:
+    - '[addgroup] RedstoneIII'
+    - '[removegroup] LapisI'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  RedstoneIII:
+    order: 8
+    prefix: '&8[&fRedstoneIII&8]'
+    rankup_to: RedstoneII
+    cost: '1000000'
+    rankup_actions:
+    - '[addgroup] RedstoneII'
+    - '[removegroup] RedstoneIII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  RedstoneII:
+    order: 9
+    prefix: '&8[&fRedstoneII&8]'
+    rankup_to: RedstoneI
+    cost: '1250000'
+    rankup_actions:
+    - '[addgroup] RedstoneI'
+    - '[removegroup] RedstoneII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  RedstoneI:
+    order: 10
+    prefix: '&8[&fRedstoneI&8]'
+    rankup_to: FerroIII
+    cost: '1550000'
+    rankup_actions:
+    - '[addgroup] FerroIII'
+    - '[removegroup] RedstoneI'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  FerroIII:
+    order: 11
+    prefix: '&8[&fFerroIII&8]'
+    rankup_to: FerroII
+    cost: '1800000'
+    rankup_actions:
+    - '[addgroup] FerroII'
+    - '[removegroup] FerroIII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  FerroII:
+    order: 12
+    prefix: '&8[&fFerroII&8]'
+    rankup_to: FerroI
+    cost: '2350000'
+    rankup_actions:
+    - '[addgroup] FerroI'
+    - '[removegroup] FerroII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  FerroI:
+    order: 13
+    prefix: '&8[&fFerroI&8]'
+    rankup_to: OuroIII
+    cost: '2866666'
+    rankup_actions:
+    - '[addgroup] OuroIII'
+    - '[removegroup] FerroI'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  OuroIII:
+    order: 14
+    prefix: '&8[&fOuroIII&8]'
+    rankup_to: OuroII
+    cost: '3300000'
+    rankup_actions:
+    - '[addgroup] OuroII'
+    - '[removegroup] OuroIII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  OuroII:
+    order: 15
+    prefix: '&8[&fOuroII&8]'
+    rankup_to: OuroI
+    cost: '3800000'
+    rankup_actions:
+    - '[addgroup] OuroI'
+    - '[removegroup] OuroII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  OuroI:
+    order: 16
+    prefix: '&8[&fOuroI&8]'
+    rankup_to: EsmeraldaIII
+    cost: '4450000'
+    rankup_actions:
+    - '[addgroup] EsmeraldaIII'
+    - '[removegroup] OuroI'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  EsmeraldaIII:
+    order: 17
+    prefix: '&8[&fEsmeraldaIII&8]'
+    rankup_to: EsmeraldaII
+    cost: '5000000'
+    rankup_actions:
+    - '[addgroup] EsmeraldaII'
+    - '[removegroup] EsmeraldaIII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  EsmeraldaII:
+    order: 18
+    prefix: '&8[&fEsmeraldaII&8]'
+    rankup_to: EsmeraldaI
+    cost: '6000000'
+    rankup_actions:
+    - '[addgroup] EsmeraldaI'
+    - '[removegroup] EsmeraldaII'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'
+  EsmeraldaI:
+    order: 19
+    prefix: '&8[&fEsmeraldaI&8]'
+    rankup_to: Obsidiana
+    cost: '8000000'
+    rankup_actions:
+    - '[addgroup] Obsidiana'
+    - '[removegroup] EsmeraldaI'
+    - '[actionbarbroadcast] &6&l>&b&l> &6%player% &eranked up to &7[&e&l%rankup%&7]'

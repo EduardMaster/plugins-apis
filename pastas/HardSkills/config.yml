@@ -1,0 +1,82 @@
+# Nomes e Lores
+# Dos Items do Menu GUI
+Skill:
+  Sword:
+    name: "§6ESPADAS"
+    Lore: &id001
+    - ''
+    - "§3100 Levels"
+    - "§3201000 XPs"
+    - ''
+  Mining:
+    name: "§6Mineracao"
+    Lore: &id002
+    - ''
+    - "§3100 Levels"
+    - "§3201000 XPs"
+    - ''
+  Axe:
+    name: "§6Machados"
+    Lore: &id003
+    - ''
+    - "§3100 Levels"
+    - "§3201000 XPs"
+    - ''
+# Nome E Lores
+# Das Skill's Desativadas
+Desativadas:
+  Name:
+    Skill_1: "§cUnlock"
+    Skill_2: "§cUnlock"
+    Skill_3: "§cUnlock"
+    Skill_4: "§cUnlock"
+    Skill_5: "§cUnlock"
+    Skill_6: "§cUnlock"
+  Lore:
+    Skill_1: &id004
+    - ''
+    - "§cSkill Desativa"
+    - "§cMOTIVO: Bugs"
+    - ''
+    Skill_2: &id005
+    - ''
+    - "§cSkill Desativa"
+    - "§cMOTIVO: Bugs"
+    - ''
+    Skill_3: &id006
+    - ''
+    - "§cSkill Desativa"
+    - "§cMOTIVO: Bugs"
+    - ''
+    Skill_4: &id007
+    - ''
+    - "§cSkill Desativa"
+    - "§cMOTIVO: Bugs"
+    - ''
+    Skill_5: &id008
+    - ''
+    - "§cSkill Desativa"
+    - "§cMOTIVO: Bugs"
+    - ''
+    Skill_6: &id009
+    - ''
+    - "§cSkill Desativa"
+    - "§cMOTIVO: Bugs"
+    - ''
+# Menssagens :p
+Menssagens:
+  Sem_Money: "§e* §cVocê não possui money §e*"
+  Compra_Efetuada: "§e* §aCompra efetuada com sucesso !§e*"
+# Lv's que o player ira comprar
+Skills:
+  Axes:
+    levels: 100
+  Sword:
+    levels: 100
+  Mining:
+    levels: 100
+# Preço
+Preco:
+  Axe: 1000000
+  Sword: 1000000
+  Mining: 10000000

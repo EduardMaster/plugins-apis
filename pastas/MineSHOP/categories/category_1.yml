@@ -1,0 +1,113 @@
+# DON'T EDIT THE FILE NAME / NAO EDITE O NOME DO ARQUIVO! 
+
+name: '&eVIPs'
+icon-id: 57
+icon-data: 0
+ativate: true
+lore:
+- '&7Adiquira seu vip clicando aqui!'
+Itens:
+  Example:
+    name: '&aGuerreiro'
+    id: 42
+    data: 0
+    slot: 0
+    give: false
+    amount: 1
+    price: 7
+    enchants: false
+    lore:
+    - '&aVIP Guerreiro (30 Dias)'
+    commands:
+    - darvip %player% guerreiro 30
+  Example1:
+    name: '&aGuerreiro'
+    id: 265
+    data: 0
+    slot: 18
+    give: false
+    amount: 1
+    price: 15
+    enchants: false
+    lore:
+    - '&aVIP Guerreiro (Eterno)'
+    commands:
+    - darvip %player% guerreiro 999
+  Example3:
+    name: '&3Dominador'
+    id: 41
+    data: 0
+    slot: 2
+    give: false
+    amount: 1
+    price: 10
+    enchants: false
+    lore:
+    - '&aVIP Dominador (30 Dias)'
+    commands:
+    - darvip %player% dominador 30
+  Example4:
+    name: '&3Dominador'
+    id: 266
+    data: 0
+    slot: 20
+    give: false
+    amount: 1
+    price: 18
+    enchants: false
+    lore:
+    - '&aVIP Dominador(Eterno)'       
+    commands:
+    - darvip %player% dominador 999
+  Example5:
+    name: '&dImperador'
+    id: 57
+    data: 0
+    slot: 4
+    give: false
+    amount: 1
+    price: 15
+    enchants: false
+    lore:
+    - '&aVIP Imperador (30 Dias)'
+    commands:
+    - darvip %player% imperador 30
+  Example6:
+    name: '&dImperador'
+    id: 264
+    data: 0
+    slot: 22
+    give: false
+    amount: 1
+    price: 25
+    enchants: false
+    lore:
+    - '&aVIP Imperador (Eterno)'
+    commands:
+    - darvip %player% imperador 999
+  Example7:
+    name: '&5Spartacus'
+    id: 133
+    data: 0
+    slot: 6
+    give: false
+    amount: 1
+    price: 25
+    enchants: false
+    lore:
+    - '&aVIP Spartacus (30 Dias)'
+    commands:
+    - darvip %player% imperador 30
+  Example2:
+    name: '&5Spartacus'
+    id: 388
+    data: 0
+    slot: 24
+    give: false
+    amount: 1
+    price: 35
+    enchants: false
+    lore:
+    - '&aVIP Spartacus (Eterno)'
+    commands:
+    - darvip %player% guerreiro 999

@@ -1,0 +1,27 @@
+# MaxMobs: Max amount of total mobs allowed alive at any given time
+# MonsterLimit: The max hostile mobs at any given time
+# AnimalLimit: The max friendly mobs at any given time
+Enabled: true
+MaxMobs: 2500
+worlds:
+  world:
+    monsterLimit: 2400
+    animalLimit: 2400
+  world_nether:
+    monsterLimit: 2400
+    animalLimit: 2400
+  world_the_end:
+    monsterLimit: 2400
+    animalLimit: 2400
+  spawn:
+    monsterLimit: 2400
+    animalLimit: 2400
+  plotworld:
+    monsterLimit: 2400
+    animalLimit: 2400
+  island-0:
+    monsterLimit: 2400
+    animalLimit: 2400
+  world2:
+    monsterLimit: 2400
+    animalLimit: 2400

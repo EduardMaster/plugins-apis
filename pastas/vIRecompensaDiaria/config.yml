@@ -1,0 +1,56 @@
+# Configuracao geral do plugin
+# Criado por Viiict0r
+# =======================
+# www.youtube.com/c/Viiict0r
+# =======================
+
+moeda:
+  id: 175
+  nome: '&eMoeda Diaria'
+  lore:
+  - '&8Moeda diaria'
+
+fireworks: true
+
+mensagens:
+  msg01: '&aParabens! Voce recebeu uma moeda diaria, volte em 24 hrs para receber outra!'
+  msg02: '&cVoce so pode pegar outra moeda ao completar 24 hrs.'
+  msg03: '&cSeu inventario esta lotado.'
+  msg04: '&aVoce ganhou &r@item'
+  msg05: '&cVoce so pode inserir uma moeda de cada vez!'
+  msg06: '&cMoeda invalida.'
+  msg07: '&cInsira uma moeda no slot vazio!'
+ 
+holograma:
+- '&e&lRECOMPENSA DIARIA'
+- '&7Ganhe 1 moeda a cada 24 hrs'
+- '&7(Clique direito)'
+
+menu:
+  icone_1:
+    id: 54
+    nome: '&eUtilizar uma moeda diária'
+    lore:
+    - ''
+    - '&7Clique para utilizar sua'
+    - '&7moeda diaria e ganhar um item!'
+    - ''
+  icone_2:
+    ativo:
+      id: 342
+      nome: '&aRecolher!'
+      lore:
+      - ''
+      - '&7Recolha sua moeda diaria!'
+      - '&7Voce pode ganhar moedas diarias'
+      - '&7a cada 24 hrs!'
+      - ''
+    desativado:
+      id: 408
+      nome: '&c-/-'
+      lore:
+      - ''
+      - '&7Volte em:'
+      - '&7 &c@time'
+      - '&7 Para recolher uma nova moeda diaria!'
+      - ''

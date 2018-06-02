@@ -1,0 +1,126 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&b&lMENU VIPS'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'comprarvip'
+
+  # The sound played whenever the menu is opened.
+  # List of sounds:
+  # jd.bukkit.org/rb/apidocs/org/bukkit/Sound.html
+  open-sound: LEVEL_UP
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    item-id: 54
+    left-click: false
+    right-click: true
+    data-value: 1
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+coalcmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &7&l&k!!&8&lCoal&7&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$10'
+  ID: 173
+  POSITION-X: 1
+  POSITION-Y: 2
+ironcmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &8&l&k!!&7&lIron&8&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$15'
+  ID: 42
+  POSITION-X: 2
+  POSITION-Y: 2
+redstonecmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &8&l&k!!&4&lRedstone&8&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$20'
+  ID: 152
+  POSITION-X: 3
+  POSITION-Y: 2
+goldcmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &0&l&k!!&6&lGold&0&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$25'
+  ID: 41
+  POSITION-X: 4
+  POSITION-Y: 2
+diamondcmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &1&l&k!!&b&lDiamond&1&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$30'
+  ID: 57
+  POSITION-X: 5
+  POSITION-Y: 2
+emeraldcmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &7&l&k!!&a&lEmerald&7&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$35'
+  ID: 133
+  POSITION-X: 6
+  POSITION-Y: 2
+obsidiancmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &7&l&k!!&5&lObsidian&7&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$40'
+  ID: 49
+  POSITION-X: 7
+  POSITION-Y: 2
+legendcmd:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &7&l&k!!&c&lLegend&7&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$45'
+  ID: 87
+  POSITION-X: 8
+  POSITION-Y: 2
+ghost:
+  COMMAND: 'pagarvip'
+  NAME: '&6&l[*] &7&l&k!!&4&lGhost&7&l&k!! &6&l[*]'
+  LORE:
+    - '&aPreço:'
+    - '&2$50'
+  ID: 7
+  POSITION-X: 9
+  POSITION-Y: 2
+menu-close-no-commands-no-description:
+  COMMAND: ''
+  NAME: '&4&l[++] &c&lFECHAR MENU &4&l[++]'
+  ID: 76
+  POSITION-X: 5
+  POSITION-Y: 3

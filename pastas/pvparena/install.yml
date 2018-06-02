@@ -1,0 +1,31 @@
+arenas:
+    ctf: v0.8.11.11
+    dm: v0.8.11.11
+    dom: v0.8.11.20
+    free: v0.8.11.11
+    pumpkin: v0.8.11.11
+    sabotage: v0.8.11.11
+    spleef: v0.8.11.11
+    tank: v0.8.11.11
+    teamdm: v0.8.11.11
+modules:
+    aftermatch: v0.8.10.2
+    announcements: v0.8.11.6
+    arenaboards: v0.8.10.1
+    arenamaps: v0.8.4.0
+    betterfight: v0.8.10.10
+    blockrestore: v0.8.11.12
+    colorteams: v0.8.11.11
+    economy: v0.8.11.5
+    fixinventoryloss: v0.7.25.0
+    latelounge: v0.8.8.5
+    powerups: v0.7.25.0
+    redstonetriggers: v0.8.8.5
+    regiontool: v0.8.6.14
+    skins: v0.8.6.19
+    tempperms: v0.8.4.2
+    vault: v0.8.11.5
+    visibility: v0.8.13.2
+regions:
+    cylinder: v0.8.6.16
+    spheric: v0.8.6.16

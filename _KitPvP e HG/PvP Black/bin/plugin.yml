@@ -1,0 +1,19 @@
+name: BlackPvP
+version: 1.0
+main: me.Pedro.Main
+author: Pedrao
+descripition: Plugin KitPvP
+commands:
+  kits:
+  SetArena:
+  kit:
+  setspawn:
+  spawn:
+  clicktest:
+  setfps:
+  fps:
+  setlava:
+  kreload:
+  lava:
+  setrdm:
+  rdm:

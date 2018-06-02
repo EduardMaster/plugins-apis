@@ -1,0 +1,8 @@
+&5==============================================
+
+&d Evento Killer FINALIZADO!
+&d Vencedor: @vencedor!
+&d Premio: $@dinheiro!
+&d Tag [KILLER] para @vencedor!
+
+&5==============================================

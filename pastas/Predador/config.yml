@@ -1,0 +1,21 @@
+AutoStart:
+  Hora1: '1200'
+  Hora2: '0000'
+Premios:
+  Tag: '&8&l-=(&6&lPredador&8&l)=- &6'
+  Dinheiro: 50000
+Timers:
+  Preparar:
+    Avisos: 20
+    TempoEntre: 30
+  Iniciando:
+    Avisos: 10
+    TempoEntre: 30
+  Finalizando: 30
+Arena:
+  Entrada: SPAWN;-762.5807391637526;5.0;1651.4585007378464;-179.83673;2.016595
+  Saida: SPAWN;247.5;9.0;-551.5;-271.12402;-9.582087
+  Camarote: SPAWN;-732.1142159338727;11.0;1629.4217650514668;-270.42538;10.434092
+  Wither: SPAWN;-762.3758003680884;5.0;1608.609668197506;221.3645;90.0
+Vencedor: ''
+Bans: {}

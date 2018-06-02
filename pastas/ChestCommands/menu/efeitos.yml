@@ -1,0 +1,476 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&5&lParticulas'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'efeitos'
+
+  # The sound played whenever the menu is opened.
+  # List of sounds:
+  # jd.bukkit.org/rb/apidocs/org/bukkit/Sound.html
+  open-sound: LEVEL_UP
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    item-id: 54
+    left-click: false
+    right-click: true
+    data-value: 1
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+1:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: carpet
+  KEEP-OPEN: true
+  DATA-VALUE: 14
+  POSITION-X: 1
+  POSITION-Y: 1
+2:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 1
+3:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 1
+4:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 1
+5:
+  COMMAND: ''
+  NAME: ''
+  LORES:
+    - '/money'
+  ID: carpet
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 1
+6:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 1
+7:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 1
+8:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 1
+9:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Vip'
+  ID: carpet
+  KEEP-OPEN: true
+  DATA-VALUE: 14
+  POSITION-X: 9
+  POSITION-Y: 1
+10:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: carpet
+  KEEP-OPEN: true
+  DATA-VALUE: 14
+  POSITION-X: 1
+  POSITION-Y: 6
+11:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 6
+12:
+  COMMAND: 'upack off'
+  NAME: '&4&l[++] &c&lREMOVER EFEITO &4&l[++]'
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 50
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 6
+13:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 6
+14:
+  COMMAND: ''
+  NAME: '&4&l[++] &c&lFECHAR MENU &4&l[++]'
+  LORES:
+    - '&bKit Livre'
+  ID: 76
+  POSITION-X: 5
+  POSITION-Y: 6
+15:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 6
+16:
+  COMMAND: 'upack off'
+  NAME: '&4&l[++] &c&lREMOVER EFEITO &4&l[++]'
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 50
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 6
+17:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 6
+18:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Vip'
+  ID: carpet
+  KEEP-OPEN: true
+  DATA-VALUE: 14
+  POSITION-X: 9
+  POSITION-Y: 6
+19:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 2
+20:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3
+21:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 4
+22:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Vip'
+  ID: carpet
+  KEEP-OPEN: true
+  DATA-VALUE: 0
+  POSITION-X: 9
+  POSITION-Y: 5
+23:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 2
+24:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 3
+25:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Livre'
+  ID: 171
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 4
+26:
+  COMMAND: ''
+  NAME: ''
+  DESCRIPTION:
+    - '&bKit Vip'
+  ID: carpet
+  KEEP-OPEN: true
+  DATA-VALUE: 0
+  POSITION-X: 1
+  POSITION-Y: 5
+agua:
+  COMMAND: 'upack waterdrip'
+  NAME: '&aWater Drip'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 8
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 2
+love:
+  COMMAND: 'upack love'
+  NAME: '&aHeart'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 38
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 3
+spell:
+  COMMAND: 'upack spell'
+  NAME: '&aSpell'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 373
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 4
+fogos:
+  COMMAND: 'upack firework'
+  NAME: '&aFirework'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: firework
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 2
+magic:
+  COMMAND: 'upack Magic'
+  NAME: '&aMagic'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 399
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 3  
+splash:
+  COMMAND: 'upack splash'
+  NAME: '&aSplash'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 326
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 4
+color:
+  COMMAND: 'upack color'
+  NAME: '&aColor'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 22
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 2
+music:
+  COMMAND: 'upack music'
+  NAME: '&aMusic'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 25
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 3
+void:
+  COMMAND: 'upack void'
+  NAME: '&aVoid'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 7
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 4
+enchantment:
+  COMMAND: 'upack enchantment'
+  NAME: '&aEnchantment'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 116
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 2
+portal:
+  COMMAND: 'upack portal'
+  NAME: '&aPortal'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 90
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 3
+cloud:
+  COMMAND: 'upack cloud'
+  NAME: '&aCloud'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 30
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 4
+ender:
+  COMMAND: 'upack ender'
+  NAME: '&aEnder'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: enderpearl
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 2
+slime:
+  COMMAND: 'upack slime'
+  NAME: '&aSlime'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 341
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 3
+spark:
+  COMMAND: 'upack spark'
+  NAME: '&aSpark'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 259
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 4
+explosion:
+  COMMAND: 'upack explosion'
+  NAME: '&aExplosion'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: tnt
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 2
+smoke:
+  COMMAND: 'upack smoke'
+  NAME: '&aSmok'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: coal
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 3
+fire:
+  COMMAND: 'upack fire'
+  NAME: '&aFire'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 51
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 4
+lavadrip:
+  COMMAND: 'upack lavadrip'
+  NAME: '&aLava Drip'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 10
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 2
+snowball:
+  COMMAND: 'upack snowball'
+  NAME: '&aSnowBall'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 332
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 3
+crit:
+  COMMAND: 'upack crit'
+  NAME: '&aCrit'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: diamond_sword
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 4
+reddust:
+  COMMAND: 'upack reddust'
+  NAME: '&aRedDust'
+  LORE:
+    - '&bClick Para Ativar'
+  ID: 331
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 5

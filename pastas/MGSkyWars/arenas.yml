@@ -1,0 +1,582 @@
+# Used for saving arena details.
+mainlobby:
+  world: spawn
+  location:
+    x: 1051.8802167009753
+    y: 97.0
+    z: -587.3253504935728
+    yaw: 15.150006
+    pitch: 35.700005
+arenas:
+  angrybirds:
+    lobby:
+      world: angrybirds
+      location:
+        x: 25.534143198347994
+        y: 203.0
+        z: 153.8383567930601
+        yaw: -271.9494
+        pitch: 85.49996
+    spawns:
+      spawn0:
+        world: angrybirds
+        location:
+          x: 4.5
+          y: 108.0
+          z: 196.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn1:
+        world: angrybirds
+        location:
+          x: -17.5
+          y: 108.0
+          z: 131.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn2:
+        world: angrybirds
+        location:
+          x: 47.5
+          y: 108.0
+          z: 108.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn3:
+        world: angrybirds
+        location:
+          x: 70.5
+          y: 108.0
+          z: 173.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn4:
+        world: angrybirds
+        location:
+          x: -17.5
+          y: 108.0
+          z: 173.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn5:
+        world: angrybirds
+        location:
+          x: 5.5
+          y: 108.0
+          z: 108.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn6:
+        world: angrybirds
+        location:
+          x: 70.5
+          y: 108.0
+          z: 131.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn7:
+        world: angrybirds
+        location:
+          x: 48.5
+          y: 108.0
+          z: 196.5
+          yaw: 0.0
+          pitch: 0.0
+    bounds:
+      low:
+        world: angrybirds
+        location:
+          x: 76.98674527552146
+          y: 77.80467709089794
+          z: 207.91951650798933
+          yaw: 140.7019
+          pitch: 5.6999984
+      high:
+        world: angrybirds
+        location:
+          x: -40.13251527426738
+          y: 149.71868633202658
+          z: 84.17355777732334
+          yaw: 316.05206
+          pitch: 31.349985
+    max_players: 8
+    min_players: 2
+    displayname: angrybirds
+    is_vip: false
+    sign:
+      world: spawn
+      loc:
+        x: 1053
+        y: 97
+        z: -574
+  Deserto:
+    lobby:
+      world: mapadodeserto
+      location:
+        x: 38.42555449398882
+        y: 152.0
+        z: 256.71738817086117
+        yaw: -143.99863
+        pitch: 33.299984
+    spawns:
+      spawn0:
+        world: mapadodeserto
+        location:
+          x: 0.5
+          y: 86.0
+          z: 281.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn1:
+        world: mapadodeserto
+        location:
+          x: 1.5
+          y: 86.0
+          z: 231.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn2:
+        world: mapadodeserto
+        location:
+          x: 43.5
+          y: 86.0
+          z: 205.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn3:
+        world: mapadodeserto
+        location:
+          x: 66.5
+          y: 86.0
+          z: 211.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn4:
+        world: mapadodeserto
+        location:
+          x: 95.5
+          y: 86.0
+          z: 255.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn5:
+        world: mapadodeserto
+        location:
+          x: 69.5
+          y: 86.0
+          z: 300.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn6:
+        world: mapadodeserto
+        location:
+          x: 45.5
+          y: 86.0
+          z: 307.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn7:
+        world: mapadodeserto
+        location:
+          x: -6.5
+          y: 86.0
+          z: 257.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn8:
+        world: mapadodeserto
+        location:
+          x: 19.5
+          y: 86.0
+          z: 212.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn9:
+        world: mapadodeserto
+        location:
+          x: 89.5
+          y: 86.0
+          z: 232.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn10:
+        world: mapadodeserto
+        location:
+          x: 89.5
+          y: 86.0
+          z: 277.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn11:
+        world: mapadodeserto
+        location:
+          x: 22.5
+          y: 86.0
+          z: 301.5
+          yaw: 0.0
+          pitch: 0.0
+    min_players: 2
+    max_players: 12
+    bounds:
+      low:
+        world: mapadodeserto
+        location:
+          x: -25.199676072846323
+          y: 40.64091169582699
+          z: 314.6126650728878
+          yaw: -125.099655
+          pitch: -24.60002
+      high:
+        world: mapadodeserto
+        location:
+          x: 107.24113356834286
+          y: 137.72885507447788
+          z: 198.66981539510363
+          yaw: -314.84937
+          pitch: 30.899918
+    displayname: Deserto
+    is_vip: false
+    sign:
+      world: spawn
+      loc:
+        x: 1052
+        y: 97
+        z: -574
+  The_End:
+    lobby:
+      world: mapatheende
+      location:
+        x: -46.452301512339005
+        y: 176.0
+        z: 290.6505478126893
+        yaw: -83.69937
+        pitch: 90.0
+    spawns:
+      spawn0:
+        world: mapatheende
+        location:
+          x: -42.5
+          y: 99.0
+          z: 215.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn1:
+        world: mapatheende
+        location:
+          x: 23.5
+          y: 100.0
+          z: 258.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn2:
+        world: mapatheende
+        location:
+          x: 22.5
+          y: 100.0
+          z: 328.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn3:
+        world: mapatheende
+        location:
+          x: -43.5
+          y: 101.0
+          z: 367.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn4:
+        world: mapatheende
+        location:
+          x: -110.5
+          y: 101.0
+          z: 324.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn5:
+        world: mapatheende
+        location:
+          x: -109.5
+          y: 100.0
+          z: 254.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn6:
+        world: mapatheende
+        location:
+          x: -8.5
+          y: 100.0
+          z: 224.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn7:
+        world: mapatheende
+        location:
+          x: 32.5
+          y: 101.0
+          z: 291.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn8:
+        world: mapatheende
+        location:
+          x: -8.5
+          y: 100.0
+          z: 357.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn9:
+        world: mapatheende
+        location:
+          x: -79.5
+          y: 101.0
+          z: 357.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn10:
+        world: mapatheende
+        location:
+          x: -119.5
+          y: 100.0
+          z: 290.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn11:
+        world: mapatheende
+        location:
+          x: -76.5
+          y: 100.0
+          z: 224.5
+          yaw: 0.0
+          pitch: 0.0
+    max_players: 12
+    min_players: 2
+    bounds:
+      high:
+        world: mapatheende
+        location:
+          x: 34.92996788284599
+          y: 158.08293188879796
+          z: 370.42619244831894
+          yaw: 134.85043
+          pitch: 37.649982
+      low:
+        world: mapatheende
+        location:
+          x: -125.53224249957238
+          y: 42.94518315252238
+          z: 211.15990274198282
+          yaw: 313.9506
+          pitch: -18.150036
+    displayname: The_End
+    is_vip: false
+    sign:
+      world: spawn
+      loc:
+        x: 1050
+        y: 97
+        z: -574
+  Planice:
+    lobby:
+      world: planice
+      location:
+        x: 33.98296100154638
+        y: 179.0
+        z: 255.6884773015458
+        yaw: -266.40036
+        pitch: 76.94986
+    spawns:
+      spawn0:
+        world: planice
+        location:
+          x: 9.5
+          y: 84.0
+          z: 282.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn1:
+        world: planice
+        location:
+          x: 10.5
+          y: 83.0
+          z: 229.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn2:
+        world: planice
+        location:
+          x: 59.5
+          y: 83.0
+          z: 227.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn3:
+        world: planice
+        location:
+          x: 61.5
+          y: 83.0
+          z: 278.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn4:
+        world: planice
+        location:
+          x: -0.5
+          y: 84.0
+          z: 253.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn5:
+        world: planice
+        location:
+          x: 34.5
+          y: 84.0
+          z: 216.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn6:
+        world: planice
+        location:
+          x: 71.5
+          y: 84.0
+          z: 251.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn7:
+        world: planice
+        location:
+          x: 36.5
+          y: 84.0
+          z: 288.5
+          yaw: 0.0
+          pitch: 0.0
+    bounds:
+      low:
+        world: planice
+        location:
+          x: -15.922104653420558
+          y: 36.388536658175894
+          z: 199.31543142062174
+          yaw: 315.75073
+          pitch: 7.6500583
+      high:
+        world: planice
+        location:
+          x: 84.98024774388699
+          y: 130.48519318321394
+          z: 302.0164013881588
+          yaw: 136.80212
+          pitch: 41.100056
+    max_players: 8
+    min_players: 2
+    displayname: Planice
+    is_vip: false
+    sign:
+      world: spawn
+      loc:
+        x: 1049
+        y: 97
+        z: -574
+  planice:
+    max_players: 8
+    min_players: 2
+  CasaDeCampo:
+    spawns:
+      spawn0:
+        world: casadecampo
+        location:
+          x: 62.5
+          y: 116.0
+          z: 91.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn1:
+        world: casadecampo
+        location:
+          x: 39.5
+          y: 116.0
+          z: 145.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn2:
+        world: casadecampo
+        location:
+          x: 65.5
+          y: 116.0
+          z: 203.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn3:
+        world: casadecampo
+        location:
+          x: 100.5
+          y: 116.0
+          z: 206.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn4:
+        world: casadecampo
+        location:
+          x: 136.5
+          y: 116.0
+          z: 199.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn5:
+        world: casadecampo
+        location:
+          x: 161.5
+          y: 116.0
+          z: 145.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn6:
+        world: casadecampo
+        location:
+          x: 137.5
+          y: 116.0
+          z: 90.5
+          yaw: 0.0
+          pitch: 0.0
+      spawn7:
+        world: casadecampo
+        location:
+          x: 100.5
+          y: 116.0
+          z: 84.5
+          yaw: 0.0
+          pitch: 0.0
+    max_players: 8
+    min_players: 2
+    bounds:
+      low:
+        world: casadecampo
+        location:
+          x: 45.90871893661546
+          y: 72.87744017769151
+          z: 61.98139824460321
+          yaw: 330.59515
+          pitch: 12.60027
+      high:
+        world: casadecampo
+        location:
+          x: 184.20168102777123
+          y: 161.33117073463833
+          z: 221.49880834564448
+          yaw: 133.3471
+          pitch: 34.200237
+    lobby:
+      world: casadecampo
+      location:
+        x: 93.28869541653297
+        y: 195.0
+        z: 147.8768326293286
+        yaw: 84.29669
+        pitch: 86.39999
+    displayname: CasaDeCampo
+    is_vip: false
+    sign:
+      world: spawn
+      loc:
+        x: 1051
+        y: 97
+        z: -574

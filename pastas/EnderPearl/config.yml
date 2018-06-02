@@ -1,0 +1,8 @@
+cooldown: 
+  seconds: 16
+xp-bar:
+  enable: true
+  ticks: 2
+messages:
+  enderpearl_airborn: '&eVoce Nao Pode Usar &9EnderPearl &eNo Ar.'
+  enderpearl_cooldown: '&eEspere &c%seconds% &ePara Poder Usar &9EnderPear.'

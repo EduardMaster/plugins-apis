@@ -1,0 +1,10 @@
+#Anti-Proxy Config
+
+#Kick message
+Kick_Message: Anti-Proxy detected that you are using a proxy!
+
+#Notify users who have "antiproxy.notify" permission when someone tries to connect using proxy.
+Notify: false
+
+#Automatically check for updates and download them.
+auto-update: true

@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://njol.ch/projects/skript/doc/classes/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="author" content="Peter Güttinger">
+<title>Skript: Types</title>
+<link rel="shortcut icon" type="image/png" href="http://njol.ch/favicon.png">
+<link rel="stylesheet" type="text/css" href="./types_files/normalize.css">
+<link rel="stylesheet" type="text/css" href="./types_files/general.css">
+<link rel="stylesheet" type="text/css" href="./types_files/syntax_elements.css">
+<link rel="stylesheet" type="text/css" href="./types_files/geshi.css">
+<link rel="top" title="Home" href="http://njol.ch/">
+<link rel="author" title="About" href="http://njol.ch/about/">
+<link rel="copyright" title="Copyright" href="http://njol.ch/legal/#license">
+<link rel="license" title="Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Switzerland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+<script src="./types_files/js.js" type="text/javascript"></script>
+<style type="text/css"></style></head>
+<body>
+<div id="header">
+<div id="header-content">
+<div id="breadcrumb">
+<div class="item n1">
+<a href="http://njol.ch/">Njol.ch</a>
+</div>»<div class="item n1">
+<a href="http://njol.ch/projects/">Projects</a> </div>»<div class="item n3">
+<a href="http://njol.ch/projects/skript/">Skript</a><a href="http://njol.ch/projects/yggdrasil/">Yggdrasil</a><a href="http://njol.ch/projects/markup/">Markup</a> </div>»<div class="item n4">
+<a href="http://njol.ch/projects/skript/doc/">Documentation</a><a href="http://njol.ch/projects/skript/tutorial/">Tutorial</a><a href="http://njol.ch/projects/skript/API/">API</a><a href="http://njol.ch/projects/skript/stats/">Statistics</a> </div>» </div>
+<h1 id="title">Skript: Types</h1>
+<div id="navi">
+<a href="http://njol.ch/projects/skript/doc/events/">Events</a><a href="http://njol.ch/projects/skript/doc/conditions/">Conditions</a><a href="http://njol.ch/projects/skript/doc/effects/">Effects</a><a href="http://njol.ch/projects/skript/doc/expressions/">Expressions</a><a href="http://njol.ch/projects/skript/doc/loops/">Loops</a><a href="http://njol.ch/projects/skript/doc/commands/">Custom Commands</a><a href="./types_files/types.html" class="current">Types</a><a href="http://njol.ch/projects/skript/doc/strings/">Text</a><a href="http://njol.ch/projects/skript/doc/variables/">Variables</a> </div>
+</div>
+</div>
+<div id="content" class="file-syntax_elements">
+<div id="toc">
+<div id="toc-title">Table of Contents</div>
+<ul>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#biome">Biome</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#block">Block</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#boolean">Boolean</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#chunk">Chunk</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#color">Colour</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#commandsender">Command Sender</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#damagecause">Damage Cause</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#date">Date</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#direction">Direction</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#enchantment">Enchantment</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#enchantmenttype">Enchantment Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#entity">Entity</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#entitydata">Entity Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#entitytype">Entity Type with Amount</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#experience">Experience</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#gamemode">Game Mode</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#inventory">Inventory</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#slot">Inventory Slot</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#itemstack">Item / Material</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#itemtype">Item Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#livingentity">Living Entity</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#location">Location</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#money">Money</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#number">Number</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#object">Object</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#offlineplayer">Offlineplayer</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#player">Player</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#potioneffecttype">Potion Effect Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#projectile">Projectile</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#region">Region</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#string">Text</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#time">Time</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#timeperiod">Timeperiod</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#timespan">Timespan</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#structuretype">Tree Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#classinfo">Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#visualeffect">Visual Effect</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#weathertype">Weather Type</a></li>
+<li><a href="http://njol.ch/projects/skript/doc/classes/#world">World</a></li>
+</ul>
+</div>
+<div id="page">
+<div id="version-filter">
+<form action="./types_files/types.html" method="get" onsubmit="return filter_version(this.elements[&#39;version&#39;].value)">
+<label for="version">Filter for version:</label> <input type="text" size="5" id="version" name="version" value=""> <input type="submit" value="=&gt;">
+</form>
+</div>This is a list of most types that Skript uses (types that are not listed are not needed by the user). A type is a kind of object, e.g. player, number, or text.<br>
+Many types can be used as command arguments (‘&lt;type&gt;’, e.g. &lt;number&gt;) and almost all types can be used as <a href="http://njol.ch/projects/skript/doc/expressions#ExprLoopValue">loop-values</a> (‘loop-type’, e.g. loop-block). The patterns listed for each type below reference to this.<br>
+The usage listed above the patterns for each type describe how you can define an instance of the type in a script, e.g. how to include text properly or how to write a number. The usage does usually not include any <a href="http://njol.ch/projects/skript/doc/expressions">expressions</a> that represent an instance of the type, e.g. <a href="http://njol.ch/projects/skript/doc/classes/#block">blocks</a> cannot be defined in a script, but you can use one of the many <a href="http://njol.ch/projects/skript/doc/expressions#ExprBlock">block expressions</a> to get a block.
+<div id="section-biome" class="section">
+<a name="biome"><h2>Biome</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">swampland, forest, taiga, desert, plains, hell, sky, ocean, river, extreme hills, frozen ocean, frozen river, ice plains, ice mountains, mushroom island, mushroom shore, beach, desert hills, forest hills, taiga hills, small mountains, jungle, jungle hills</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">biome[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.4.4</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">All possible biomes Minecraft uses to generate a world.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">biome at the player is desert</pre>
+</div>
+</div>
+<div id="section-block" class="section">
+<a name="block"><h2>Block</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">block[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A block in a <a href="http://njol.ch/projects/skript/doc/classes/#world">world</a>. It has a <a href="http://njol.ch/projects/skript/doc/classes/#location">location</a> and a <a href="http://njol.ch/projects/skript/doc/classes/#itemstack">type</a>, and can also have a <a href="http://njol.ch/projects/skript/doc/classes/#direction">direction</a> (mostly a <a href="http://njol.ch/projects/skript/doc/expressions/#ExprFacing">facing</a>), an <a href="http://njol.ch/projects/skript/doc/classes/#inventory">inventory</a>, or other special properties.</div>
+</div>
+<div id="section-boolean" class="section">
+<a name="boolean"><h2>Boolean</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">true/yes/on or false/no/off</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">boolean[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A boolean is a value that is either true or false. Other accepted names are 'on' and 'yes' for true, and 'off' and 'no' for false.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">set {config.%player%.use mod} to false</pre>
+</div>
+</div>
+<div id="section-chunk" class="section">
+<a name="chunk"><h2>Chunk</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">chunk[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A chunk is a cuboid of 16×16×&lt;world height&gt; (x×z×y) blocks (the world height is usually 128 or 256). Chunks are spread on a fixed rectangular grid in their world, where the chunk <code>(0,0)</code> contains the blocks <code>(0,0,0)</code> to <code>(15,15,&lt;world height&gt; - 1)</code>.</div>
+</div>
+<div id="section-color" class="section">
+<a name="color"><h2>Colour</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">black, dark grey/dark gray, grey/light grey/gray/light gray/silver, white, blue/dark blue, cyan/aqua/dark cyan/dark aqua, light blue/light cyan/light aqua, green/dark green, light green/lime/lime green, yellow/light yellow, orange/gold/dark yellow, red/dark red, pink/light red, purple/dark purple, magenta/light purple, brown/indigo</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">colo[u]r[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since"><i>unknown</i></td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">Wool, dye and chat colours.
+<br>Please note that the same colours are used for chat and wool so that you can use any colour expression to colour chat, e.g. <code>message "&lt;%colour of sheep%&gt;this colour"</code>. Minecraft however uses slightly different colours for chat and sheep, with the main difference being that there exists no brown chat colour, but there exists another blue one instead, thus 'brown' and 'indigo' are the same colour.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">color of the sheep is red or black
+set the colour of the block to green
+message "You're holding a &lt;%color of tool%&gt;%color of tool%&lt;reset&gt; wool block"</pre>
+</div>
+</div>
+<div id="section-commandsender" class="section">
+<a name="commandsender"><h2>Command Sender</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">use <a href="http://njol.ch/projects/skript/doc/expressions/#LitConsole">the console</a> for the console<br>see <a href="http://njol.ch/projects/skript/doc/classes/#player">player</a> for players.</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">[command[s]][ ](sender|executor)[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A player or the console.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">on command /pm:
+	command sender is not the console
+	chance of 10%
+	give coal to the player
+	message "You got a piece of coal for sending that PM!"</pre>
+</div>
+</div>
+<div id="section-damagecause" class="section">
+<a name="damagecause"><h2>Damage Cause</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">contact, attack, projectile, suffocation, fall, fire, burning, melting, lava, drowning, block explosion, entity explosion, void, lightning, suicide, starvation, poison, potion, wither, falling block, thorns, unknown</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">damage cause[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">The cause/type of a <a href="http://njol.ch/projects/skript/doc/events/#damage">damage event</a>, e.g. lava, fall, fire, drowning, explosion, poison, etc.<br>Please note that support for this type is very rudimentary, e.g. lava, fire and burning, as well as projectile and attack are considered different types.</div>
+</div>
+<div id="section-date" class="section">
+<a name="date"><h2>Date</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">date[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.4</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A date is a certain point in the real world's time which can currently only be obtained with <a href="http://njol.ch/projects/skript/doc/expressions/#ExprNow">now</a>.<br>See <a href="http://njol.ch/projects/skript/doc/classes/#time">time</a> and <a href="http://njol.ch/projects/skript/doc/classes/#timespan">timespan</a> for the other time types of Skript.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">set {_yesterday} to now
+subtract a day from {_yesterday}
+# now {_yesterday} represents the date 24 hours before now</pre>
+</div>
+</div>
+<div id="section-direction" class="section">
+<a name="direction"><h2>Direction</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">see <a href="http://njol.ch/projects/skript/doc/expressions/#ExprDirection">direction (expression)</a></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">direction[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A direction, e.g. north, east, behind, 5 south east, 1.3 meters to the right, etc.<br><a href="http://njol.ch/projects/skript/doc/classes/#location">Locations</a> and some <a href="http://njol.ch/projects/skript/doc/classes/#block">blocks</a> also have a direction, but without a length.<br>Please note that directions have changed extensively in the betas and might not work perfectly. They can also not be used as command arguments.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">set the block below the victim to a chest
+loop blocks from the block infront of the player to the block 10 below the player:
+	set the block behind the loop-block to water</pre>
+</div>
+</div>
+<div id="section-enchantment" class="section">
+<a name="enchantment"><h2>Enchantment</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">protection, respiration, punch, projectile protection, smite, fortune, infinity, feather falling, flame, knockback, sharpness, aqua affinity, looting, fire aspect, silk touch, blast protection, power, thorns, efficiency, fire protection, bane of arthropods, unbreaking, luck of the sea, lure</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">enchantment[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.4.6</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An enchantment, e.g. 'sharpness' or 'fortune'. Unlike <a href="http://njol.ch/projects/skript/doc/classes/#enchantmenttype">enchantment type</a> this type has no level, but you usually don't need to use this type anyway.</div>
+</div>
+<div id="section-enchantmenttype" class="section">
+<a name="enchantmenttype"><h2>Enchantment Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>&lt;enchantment&gt; [&lt;level&gt;]</code></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">enchant(ing|ment) type[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.4.6</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An enchantment with an optional level, e.g. 'sharpness 2' or 'fortune'.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">enchant the player's tool with sharpness 5
+helmet is enchanted with waterbreathing</pre>
+</div>
+</div>
+<div id="section-entity" class="section">
+<a name="entity"><h2>Entity</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">player, op, wolf, tamed ocelot, powered creeper, zombie, unsaddled pig, fireball, arrow, dropped item, item frame, etc.</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">entit(y|ies)</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An entity is something in a <a href="http://njol.ch/projects/skript/doc/classes/#world">world</a> that's not a <a href="http://njol.ch/projects/skript/doc/classes/#block">block</a>, e.g. a <a href="http://njol.ch/projects/skript/doc/classes/#player">player</a>, a skeleton, or a zombie, but also <a href="http://njol.ch/projects/skript/doc/classes/#projectile">projectiles</a> like arrows, fireballs or thrown potions, or special entities like dropped items, falling blocks or paintings.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">entity is a zombie or creeper
+player is an op
+projectile is an arrow
+shoot a fireball from the player</pre>
+</div>
+</div>
+<div id="section-entitydata" class="section">
+<a name="entitydata"><h2>Entity Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>Detailed usage will be added eventually</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">entity[ ]type[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.3</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">The type of an <a href="http://njol.ch/projects/skript/doc/classes/#entity">entity</a>, e.g. player, wolf, powered creeper, etc.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">victim is a cow
+spawn a creeper
+targeted entity is an enderman holding a rose
+spawn 10 red, green or blue sheep
+spawn a falling anvil 4 meters above the player
+kill all skeleton horses in all worlds</pre>
+</div>
+</div>
+<div id="section-entitytype" class="section">
+<a name="entitytype"><h2>Entity Type with Amount</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">&lt;<a href="http://njol.ch/projects/skript/doc/classes/#number">number</a>&gt; &lt;entity type&gt;</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns"><i>cannot be used directly</i></pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.3</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An <a href="http://njol.ch/projects/skript/doc/classes/#entitydata">entity type</a> with an amount, e.g. '2 zombies'. I might remove this type in the future and make a more general 'type' type, i.e. a type that has a number and a type.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">spawn 5 creepers behind the player</pre>
+</div>
+</div>
+<div id="section-experience" class="section">
+<a name="experience"><h2>Experience</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>[&lt;number&gt;] ([e]xp|experience)</code></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns"><i>cannot be used directly</i></pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">Experience points. Please note that Bukkit only allows to give XP, but not remove XP from players. You can however change a player's <a href="http://njol.ch/projects/skript/doc/expressions/#ExprLevel">level</a> and <a href="http://njol.ch/projects/skript/doc/expressions/#ExprLevelProgress">level progress</a> freely.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">give 10 xp to the player</pre>
+</div>
+</div>
+<div id="section-gamemode" class="section">
+<a name="gamemode"><h2>Game Mode</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">creative/survival/adventure</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">game[ ]mode[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">The game modes survival, creative and adventure.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">player's gamemode is survival
+set the player argument's game mode to creative</pre>
+</div>
+</div>
+<div id="section-inventory" class="section">
+<a name="inventory"><h2>Inventory</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">inventor(y|ies)</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An inventory of a <a href="http://njol.ch/projects/skript/doc/classes/#player">player</a> or <a href="http://njol.ch/projects/skript/doc/classes/#block">block</a>. Inventories have many effects and conditions regarding the items contained.<br>An inventory has a fixed amount of <a href="http://njol.ch/projects/skript/doc/classes/#slot">slots</a> which represent a specific place in the inventory, e.g. the <a href="http://njol.ch/projects/skript/doc/expressions/#ExprArmorSlot">helmet slot</a> for players (Please note that slot support is still very limited but will be improved eventually).</div>
+</div>
+<div id="section-slot" class="section">
+<a name="slot"><h2>Inventory Slot</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">[inventory ]slot[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since"><i>unknown</i></td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">Represents a single slot of an <a href="http://njol.ch/projects/skript/doc/classes/#inventory">inventory</a>. Notable slots are the <a href="http://njol.ch/projects/skript/doc/expressions/#ExprArmorSlot">armour slots</a> and <a href="http://njol.ch/projects/skript/doc/expressions/#ExprFurnaceSlot">furnace slots</a>.
+<br>The most important property that distinguishes a slot from an <a href="http://njol.ch/projects/skript/doc/classes/#itemstack">item</a> is its ability to be changed, e.g. it can be set, deleted, enchanted, etc. (Some item expressions can be changed as well, e.g. items stored in variables. Speaking of which: slots are never saved to variables, only the items they represent at the time when the variable is set).
+<br>Please note that the <a href="http://njol.ch/projects/skript/doc/expressions/#ExprTool">tool</a> is a slot, but it can actually change its position, i.e. doesn't always represent the same slot.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">set tool of player to dirt
+delete helmet of the victim
+set the colour of the player's tool to green
+enchant the player's chestplate with projectile protection 5</pre>
+</div>
+</div>
+<div id="section-itemstack" class="section">
+<a name="itemstack"><h2>Item / Material</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>[&lt;number&gt; [of]] &lt;alias&gt; [of &lt;enchantment&gt; &lt;level&gt;]</code>, Where &lt;alias&gt; must be an alias that represents exactly one item (i.e cannot be a general alias like 'sword' or 'plant')</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">item
+material</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An item, e.g. a stack of torches, a furnace, or a wooden sword of sharpness 2. Unlike <a href="http://njol.ch/projects/skript/doc/classes/#itemtype">item type</a> an item can only represent exactly one item (e.g. an upside-down cobblestone stair facing west), while an item type can represent a whole range of items (e.g. any cobble stone stairs regardless of direction).<br>You don't usually need this type except when you want to make a command that only accepts an exact item.<br>Please note that currently 'material' is exactly the same as 'item', i.e. can have an amount &amp; enchantments.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">set {_item} to type of the targeted block
+{_item} is a torch</pre>
+</div>
+</div>
+<div id="section-itemtype" class="section">
+<a name="itemtype"><h2>Item Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>[&lt;number&gt; [of]] [all/every] &lt;alias&gt; [of &lt;enchantment&gt; [&lt;level&gt;] [,/and &lt;more enchantments...&gt;]]</code></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">item[ ]type[s]
+items
+materials</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">An item type is an alias, e.g. 'a pickaxe', 'all plants', etc., and can result in different items when added to an inventory, and unlike <a href="http://njol.ch/projects/skript/doc/classes/#itemstack">items</a> they are well suited for checking whether an inventory contains a certain item or whether a certain item is of a certain type.<br>An item type can also have one or more <a href="http://njol.ch/projects/skript/doc/classes/#enchantmenttype">enchantments</a> with or without a specific level defined, and can optionally start with 'all' or 'every' to make this item type represent <i>all</i> types that the alias represents, including data ranges.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">give 4 torches to the player
+add all slabs to the inventory of the block
+player's tool is a diamond sword of sharpness
+remove a pickaxes of fortune 4 from {stored items::*}
+set {_item} to 10 of every upside-down stair
+block is dirt or farmland</pre>
+</div>
+</div>
+<div id="section-livingentity" class="section">
+<a name="livingentity"><h2>Living Entity</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">see <a href="http://njol.ch/projects/skript/doc/classes/#entity">entity</a>, but ignore inanimate objects</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">living[ ]entit(y|ies)</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A living <a href="http://njol.ch/projects/skript/doc/classes/#entity">entity</a>, e.g. a mob or <a href="http://njol.ch/projects/skript/doc/classes/#player">player</a>, not inanimate entities like <a href="http://njol.ch/projects/skript/doc/classes/#projectile">projectiles</a> or dropped items.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">spawn 5 powered creepers
+shoot a zombie from the creeper</pre>
+</div>
+</div>
+<div id="section-location" class="section">
+<a name="location"><h2>Location</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">See <a href="http://njol.ch/projects/skript/doc/expressions/#ExprLocationAt">location at (expression)</a> </td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">location[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A location in a <a href="http://njol.ch/projects/skript/doc/classes/#world">world</a>. Locations are world-specific and even store a <a href="http://njol.ch/projects/skript/doc/classes/#direction">direction</a>, e.g. if you save a location and later teleport to it you will face the exact same direction you did when you saved the location.
+<br>
+<br>In the case of the <a href="http://njol.ch/projects/skript/doc/effects/#EffTeleport">teleport effect</a> you can set a location's <a href="http://njol.ch/projects/skript/doc/expressions/#ExprYawPitch">yaw and pitch</a> to 0 to prevent this behaviour.</div>
+</div>
+<div id="section-money" class="section">
+<a name="money"><h2>Money</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>&lt;number&gt; $</code> or <code>$ &lt;number&gt;</code>, where '$' is your server's currency, e.g. '10 rupees' or '£5.00'</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns"><i>cannot be used directly</i></pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A certain amount of money. Please note that this differs from <a href="http://njol.ch/projects/skript/doc/classes/#number">numbers</a> as it includes a currency symbol or name, but usually the two are interchangeable, e.g. you can both <code>add 100$ to the player's balance</code> and <code>add 100 to the player's balance</code>.
+<br>
+<br>Like all economy elements, this type requires that Vault and a compatible economy plugin is installed.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">add 10£ to the player's account
+remove Fr. 9.95 from the player's money
+set the victim's money to 0
+increase the attacker's balance by the level of the victim * 100</pre>
+</div>
+</div>
+<div id="section-number" class="section">
+<a name="number"><h2>Number</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>[-]###[.###]</code> (any amount of digits; very large numbers will be truncated though)</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">num[ber][s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A number, e.g. 2.5, 3, or -9812454.<br>Please note that many expressions only need integers, i.e. will discard any frational parts of any numbers without producing an error.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">set the player's health to 5.5
+set {_temp} to 2*{_temp} - 2.5</pre>
+</div>
+</div>
+<div id="section-object" class="section">
+<a name="object"><h2>Object</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns"><i>cannot be used directly</i></pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">The supertype of all types, meaning that if %object% is used in e.g. a condition it will accept all kinds of expressions.</div>
+</div>
+<div id="section-offlineplayer" class="section">
+<a name="offlineplayer"><h2>Offlineplayer</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">offline[ ]player[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since"><i>unknown</i></td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A player that is possibly offline. See <a href="http://njol.ch/projects/skript/doc/classes/#player">player</a> for more information. Please note that while all effects and conditions that require a player can be used with an offline player as well, they will not work if the player is not actually online.</div>
+</div>
+<div id="section-player" class="section">
+<a name="player"><h2>Player</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><i>cannot be written in scripts</i></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">player[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A player. Depending on whether a player is online or offline several actions can be performed with them, though you won't get any errors when using effects that only work if the player is online (e.g. changing his inventory) on an offline player.<br>You have two possibilities to use players as command arguments: &lt;player&gt; and &lt;offline player&gt;. The first requires that the player is online and also accepts only part of the name, while the latter doesn't require that the player is online, but the player's name has to be entered exactly.</div>
+</div>
+<div id="section-potioneffecttype" class="section">
+<a name="potioneffecttype"><h2>Potion Effect Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">speed, slowness, haste, mining fatigue, strength, instant health, instant damage, jump boost, nausea, regeneration, resistance, fire resistance, water breathing, invisibility, blindness, night vision, hunger, weakness, poison, wither</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">potion[[ ]effect][[ ]type][s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since"><i>unknown</i></td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A potion effect, e.g. 'strength' or 'swiftness'.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">apply swiftness 5 to the player
+apply potion of speed 2 to the player for 60 seconds
+remove invisibility from the victim</pre>
+</div>
+</div>
+<div id="section-projectile" class="section">
+<a name="projectile"><h2>Projectile</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">arrow, fireball, snowball, thrown potion, etc.</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">projectile[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A projectile, e.g. an arrow, snowball or thrown potion.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">projectile is a snowball
+shoot an arrow at speed 5 from the player</pre>
+</div>
+</div>
+<div id="section-region" class="section">
+<a name="region"><h2>Region</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">"region name"</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns"><i>cannot be used directly</i></pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.1</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A region of a regions plugin. Skript currently supports WorldGuard, Factions, GriefPrevention and PreciousStones.<br>Please note that some regions plugins do not have named regions, some use numerical ids to identify regions, and some may have regions with the same name in different worlds, thus using regions like "region name" in scripts may or may not work.</div>
+</div>
+<div id="section-string" class="section">
+<a name="string"><h2>Text</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">simple: <code>"..."</code><br>quotes: <code>"...""..."</code><br>expressions: <code>"...%expression%..."</code><br>percent signs: <code>"...%%..."</code></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">(text|string)[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">Text is simply text, i.e. a sequence of characters, which can optionally contain expressions which will be replaced with a meaningful representation (e.g. %player% will be replaced with the player's name).<br>Because scripts are also text, you have to put text into double quotes to tell Skript which part of the line is an effect/expression and which part is the text.<br>Please read the article on <a href="http://njol.ch/projects/skript/doc/strings/">Texts and Variable Names</a> to learn more.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">broadcast "Hello World!"
+message "Hello %player%"
+message "The id of ""%type of tool%"" is %id of tool%."</pre>
+</div>
+</div>
+<div id="section-time" class="section">
+<a name="time"><h2>Time</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>##:##</code><br><code>##[:##][ ]am/pm</code></td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">time[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A time is a point in a minecraft day's time (i.e. ranges from 0:00 to 23:59), which can vary per world.<br>See <a href="http://njol.ch/projects/skript/doc/classes/#date">date</a> and <a href="http://njol.ch/projects/skript/doc/classes/#timespan">timespan</a> for the other time types of Skript.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">at 20:00:
+	time is 8 pm
+	broadcast "It's %time%"</pre>
+</div>
+</div>
+<div id="section-timeperiod" class="section">
+<a name="timeperiod"><h2>Timeperiod</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>##:## - ##:##</code><br>dusk/day/dawn/night</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">time[ ]period[s]
+duration[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A period of time between two <a href="http://njol.ch/projects/skript/doc/classes/#time">times</a>. Mostly useful since you can use this to test for whether it's day, night, dusk or dawn in a specific world.<br>This type might be removed in the future as you can use 'time of world is between x and y' as a replacement.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">time in world is night</pre>
+</div>
+</div>
+<div id="section-timespan" class="section">
+<a name="timespan"><h2>Timespan</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>&lt;number&gt; [minecraft/mc/real/rl/irl] ticks/seconds/minutes/hours/days [[,/and] &lt;more...&gt;</code>]<br><code>[###:]##:##[.####]</code> ([hours:]minutes:seconds[.milliseconds])</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">time[ ]span[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A timespan is a difference of two different dates or times, e.g '10 minutes'. Timespans are always displayed as real life time, but can be defined as minecraft time, e.g. '5 minecraft days and 12 hours'.<br>See <a href="http://njol.ch/projects/skript/doc/classes/#date">date</a> and <a href="http://njol.ch/projects/skript/doc/classes/#time">time</a> for the other time types of Skript.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">every 5 minecraft days:
+	wait a minecraft second and 5 ticks
+every 10 mc days and 12 hours:
+	halt for 12.7 irl minutes, 12 hours and 120.5 seconds</pre>
+</div>
+</div>
+<div id="section-structuretype" class="section">
+<a name="structuretype"><h2>Tree Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>[any] &lt;general tree/mushroom type&gt;</code>, e.g. tree/any jungle tree/etc.<br><code>&lt;specific tree/mushroom species&gt;</code>, e.g. red mushroom/small jungle tree/big regular tree/etc.</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">tree[ ]type[s]
+tree[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since"><i>unknown</i></td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A tree type represents a tree species or a huge mushroom species. These can be generated in a world with the <a href="http://njol.ch/projects/skript/doc/effects/#EffTree">generate tree</a> effect.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">grow any regular tree at the block
+grow a huge red mushroom above the block</pre>
+</div>
+</div>
+<div id="section-classinfo" class="section">
+<a name="classinfo"><h2>Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">See the type name patterns of all types - including this one</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">type[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">Represents a type, e.g. number, object, item type, location, block, world, entity type, etc.<br>This is mostly used for expressions like 'event-&lt;type&gt;', '&lt;type&gt;-argument', 'loop-&lt;type&gt;', etc., e.g. event-world, number-argument and loop-player.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">{variable} is a number # check whether the variable contains a number, e.g. -1 or 5.5
+{variable} is a type # check whether the variable contains a type, e.g. number or player
+{variable} is an object # will always succeed if the variable is set as everything is an object, even types.
+disable PvP in the event-world
+kill the loop-entity</pre>
+</div>
+</div>
+<div id="section-visualeffect" class="section">
+<a name="visualeffect"><h2>Visual Effect</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">ender signal, mobspawner flames, potion break, smoke, hurt, sheep eating, wolf hearts, wolf shaking, wolf smoke</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">(visual|particle) effect[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">2.1</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">A visible effect, e.g. particles.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">show wolf hearts on the clicked wolf
+play mob spawner flames at the targeted block to the player</pre>
+</div>
+</div>
+<div id="section-weathertype" class="section">
+<a name="weathertype"><h2>Weather Type</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage">clear/sun/sunny, rain/rainy/raining, and thunder/thundering/thunderstorm</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">weather[ ]type[s]
+weather condition[s]
+weather[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">The weather types sunny, rainy, and thundering.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">is raining
+is sunny in the player's world
+message "It is %weather in the argument's world% in %world of the argument%"</pre>
+</div>
+</div>
+<div id="section-world" class="section">
+<a name="world"><h2>World</h2></a>
+<table class="info">
+<tbody>
+<tr><th><div>type usage:</div></th><td class="usage" data-id="usage"><code>"world_name"</code>, e.g. "world"</td></tr>
+<tr><th><div>type name patterns<sup><a href="http://njol.ch/projects/skript/doc/patterns">[?]</a></sup>:</div></th><td class="patterns"><pre data-id="patterns">world[s]</pre></td></tr>
+<tr><th><div>since:</div></th><td data-id="since">1.0</td></tr>
+</tbody>
+</table>
+<div class="description" data-id="description">One of the server's worlds. Worlds can be put into scripts by surrounding their name with double quotes, e.g. "world_nether", but this might not work reliably as <a href="http://njol.ch/projects/skript/doc/classes/#string">text</a> uses the same syntax.</div>
+<div class="examples">
+<span class="label">examples:</span>
+<pre data-id="examples">broadcast "Hello!" to "world_nether"</pre>
+</div>
+</div>
+</div> </div>
+<div id="footer">
+<div id="footer-content">
+<div id="about">
+<a href="http://njol.ch/about/">About</a>
+</div>
+<div id="credits">
+~ njol.ch created by <a href="http://njol.ch/legal/">Peter Güttinger</a>
+~ icons by <a href="http://p.yusukekamiyamane.com/" target="_blank">Yusuke Kamiyamane</a> ~
+</div>
+</div>
+</div>
+
+</body></html>

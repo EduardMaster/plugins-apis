@@ -1,0 +1,38 @@
+Settings:
+  SneakToOpen: false
+  RemoveNoAccessEggs: false
+  ShowAccessInLore: true
+  ShowCostInLore: true
+  ShowBalanceIcon: true
+Protection:
+  WorldGuard: true
+MobPrices:
+  Creeper: 0.0
+  Skeleton: 0.0
+  Spider: 0.0
+  Giant: 0.0
+  Zombie: 0.0
+  Slime: 0.0
+  Ghast: 0.0
+  PigZombie: 0.0
+  Enderman: 0.0
+  CaveSpider: 0.0
+  Silverfish: 0.0
+  Blaze: 0.0
+  MagmaCube: 0.0
+  EnderDragon: 0.0
+  Wither: 0.0
+  Bat: 0.0
+  Witch: 0.0
+  Pig: 0.0
+  Sheep: 0.0
+  Cow: 0.0
+  Chicken: 0.0
+  Squid: 0.0
+  Wolf: 0.0
+  Mooshroom: 0.0
+  SnowGolem: 0.0
+  Ocelot: 0.0
+  IronGolem: 0.0
+  Horse: 0.0
+  Villager: 0.0

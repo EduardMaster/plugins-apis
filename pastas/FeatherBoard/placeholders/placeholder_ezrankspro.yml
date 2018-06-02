@@ -1,0 +1,20 @@
+## --------------------------------------- ##
+## EZRanksPro Placeholders
+## --------------------------------------- ##
+
+## Do not edit this config version
+config: 2
+
+# Enable/Disable the placeholder group
+# Placeholder groups will not be loaded into the memory
+# when not used.
+enabled: true
+
+progress_bar:
+  can_rankup: '&a/rankup'
+  bar_color: '&a'
+  needs_color: '&8'
+  end_color: '&f&l'
+  left_character: '|'
+  bar_character: ':'
+  right_character: '|'

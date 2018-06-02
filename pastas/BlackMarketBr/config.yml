@@ -1,0 +1,118 @@
+#############################################################
+#                       BlackMarket                         #       
+#                    Autor: Mr_Edition                      #
+#                      Versão: 1.2                          #
+#          Skype/E-mail: mateusaguiar-15@hotmail.com        #
+#############################################################
+
+
+#Sistem de amarzenamento em banco de dados.
+sql:
+  enable: false
+  host: 'localhost'
+  port: 3306
+  database: 'default'
+  username: 'root'
+  password: 'pass123'
+  
+broadcast:
+  enable: true
+  value: 50000
+  delay: 10
+  
+#Uso de sons ao comprar/vender itens
+sound: true
+  
+#Coloque o tempo em que os itens expiram (em minutos)
+expire_time: 720  
+ 
+#Limite de itens para cada player
+limite: 3
+
+
+#Coloque em true para deixar as prefix visiveis nos itens do mercado
+chat_prefix:
+  enable: false
+  world: 'world'
+  
+#Categorias
+#Crie sua própria categoria no mercado escolhendo os itens que podem ser vendidos nela.  
+Categorias:
+
+  Weapons:
+    slot: 13
+    icon: 276
+    name: 'Weapons'
+    itens: 268, 272, 267, 283, 276, 361
+    enchant: true
+    glow: true
+    lore: 
+      - ' '
+      - '&7Available Items: {i}'
+      
+  Armors:
+    slot: 14
+    icon: 311
+    name: 'Armors'
+    itens: 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317
+    enchant: true
+    glow: true
+    lore: 
+      - ' '
+      - '&7Available Items: {i}'
+  Tools:
+    slot: 15
+    icon: 278
+    name: 'Tools'
+    itens: 270, 271, 269, 290, 257, 258, 256, 292, 285, 286, 284, 294, 278, 279, 277, 273
+    enchant: true
+    glow: true
+    lore: 
+      - ' '
+      - '&7Available Items: {i}'
+  Books:
+    slot: 21
+    icon: 403
+    name: 'Books'
+    itens: 403
+    glow: true
+    lore: 
+      - ' '
+      - '&7Available Items: {i}'
+  Mobs:
+    slot: 22
+    icon: '383:50'
+    name: 'Mobs'
+    itens: 52, 383
+    glow: true
+    lore: 
+      - ' '
+      - '&7Available Items: {i}'
+  Potions:
+    slot: 24
+    icon: '373:8229'
+    name: 'Potions'
+    itens: 373, 322, 384
+    glow: true
+    lore:
+      - ' '
+      - '&7Available Items: {i}'
+  Ores:
+    slot: 25
+    icon: 388
+    name: 'Ores'
+    itens: 265, 266, 388, 264
+    enchant: true
+    glow: true
+    lore: 
+      - ' '
+      - '&7Available Items: {i}'
+  
+#Essas são todas as permissions usada no plugin BlackMarket
+
+#blackmarket.cmd - para usar o comand /mercado
+#blackmarket.cmd.collect - para coletar um item
+#blackmarket.cmd.reload - para recarregar as configs.
+#blackmarket.cmd.sell - para vender itens no mercado.
+#blackmarket.cmd.view - para abrir o mercado.
+#blackmarket.broadcast - para anunciar no servidor quando colocar um item no mercado

@@ -1,0 +1,23 @@
+# ##################################################### #
+#              MoreSwords Configuration                 #
+#  See http://dev.bukkit.org/bukkit-plugins/moreswords  #
+#                for more information.                  #
+#         To enable a function, set it to True          #
+#            Do disable it, set it to False             #
+# ##################################################### #
+DisableColors: false
+EmeraldSword: true
+FireSword: true
+LapisSword: true
+LavaSword: true
+SuperSword: true
+RedstoneSword: true
+ObsidianSword: true
+BedrockSword: true
+CustomSword: false
+CustomSword_Ingredient: DIRT
+CustomSword_Item: IRON_SWORD
+CustomSword_Name: Sword Name
+CustomSword_Enchant: DAMAGE_ALL
+CustomSword_EnchantLevel: 10
+CustomSword_Lore: Lore

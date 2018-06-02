@@ -1,0 +1,11 @@
+name: Anuncio
+nickname: A
+format: '{default}'
+color: green
+shortcutAllowed: true
+needFocus: false
+distance: 0.0
+crossworlds: true
+delayPerMessage: 120
+costPerMessage: 1.0
+showCostMessage: true

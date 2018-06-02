@@ -1,0 +1,247 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# Plugin Name: DeathMessages
+# Author: Jose Manuel Gassin Perez-Traverso
+# Bukkit Profile: http://dev.bukkit.org/profiles/Mayhem777/
+# Description: Change the Default Bukkit Death Messages as you Wish, including colors, victim name, killer name and weapon/material/name...  also other General messages as Join/Kick/Leave.
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Commands & Permissions #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# /dm					|		deathmessages.user		|		Shows a list of commands.
+# /dm all				|		deathmessages.user		|		Toggles on/off both, Death and General Mesages for the player.
+# /dm dm				|		deathmessages.user		|		Toggles on/off Death Messages for the player.
+# /dm gm				|		deathmessages.user		|		Toggles on/off General Messages for the player.
+# /dm reload			|		deathmessages.admin		|		Reloads this file.
+#
+### Notes: you can use both /dm or /deathmessages for commands.
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Commands & Permissions #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# Don't change this or your config will be renamed to "old_config.yml" and the correct config.yml version will be created. (Same system for the lang files)
+Version: 2.7.0
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+### Enabling this option will BROADCAST useful data about the Death Process, which will be useful to find plugins conflicting with Bukkit normal events.
+# You'll be able to check: Victim Name, World Name, Last Damage Cause Type, Last Damage Cause (Reason), and Damager.
+Debug: false
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+
+
+#====================================== PvP Messages ======================================#
+### What to do with PvP Death Messages?
+# 1 = Don't Show any of Them.
+# 2 = Show them as Usual.
+# 3 = ONLY show PvP Death Messages.
+PvP_Death_Messages_Handling: 2
+
+#====================================== World Settings ======================================#
+### IMPORTANT NOTE: World names are CASE SENSITIVE!
+### Disable ALL Death and General messages to those worlds, total silence, no message comming from the world itself or from any other.
+Silenced_Worlds:
+- TooManyDeaths_world
+- NoSpam_world
+
+### Linking worlds allows worlds to share death/general messages, worlds out if this list will ONLY see it's own messages.
+# Example: as you can see in this list, the worlds "world", "world_nether" and "world_the_end" are linked, so Death and General messages will be shared, if we have another world called "new_world", will only be able to see it's own Death and General Messages.
+Linked_Worlds:
+  Enable: false
+  World_List:
+  - world
+  - world_nether
+  - world_the_end
+
+#====================================== General Messages ======================================#
+### Enable/Disable custom General Messages:
+General_Messages: true
+
+### On Player FIRST Join Message:
+Player_First_Join: '&6Bem vindo &b%player &6ao servidor!'
+
+### On Player Join Message:
+Player_Join: '&a<> &b%player &a<+>'
+
+### On Player Leave/Disconnect Message:
+Player_Disconect: '&c<> &b%player &c<->'
+
+### On Player Kick Message:
+Player_Kick: '&cO jogador &b%player &cfoi levou kick!'
+
+#====================================== Death Messages ======================================#
+### Change those TAGS as you wish.
+# %player = Player (victim) name
+# %killer = Player Assasin name (only for player kills, PvP)
+# %weapon_material = Material name of the weapon wielded by the killer(only for player kills, PvP)
+# %weapon_name = Meta display name of the weapon, instead of the material one, if there's no name it'll show the material one.
+# %world = World name in which the player died, can be used in any message.
+
+### Don't forget to use bukkit colors if you want ===>    http://dev.bukkit.org/media/images/42/45/Colors.png
+# And other Bukkit Formats ===>    &n = Underlined   ||   &o = Italic   ||   &m = Strike-through   ||   &l = Bold   ||   &k = Magic   ||   &r = Reset Format
+
+### Some Examples:
+# Example for Creeper Message = '&2%player &Elikes to hug &CCreepers&E, he is a pill of dust now...'
+# Example for PvP Message = '&2%player &Ewas slain by &Ckiller&E, wielding his mighty &C%weapon_material'
+
+### TAKE CARE ABOUT SPECIAL CHARACTERS OR NON-ENGLISH ONES! THE BUKKIT YAML PARSER DON'T ALLOWS THEM! CHECK THE PLUGIN PAGE TO USE VARIABLES INSTEAD TO SHOW THEM!
+
+### Finally, you can add/modify/remove all the random messages you wish, when a death occurs, a random message from the list will be chosen.
+# REMEMBER, THERE'RE NOT ONLY 2 POSSIBLE RANDOM MESSAGES, ADD/REMOVE ALL YOU WISH! INFINITE POSSIBILITIES!
+
+#====# Mob Causes #====#
+Blaze:
+- '&2%player &Ewas fireballed by &CBlaze'
+- '&2%player &Eate a &CBlaze &2 fireball!'
+CaveSpider:
+- '&2%player &Ewas slain by &CCave Spider'
+- '&2%player &Ewas bitten by &CCave Spider'
+Creeper:
+- '&2%player &Eblew up'
+- '&2%player &Eexploded!'
+EnderDragon:
+- '&2%player &Ewas slain by &CEnder Dragon'
+- '&2%player &Etried to ride the &CEnder Dragon'
+Enderman:
+- '&2%player &Ewas slain by &CEnderman'
+- '&2%player &Ewas shocked by &CEnderman'
+Ghast:
+- '&2%player &Ewas fireballed by &CGhast'
+- '&2%player &Eate a &CGhast &2 fireball!'
+Giant:
+- '&2%player &Ewas slain by &CGiant'
+- '&2%player &Ewas stomped by &CGiant'
+IronGolem:
+- '&2%player &Ewas slain by &CGolem'
+- '&2%player &Ewas drilled by &CGolem'
+MagmaCube:
+- '&2%player &Ewas slain by &CMagma Cube'
+- '&2%player &Ewas crumped by &CMagma Cube'
+PigZombie:
+- '&2%player &Ewas slain by &CZombie Pigman'
+- '&2%player &Ewas slashed by &CZombie Pigman'
+Silverfish:
+- '&2%player &Ewas slain by &CSilverfish'
+- '&2%player &Ewas killed by a &CSilverfish&E, really?'
+SkeletonArcher:
+- '&2%player &Ewas shot by &CSkeleton'
+- '&2%player &Ewas head shotted by a &CSkeleton'
+SkeletonMelee:
+- '&2%player &Ewas slain by &CSkeleton'
+- '&2%player &Ewas punched by &CSkeleton&E, without bow!'
+Slime:
+- '&2%player &Ewas slain by &CSlime'
+- '&2%player &Ewas basted by &CSlime'
+Spider:
+- '&2%player &Ewas slain by &CSpider'
+- '&2%player &Ewas bitten by &CSpider'
+Witch:
+- '&2%player &Ewas killed by &CWitch'
+- '&2%player &Ewas cursed by &CWitch'
+Wolf:
+- '&2%player &Ewas slain by &CWolf'
+- '&2%player &Ewas bitten by &CWolf'
+Zombie:
+- '&2%player &Ewas slain by &CZombie'
+- '&EA &CZombie &Eate &2%player''s &Ebrain!'
+### Wither
+Wither:
+- '&2%player &Eblew up'
+- '&2%player &Ewhat?'
+WitherEffect:
+- '&2%player &Ewithered away'
+- '&2%player &Epum! pam! puf!'
+### Wither Skeleton
+WitherSkeleton:
+- '&2%player &Ewas slain by a &CWither Skeleton'
+- '&2%player &Ewas crushed by a &CWither Skeleton'
+#====# PvP Causes #====#
+PvPWeapon:
+- '&2%player &Ewas slain by &C%killer'
+- '&2%player &Ewas slashed by &C%killer'
+# Weapon Tag NOT APLICABLE
+PvPFist:
+- '&2%player &Ewas slain by &C%killer'
+- '&2%player &Ewas punched by &C%killer'
+PvPBow:
+- '&2%player &Ewas shot by &C%killer'
+- '&2%player &Ewas shot by &C%killer'
+# This happens when a player dies by a Thorn Enchantment.
+Thorns:
+- '&2%player &Ewas killed while trying to hurt &C%killer'
+- '&2%player &Ewas killed while trying to hurt &C%killer'
+#====# Other Causes #====#
+TNT:
+- '&2%player &Eblew up'
+- '&2%player &Ethought it was a cake!'
+Cactus:
+- '&2%player &Ewas pricked to death'
+- '&2%player &Ehugged a cactus!'
+Anvil:
+- '&2%player &Ewas squashed by a falling anvil'
+- '&2%player &Etried to kiss a falling anvil'
+# Dispenser only has 1 message for deaths, but i added another one if player dies from a fireball ;)
+DispenserArrow:
+- '&2%player &Ewas shot by arrow'
+- '&EA dispenser filled &2%player''s &Ebody with iron!'
+DispenserFireball:
+- '&EA &CDispenser &Ehas fried &2%player'
+- '&EA dispenser burned &2%player &Eto death!'
+Drowning:
+- '&2%player &Edrowned'
+- '&2%player &Eforget to buy gills!'
+PotionofHarming:
+- '&2%player &Ewas killed by magic'
+# In Minecraft you can't die from normal Poison, you just get to half heart, anyway it a Poison Potion hits you when u're with low health and kills you or by other plugins this could happen.
+Fall:
+- '&2%player &Ehit the ground too hard'
+- '&2%player &Ehit the ground too hard'
+Poison:
+- '&2%player &Eate contaminated food'
+- '&2%player &Eate contaminated food'
+# Direct exposure to a fire block
+FireBlock:
+- '&2%player &Ewent up in flames'
+- '&2%player &Ewent up in flames'
+# Death caused by burns after leaving a Fire Block or Lava Block.
+FireEffect:
+- '&2%player &Eburned to death'
+- '&2%player &Eburned to death'
+Lava:
+- '&2%player &Etried to swin in lava'
+- '&2%player &Etried to swin in lava'
+# You usually get "went up in flames" like cause of death by a thunder, now you can specify what you want, anyway if the fire kills you first the cause will still being the fire.
+Lightning:
+- '&2%player &Ewent up in flames'
+- '&2%player &Ewent up in flames'
+Starvation:
+- '&2%player &Estarved to death'
+- '&2%player &Estarved to death'
+Suffocation:
+- '&2%player &Esuffocated in a wall'
+- '&2%player &Esuffocated in a wall'
+# Suicide message is only possible when player uses /suicide or /kill to himself.
+Suicide:
+- '&2%player &Edied'
+- '&2%player &Edied'
+Void:
+- '&2%player &Efell out of the world'
+- '&2%player &Efell out of the world'
+# Weird causes like killed by EnderPearl, Eggs and Snowballs.
+# Snowmans can't kill players cause Snowballs have no damage, anyway some servers change this mechanic for fun (like my server), so i added it too.
+Others:
+- '&2%player &Ewas pummeled'
+- '&2%player &Ewas pummeled'
+Snowman:
+- '&2%player &Ewas freezed by &CSnowman'
+- '&2%player &Ewas freezed by &CSnowman'
+## Rest of the Causes, command causes will be showed here, like /kill or /suicide case doesn't have a damager.
+Unknown:
+- '&2%player &Efell out of the world'
+- '&2%player &Efell out of the world'

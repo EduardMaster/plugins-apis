@@ -1,0 +1,46 @@
+# Main configuration
+
+# Compatible mode with other plugins like HealthBar, ColoredTags, GhostPlayer or McCombatLevel
+compatibilityMode: false
+
+disabled-worlds:
+  - world_nether
+  - city
+
+# This will not count vanished players in the online value
+hide-vanished: false
+
+Scoreboard:
+  Title: '&r[&9Seu&fServer Stats&r]'
+  # seconds
+  # For instant updates you can or 1 and it will update every second
+  Update-delay: 2
+  Items:
+    # The Title must have under 48 characters
+    # Title: Type
+    '&fOnline': '%online%'
+    '&fKills': '%kills%'
+    '&fKillstreak': '%killstreak%'
+    '&fMortes': '%deaths%'
+    '&fDinheiro': '%money%'
+    '&aHelmet': '%helmet%'
+    '&aChestplate': '%chestplate%'
+    '&aLeggings': '%leggings%'
+    '&aBoots': '%boots%'
+
+# Let ScoreboardStats track stats (kills, deaths, mobkills, killstreak) You need no plugin for this
+enable-pvpstats: false
+
+Temp-Scoreboard-enabled: false
+
+Temp-Scoreboard:
+  Title: '&a&l[Top Kills]'
+  # %mob% | %kills% | %killstreak%
+  Type: '%kills%'
+  Color: '&f'
+  # How many Players would be displayed
+  Items: 8
+  Intervall-show: 300
+  Intervall-disappear: 300
+
+pluginUpdate: true

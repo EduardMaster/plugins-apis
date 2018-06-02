@@ -1,0 +1,9 @@
+Tempodechecagem: 600
+PrefixoMagnata: ' &2&l[Magnata]&f'
+AtivarBroadcast: true
+MensagemBroadcast: '&2&l[Magnata] &a$player &aé o Novo Magnata. &2Parabens'
+AtivarMsgJoin: true
+MensagemJoin: '&2&l[Magnata] &aMagnata &b$player &aentrou no servidor'
+AtivarMsgQuit: true
+MensagemQuit: '&2&l[Magnata] &aMagnata &b$player &asaiu do servidor'
+MagnataAtual: iRakk

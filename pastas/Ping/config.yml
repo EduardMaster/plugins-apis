@@ -1,0 +1,26 @@
+# PING by logtainment
+# EN You can use colors, listed at http://ess.khhq.net/mc/ But you need to change the & to &. The color is the same. Otherwise your plugin shows no color!
+# DE Du kannst gerne Farbcodes von http://ess.khhq.net/mc/ benutzen. Aber du musst das & zu & ändern. Die Farbe bleibt die selbe. Ansonsten zeigt das Plugin keine
+#    Farbe an.
+
+# EN This is the prefix message. This is displayed at all messages! Please use an space after your prefix in ''
+# DE Dies ist die Präfix Nachricht. Das wird vor allen Nachrichten angezeigt! Bitte setze ein Leerzeichen nach deinem Prefix in den ''
+prefix: '&3Ping &8>> '
+
+# EN This is the message for the /ping command
+# DE Dies ist die Nachricht für den /ping Command
+pingMSG: '&7Your Ping: &6'
+
+# EN This is the no Permission Message
+# DE Dies ist die Nachricht, wenn ein Spieler keine Rechte hat
+noPerm: '&7You have &cno &7permission to run this command!'
+
+# EN [player] not requied for your Ping
+# DE [player] ist nicht zwingend erforderlich
+args: '&cToo many arguments! Usage /ping [player]'
+
+# EN This is the message for the console. If the console runs /ping
+# DE Dies ist die Nachricht, die in der Konsole angezeigt wird, wenn der /ping Command ausgeführt wird.
+console: '&cYou need to be a player!'
+
+pingattempt: '&7Attempt:'

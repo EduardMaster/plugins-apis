@@ -1,0 +1,14 @@
+COMMAND:
+  NO_PERMISSION: '&cYou do not have permission to do this.'
+CLEARER:
+  INTERVAL: 90
+  BROADCAST: "\xa77[Server] \xa7a%AMOUNT% \xa79entities removed."
+  BROADCASTER:
+    ENABLED: true
+WORLD:
+  ITEM_MERGER_ENABLED: true
+  ITEM_MERGER_RADIUS: 5
+  MAX_LOADED_CHUNKS_ENABLED: true
+  MAX_LOADED_CHUNKS: 500
+  MAX_MOBS_ENABLED: true
+  MAX_MOBS: 500

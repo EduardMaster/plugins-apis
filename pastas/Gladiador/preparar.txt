@@ -1,0 +1,10 @@
+&5==============================================
+
+&d Evento gladiador automatico começando!
+&d Para participar digite: &f/gladiador
+(mito)&d Premio: $@dinheiro, tag [MITO] e tag [GLADIADOR]!
+(gladiador)&d Premio: $@dinheiro e tag [GLADIADOR]!
+&d Tempo restante: @tempo segundos
+&d [PARTICIPANTES]  Clans: @clans - Jogadores: @jogadores
+
+&5==============================================

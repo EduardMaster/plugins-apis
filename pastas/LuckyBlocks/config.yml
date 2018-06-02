@@ -1,0 +1,75 @@
+#Welcome to the LuckyBlocks config! Need help? Check out the wiki: http://bit.ly/luckyblocks
+block:
+  luckyblockid: 19
+  luckyblockdatavalue: 0
+  crafting: true
+  
+#For now you can only have 12 suprices! In the next update you can add suprices up to 20!
+#Suprice 1 to 8 has an 10% change, 9 to 12 an 5% change!
+suprices:
+  1:
+    type: 'squid'
+  2:
+    type: 'creeper'
+  3:
+    type: 'tree'
+  4:
+    type: 'books'
+  5:
+    type: 'items'
+    itemcount: 3
+    items:
+    - '42'
+    - '41'
+    - '57'
+    - '133'
+  6:
+    type: 'lightning'
+  7:
+    type: 'items'
+    itemcount: 6
+    items:
+    - '373:16418'
+    - '373:16393'
+    - '373:16451'
+    - '373:16420'
+    - '373:16462'
+  8:
+    type: 'items'
+    itemcount: 16
+    items:
+    - '263'
+    - '265'
+    - '266'
+    - '264'
+    - '388'
+  9:
+    type: 'books'
+  10:
+    type: 'anvil'
+  11:
+    type: 'command'
+    executer: 'console'
+    commands:
+    - '/kit luckyblock $p'
+  12:
+    type: 'command'
+    executer: 'console'
+    commands:
+    - '/effect $p 1 32 32'
+  13:
+    type: 'command'
+    executer: 'console'
+    commands:
+    - '/lightning $p'
+    - '/kill $p'
+  14:
+    type: 'command'
+    executer: 'console'
+    commands:
+    - '/setarmito $p'
+  15:
+    type: 'command'
+    executer: 'console'
+    commands:
+    - '/give $p 351:2 6'  

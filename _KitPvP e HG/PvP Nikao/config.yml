@@ -1,0 +1,51 @@
+#Este plugin foi criado 100 por NikaoGamerHD do canal NialGames, copias não autorizadas
+
+#---------------------------------------------------------------------------------------------
+#----------------------|                                               |----------------------
+#----------------------|          © Copyright NialGames, 2016          |----------------------
+#----------------------|                                               |----------------------
+#---------------------------------------------------------------------------------------------
+
+#Nome do seu servidor
+NomeDoServidor: '&e&lNial&f&lKits'
+
+#Nome que ficará em cima da scoreboard
+Scoreboard: '&e&l&nKITPVP'
+
+#Mensagem que ficará na lista de servidores antes do player entrar no servidor
+Motd: '&e&lNial&f&lKits &f&l- &7Venha treinar seu PvP'
+
+#Mensagem para quando um player entra no servidor, atenção coloque false para não e true para sim
+Entrou: true
+Entrou2: '&7&l[&2&l+&7&l] &a{player}'
+
+#Mensagem que aparecerá para quando um player sair do servidor,  atenção coloque false para não e true para sim
+Saiu: false
+Saiu2: '&7&l[&4&l-&7&l] &c{player}'
+
+#Esse teleporte de Kit se aplica para quando um player pega um kit ele será teleportado para uma random, se você ativar para setar as posições use /kitpos 1 até 5
+TPKit: true
+
+#Mensagem de boas vindas que aparecerá apenas para o player que entrou no servidor,  atenção coloque false para não e true para sim
+BoasVindas: true
+BoasVindas2: '&6&lSeja bem vindo &5{player} &6&lao &e&lNial&5&lKits'
+
+#Mensagens que aparecerá de 30 em 30 segundos no servidor (BROADCAST)
+Mensagem1: '&e&lNial&f&lKits &f&l- &7Coloque sua mensagem aqui #1'
+Mensagem2: '&e&lNial&f&lKits &f&l- &7Coloque sua mensagem aqui #2'
+Mensagem3: '&e&lNial&f&lKits &f&l- &7Coloque sua mensagem aqui #3'
+Mensagem4: '&e&lNial&f&lKits &f&l- &7Coloque sua mensagem aqui #4'
+Mensagem5: '&e&lNial&f&lKits &f&l- &7Coloque sua mensagem aqui #5'
+
+#Nome que ficará na placa de sopa e recraft (OBS: O nome não pode ser maior que 7 caracteres ou entao ele irá bugar)
+PlacaDeSopa: '&e&lNial&f&lKit'
+PlacaDeRecraft: '&e&lNial&f&lKit'
+
+#Link para o cara se aplicar para trial-mod
+LinkDoFormulario: '&e&lFormulario para trial-mod: &7www.example.com.br'
+
+#Mensagem que enviará para o player para quando ele errar o comando
+ComandoErro: '&c&lComando inexistente!'
+
+#Coloque aqui os requisitos para o player obter a tag youtuber
+Youtuber: '&7&l1000 Inscritos + 50 Likes no Video do servidor'

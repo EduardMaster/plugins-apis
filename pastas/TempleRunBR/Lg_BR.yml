@@ -1,0 +1,116 @@
+##############################
+# Plugin pedido por AbsintoJ #
+#     Criador RalfGamerBR    #
+# Ts: Absintoj.ts3dns.com    #
+##############################
+
+#Mensagem quando o player digitar /parkour list ou /parkour lista
+ListasDeParkour:
+ - '&2=============&4Listas de parkours&2============='
+ - '&2Use /Parkour Sonic - Para jogar no mapa do Sonic'
+ - '&2==============================================='
+Msg_Parkour:
+ - '&2>Use: /parkour perfil &f- Para ver o perfi'
+ - '&2>Use: /parkour reload &f- Para da reload'
+ - '&2>Use: /setarparkour Nome_Do_Parkour &f- Para setar um parkour'
+ - '&2>Use: /delparkour Nome_Do_Parkour &f- Para deletar um parkour'
+Msg_Parkour_Player:
+ - '&2>Use: /parkour perfil &f- Para ver o perfi'
+ - '&2>Use: /parkour Nome_Do_Parkour &f- Para ir ao parkour'
+ - '&2>Use: /spawn - Para sair do parkour'
+# Permissao para ir ao parkour - parkour.use 
+# Permissao para setar e deletar - parkour.admin
+ParkourReload: '&2todas as config foram recarregadas.'
+SKULL_ITEM_Nome: '&2Jogador: &f{Player}'
+SairParaSpawn: '&2Voce saiu do evento.'
+msgsetar: '&2{Local} Setado com sucesso.'
+setarerro: '&cVoce nao pode setar {Erro}.'
+msgdel: '&c{Local} deletado com sucesso.'
+LocaisNaoDefinidos: '&c{Local} ainda nao foi setado.'
+sempermissao: '&cAcesso negado, pessa permissoa para um adm.'
+MsgCriarPlaca: '&2Placa criada com sucesso.'
+AntiComandos: '&2Voce nao pode usar esse comando no parkour.'
+SemPermissaoParkour: '&2Voce nao tem permissao para ir ao parkour.'
+ResetStatos: '&cVoce precisa ser vip para resetar o seus statos.'
+#Se o player nao tiver no parkour e tentar clicar na placa.
+NaoEstaNoParkour: '&2voce nao esta no parkour.'
+DropEvento: '&2Voce nao pode dropar item no evento.'
+SetCheckPoint: '&2CkeckPoint salvo, use /checkpoint'
+MsgCheckPoint: '&cVoce volteu ao seu primeiro checkpoint'
+AntiCheckPoint: '&2Voce nao esta no parkour para usar /ckeckpoint'
+Caminho: '&2Voce percorreu &c{B} &2blocos.'
+TempoemSegundos: '&2Voce levou &c{T} &2segundos para vencer.'
+EsconderJogadores: '&2Esconder Jogadores'
+Esconder: '&2Todos os jogandos ficaram invisives.'
+MostrarJogadores: '&cMostrar Jogadores'
+Mostrar: '&cTodos os jogandos ficaram ivisives.'
+#Isso ira remove o damage do player.
+PvP: true
+#deixe true para o player nao poder entrar no evento com blocos.
+Items: true
+InventarioVazio: '&2Guarde seus item antes de ir para o evento.'
+
+#Linha 2 da placa de entrar
+SignJoin: '&2Entrar'
+
+#Linha da Placa de premios.
+L2: '&2Clique aqui'
+L3: '&cPremio'
+L4: '&21000'
+#Linha dos placas de checkpoint
+L1CheckPoint: '&1Parkour'
+L3CheckPoint: '&2Clique'
+L4CheckPoint: '&cAqui'
+msgteleporteParkour:
+ - '&2Teleportado para o evento de parkour.'
+ - '&2Procure a placa e termine o evento.'
+ - '&cPremio os ....'
+#Mensagem para o player se ele tentar criar placa assim [Parkour]
+MsgSemPermisaoDeCriarPlaca: '&2Acesso negado.'
+InicioDoParkour: '&2Voce voltou para o seu ultimo checkpoint.'
+
+#Efeitos nos Blocos
+SPONGE: 2.00
+#Isso teleportara o jogar 5 blocos para frente.
+ENDER_STONE: 5
+#Tempo com o efeito.
+EMERALD_BLOCK: 10
+EMERALD_BLOCK_FORCA: 3
+#Tempo com o efeito.
+COAL_BLOCK: 10
+COAL_BLOCK_FORCA: 3
+#Tempo com o efeito.
+HAY_BLOCK: 10
+HAY_BLOCK_FORCA: 3
+#Tempo com o efeito.
+QUARTZ_BLOCK: 10
+QUARTZ_BLOCK_FORCA: 3
+#Tempo com o efeito.
+LAPIS_ORE: 10
+LAPIS_ORE_FORCA: 3
+NomeDoMenu: '&2Perfil &4{Player}'
+StatosDoPlayer: '&2Statos &4{Player}'
+Perfil:
+- '&4{X} &2{[]}{[]}&4Parkour&2{[]}{[]}&4{X}'
+- '&4{X} &2Completou: {Completou} &4{X}'
+- '&4{X} &2Desistiu: {Desistiu} &4{X}'
+- '&4{X} &2{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}{[]}&4{X}'
+
+#Caso voce deixe o player entrar  com item e queira remover um item dele use isso.
+ItemJoin: true
+ItemRemove: 54
+#ScoreSboards:
+RemoverScoreBlocos: true
+#{Player} pode usar para mostra o nome do player
+ScoreNome: '&2Status'
+ScoreBlocos: '&1Blocos:'
+ScoreCompletou: '&2Completou:'
+ScoreDesistiu: '&4Desistiu:'
+ScoreTempo: '&2Segundos:'
+ScoreJogadores: '&5Jogadores:'
+#Comandos na placa de promeios.
+Comandos:
+ - give {Player} 264 10
+ - give {Player} 57 10
+ - money give {Player} 1000
+ - say o jogador {Player} completou o parkour

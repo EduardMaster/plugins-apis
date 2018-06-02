@@ -1,0 +1,105 @@
+# Info Board Config, Last Edited in v0.1.1
+# Max rows is 15, and most characters in a row is 16(Unless you enable scroll) (This includes color/formating codes)
+# The group setting will always go to default if the players group isn't found.(Scoreboards per group requires vault to be on the server)
+# The world setting will always go to global if the players world isn't found.
+# 
+# =============================================================
+# #                   Example
+# Info Board:
+# # Page Number
+#   '1':
+# # How Long this page is shown for
+#     Show Time: 10
+# # What world sees this page (global = All)
+#     global:
+# # What Permissions group sees this page
+#       default:
+# # Pages Title
+#         Title: '&4&lDuskHaven'
+# # Pages Rows
+#          Rows:
+#          - ' '
+#          - 'This board is only'
+#          - 'seen by defaults'
+#       Admin:
+#         Title: '&4&lAdmin Page'
+#         Rows:
+#         - ' '
+#         - 'This board is only'
+#         - 'seen by Admins'
+#   '2':
+#     Show Time: 5
+#     world:
+#       default:
+#         Title: '&a&lStats'
+#          Rows:
+# #               Splitting a line can be done in two ways: using <split>
+#          - 'Online Players: <split> <onlineplayers>'
+# #                Or Using ;
+#          - 'Money: ; <balance>'
+#          - 'PowerLevel: <split> <mcmmopowerlevel>'
+#          - 'Your Level: <split> <level>'
+#     world_the_nether:
+#       default:
+#         Title: '&a&lNether'
+#          Rows:
+# #         - 'Your Level: <split> <level>'
+# # Will only display if <exp> isn't "0" or "Unkown"
+# #         - '~!<exp>Your Exp:'
+# #         - '~!<exp><exp>'
+# #
+# ==================================================================
+# ==================================================================
+# Custom Variables are pretty simple, just follow this setup:
+# Custom Variables: 
+#  Variable: What it gets replaced to
+# but when you go to use them put <Variable>
+# ==================================================================
+# ==================================================================
+# For Disabled Worlds, Any worlds you want disabled put them here!  
+# ==================================================================
+# ==================================================================
+# Just a heads up, using scroll MAY cause some lag. That's why it's a config option
+# <scroll> remove the limit of characters in a row as it scrolls through
+# To enable this turn, change "Scrolling Text.Enable" to true, and restart the server
+# Shift Time is how long between letters move
+# ==================================================================
+# ==================================================================
+# For Update Time, How many seconds between updating the scoreboard
+# ==================================================================
+# ==================    SCORE BOARDS      ======================
+# Max rows is 15, and most characters in a row is 16(Unless you enable scroll) (This includes color/formating codes)
+# The group setting will always go to default if the players group isn't found.(Scoreboards per group requires vault to be on the server)
+# The world setting will always go to global if the players world isn't found.
+# ==================================================================
+Custom Variables:
+  website: Lecraft.com.br
+  plugindev: TeslaCraft
+Disabled Worlds:
+- DisabledWorld1
+- DisabledWorld2
+Scrolling Text:
+  Enable: false
+  Shift Time: 1
+Update Time: 2
+Info Board:
+  '1':
+    Show Time: 20
+    global:
+      default:
+        Title: <plugindev>
+        Rows:
+        - '&6<nuke>----~<skull>~----<nuke>'
+        - ' '
+        - '&e&lWelcome!'
+        - '&l<player>'
+        - ' '
+        - '&a&lOnline:'
+        - <onlineplayers>
+        - ' '
+        - '~!<level>&6&lLevel:'
+        - ~!<level>&e<level>
+        - ' '
+        - '&e&lWebsite:'
+        - <website>
+        - '&6<nuke>----=<skull>=----<nuke>'

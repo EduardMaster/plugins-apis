@@ -1,0 +1,23 @@
+# DON'T EDIT THE FILE NAME / NAO EDITE O NOME DO ARQUIVO! 
+
+name: '&cPoder'
+icon-id: 399
+icon-data: 0
+ativate: true
+lore:
+- '&7Compre Poder Aqui'
+- '&7E Aumente o limite'
+Itens:
+  Example:
+    name: '&E&L+1 DE PODER'
+    id: 399
+    data: 0
+    slot: 13
+    give: false
+    amount: 1
+    price: 5
+    enchants: false
+    lore:
+    - '&7Você Pode Aumentar Seu Poder +1'
+    commands:
+    - limitestar %player%

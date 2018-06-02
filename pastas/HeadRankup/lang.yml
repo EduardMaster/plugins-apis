@@ -1,0 +1,73 @@
+en:
+  headrankup:
+    prefix: §b§lHeadRankup §f§l► §6§l
+    notdone: §c§lThis feature is not yet done.
+    onlyplayer: §c§lOnly players can use this command.
+    noperm: §c§lYou don't have permission for this action.
+    sell:
+      noitem: §c§lYou don't have any item to sell.
+      wrongitem: §c§lYou need to have a head in your hand in order to sell it.
+      noperm: §c§lYou don't have permission for selling this type of head.
+      all: Sold every item in your inventory
+      hand: Sold heads in your hand
+    spawner: §c§lYou don't have permission to place this type of spawner.
+      break: §c§lYou don't have permission to break this type of spawner.
+    rankup: Congratulation, you have ranked up and unlocked selling the following head types: §e<heads>
+      xp: §c§lYou need to get §e§l<xp>§c§l more xp to unlock the next rank.
+      money: §c§lYou need to get §e§l<money>$§c§l to unlock the next rank§c§l.
+      top: §c§lYou have already reached the top rank.
+      noecon: §c§lError the economy is not set up.
+de:
+  headrankup:
+    prefix: §b§lHeadRankup §f§l► §6§l
+    notdone: §c§lDiese Funktion ist derzeit nicht verfuegbar.
+    onlyplayer: §c§lNur Spieler koennen diesen Befehl nutzen
+    noperm: §c§lDu hast keine Berechtgung dies zu tun.
+    sell:
+      noitem: §c§lDu hast keine Gegenstaende zum verkaufen.
+      wrongitem: §c§lDu musst den Gegenstand in der Hand halten, um ihn verkaufen zu koennen.
+      noperm: §c§lDu hast keine Berechtigung diesen Typ von Kopf zu verkaufen.
+      all: Alle Gegenstande in deinem Inventrar wurden verkauft.
+      hand: Der Kopf in deiner Hand wurd verkauft.
+    spawner: §c§lDu hast keine Berechtigung diesen Spawner zu plazieren.
+    rankup: Gratulation. Du bist einen Rang aufgestiegen und kannst nun folgende Koepfe verkaufen: §e<heads>
+      xp: §c§lDu benoetigst noch §e§l<xp>§c§l Erfahrung um den naechsten Rang freizuschalten.
+      money: §c§lDu benoetigst §e§l<money>$§c§l Geld um den nachsten Rang freizuschalten: §c§l.
+      top: §c§lDu hast beeits den hoesten Rang errreicht.
+      noecon: §c§lFehler - Es ist keine Economy installiert.
+hu:
+  headrankup:
+    prefix: §b§lHeadRankup §f§l► §6§l
+    notdone: §c§lEz az előnye a pluginnak még nem készült el.
+    onlyplayer: §c§lEzt a parancsot csak a játékosok használhatják.
+    noperm: §c§lNincs jogod ehhez.
+    sell:
+      noitem: §c§lNincs nálad semmi eladható.
+      wrongitem: §c§lAz eladni kívánt fejet/fejeket a kezedben kell tartanod.
+      noperm: §c§lNincs jogod eladni ezt a fajta fejet.
+      all: Eladva a hátizsákodban megtalálható összes eladható fej.
+      hand: Kezedben lévő fej(ek) sikeresen eladva.
+    spawner: §c§lNincs jogod lerakni ezt a fajta mobkeltetőt
+    rankup: Gratulálunk, rangot léptél, ezért kioldottad az alábbi fejtípusokat: §e<heads>
+      xp: §c§lKell még szerezned §e§l<xp>§c§l tapasztalati pontot, hogy kiold a következő rangot.
+      money: §c§lKell még szerezned §e§l<money>$§c§l-t, hogy kiold a következő rangot§c§l.
+      top: §c§lMár kioldottad az összes rangot.
+      noecon: §c§lHiba a pénzkezelés helytelenül van beállítva.
+nl:
+  headrankup:
+    prefix: §b§lHeadRankup §f§l► §6§l
+    notdone: §c§ldeze feature is nog niet af.
+    onlyplayer: §c§lAlleen spelers kunnen deze commando.
+    noperm: §c§lJe hebt geen rechten voor deze actie.
+    sell:
+      noitem: §c§lJe hebt geen voorwerpen om te verkopen.
+      wrongitem: §c§lJe hebt een hoofd nodig in je hand om te kunnen verkopen.
+      noperm: §c§lJe hebt geen rechten om dit hoofd te verkopen.
+      all: je hebt alle voorwerpen uit je inventaris verkocht
+      hand: je hebt alle hoofden uit je inventaris verkocht
+    spawner: §c§lJe hebt geen rechten om dit type spawner te plaatsen.
+    rankup: Gefeliciteerd, je bent een rank hoger je kunt de volgende hoofd nu verkopen: §e<heads>
+      xp: §c§lje hebt §e§l<xp>§c§l meer xp nodig om rank up te kunnen.
+      money: §c§lJe hebt §e§l<money>$§c§l meer geld om rank up te kunnen§c§l.
+      top: §c§lJe bent al de hoogste rank.
+      noecon: §c§lFout! de economy is niet ingesteld.

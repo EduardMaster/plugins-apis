@@ -1,0 +1,15 @@
+# Used for saving user statistics. Example user stats:
+players:
+  3c8c41ff-51f5-4b7a-8c2b-44df0beba03b:
+    wins: 1
+    loses: 1
+    points: 10
+    playername: InstanceLabs
+  4eadae6c-17a1-32d7-a075-95d4e794e299:
+    points: 60
+  378e26d2-c870-373c-81af-399300c32239:
+    points: 110
+  00aa381d-d8e3-3d20-8cf5-529b69d24370:
+    points: 52
+  84f21a4a-ce4d-3706-88a2-46d1603c445a:
+    points: 42

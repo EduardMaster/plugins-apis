@@ -1,0 +1,74 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&c&lTrocar &e&0&lVip'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'vips'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: ''
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+shopcmd:
+  COMMAND: 'trocarvip guerreiro'
+  NAME: '&e&lVip &a[GUERREIRO]'
+  LORE:
+    - '&eClique Para Trocar De Vip'
+  ID: 42
+  POSITION-X: 2
+  POSITION-Y: 2
+shop2cmd:
+  COMMAND: 'trocarvip dominador'
+  NAME: '&a&lVip &3[DOMINADOR]'
+  LORE:
+    - '&eClique Para Trocar De Vip'
+  ID: 41
+  POSITION-X: 4
+  POSITION-Y: 2
+shop3cmd:
+  COMMAND: 'trocarvip imperador'
+  NAME: '&a&lVip &6[IMPERADOR]'
+  LORE:
+    - '&eClique Para Trocar De Vip'
+  ID: 57
+  POSITION-X: 6
+  POSITION-Y: 2
+shop4cmd:
+  COMMAND: 'trocarvip spartacus'
+  NAME: '&a&lVip &5[SPARTACUS]'
+  LORE:
+    - '&eClique Para Trocar De Vip'
+  ID: 133
+  POSITION-X: 8
+  POSITION-Y: 2

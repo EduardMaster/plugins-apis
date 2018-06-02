@@ -1,0 +1,11 @@
+# Enter your world name 
+WorldName: world
+LimitAnimals: true
+LimitMonsters: true
+LimitWaterAnimals: true
+LimitAmbient: true
+LimitAnimalTicks: true
+LimitMonsterTicks: true
+RemoveNearbySquid: true
+CancelTNTNearby: false
+AllowPortals: true

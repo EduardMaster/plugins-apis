@@ -1,0 +1,40 @@
+# [Clickwarp] Plugin by comniemeer | Color codes: http://ess.khhq.net/mc/ | Czech translated by xSkillCycanxMC
+Warp:
+  NoWarps: '&7Njesou zde zadne warpy!'
+  List: '&7Zde jsou warpy:'
+  NoExist: '&7Neni tu zadny takovy warp &6{warp}&7.'
+  NotEnoughMoney: '&7Nedostatek penez pro tento warp! Potrebujes &6{price} {currency}&7!'
+  Success: '&7[&6Warp&7] byl jsi teleportovan na warp &6{warp}&7.'
+  SuccessPrice: '&7[&6Warp&7] Byl jsi teleportovan za &6{price} {currency} &7na warp
+    &6{warp}&7.'
+Setwarp:
+  InvalidName: '&cNeznamy nazev warpu!'
+  Success: '&7Warp &6{warp} &7byl vytvoren.'
+  NeedNumber: '&7Musis specifikovat nazev warpu! Napriklad: "&6/setwarp warp 1&"'
+  InvalidItem: '&cNeznamy item!'
+  WrongItemFormat: '&7Muzes pridat hodnotu jenom "&656&7" nebo "&635:4&7"!'
+Delwarp:
+  Success: '&7warp &6{warp} &7byl odstranen!'
+Editwarp:
+  ItemSuccess: '&7Warp &6{warp} &7byl zobrazen itemem "&6{item}&7" na &6/invwarp&7!'
+  LoreSuccess: '&7Warp &6{warp} &7ma ted podnazev "&6{lore}&7" na &6/invwarp&7!'
+  PriceSuccess: '&7Warpu &6{warp} &7byla pridana hodnota &6{price} {currency}&7.'
+SignWarp:
+  SpecifyWarp: '&7[&6SignWarp&7] &cSpecifikuj warp v &6radku 2&c!'
+  Success: '&7[&6SignWarp&7] Sign for the warp &6{warp} &7byl vytvoren!'
+Invwarp:
+  TooManyWarps: '&7Je to moc warpu! :O'
+InvTP:
+  NoPlayers: '&7Upss neni zde &6zadny hrac &7online!'
+  TooManyPlayers: '&7Je tu hodne hracu! :O'
+  Success: '&7[&6TP&7] byl jsi teleportovan na &6{player}&7.'
+  NotOnline: '&7[&6TP&7] Hrac &6{player} &7neni online.'
+Delay:
+  Delay: '&7Budes portnut za &6{delay} sekund&7!'
+  DoNotMove: '&6Nehybej se! &7budes portnut za &6{delay} sekund&7!'
+  TeleportCanceled: '&cPortovani bylo zruseno, pohl ses!'
+Various:
+  PluginReloaded: '&7[&6ClickWarp&7] Plugin znovu nacten.'
+  ErrorFileSaving: '&cError pri ukladani, zkontroluj konzoli!'
+  NoPermission: '&cNa tohle nemás právo!'
+  OnlyPlayers: '&cJenom hrac muze vykonat tuhle akci.'

@@ -1,0 +1,16 @@
+# Just copy paste if you want more chests. The percentages must add up to 100!
+config:
+  enabled: false
+  chests:
+    chest1:
+      items: 5*64;5*64;5*64;5*64;262*64;278*1;5*64%30
+      percentage: 5
+    chest2:
+      items: 5*64;262*64;267*1
+      percentage: 20
+    chest3:
+      items: 5*64;262*64
+      percentage: 25
+    chest4:
+      items: 5*64
+      percentage: 50

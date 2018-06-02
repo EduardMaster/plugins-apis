@@ -1,0 +1,43 @@
+world: SkyLegend
+p1:
+  ==: Vector
+  x: 1255.0
+  y: 8.0
+  z: -75.0
+p2:
+  ==: Vector
+  x: 1288.0
+  y: 72.0
+  z: -42.0
+gameleveldestroydelay: 6
+loselevel:
+  p1:
+    ==: Vector
+    x: 1255.0
+    y: 8.0
+    z: -75.0
+  p2:
+    ==: Vector
+    x: 1288.0
+    y: 8.0
+    z: -42.0
+spawnpoint:
+  ==: Vector
+  x: 1272.300000011921
+  y: 65.0
+  z: -58.30000001192093
+spectatorspawn:
+  ==: Vector
+  x: 1272.3507942770082
+  y: 65.0
+  z: -58.63089865151287
+maxPlayers: 12
+minPlayers: 2
+votePercent: 0.5
+timelimit: 600
+countdown: 10
+teleportto: PREVIOUS
+damageenabled: 'NO'
+reward:
+  money: 50
+  items: []

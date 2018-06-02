@@ -1,0 +1,60 @@
+# +----------------------------------------------------+
+# <              BlastHostingAntiBot v5.2              >
+# <             Desenvolvido por BrMateus              >
+# +----------------------------------------------------+
+
+#############################################################################################################
+
+AtivarBloqueioPorIP: true
+
+# Bloqueia automaticamente um IP que efetua mais de 5 conexoes em 5 segundos.
+# true para sim, false para nao.
+
+BloqueioIPMensagem: "&c&lO seu IP foi bloqueado por tentativa de ataque bot!"
+
+# Defina uma mensagem a ser exibida na tela de bloqueio de ip.
+
+#############################################################################################################
+
+AtivarBloqueioPaises: true
+
+# Ativar bloqueio por paises? true para sim, false para nao.
+# Recomendamos deixar ativado para melhor desempenho no bloqueio de bots.
+
+Modo: 1
+
+# Modo 1 = Permite a entrada somente dos paises listados abaixo.
+# Modo 2 = Bloqueia a entrada dos paises listados abaixo.
+
+Paises: BR,PT
+
+# Para uma lista das abreviacoes dos paises visite o link abaixo:
+# http://pastebin.com/Zjanxk3p
+
+Mensagem: "&c&lSeu pais foi bloqueado de entrar no servidor!"
+
+# Defina uma mensagem a ser exibida na tela de bloqueio.
+
+#############################################################################################################
+
+ProxyBlackList: true
+
+# Usar BlackList de Proxies? true para sim, false para nao. (Extremamente Recomendado: true)
+
+ProxyKickMensagem: "&c&lProxy detectado! Remova-o para entrar no servidor!"
+
+# Defina uma mensagem a ser exibida na tela de bloqueio de uso de proxy.
+
+#############################################################################################################
+
+UsarStopForumSpam: true
+
+#############################################################################################################
+
+# Usar StopForumSpam? true para sim, false para nao.
+# O StopForumSpam sera utilizado em ultimo caso, caso o IP do jogador nao constar em nossa BlackList ou no Banco de dados de IP de um pais bloqueado, sera utilizado o StopForumSpam.
+
+# Visite nosso site: www.blasthosting.com.br
+# Precisa de suporte? Veja nossos contatos:
+# Skype: blasthosting
+# E-mail: suporte@blasthosting.com.br

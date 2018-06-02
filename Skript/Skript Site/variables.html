@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://njol.ch/projects/skript/doc/variables/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="author" content="Peter Güttinger">
+<title>Skript: Variables</title>
+<link rel="shortcut icon" type="image/png" href="http://njol.ch/favicon.png">
+<link rel="stylesheet" type="text/css" href="./variables_files/normalize.css">
+<link rel="stylesheet" type="text/css" href="./variables_files/general.css">
+<link rel="stylesheet" type="text/css" href="./variables_files/syntax_elements.css">
+<link rel="stylesheet" type="text/css" href="./variables_files/geshi.css">
+<link rel="top" title="Home" href="http://njol.ch/">
+<link rel="author" title="About" href="http://njol.ch/about/">
+<link rel="copyright" title="Copyright" href="http://njol.ch/legal/#license">
+<link rel="license" title="Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Switzerland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+<script src="./variables_files/js.js" type="text/javascript"></script>
+<style type="text/css"></style></head>
+<body>
+<div id="header">
+<div id="header-content">
+<div id="breadcrumb">
+<div class="item n1">
+<a href="http://njol.ch/">Njol.ch</a>
+</div>»<div class="item n1">
+<a href="http://njol.ch/projects/">Projects</a> </div>»<div class="item n3">
+<a href="http://njol.ch/projects/skript/">Skript</a><a href="http://njol.ch/projects/yggdrasil/">Yggdrasil</a><a href="http://njol.ch/projects/markup/">Markup</a> </div>»<div class="item n4">
+<a href="http://njol.ch/projects/skript/doc/">Documentation</a><a href="http://njol.ch/projects/skript/tutorial/">Tutorial</a><a href="http://njol.ch/projects/skript/API/">API</a><a href="http://njol.ch/projects/skript/stats/">Statistics</a> </div>» </div>
+<h1 id="title">Skript: Variables</h1>
+<div id="navi">
+<a href="http://njol.ch/projects/skript/doc/events/">Events</a><a href="http://njol.ch/projects/skript/doc/conditions/">Conditions</a><a href="http://njol.ch/projects/skript/doc/effects/">Effects</a><a href="http://njol.ch/projects/skript/doc/expressions/">Expressions</a><a href="http://njol.ch/projects/skript/doc/loops/">Loops</a><a href="http://njol.ch/projects/skript/doc/commands/">Custom Commands</a><a href="http://njol.ch/projects/skript/doc/classes/">Types</a><a href="http://njol.ch/projects/skript/doc/strings/">Text</a><a href="./variables_files/variables.html" class="current">Variables</a> </div>
+</div>
+</div>
+<div id="content">
+Variables are Skript's way to save data. Every variable has a name and a value, i.e. some stored data. You can put variables anywhere in your triggers to replace something, e.g. you can replace a location with a variable that holds a location.<br>
+This can for example be used for a /home command: make a variable ‘home’ and a command /home which teleports the player to the location stored in the ‘home’ variable.<br>
+To distinguish variables from the rest of the trigger their name has to be put in curly brackets like this: <code class="code-text">{variable name}</code>. A variable's name can also contain expressions, e.g. to make a ‘home’ variable for every player you can make a variable like <code class="code-text">{home.%player%}</code> where %player% will be replaced by the player's name every time the variable is used, which essentially creates a ‘home’ variable that is different for every player.<br>
+<br>
+All variables are saved in a file called ‘variables.csv’ in the plugin's folder. Please do not edit the file manually, if you do something wrong you might wipe out some variables. The variables are written to this file constantly, so a server crash will make you loose at most one variable. Starting with version 2.0 you can also choose to save variables in a database which can also be monitored for changes, e.g. if you have multiple servers and want to synchronize variables between them.<br>
+<br>
+There are 3 different kinds of variables: ‘normal’ variables, local variables and options. Normal variables (usually simply called variables) are unique, i.e. there can only exist one variable with the same name, and they are saved between server restarts.<br>
+Local variables (which are identified with an underscore: <code class="code-text">{_local variable}</code>) are ‘local to the event’, which means that there can exist several of these variables with the same name simultaneously, e.g. the following trigger will send a player his name one minute after he joined:<pre class="code-text">on join:
+  set {_player} to player
+  wait a minute
+  message "%{_player}%" # the local variable is unchanged no matter how many players joined in the meantime</pre>If a normal variable was used all players would recieve the name of the last player who joined since normal variables are unique.<br>
+Local variables are also automatically deleted when they are not needed anymore and do not clutter the variables file, but their data is lost when the server stops (which does not matter that much as all scripts also stop running and won't resume where they left off when the server restarts).<br>
+The last kind of variables are options which are not actually variables at all. You can add a section ‘options’ to your script like this:<pre class="code-text">options:
+  option name = option value</pre>You can then use these options <i>anywhere</i> in your scripts with <code class="code-text">{@option name}</code>. The reason why I stress anywhere is because options will be replaced one-to-one with their values just before the script is parsed. Thus you can put anything into options, even whole script lines or parts thereof. Remember to not use percent signs around options in text though as the percent signs will remain.<br>
+<a name="list_variables"></a><h2>List Variables</h2>
+List variables are variables which can hold multiple values. They look like <code class="code-text">{variable name::*}</code> and can have elements added and removed from them using the default add and remove effects, can be deleted which will clear all values of the list, and overwritten with new values with the set effect. You can access a specific value of a list variable with <code class="code-text">{variable name::index}</code> where ‘index’ is the index of the value you want. The index can be anything, e.g. a player name or a number, but when adding values to the list with the add effect the index of the new value will be a number.<br>
+<br>
+List variables can be looped with <code class="code-text">loop {list variable::*}</code>. Within the loop the currently looped value can be accessed with <code class="code-text">loop-value</code> and its index with <code class="code-text">loop-index</code>.<br>
+<br>
+List variables are also useful to show a list in a message, e.g. a list of all admins online, by first adding them to the same list variable and then using that variable in the message (see the last example below). Using a local list variable for this purpose is recommended: <code class="code-text">{_local list variable::*}</code><br>
+<a name="examples"></a><h2>Examples</h2>
+As I'm not very good at explaining the rest of this page is filled with some examples:<br>
+<br>
+Save how many players have ever logged into your server:<pre class="code-text"># if you add a 'variables:' section to your script, the variables defined there will be set to the given value if they don't exist
+# when the script is loaded. You cannot change an existing variable's value this way however, in particular if you
+# change the variables' values here the actual variables will not be changed at all.
+variables:
+	{logincount} = 0
+&nbsp;
+on login:
+	add 1 to {logincount}
+&nbsp;
+command /logincount:
+	description: Find out how many people have ever logged into this server
+	trigger:
+		message "Since its beginnings &lt;green&gt;%{logincount}%&lt;reset&gt; people have logged into this server"</pre><br>
+A simple /home plugin:<pre class="code-text">command /sethome:
+	permission: skript.home
+	description: Set your home
+	trigger:
+		set {home.%player%} to location of player
+		message "Set your home to &lt;grey&gt;%location of player%&lt;reset&gt;"
+&nbsp;
+command /home:
+	permission: skript.home
+	description: Teleport yourself to your home
+	trigger:
+		if {home.%player%} is not set:
+			message "You have not set your home yet!"
+			stop trigger
+		teleport player to {home.%player%}</pre><br>
+A command that shows the currently online staff:<pre class="code-text">command /staff:
+	description: Shows online staff
+	trigger:
+		loop all players:
+			loop-player has permission "is.staff"
+			add loop-player to {_online staff::*}
+&nbsp;
+		size of {_online staff::*} is 0:
+			message "No staff currently online! Happy griefing ;)!"
+		else:
+			message "Online staff: %{_online staff::*}%"</pre>
+</div>
+<div id="footer">
+<div id="footer-content">
+<div id="about">
+<a href="http://njol.ch/about/">About</a>
+</div>
+<div id="credits">
+~ njol.ch created by <a href="http://njol.ch/legal/">Peter Güttinger</a>
+~ icons by <a href="http://p.yusukekamiyamane.com/" target="_blank">Yusuke Kamiyamane</a> ~
+</div>
+</div>
+</div>
+
+</body></html>

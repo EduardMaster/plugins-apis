@@ -1,0 +1,11 @@
+users:
+- username: caswells
+  password: bassaille
+  logging: true
+  groups:
+  - full_control
+- username: chatonly
+  password: example
+  logging: true
+  groups:
+  - chat_only

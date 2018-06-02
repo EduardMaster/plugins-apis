@@ -1,0 +1,44 @@
+#########################################################
+#                                                       #
+#            CONFIGURAÇOES / CONFIG                    #
+#                                                       #
+#########################################################
+
+#disponivel / available : Portugues Brazil use (1) - English USA use (2)
+Language: 1
+
+# Animaçoes diponiveis 1 e 2 - Animation disponible 1 and 2
+# animation: 2 - not disponible
+
+# titulo da GUI caixa basica / GUI title of the basic box
+titlebasic: '&e&lBasic Box'
+
+# titulo da GUI caixa avancada / GUI title of the advanced box
+titleadvanced: '&5&lAdvanced Box'
+
+# titulo da GUI do comando /caixasmisteriosas - GUI title of the command /caixasmisteriosas 
+title_command_cm: '&c&lChoose the Box'
+
+# nome do chest do comando /caixasmisteriosas - Name of the chest from command /caixasmisteriosas
+name_basic_box_cm: '&e&lMystery Box'
+
+# descriçao do chest do comando /caixasmisteriosas - description of the chest from command /caixasmisteriosas
+lore_basic_box_cm: '&e&lBasic'
+
+# nome do enderchest do comando /caixasmisteriosas - Name of the enderchest from command /caixasmisteriosas
+name_advanced_box_cm: '&5&lMystery Box'
+
+# descriçao do enderchest do comando /caixasmisteriosas - description of the enderchest from command /caixasmisteriosas
+lore_advanced_box_cm: '&5&lAdvanced'
+
+# titulo da GUI para confirmar compra da caixa basica - title of the GUI to confirm purchase of basic box
+title_purchase_basic_box: '&e&lConfirm buy'
+
+# titulo da GUI para confirmar compra da caixa avancada - title of the GUI to confirm purchase of advanced box
+title_purchase_advanced_box: '&5&lConfirm buy'
+
+# nome da la para confirmar a compra das caixas - name of the wool to confirm the purchase of the boxes
+name_wool_confirm: '&a&lConfirm'
+
+# nome da la para cancelar a compra das caixas - name of the wool to cancel the purchase of the boxes
+name_wool_cancel: '&c&lCancell'

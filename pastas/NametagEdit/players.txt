@@ -1,0 +1,5 @@
+// This file declares any user specific prefixes and suffixes set with the /ne command.
+Notch prefix = "&b< &a"
+Notch suffix = " &b>"
+MichelCardoso prefix = "&6[Master] &7"
+Tester prefix = "&2[Lendario] &7"

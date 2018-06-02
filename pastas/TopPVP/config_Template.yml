@@ -1,0 +1,39 @@
+#This is the Configuration file for TopPVP
+
+#Edit these messages for what the players will be shown for deaths/kills/etc
+Messages:
+    Deaths:
+        #Before the number of deaths in the message
+        Before Number: "You have died "
+        #After the number of deaths in the message
+        #If there is no space, the number will be apart of the same word as the AFTER tag
+        After Number: " times"
+        #If the player has only died once
+        One Time: "You have died once."
+        #If the player has never died
+        None: "You have never died."
+    Kills:
+        Before Number: "You have killed "
+        After Number: " times"
+        One Time: "You have killed once."
+        None: "You have never killed anyone..."
+    Reset:
+        Deaths:
+            #If the player reset own deaths
+            Sender: "Your deaths have been reset."
+            #IF the player reste another player's deaths
+            Another Player: "'s deaths have been reest."
+        Kills: 
+            Sender: "Your kills have been reset."
+            Another Player: "'s kills have been reset."
+
+Leaderboards:
+    #Whether the leaderboards are available/enabled
+    Allow: true
+    #How many players will be displayed
+    People to View: 10
+    #The color for the players in the player chat box
+    Color: GOLD
+
+#!!!!!DO NOT EDIT BELOW THIS LINE!!!!!!#
+Version: 5

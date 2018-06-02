@@ -1,0 +1,69 @@
+spawncmd:
+  COMMAND: 'spawn'
+  NAME: '&6[*] &e/spawn &6[*]'
+  DESCRIPTION:
+    - '&a[v] &7warp to the spawn'
+  ICON-ITEM: 399
+  POSITION-X: 1
+  POSITION-Y: 2
+homecmd:
+  COMMAND: 'home'
+  NAME: '&9[**] &bHome &9[**]'
+  DESCRIPTION:
+    - '&7Home sweet home &c<3'
+  ICON-ITEM: 355
+  POSITION-X: 2
+  POSITION-Y: 4
+pvpteleport:
+  COMMAND: 'warp pvp'
+  NAME: '&c/warp pvp'
+  DESCRIPTION:
+    - '&4[++] &7Fight enemies!'
+  ICON-ITEM: 276
+  POSITION-X: 3
+  POSITION-Y: 6
+colored-wool:
+  NAME: '&aColored wool, with data value'
+  ICON-ITEM: 35
+  DATA-VALUE: 8
+  POSITION-X: 8
+  POSITION-Y: 2
+this-text-will-not-appear:
+  COMMAND: 'me clicked on the menu!'
+  NAME: '&d[p] Formatting codes [p]'
+  DESCRIPTION:
+    - '&7You can use all the formatting codes!'
+    - '&fColors: &c#c &a#a &9#9 &e#e'
+    - '&fRandom (#k): &kfy379!H'
+    - '&fBold (#l): &lexample'
+    - '&fStrikethrough (#m): &mexample'
+    - '&fUnderline (#n): &nexample'
+    - '&fItalic (#o): &oexample'
+  ICON-ITEM: 51
+  POSITION-X: 5
+  POSITION-Y: 2
+test-with-placeholder:
+  COMMAND: 'me hello, I''m <player>!'
+  NAME: '&6Hello world!'
+  DESCRIPTION:
+    - '&7Prints your name with /me command'
+  ICON-ITEM: 395
+  POSITION-X: 5
+  POSITION-Y: 3
+test-multiple-command:
+  COMMAND: 'console:tell <player> This is an example;console:tell <player> you can use multiple commands;tell <player> and execute them as console or as the player, <player>!'
+  NAME: '&aMultiple commands'
+  DESCRIPTION:
+    - '&7Example of how to use multiple commands'
+    - '&7and execute them as console or as the player'
+  ICON-ITEM: 322
+  DATA-VALUE: 1
+  POSITION-X: 7
+  POSITION-Y: 4
+
+menu-close-no-commands-no-description:
+  COMMAND: ''
+  NAME: '&cClose the menu'
+  ICON-ITEM: 123
+  POSITION-X: 9
+  POSITION-Y: 6

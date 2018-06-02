@@ -1,0 +1,88 @@
+#Universal head configuration: data-value owner dropchance sell-price sell-xp displayname
+heads:
+  PLAYER: 3 <name> 1 10 1 §9§l<name>s head
+  CREEPER: 4 Creeper 0.8 10 1 §a§lCreeper head
+  SKELETON: 0 Skeleton 0.8 10 1 §7§lSkeleton head
+  WITHER: 1 WitherSkeleton 0.8 10 1 §5§lWither skeleton head
+  SPIDER: 3 MHF_Spider 0.8 10 1 §4§lSpider head
+  GIANT: 2 Giant 0.8 10 1 §2§lGiant head
+  ZOMBIE: 2 Zombie 0.8 10 1 §2§lZombie head
+  SLIME: 3 MHF_Slime 0.8 10 1 §a§lSlime head
+  GHAST: 3 MHF_Ghast 0.8 10 1 §7§lGhast head
+  PIG_ZOMBIE: 3 MHF_PigZombie 0.8 10 1 §c§lZombie pigman head
+  ENDERMAN: 3 MHF_Enderman 0.8 10 1 §0§lEnderman head
+  CAVE_SPIDER: 3 MHF_CaveSpider 0.8 10 1 §4§lCavespider head
+  SILVERFISH: 3 MHF_Silverfish 0.8 10 1 §8§lSilverfish head
+  BLAZE: 3 MHF_Blaze 0.8 10 1 §6§lBlaze head
+  MAGMA_CUBE: 3 MHF_LavaSlime 0.8 10 1 §6§lMagma§4§lCube §e§lhead
+  ENDER_DRAGON: 3 MHF_EnderDragon 0.8 10 1 §0§lEnderDragon head
+  WITHER: 1 MHF_Wither 0.8 10 1 §5§lWither head
+  BAT: 3 bozzobrain 0.8 10 1 §d§lBat head
+  WITCH: 3 MHF_Witch 0.8 10 1 §d§lWitch head
+  ENDERMITE: 3 MHF_Endermite 0.8 10 1 §d§lEndermite head
+  GUARDIAN: 3 MHF_Guardian 0.8 10 1 §2§lGuardian head
+  PIG: 3 MHF_Pig 0.8 10 1 §c§lPig head
+  SHEEP: 3 MHF_Sheep 0.8 10 1 §f§lSheep head
+  COW: 3 MHF_Cow 0.8 25 5 §b§lCow head
+  CHICKEN: 3 MHF_Chicken 0.8 40 10 §e§lChicken head
+  SQUID: 3 MHF_Squid 0.8 10 1 §9§lSquid head
+  WOLF: 3 Wolf_Doctor 0.8 10 1 §8§lWolf head
+  MUSHROOM_COW: 3 MHF_MushroomCow 0.8 10 1 §4§lMushroom cow head
+  SNOWMAN: 3 MHF_SnowGolem 0.8 10 1 §f§lSnowman head
+  OCELOT: 3 MHF_Ocelot 0.8 10 1 §e§lOcelot head
+  IRON_GOLEM: 3 MHF_Golem 0.8 10 1 §f§lIronGolem head
+  HORSE: 3 gavertoso 0.8 10 1 §6§lHorse head
+  RABBIT: 3 MHF_Bunny 0.8 10 1 §c§lRabbit head
+  VILLAGER: 3 MHF_Villager 0.8 10 1 §3§lVillager head
+#Commands executed on xp changes
+#
+# Variables:
+# <hr:remaining>: Remaining xp for the next level
+# <hr:xp>: Current player xp
+# <hr:rank>: Player rank
+#
+# Commands:
+#
+#  - XPLEVEL:<level> -> set players xp level
+#  - XP:<level> -> set players experience
+#  - MAXHP:<maxhp> -> set players maximal health
+#  - HP:<hp> -> set players health
+#  - NORMAL:<message> -> force player to enter message
+#  - OP:<message> -> force player to enter message, as he would be op
+#  - CONSOLE:<command> -> execute commands from console
+#  - LOG:<message> -> lo
+#  - ABM:<message> -> send action bar message to player
+#  - TS:<fade-in> <showtime> <fade-out> -> set players title settings
+#  - TITLE:<message> -> send title message to player
+#  - SUBTITLE:<message> -> set subtitle message of a player (need to use the TITLE prefix before this in order to show the subtitle)
+#  - MSG:<message> -> send SpigotLibs formatted JSON tags supported message to player.
+xpChange:
+  - XPLEVEL:<HR:xpneed>
+  - ABM:§2You have §a<HR:xp>§2 xp, you need §a<HR:need>§2 for the next rank.
+sellHandSign:
+  -
+  - Sell
+  - Hand
+  -
+sellAllSign:
+  -
+  - Sell
+  - All
+  -
+#Deny placement of not unlocked spawners
+denySpawnerPlacement: +
+#Allow to mine and get a spawner if it is unlocked
+mineSpawner: +
+#Hook to vault for being able to check players balances, it's not required for giving money, just for taking money.
+vaultHook: +
+#Enable this, if you want your players to get not unlocked heads, by killing not unlocked mobs. Useful for supporting auto grinders.
+getAnyHead: -
+#Money give command, to be able to give money to players without Vault. Set it to "none" (without "s) for disabling.
+moneyGiveCommand: eco give <player> <money>
+#Rankup level config(exp-need money-need unlocked-mobs)
+rankup:
+  - 0 100 PIG
+  - 100 1000 COW CHICKEN
+  - 1000 5000 HORSE ENDERMITE SILVERFISH
+  - 10000 10000 ZOMBIE CREEPER SKELETON
+  - 20000 100000 ENDER_DRAGON ENDERMAN VILLAGER RABBIT

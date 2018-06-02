@@ -1,0 +1,4 @@
+# This file keeps track of the stats of VR if you are not using a database. Theres no need to edit anything here.
+
+vote-totals: {}
+vote-streaks: {}

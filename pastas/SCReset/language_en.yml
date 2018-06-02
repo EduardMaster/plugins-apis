@@ -1,0 +1,8 @@
+error1: 'You do not have enough money! ($@money)'
+error2: 'Error! You are not registered in any clan.'
+error3: 'You do not have permission!'
+error4: 'Error! @player is not registered in any clan.'
+error5: 'Player not found!'
+success1: 'You payed $@money and your KDR was reset!'
+success2: 'Your KDR was reset!'
+success3: '@player KDR was reset!'

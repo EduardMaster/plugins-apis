@@ -1,0 +1,43 @@
+# Set the selection tool frst.
+# Second you can set when your logs have reached the size 
+# you specify, should be moved to the logs/ folder.
+# And last but not least, you can set which things you would like to get logged.
+# If you want more help on the configuration you should contact me on http://dev.bukkit.org/server-mods/grieflog/
+# or you can pm me there, you could also add me as skype contact, but that will only be chat, 
+# my name is blackwolf12333.
+
+general:
+  blackwolf12333glog: true
+  tool: 8
+  mb: 5
+  logging-method: flatfile
+  path: logs/
+  debug: false
+events:
+  command: true
+  changeworld: true
+  changegamemode: true
+  blockignite: true
+  bucketwater: true
+  bucketlava: true
+  enderman: true
+  zombie: true
+  explosions: true
+  playerjoin: true
+  playerquit: true
+  putitemsbackonrollback: false
+  ignored-commands: login,register
+antigrief:
+  antilava: false
+  antitnt: false
+  anticreeper: false
+  antifire: false
+  antienderman: false
+show: default
+colors:
+  time: gold
+  event: red
+  player: blue
+  block-info: white
+  location: white
+  world: white

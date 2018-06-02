@@ -1,0 +1,209 @@
+groups:
+  jogador:
+    default: true
+    permissions:
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.question
+    - essentials.chat.shout
+    - essentials.chat.url
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.url
+    - essentials.signs.use.*
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.eco.loan
+    - essentials.pay
+    - essentials.worth
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.whois
+    - essentials.suicide
+    - essentials.rules
+    - essentials.recipe
+    - essentials.list
+    - essentials.itemdb
+    - essentials.info
+    - essentials.helpop
+    - essentials.help
+    - essentials.compass
+    - essentials.depth
+    - essentials.getpos
+    - essentials.me
+    - essentials.vanish
+    - essentials.vanish.effect
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.tptoggle
+    - essentials.sethome
+    - essentials.delhome
+    - essentials.sethome.bed
+    - essentials.sethome.multiple.jogador
+    - essentials.home
+    - essentials.home.bed
+    - essentials.time
+    - customjoinitems.kit
+    - customjoinitems.minigame
+    - customjoinitems.lobby
+    - pvpsoup.use
+    - chestcommands.open.minigame.yml
+    - chestcommands.open.perm.yml
+    - chestcommands.open.kits.yml
+    - null
+    - null
+    - null
+    - null
+    prefix: '&a'
+    suffix: ''
+  vip:
+    default: false
+    permissions:
+    - essentials.pay.multiple
+    - essentials.joinfullserver
+    - essentials.realname
+    - essentials.getpos.others
+    - essentials.msg.multiple
+    - essentials.vanish.interact
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.top
+    - essentials.teleport.cooldown.bypass
+    - essentials.teleport.timer.move
+    - essentials.warp.otherplayers
+    - essentials.home.others
+    - essentials.workbench
+    - essentials.enderchest
+    - essentials.skull
+    - essentials.skull.spawn
+    - essentials.skull.modify
+    - essentials.enderchest.others
+    - customjoinitems.sons
+    - chestcommands.open.sounds.yml
+    - null
+    prefix: '&6&l[&b&lVIP&6&l] &2'
+    suffix: ''
+    inheritance:
+    - jogador
+  yt:
+    default: false
+    permissions:
+    - essentials.gamemode
+    - essentials.god
+    - essentials.speed
+    - essentials.invsee.preventmodify
+    prefix: '&3&l[&f&lYT&3&l] &6'
+    suffix: ''
+    inheritance:
+    - vip
+  mod:
+    default: false
+    permissions:
+    - essentials.chat.magic
+    - essentials.nick.magic
+    - essentials.nick.others
+    - essentials.msg.magic
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.seen.ipsearch
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.powertool.append
+    - essentials.backup
+    - essentials.ban
+    - essentials.ban.offline
+    - essentials.ban.notify
+    - essentials.kill
+    - essentials.kill.exempt
+    - essentials.kill.force
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.mute
+    - essentials.mute.exempt
+    - essentials.mute.notify
+    - essentials.mute.offline
+    - essentials.remove
+    - essentials.tempban
+    - essentials.tempban.exempt
+    - essentials.tempban.offline
+    - essentials.vanish.others
+    - essentials.vanish.pvp
+    - essentials.vanish.see
+    - essentials.god
+    - essentials.give
+    - essentials.oversizedstacks
+    - essentials.gamemode
+    - essentials.gamemode.others
+    - essentials.fly.others
+    - essentials.feed.others
+    - essentials.feed.cooldown.bypass
+    - essentials.heal.others
+    - essentials.heal.cooldown.bypass
+    - essentials.tp.others
+    - essentials.tpaall
+    - essentials.tppos
+    - essentials.jump
+    - essentials.keepxp
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.tp
+    - essentials.tphere
+    - essentials.speed.bypass
+    - essentials.speed.others
+    - essentials.speed.walk
+    - essentials.time.set
+    - essentials.enderchest.modify
+    - essentials.kick
+    - essentials.kick.exempt
+    - essentials.kick.notify
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.weather
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    prefix: '&4&l[&c&lMOD&4&l] &d'
+    suffix: ''
+    inheritance:
+    - vip
+  adm:
+    default: false
+    permissions:
+    - essentials.*
+    - customjoinitems.adm
+    - chestcommands.open.*
+    prefix: '&c&l[&4&lADM&c&l] &e'
+    suffix: ''
+    inheritance:
+    - mod
+  dono:
+    default: false
+    permissions:
+    - '*'
+    prefix: '&f&l[&6&lDONO&f&l] &b'
+    suffix: ''
+users:
+  EduardKillerPro:
+    group:
+    - dono
+  kratos007:
+    group:
+    - adm
+  enzo_andalik:
+    group:
+    - yt
+  Biiohazzard:
+    group:
+    - adm

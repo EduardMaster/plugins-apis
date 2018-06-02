@@ -1,0 +1,49 @@
+Prefix: '&c&l[CCubeAntiDupe]&7'
+LogDePlaca:
+    Ativado: false
+    MySQLAddress: 'localhost'
+    MySQLUsername: 'root'
+    MySQLPassword: 'password'
+    MySQLDB: 'PlacaLog'
+BlockSubirNoPorco:
+    Ativado: true
+    Kick: false
+    KickMensagem: ''
+    MensagemNaoKick: '&cEste veiculo esta proibido de ser utilizado para evitar bugs...'
+    AvisoStaff: true
+    AvisoStaffMensagem: 'Player @Player Tentou subir no porco!'
+BlockCarrinho:
+    Ativado: true
+    Kick: false
+    KickMensagem: ''
+    MenssagemNaoKick: '&cEste veiculo esta proibido de ser utilizado para evitar bugs...'
+    AvisoStaff: true
+    AvisoStaffMensagem: 'Player @Player Tentou subir no carrinho!'
+BlockSubirNoBarco:
+    Ativado: true
+    Kick: false
+    KickMensagem: ''
+    MensagemNaoKick: '&cEste veiculo esta proibido de ser utilizado para evitar bugs...'
+    AvisoStaff: true
+    AvisoStaffMensagem: 'Player @Player Tentou subir no barco!'
+BlockAbrirFunil:
+    Ativado: true
+    Kick: false
+    KickMensagem: ''
+    MensagemNaoKick: '&cEste item esta proibido de ser utilizado para evitar bugs...'
+    AvisoStaff: true
+    AvisoStaffMensagem: 'Player @Player Tentou abrir o funil!'
+BlockNetherPortal: 
+    Ativado: true
+    Kick: false
+    KickMensagem: ''
+    MensagemNaoKick: '&cEste portal esta proibido de ser criado para evitar bugs...'
+    AvisoStaff: true
+    AvisoStaffMensagem: 'Player @Player Tentou criar portal para o nether!'
+BlockMolduraNoVeiculo:
+    Ativado: true
+    Kick: false
+    KickMensagem: ''
+    MensagemNaoKick: '&cVoce nao pode usar a moldura dentro de um veiculo'
+    AvisoStaff: true
+    AvisoStaffMensagem: 'Player @Player Tentou usar a moldura dentro de um veiculo!'

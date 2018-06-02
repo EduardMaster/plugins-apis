@@ -1,0 +1,19 @@
+mine:
+  ==: com.koletar.jj.mineresetlite.Mine
+  resetDelay: 5
+  surface: ''
+  maxZ: -2019
+  maxY: 123
+  maxX: 1754
+  fillMode: false
+  world: world
+  minY: 111
+  resetWarnings: []
+  minX: 1716
+  composition:
+    '129:0': 0.5
+    '133:0': 0.5
+  name: '&7&lMina&6&lVip&2&lesmeralda'
+  resetClock: 4
+  minZ: -2048
+  isSilent: false

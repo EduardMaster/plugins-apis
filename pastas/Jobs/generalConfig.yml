@@ -1,0 +1,43 @@
+#   The general configuration for the jobs plugin mostly includes how often the plugin
+# saves user data (when the user is in the game), the storage method, whether
+# to broadcast a message to the server when a user goes up a skill level.
+#   It also allows admins to set the maximum number of jobs a player can have at
+# any one time.
+
+# Default language.  Use your languages two digit ISO 639-1 code, and optionally followed by the ISO-3166-1 country code.
+# Example: en, en_US
+locale-language: en
+# storage method, can be MySQL, sqlite, h2
+storage-method: sqlite
+# Requires Mysql.
+mysql-username: root
+mysql-password: ''
+mysql-url: jdbc:mysql://localhost:3306/minecraft
+mysql-table-prefix: ''
+# How often in minutes you want it to save.  This must be a non-zero number
+save-period: 10
+# Should player data be saved on disconnect?
+# Player data is always periodically auto-saved and autosaved during a clean shutdown.
+# Only enable this if you have a multi-server setup, or have a really good reason for enabling this.
+# Turning this on will decrease database performance.
+save-on-disconnect: false
+# Do all players get a message when somone goes up a skill level?
+broadcast-on-skill-up: false
+# Do all players get a message when somone goes up a level?
+broadcast-on-level-up: false
+# Maximum number of jobs a player can join.
+# Use 0 for no maximum
+max-jobs: 3
+# Hide jobs from player if they lack the permission to join the job
+hide-jobs-without-permission: false
+# option to allow payment to be made when killing mobs from a spawner
+enable-pay-near-spawner: false
+# option to allow payment to be made in creative mode
+enable-pay-creative: false
+# Adds the Jobs xp recieved to the player's Minecraft XP bar
+add-xp-player: false
+# Modifys chat to add chat titles.  If you're using a chat manager, you may add the tag {jobs} to your chat format and disable this.
+modify-chat: true
+# Changes how often, in seconds, players are paid out.  Default is 5 seconds.
+# Setting this too low may cause tick lag.  Increase this to improve economy performance (at the cost of delays in payment)
+economy-batch-delay: 5

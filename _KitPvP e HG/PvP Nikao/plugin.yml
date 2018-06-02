@@ -1,0 +1,47 @@
+name: KitPvP
+main: br.nikao.Main
+author: NikaoGamerHD
+version: 1.0
+description: Um plugin de kitpvp
+website: https://www.youtube.com/channel/UCd7hsldtN1DzB5P5G2oq7cA
+commands:
+  status:
+  warps:
+  kit:
+  kits:
+  tag:
+  tags:
+  rank:
+  setspawn:
+  spawn:
+  setfps:
+  fps:
+  setrdm:
+  rdm:
+  setmdr:
+  mdr:
+  setchallenge:
+  challenge:
+  admin:
+  aplicar:
+  arena:
+  build:
+  cc:
+  report:
+  sc:
+  togglepvp:
+    aliases: [pvp]
+  tp:
+  tpall:
+  youtuber:
+  caixa:
+  comprarcaixa:
+  loja:
+  kitpos:
+  ping:
+  lag:
+  gm:
+  score:
+  tphere:
+  fly:
+  chat:

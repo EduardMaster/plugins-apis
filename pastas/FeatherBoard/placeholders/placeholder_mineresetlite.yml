@@ -1,0 +1,47 @@
+## --------------------------------------- ##
+## MineResetLite Placeholders
+## http://dev.bukkit.org/bukkit-plugins/mineresetlite/
+## About: This configuration allows you to
+##        configure what certain placeholders return.
+## --------------------------------------- ##
+
+# DO NOT EDIT THE CONFIG VERSION
+config: 1
+
+# Enable/Disable the placeholder group
+# Placeholder groups will not be loaded into the memory
+# when not used.
+enabled: true
+
+# Define what the boolean placeholder {mineresetlite_mine_issilent:_raw} returns
+mineresetlite_mine_issilent:_raw:
+  # This will be shown when the placeholder is 'True'
+  true: 'true'
+  # This will be shown when the placeholder is 'False'
+  false: 'false'
+
+
+# Define what the boolean placeholder {mineresetlite_mine_fillmode:_raw} returns
+mineresetlite_mine_fillmode:_raw:
+  # This will be shown when the placeholder is 'True'
+  true: 'true'
+  # This will be shown when the placeholder is 'False'
+  false: 'false'
+
+
+# Define what the boolean placeholder {mineresetlite_currentmine_issilent} returns
+mineresetlite_currentmine_issilent:
+  # This will be shown when the placeholder is 'True'
+  true: 'true'
+  # This will be shown when the placeholder is 'False'
+  false: 'false'
+
+
+# Define what the boolean placeholder {mineresetlite_currentmine_fillmode} returns
+mineresetlite_currentmine_fillmode:
+  # This will be shown when the placeholder is 'True'
+  true: 'true'
+  # This will be shown when the placeholder is 'False'
+  false: 'false'
+
+

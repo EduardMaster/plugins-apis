@@ -1,0 +1,8 @@
+DURABILITY: '&6Durability:'
+DURABILITY_LEFT: '&3{0} &6of &3{1}'
+UNLIMITED: '&3Unlimited'
+UNLIMITED_VOID: '&3Unlimited (Void Protection)'
+NO_PERMISSION: '&4No permission!'
+INVALID_ARGUMENTS: '&4Invalid arguments!'
+CONFIG_RELOADED: '&6Config reloaded!'
+RELOAD_CONFIG: Reload the config

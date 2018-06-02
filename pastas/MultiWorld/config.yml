@@ -1,0 +1,82 @@
+# # options.debug: must the debug output be printed?
+# # options.difficulty: what is the server diffeculty?
+# # options.locale: what set of lang files must be used, supported: en_US, nl_NL, de_DE, it_IT
+# # spawnGroup: used to set withs worlds have what spawn, difficult to use. see official site for details
+options:
+  debug: false
+  difficulty: NORMAL
+  usecreativemode: false
+  usecreativemodeinv: true
+  blockEnderChestInCrea: false
+  useEndPortalHandler: false
+  useportalhandler: false
+  useWorldSpawnHandler: false
+  useWorldChatSeperator: false
+  craftbukkitHooks: true
+worlds:
+  Nether_Spawn:
+    seed: 100
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  SuperPlano:
+    seed: 4103754985869364359
+    worldgen: Normal
+    options: ''
+    difficulty: PEACEFUL
+    autoload: true
+  copia:
+    seed: 2200045025601152137
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  lobby:
+    seed: 3289090610263661912
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  mina:
+    seed: 477595269096858845
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  minerar:
+    seed: 6707870296879523913
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  novo:
+    seed: -308515906629740789
+    worldgen: Normal
+    options: ''
+    difficulty: NORMAL
+    autoload: true
+  vip:
+    seed: -2312059818628084978
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  world:
+    seed: -395312214887983165
+    worldgen: Normal
+    options: ''
+    difficulty: EASY
+    autoload: true
+  world_nether:
+    seed: 1721842796701563197
+    worldgen: Nether
+    options: ''
+    difficulty: EASY
+    autoload: true
+  world_the_end:
+    seed: 9061954004086686144
+    worldgen: The_End
+    options: ''
+    difficulty: EASY
+    autoload: true

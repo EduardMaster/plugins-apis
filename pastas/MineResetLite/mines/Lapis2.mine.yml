@@ -1,0 +1,22 @@
+mine:
+  ==: com.koletar.jj.mineresetlite.Mine
+  resetDelay: 8
+  surface: ''
+  maxZ: 1078
+  maxY: 116
+  maxX: 992
+  ignoreLadders: false
+  fillMode: false
+  world: world
+  minY: 100
+  resetWarnings: []
+  minX: 971
+  composition:
+    '129:0': 1.0
+  name: Lapis2
+  resetClock: 1
+  minZ: 1050
+  isSilent: true
+  tpY: -1
+  tpX: 0
+  tpZ: 0

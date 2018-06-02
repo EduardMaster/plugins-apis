@@ -1,0 +1,15 @@
+# Coloque aqui o dominio de sua loja, exemplo: maniacraft.com.br a checagem sera feira atraves do seu dominio
+Dominio: happycraft.cmhosts.com.br
+gerar-logs: true
+language: br
+gui-name: HappyCraft Shop
+back-item: '&cVoltar'
+products-lore:
+- ''
+- '&eNome (&6Produto&e): &f%product name%'
+- '&eCusto (&6Pontos&e): &f%points% points'
+- '&eQuantidade: &f%amount%'
+- ''
+confirmar:
+  utilizar: true
+  menu_name: Deseja comprar este produto?

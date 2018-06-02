@@ -1,0 +1,258 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+    - essentials.kit
+    - essentials.kits.iniciante
+    - essentials.kits.invadir
+    - essentials.kits.comida
+    - essentials.kits.faction
+    - essentials.spawn
+    - essentials.sethome
+    - essentials.sethome.multiple
+    - essentials.home
+    - essentials.delhome
+    - factions.autoclaim
+    - factions.chat
+    - factions.claim
+    - factions.deinvite
+    - factions.description
+    - factions.help
+    - factions.home
+    - factions.invite
+    - factions.join
+    - factions.kick
+    - factions.leave
+    - factions.list
+    - factions.mod
+    - factions.open
+    - factions.power
+    - factions.power.any
+    - factions.relation
+    - factions.sethome
+    - factions.show
+    - factions.tag
+    - factions.title
+    - factions.version
+    - factions.unclaim
+    - factions.unclaimall
+    - obsidiandestroyer.check
+    - legendchat.channel.global.chat
+    - legendchat.channel.local.chat
+    - votinginfo.info
+  Admin:
+    permissions:
+    - '*'
+    options:
+      prefix: '&aAdministrador&8/'
+  Co-Admin:
+    permissions:
+    - modifyworld.*
+    - essentials.spawn
+    - essentials.gamemode
+    - essentials.gamemode.*
+    - essentials.kit
+    - essentials.kits.*
+    - essentials.kit.exemptdelay
+    - essentials.kit.others
+    - essentials.god
+    - essentials.time
+    - essentials.time.set
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.enchanted
+    - essentials.repair.armor
+    - essentials.hat
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.firework
+    - essentials.firework.fire
+    - essentials.speed
+    - essentials.speed.walk
+    - essentials.speed.fly
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.eco
+    - essentials.pay
+    - essentials.sell
+    - essentials.buy
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.afk.kickexempt
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.magic
+    - essentials.nick.format
+    - essentials.realname
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.recipe
+    - essentials.rules
+    - essentials.whois
+    - essentials.geoip.show
+    - essentials.spawner
+    - essentials.spawner.*
+    - essentials.broadcast
+    - essentials.ban
+    - essentials.ban.notify
+    - essentials.banip
+    - essentials.ban.notify
+    - essentials.burn
+    - essentials.clearinventory
+    - essentials.clearinventory.others
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.mute
+    - essentials.mute.notify
+    - essentials.socialspy
+    - essentials.socialspy.others
+    - essentials.tempban
+    - essentials.unban
+    - essentials.vanish
+    - essentials.weather
+    - essentials.sethome
+    - essentials.sethome.multiple
+    - essentials.home
+    - essentials.delhome
+    - essentials.top
+    - essentials.tp
+    - essentials.tpa
+    - essentials.tpaall
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.*
+    - essentials.spawn
+    - essentials.gamemode
+    - essentials.gamemode.*
+    - essentials.kit
+    - essentials.kits.*
+    - essentials.kit.exemptdelay
+    - essentials.kit.others
+    - essentials.god
+    - essentials.time
+    - essentials.time.set
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.enchanted
+    - essentials.repair.armor
+    - essentials.hat
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.firework
+    - essentials.firework.fire
+    - essentials.speed
+    - essentials.speed.walk
+    - essentials.speed.fly
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.eco
+    - essentials.pay
+    - essentials.sell
+    - essentials.buy
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.afk.kickexempt
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.magic
+    - essentials.nick.format
+    - essentials.realname
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.recipe
+    - essentials.rules
+    - essentials.whois
+    - essentials.geoip.show
+    - essentials.spawner
+    - essentials.spawner.*
+    - essentials.broadcast
+    - essentials.ban
+    - essentials.ban.notify
+    - essentials.banip
+    - essentials.ban.notify
+    - essentials.burn
+    - essentials.clearinventory
+    - essentials.clearinventory.others
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.mute
+    - essentials.mute.notify
+    - essentials.socialspy
+    - essentials.socialspy.others
+    - essentials.tempban
+    - essentials.unban
+    - worldedit.wand
+    - worldedit.selection.pos
+    - worldedit.selection.hpos
+    - worldedit.region.stack
+    - worldedit.history.undo
+    - worldedit.region.walls
+    - worldedit.brush.sphere
+    - worldedit.brush.cylinder
+    - worldedit.brush.clipboard
+    - worldedit.brush.smooth
+    - worldedit.brush.ex
+    - worldedit.brush.gravity
+    - worldedit.brush.butcher
+    - worldedit.region.set
+    - worldedit.green
+    - obsidiandestroyer.check
+    options:
+      prefix: '&eCo-Admin&8/'
+  Moderador:
+    permissions:
+    - modifyworld.*
+    - essentials.spawn
+    - essentials.vanish
+    - essentials.weather
+    - essentials.sethome
+    - essentials.sethome.multiple
+    - essentials.home
+    - essentials.delhome
+    - essentials.top
+    - essentials.tp
+    - essentials.tpa
+    - essentials.tpaall
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.*
+    - obsidiandestroyer.check
+    options:
+      prefix: '&9Moderador&8/'
+  Ajudante:
+    options:
+      prefix: '&2Ajudante&8/'
+  Youtuber:
+    options:
+      prefix: '&4You&fTuber&8/'
+  Vip:
+    options:
+      prefix: '&cVip&8/'
+schema-version: 1
+users:
+  6025d5fe-ef9e-4998-90ee-060f1aa3e241:
+    group:
+    - default
+    options:
+      name: JonataslGamer
+  c18f7683-3430-384d-9f8e-33927bcc4e23:
+    group:
+    - Admin
+    options:
+      name: JonataslGamer

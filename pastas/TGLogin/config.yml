@@ -1,0 +1,77 @@
+##
+#Criador: Trow
+#Versao: 1.6
+##
+
+Permissoes:
+  #Permissoes:
+  #Permissao todos os comandos: tglogin.usar.*
+  #/login - tglogin.usar
+  #/registrar/register - tgregistrar.usar
+  #/changepassword/mudarsenha - tglogin.mudarsenha.usar
+  #/tglogin - tglogin.comandos.usar
+  #/tglogin unregister/remover - tglogin.unregister.outros
+  #/tglogin changepassword/mudarsenha - tglogin.mudarsenha.outros
+  Sem_Permissao: "&cVoce nao tem permissao!"
+  
+Registrar:
+  Use: "&cUse: &f/registrar &6<Senha> <Senha>&c."
+  Senhas_Diferentes: "&cAs senhas nao sao iguais."
+  Senha_Muito_Pequena: "&cSua senha e muito pequena."
+  Ja_Registrado: "&cVoce ja esta registrado."
+  Limite_Registros: 0
+  Limite_Alcancado: "&cFoi alcancado o limite de registros. Notifique um admin!"
+  Sucesso: "&bRegistrado com sucesso. Senha: &f{senha}&b."
+  Nick_Erro: "&cErro. O seu nome deve ser pequeno de mais, ou grande de mais!"
+  Min_Nick: 3
+  Max_Nick: 16
+  
+Login:
+  Use: "&cUse: &f/login &6<Senha>&c."
+  Ja_Logado: "&cVoce ja esta logado!"
+  Sem_Conta: "&cVoce nao tem conta."
+  Senha_Errada: "&cSenha incorreta."
+  Sucesso: "&bLogado com sucesso."
+  Ativar_Msg_Voce_Deve_Logar: false
+  Voce_Deve_Logar: "&cVoce deve logar para poder concluir esta acao!"
+  Demorou_Muito_Para_Logar: "&f{player}&c, voce demorou muito para logar."
+  #Configuracao Comandos Liberados:
+  Comandos_Liberados:
+    - /login
+    - /pin
+    - /register
+    - /registrar
+    - /logar
+    - /l
+  
+MudarSenha:
+  Use: "&cUse: &f/mudarsenha &e<Senha Atual> &6<Senha Nova>&c."
+  Voce_Nao_Tem_Conta: "&cVoce nao tem conta."
+  Senha_Errada: "&cSenha incorreta."
+  Senha_Mudada_Para: "&bSenha mudada com sucesso, para &f{senha}&b."
+  
+TGLogin:
+  Ativar_Mensagem_Deve_Entrar: true
+  Tempo_Aparecer_Msg_Login/Register: 5
+  Tempo_Para_Logar: 15
+  Voce_Deve_Entrar:
+    - '&aBem - Vindo &f{player}&a, ao servidor.'
+    - '&aPara poder se divertir na nossa comunidade, logue-se na sua conta.'
+    - '&cPara logar na sua conta digite: &f/login &6<Senha>&c.'
+    - '&aCaso ainda nao tenha conta, cadastre-se com este comando:'
+    - '&cPara Cadastrar digite: &f/registrar &6<Senha> <Senha>&c.'
+  Unregister:
+    Use: "&cUse: &f/tglogin &e<unregister/remover> &6<Player>&c."
+    Nao_Registrado: "&cEste player nao esta registrado."
+    Removido: "&cVoce removeu o player &f{player}&c, com sucesso."
+  MudarSenha:
+    Use: "&cUse: &f/tglogin &e<changepassword/mudarsenha> &a<Player> &6<Senha>&c."
+    Mudada: "&bVoce mudou a senha do player &f{player}&b, para &f{senha}&b."
+
+Config:
+  SQL:
+    Modo: 2
+    Host: 'localhost'
+    DataBase: 'trow'
+    User: 'trow'
+    Pass: '123'

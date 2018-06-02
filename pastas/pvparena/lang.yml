@@ -1,0 +1,157 @@
+log:
+  matnotfound: 'Unrecognized material: %1%'
+  enabled: enabled (version %1%)
+  disabled: disabled (version %1%)
+  startTracker: 'Plugin tracking enabled. Set stats: false inside the main config
+    to disable.'
+  stopTracker: Plugin tracking disabled. See you soon?
+  notupdating: Updates deactivated. Please check dev.bukkit for updates.
+  updating: Checking for updates...
+  warn: '%1%'
+lang:
+  playerleave: '%1% has left the fight!'
+  youleave: You have left the fight!
+  dropitem: Not so fast! No Cheating!
+  usepatoexit: Please use '/pa leave' to exit the fight!
+  pos1: First position set.
+  pos2: Second position set.
+  classperms: You don't have permission for that class.
+  waitequal: Waiting for the teams to have equal player number!
+  ready: '%1% team is ready!'
+  begin: Let the fight begin!
+  killedbylives: '%1% has been killed by %2%! %3% lives remaining.'
+  killedby: '%1% has been killed by %2%!'
+  onlyplayers: Only players may access this command!
+  arenadisabled: Arena disabled, please try again later!
+  arenanotsetup: All waypoints must be set up first. %1%
+  permjoin: You don't have permission to join the arena!
+  alreadyjoined: You already joined!
+  fightinprogress: A fight is already in progress!
+  youjoined: Welcome! You are on team %1%
+  playerjoined: '%1% has joined team %2%'
+  nopermto: You don't have permission to %1%
+  enable: enable
+  disable: disable
+  join: join
+  reload: reload
+  enabled: Enabled!
+  disabled: Disabled!
+  admin: administrate
+  reloaded: Config reloaded!
+  noplayer: No player in the PVP arena.
+  players: Players
+  notreadyplayers: Players not ready
+  specwelcome: Welcome to the spectator's area! /pa bet [name] [amount] to bet on team or player
+  setspectator: Spectator spawn set.
+  setexit: Exit spawn set.
+  settype: Arena %1% now has type %2%.
+  forcestop: You have forced the fight to stop.
+  nofight: There is no fight in progress.
+  invalidcmd: Invalid command (%1%)
+  regionset: Setting region enabled.
+  regionsaved: Region saved.
+  regionnotremoved: There is no region setup.
+  awarded: You have been awarded %1%
+  invfull: Your inventory was full. You did not receive all rewards!
+  arenaexists: Arena already exists!
+  arenanotexists: 'Arena does not exist: %1%'
+  regionalreadybeingset: 'A region is already being created: %1%'
+  regionnotbeingset: A region is not being created!
+  notinarena: You are not part of an arena!
+  arenas: 'Available arenas: %1%'
+  setup: setup an arena
+  create: create an arena
+  created: arena '%1%' created!
+  remove: remove an arena
+  removed: arena '%1%' removed!
+  setspawn: 'Spawn set: %1%'
+  loungeset: 'Lounge set: %1%'
+  selectteam: You must select a team to join! /pa [arenaname] [team]
+  notselectteam: You cannot select a team to join! /pa [arenaname]
+  joinrange: You are too far away to join this arena!
+  teamhaswon: '%1% are the Champions!'
+  notsameworld: Not in the same world as the arena (%1%)!
+  checkregionerror: Waiting for a running arena to finish!
+  notready: At least one player is not ready!
+  notready1: You are alone in the arena!
+  notready2: Your team is alone in the arena!
+  notready3: A team is missing players!
+  notready4: The arena is missing players!
+  notready5: At least one player has not chosen a class!
+  teamfull: team %1% is full!
+  arenafull: arena is full!
+  classfull: class is full!
+  errorcustomflag: Error! Arena is not of type ctf.
+  errorcustompumpkin: Error! Arena is not of type pumpkin.
+  errorspawnfree: Error! Arena is of type free. Use 'spawnX' where X is a digit or letter!
+  errorloungefree: Error! Arena is not of type free. Use '[teamname]lounge'
+  notjoinregion: You are not in the join region! Move there to join!
+  edit: edit an arena
+  teleport: teleport to an arena spawn
+  edittrue: 'Enabled edit mode for arena: %1%'
+  editfalse: 'Disabled edit mode for arena: %1%'
+  unknownarena: Unknown arena
+  unknowncmd: Unknown command
+  insidevehicle: You cannot join while on a vehicle!
+  startingin: Enough players ready. Starting in %1% seconds!
+  invalidstattype: 'Invalid statistics type: %1%'
+  set: set a config node
+  classpreview: You are now previewing the class %1%
+  classsaved: 'Class saved: %1%'
+  classremoved: 'Class removed: %1%'
+  classunknown: 'Class unknown: %1%'
+  arenatypeunknown: 'Arena Type ''%1%'' unknown. consult the forums: http://goo.gl/KyJzo'
+  arenaregionshapeunknown: 'Arena Shape ''%1%'' unknown. consult the forums: http://goo.gl/IfLOh'
+  arenateamunknown: Arena Team '%1%' unknown!
+  WINS: matches won
+  LOSSES: matches lost
+  KILLS: kills
+  DEATHS: deaths
+  MAXDAMAGE: max damage dealt
+  MAXDAMAGETAKE: max damage taken
+  DAMAGE: full damage dealt
+  DAMAGETAKE: full damage taken
+  'NULL': player name
+  block_explosion: an explosion
+  contact: a cactus
+  custom: Herobrine
+  drowning: water
+  entity_explosion: a creeper
+  fall: gravity
+  fire: a fire
+  fire_tick: fire
+  lava: lava
+  lightning: Thor
+  magic: Magical Powers
+  poison: Poison
+  projectile: something he didn't see coming
+  starvation: hunger
+  suffocation: lack of air
+  suicide: self
+  void: the Void
+  spawnremoved: 'Spawn removed: %1%'
+  regionremoved: 'Region removed: %1%'
+  nocampregion: You are in a NOCAMP region. Move!
+  deathregion: You entered a DEATH region. Goodbye!
+  youescaped: You escaped the battlefield. Goodbye!
+  args: Wrong number of arguments (%1% instead of %2%)
+  chatteam: You now talk to your team!
+  chatpublic: You now talk to the public!
+  select2: Select two points before trying to save.
+  whitelist: Whitelist
+  whitelistclear: Whitelist cleared.
+  whitelistadd: 'Added to whitelist: %1%'
+  whitelistremove: 'Removed from whitelist: %1%'
+  blacklist: Blacklist
+  blacklistclear: Blacklist cleared.
+  blacklistadd: 'Added to blacklist: %1%'
+  blacklistremove: 'Removed from blacklist: %1%'
+  joinarena: Arena is starting! Type /pa %1% to join!
+  warmingup: Warming up... stand by...
+  countdowninterrupt: Countdown interrupted! Hit the ready block!
+  startinginexact: Starting in %1%!
+  warmingupexact: Warming up... %1%!
+  resetexact: The arena will reset in %1%!
+  endingexact: The match will end in %1%!
+  seconds: seconds
+  minutes: minutes

@@ -1,0 +1,13 @@
+icon:
+  # The material this kit should have in the inventory menu
+  material: '368'
+  # The data this material should have (optional)
+  data: 0
+# Gives the player the permission to purchase this kit through score (optional)
+points: 20
+# Additional text added to the lores of the item in the inventory menu (optional)
+details:
+- '&a4 Ender Pearl '
+# The items in this kit
+items:
+- '368 4'

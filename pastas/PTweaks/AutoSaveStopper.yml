@@ -1,0 +1,3 @@
+# Interval: How many ticks before each Min-Save
+interval: 50000
+Enabled: true

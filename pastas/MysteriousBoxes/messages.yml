@@ -1,0 +1,3 @@
+# mensagem de aviso para nao abrir uma caixa em quanto outra esta sendo aberta
+# warning message to not open a box as another is being opened
+message_exists_open_box: '&cVoce ja esta abrindo uma Box!'

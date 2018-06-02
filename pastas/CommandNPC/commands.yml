@@ -1,0 +1,4 @@
+NPCS:
+  '0':
+    Commands:
+    - ashop~~false

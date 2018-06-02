@@ -1,0 +1,61 @@
+# DON'T EDIT THE FILE NAME / NAO EDITE O NOME DO ARQUIVO! 
+
+name: '&bBaus'
+icon-id: 54
+icon-data: 0
+ativate: true
+lore:
+- '&7Adquira Baus'
+Itens:
+  Example:
+    name: '&e&lBAU 1'
+    id: 54
+    data: 0
+    slot: 10
+    give: false
+    amount: 1
+    price: 10
+    enchants: false
+    lore:
+    - '&7Compre Esse Bau E Tenha Direito Ao &f/bau1'
+    commands:
+    - pex user %player% add playervaults.amount.1
+  Example1:
+    name: '&e&lBAU 2'
+    id: 54
+    data: 0
+    slot: 12
+    give: false
+    amount: 1
+    price: 15
+    enchants: false
+    lore:
+    - '&7Compre Esse Bau E Tenha Direito Ao &f/bau2'
+    commands:
+    - pex user %player% add playervaults.amount.2
+  Example2:
+    name: '&e&lBAU 3'
+    id: 130
+    data: 0
+    slot: 14
+    give: false
+    amount: 1
+    price: 20
+    enchants: false
+    lore:
+    - '&7Compre Esse Bau E Tenha Direito Ao &f/bau3'
+    commands:
+    - pex user %player% add playervaults.amount.3
+  Example3:
+    name: '&e&lBAU 4'
+    id: 130
+    data: 0
+    slot: 16
+    give: false
+    amount: 1
+    price: 25
+    enchants: false
+    lore:
+    - '&7Compre Esse Bau E Tenha Direito Ao &f/bau4'
+    commands:
+    - pex user %player% add playervaults.amount.4

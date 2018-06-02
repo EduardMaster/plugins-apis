@@ -1,0 +1,19 @@
+icon:
+  # The material this kit should have in the inventory menu
+  material: '267'
+  # The data this material should have (optional)
+  data: 0
+# Gives the player the permission to purchase this kit through score (optional)
+points: 25
+# Additional text added to the lores of the item in the inventory menu (optional)
+details:
+- '&a1 Espada de Iron  '
+- '&a2 Irons '
+- '&a1 Peitoral De Iron '
+- '&a1 Machado De Iron 1'
+# The items in this kit
+items:
+- '307 1'
+- '258 1'
+- '267 1'
+- '265 2'

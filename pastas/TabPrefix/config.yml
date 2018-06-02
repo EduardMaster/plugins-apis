@@ -1,0 +1,4 @@
+# 
+# NOTE: CAPS MATTER! PLEASE USE ALL LOWERCASE!
+TabFormat: '%prefix% &7%name% %suffix%'
+NoPermFormat: '%prefix% &7%name%'

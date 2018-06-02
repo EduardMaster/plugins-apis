@@ -1,0 +1,36 @@
+Config:
+  Register:
+    Title: "&f&lNextFactions"
+    Sub-Title: "&c/register senha senha"
+    Tempo:
+      Entrar: 20
+      Ficar: 200
+      Sair: 20
+  Registrado:
+    Title: "&f&lNextFactions"
+    Sub-Title: "&aRegistrado com sucesso"
+    Tempo:
+      Entrar: 20
+      Ficar: 200
+      Sair: 20
+  Login:
+    Title: "&f&lNextFactions"
+    Sub-Title: "&c/login senha"
+    Tempo:
+      Entrar: 20
+      Ficar: 200
+      Sair: 20
+  Logado:
+    Title: "&f&lNextFactions"
+    Sub-Title: "&aLogado com sucesso"
+    Tempo:
+      Entrar: 20
+      Ficar: 200
+      Sair: 20
+  SenhaErrada:
+    Title: "&f&lNextFactions"
+    Sub-Title: "&cSenha Errada Men ;-;"
+    Tempo:
+      Entrar: 20
+      Ficar: 200
+      Sair: 1

@@ -1,0 +1,13 @@
+saveThresholds: false
+veryHigh: 15
+high: 7
+low: 1
+allBlockChecks:
+    enabled: true
+    message: true
+chestMessages: false
+messages:
+    Flint_and_Steel_Freecaming: "&4%player% Esta usando FreeCam"
+    Block_Clicking: "&4%player% Esta usando FreeCam"
+    CreeperEgg_PhaseMethod: "&4%player% Esta usando FreeCam"
+    CreeperEgging: "&4%player% Esta usando FreeCam"

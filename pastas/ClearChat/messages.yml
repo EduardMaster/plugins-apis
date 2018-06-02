@@ -1,0 +1,16 @@
+# ##### ClearGlobalChat v1.1.0 - Messages.yml ##### #
+# #####         Plugin created by kl21        ##### #
+# #####           File: Messages.yml          ##### #
+# #####   All configurable messages are here  ##### #
+
+prefix: '&4[&bClearChat&4] &r'
+no-permission: '&cYou do not have permission to use this command.'
+re-loaded: '&aSuccessfully reloaded file &e&l''messages.yml''&a.'
+console-use-command: '&cOnly player can use commands.'
+clear-chat: '&6Chat has been cleared by &r%player%&6.'
+clear-private-chat: '&6You cleaned your private chat.'
+chat-for-players-off: '&7Chat for players: &cDisabled&7.'
+chat-for-players-on: '&7Chat for players: &aEnabled&7.'
+chatmute-chat-disabled: '&6Chat has been &cDisabled&6 by &r%player%&6.'
+chatmute-chat-enabled: '&6Chat has been &aEnabled&6 by &r%player%&6.'
+chat-disabled: '&6Chat is currently &cDisabled&6.'

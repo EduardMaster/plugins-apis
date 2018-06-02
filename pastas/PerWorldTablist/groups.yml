@@ -1,0 +1,16 @@
+# PerWorldTablist v0.2 - Groups
+# Should be self-explaining.
+# Important: The groupnames must be n1, n2, n3...
+# Case sensitive!!
+Groups:
+  n1:
+  - exampleOne
+  - exampleTwo
+  - exampleThree
+  n2:
+  - exampleFour
+  - exampleFive
+  - exampleSix
+  n3:
+  - anotherExample
+  - easyIsntIt

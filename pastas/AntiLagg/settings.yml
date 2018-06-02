@@ -1,0 +1,6 @@
+clear_item_frames: false
+clear_hostile_mobs: true
+clear_passive_mobs: false
+clear_others: true
+clear_drops: true
+unload_chunks: false

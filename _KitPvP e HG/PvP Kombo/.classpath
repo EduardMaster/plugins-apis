@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Rafael.Hugo-PC/Desktop/ultra kombo/plugins/worldguard-6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Rafael.Hugo-PC/Desktop/ultra kombo/plugins/worldedit-bukkit-6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Rafael.Hugo-PC/Desktop/ultra kombo/plugins/NametagEdit.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Rafael.Hugo-PC/Desktop/spigot.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Rafael.Hugo-PC/Desktop/ultra kombo/plugins/PermissionsEx-1.22.9.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

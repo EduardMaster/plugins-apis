@@ -1,0 +1,15 @@
+icon:
+  # The material this kit should have in the inventory menu
+  material: '261'
+  # The data this material should have (optional)
+  data: 0
+# Gives the player the permission to purchase this kit through score (optional)
+points: 15
+# Additional text added to the lores of the item in the inventory menu (optional)
+details:
+- '&a1 Arco '
+- '&e20 Flechas'
+# The items in this kit
+items:
+- '261 1'
+- '262 20'

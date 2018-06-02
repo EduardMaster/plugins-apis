@@ -1,0 +1,28 @@
+# ===========================================================================
+# HeroClanTags - versao 1.0 (by HeroM4X)
+# Tags de clans e de grupos em cima da cabeca (ao lado do nickname) e no TAB.
+# ===========================================================================
+
+TagClan:
+  Ativar: true
+  Formato: '[{tag}&f] '
+  CorPadrao: ''
+Atualizar:
+  Ativar: true
+  Tempo: 15
+Grupos:
+  Membro: '{clan}&e'
+  VIPs: '{clan}&6'
+  Coal: '{clan}&8'
+  Iron: '{clan}&7'
+  Redstone: '{clan}&4'
+  Gold: '{clan}&6'
+  Diamond: '{clan}&b'
+  Emerald: '{clan}&a'
+  Obsidian: '{clan}&5'
+  Legend: '{clan}&c'
+  Ghost: '{clan}&4'
+  Helper: '&r[&3Help&r] &3'
+  Mod: '&r[&2Mod&r] &2'
+  Admin: '&r[&cAdmin&r] &c'
+  Dono: '&r[&4Dono&r] &4'
