@@ -1,9 +1,0 @@
-&5==============================================
-
-&d Evento Killer automatico começando!
-&d Para participar digite: &f/killer
-&d Premio: $@dinheiro e tag [KILLER]!
-&d Tempo restante: @tempo segundos
-&d [PARTICIPANTES]  Jogadores: @jogadores
-
-&5==============================================

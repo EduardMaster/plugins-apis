@@ -1,6 +1,0 @@
-§e-> §f/§bwarp portais §f<> §eportais do servidor
-§e-> §f/§bwarp minas §f<> §eminas do servidor
-§e-> §f/§bwarp loja §f<> §eloja do servidor
-§e-> §f/§bwarp encantar §f<> §eencantamento do servidor
-§e-> §f/§bwarp minigames §f<> §eMini-Games do servidor
-§e-> §f§bwww.mrcraftpvp.weebly.com §f<> §eWebsite do Servidor

@@ -1,7 +1,0 @@
-&5==============================================
-
-&d Evento killer Automatico Começando!
-&d Tempo Inicial Para Os Jogadores Se Prepararem!
-&d Tempo restante: @tempo segundos
-
-&5==============================================

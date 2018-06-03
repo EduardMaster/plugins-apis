@@ -1,7 +1,0 @@
-# 
-# -1 will turn off check
-maxlevel: -1
-maxduration: -1
-replaceeffects: true
-messages: true
-autoupdate-check: true

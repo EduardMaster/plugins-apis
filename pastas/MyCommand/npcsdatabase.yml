@@ -1,5 +1,0 @@
-entities:
-  '1':
-    customname: '&aMyCmd &eNPC 1'
-    loc: world;-49.0;76.0;835.0;0;0
-    commands: []

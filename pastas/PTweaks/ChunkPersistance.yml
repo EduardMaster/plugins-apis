@@ -1,8 +1,0 @@
-# LifeTime: The minimum lifetime of inactive chunks in seconds
-# Prune: The cycle in which inactive chunks are cleared
-# SpawnChunkRadius: The radius of chunks that load around the player. Don't change this!
-# ViewDistance: The distance in which chunks will be loaded. 
-Enabled: true
-lifetime: 100000
-prune: 3
-spawnChunkRadius: 64

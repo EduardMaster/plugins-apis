@@ -1,7 +1,0 @@
-PlayerLastName: DevCafezinho
-EnderChestSize: 54
-EnderChestInventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_CHEST
-    amount: 64

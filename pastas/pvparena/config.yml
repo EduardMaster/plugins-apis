@@ -1,8 +1,0 @@
-debug: none
-stats: true
-updatecheck: true
-modulecheck: true
-language: en
-onlyPVPinArena: false
-whitelist:
-- ungod

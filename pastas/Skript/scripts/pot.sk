@@ -1,3 +1,0 @@
-command /luz:
-	trigger:
-		apply potion of Night Vision 1 to the player for 100000000000 seconds

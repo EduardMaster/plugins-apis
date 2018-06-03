@@ -1,9 +1,0 @@
-Setada: '&3[BVIPLoja] &bSua loja &3$loja &bfoi marcada!'
-SetadaPadrao: '&3[BVIPLoja] &bSua loja padrao foi marcada!'
-Teleportado: '&3[BVIPLoja] &bVoce foi teleportado a loja &3$loja'
-TeleportadoPadrao: '&3[BVIPLoja] &bVoce foi teleportado a loja do(a) &3$loja'
-Deletada: '&3[BVIPLoja] &bSua loja &3$loja &bfoi deletada!'
-DeletadaPadrao: '&3[BVIPLoja] &bSua loja padrao foi deletada!'
-SemPermissao: '&cVoce nao tem permissao!'
-NaoEncontrada: '&3[BVIPLoja] &bLoja nao encontrada!'
-LojasPadrao: {}

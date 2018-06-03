@@ -1,6 +1,0 @@
-&5==============================================
-
-&d Evento Killer sendo INICIADO!
-&d Teleporte para o evento TRANCADO!
-
-&5==============================================

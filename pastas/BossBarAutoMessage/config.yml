@@ -1,8 +1,0 @@
-# Default Config For BossBarAutoMessage
-
-Message1: '&a Bem vindo ao Servidor'
-Message2: '&9 Confira nossos planos VIP'
-Message3: '&b Qualquer duvida fale com nossos ajudantes'
-Message4: '&3 Digite /vote para saber onde votar'
-Message5: '&7 Convide seus amigos para jogar'
-Interval: 2

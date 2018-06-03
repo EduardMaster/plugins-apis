@@ -1,7 +1,0 @@
-PrefixoMito: ' &5&l[Mito]&f'
-AtivarBroadcast: true
-MensagemBroadcast: '&c&l[Mito] &c$killer &amatou &c$dead &ae ganhou a TAG &5&l[Mito]'
-AtivarMsgJoin: true
-MensagemJoin: '&c&l[Mito] &6Mito &a$player &6entrou no servidor'
-AtivarMsgQuit: true
-MensagemQuit: '&c&l[Mito] &6Mito &a$player &6saiu do servidor'

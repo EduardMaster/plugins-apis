@@ -1,6 +1,0 @@
-# CWAnunciar By Matgsan
-# Plugin de Anuncio VIP
-# Mudanca dos creditos, podem causar problemas de copyright
-
-Custo: 1000
-Formato: '&b[AnuncioVIP]&7{prefix}{player}:&a {msg}'

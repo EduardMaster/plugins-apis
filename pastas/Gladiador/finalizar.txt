@@ -1,9 +1,0 @@
-&5==============================================
-
-&d Evento gladiador FINALIZADO!
-&d Clan vencedor: @clan!
-&d Premio: $@dinheiro!
-(mito)&d Tag [MITO] para @mito!
-&d Tag [GLADIADOR] para @vencedores!
-
-&5==============================================

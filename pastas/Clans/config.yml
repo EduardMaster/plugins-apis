@@ -1,9 +1,0 @@
-auto-update: true
-chat-format-prefix: '&6%clan%&7 • '
-clan-home-delay: 5
-clan-pvp-default: false
-clan-chat:
-  prefix: '#'
-  format-owner: '&7•&3ClanChat&7• (&4Owner&7) &c%player%&7: &6%message%'
-  format-member: '&7•&3ClanChat&7• (&2Member&7) &6%player%&7: &6%message%'
-similar-cmd-suggestions: true

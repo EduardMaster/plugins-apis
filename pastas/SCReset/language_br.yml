@@ -1,8 +1,0 @@
-error1: 'Voce nao tem dinheiro suficiente! (R$@money)'
-error2: 'Erro! Voce nao esta registrado nos clans.'
-error3: 'Voce nao tem permissao!'
-error4: 'Erro! @player nao esta registrado nos clans.'
-error5: 'Player nao encontrado!'
-success1: 'Voce pagou R$@money e resetou seu KDR!'
-success2: 'Voce resetou seu KDR!'
-success3: '@player teve seu KDR resetado!'

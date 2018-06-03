@@ -1,9 +1,0 @@
-# ================= [FarmProtect] ================== #
-
-# Copyright 2012 Licence LinCraft(?)
-# http://dev.bukkit.org/licenses/2049-lin-craft-license/
-
-# Check for updates?
-UpdateCheck: true
-# AutoUpdate? If update is avaliable download it ready for the next startup
-AutoUpdate: true

@@ -1,6 +1,0 @@
-# Check out the bukkitdev page (http://dev.bukkit.org/bukkit-plugins/skin-statue-builder/) for more information on these settings.
-config:
-  auto_updating: true
-  auto_skin_updating: false
-  auto_skin_updating_interval_minutes: 30
-  use_worldguard: false

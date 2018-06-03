@@ -1,3 +1,0 @@
-&9Bem Vindo {PLAYER} &9ao Servidor &aSeu&fServidor.
-&6Digite &c/list&6 para ver quem esta online.
-&6Jogadores online:&c {ONLINE} &6- World time:&c {WORLDTIME12}

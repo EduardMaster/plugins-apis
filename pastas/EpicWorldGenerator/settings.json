@@ -1,8 +1,0 @@
-{
-  "info": "Looking for the config files? The configuration files is located in the world folder under the settings folder",
-  "worldsWithDefaultWG": [
-    "myvanillaworld"
-  ],
-  "forceBukkitGeneratorAPI": false,
-  "minecraft_1_7_Map": false
-}

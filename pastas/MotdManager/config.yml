@@ -1,9 +1,0 @@
-# MotdManager Configuration file!
-# @author syamn <admin@sakura-server.net>
-# github: https://github.com/syamn/MotdManager
-
-MotdList:
-- ' &6&lSEU SERVIDOR &e[1.8]                                  &eSUALOJA.COM.BR' 
-FakeMaxPlayer: 450
-Debug: false
-ConfigVersion: 1

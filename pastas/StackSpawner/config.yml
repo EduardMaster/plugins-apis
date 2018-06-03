@@ -1,8 +1,0 @@
-spawner:
-  nametag:
-    display: true
-    format: '&a%amount%x &6%type%'
-    always-visible: true
-  stacking:
-    limit: 0
-    radius: 5

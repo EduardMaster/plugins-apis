@@ -1,6 +1,0 @@
-&5==============================================
-
-&d Evento gladiador automatico &cCANCELADO!
-&d Motivo: Quantidade de clans menor que 2
-
-&5==============================================

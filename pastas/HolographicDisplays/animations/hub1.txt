@@ -1,5 +1,0 @@
-speed: 0.2
-&e&l
-&e&l
-&f&l
-&e&l

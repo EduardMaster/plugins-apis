@@ -1,7 +1,0 @@
-&5==============================================
-
-&d Evento gladiador automatico começando!
-&d Tempo inicial para os clans se agruparem!
-&d Tempo restante: @tempo segundos
-
-&5==============================================
