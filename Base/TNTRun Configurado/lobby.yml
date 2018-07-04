@@ -1,0 +1,9 @@
+lobby:
+  world: SkyLegend
+  vector:
+    ==: Vector
+    x: 1272.300000011921
+    y: 65.0
+    z: -58.30000001192093
+  yaw: 88.20014
+  pitch: 6.8999853

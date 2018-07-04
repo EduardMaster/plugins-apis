@@ -1,0 +1,3 @@
+waiting: '&6Esperando jogadores, quantidade de jogadores: &a{COUNT}'
+starting: '&6O jogo comecara em : &a{SECONDS} &6segundos'
+playing: '&6Tempo restante: &a{SECONDS} &6Quantidade de jogadores restantes: &a{COUNT}'

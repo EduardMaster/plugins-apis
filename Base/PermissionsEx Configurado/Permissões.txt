@@ -1,0 +1,549 @@
+=========================================
+==============  Economia  ===============
+=========================================
+    - essentials.essentials
+    - essentials.backup
+	- essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.eco.loan
+    - essentials.pay
+    - essentials.sell
+    - essentials.pay.multiple
+    - essentials.worth
+    - essentials.setworth
+    - essentials.itemdb
+=========================================
+============   Informações   ============
+=========================================
+    - essentials.gc
+    - essentials.compass
+    - essentials.getpos
+    - essentials.getpos.others
+    - essentials.info
+    - essentials.motd
+    - essentials.whois
+    - essentials.help
+    - essentials.helpop
+    - essentials.helpop.receive
+    - essentials.list
+    - essentials.list.hidden
+    - essentials.rules
+    - essentials.near
+    - essentials.near.others
+    - essentials.near.maxexempt
+    - essentials.depth
+    - essentials.time
+    - essentials.time.set
+	- essentials.recipe
+    - essentials.seen
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.seen.ipsearch
+    - essentials.ptime
+    - essentials.ptime.others
+    - essentials.geoip.show
+    - essentials.ping
+    - essentials.socialspy
+========================================
+==============   Nome    ===============
+========================================
+    - essentials.realname
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - essentials.nick.others
+=========================================
+=============   Mensagens   =============
+=========================================
+    - essentials.broadcast
+    - essentials.socialspy.others
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.mail.sendall
+    - essentials.me
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.multiple
+    - essentials.msg.url
+    - essentials.msg.magic
+	- essentials.ignore
+    - essentials.chat.ignoreexempt
+    - essentials.customtext
+=========================================
+==============  Comandos  ===============
+=========================================
+	- essentials.suicide
+    - essentials.ext
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.afk.kickexempt
+    - essentials.afk.others
+    - essentials.skull
+    - essentials.skull.modify
+    - essentials.skull.spawn
+    - essentials.skull.others
+    - essentials.book
+    - essentials.book.title
+    - essentials.book.others
+    - essentials.book.author
+    - essentials.fly
+    - essentials.fly.others
+    - essentials.fly.safelogin
+    - essentials.heal
+    - essentials.heal.cooldown.bypass
+    - essentials.heal.others
+    - essentials.feed
+    - essentials.feed.others
+    - essentials.feed.cooldown.bypass
+    - essentials.speed
+    - essentials.speed.bypass
+    - essentials.speed.fly
+    - essentials.speed.others
+    - essentials.speed.walk
+    - essentials.exp
+    - essentials.exp.give
+    - essentials.exp.give.others
+    - essentials.exp.set.others
+    - essentials.exp.set
+    - essentials.kit
+	- essentials.kit.exemptdelay
+    - essentials.kit.others
+    - essentials.kits.*
+    - essentials.gamemode
+    - essentials.gamemode.others
+    - essentials.give
+    - essentials.itemspawn.exempt
+    - essentials.itemspawn.meta-author
+    - essentials.itemspawn.meta-book
+    - essentials.itemspawn.meta-firework
+    - essentials.itemspawn.meta-head
+    - essentials.itemspawn.meta-lore
+    - essentials.itemspawn.meta-title
+    - essentials.unlimited.item-all
+    - essentials.unlimited.item-bucket
+    - essentials.unlimited.others
+    - essentials.more
+    - essentials.oversizedstacks
+	- essentials.repair
+    - essentials.repair.all
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.god
+    - essentials.god.others
+    - essentials.god.pvp
+    - essentials.spawner
+    - essentials.spawner.*
+    - essentials.break
+    - essentials.break.bedrock
+    - essentials.enchant
+    - essentials.enchantments.*
+    - essentials.enchantments.allowunsafe
+    - essentials.firework
+    - essentials.firework.fire
+    - essentials.vanish
+    - essentials.vanish.see
+    - essentials.vanish.interact
+    - essentials.vanish.effect
+    - essentials.vanish.others
+    - essentials.vanish.pvp
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.invsee.preventmodify
+    - essentials.workbench
+    - essentials.enderchest
+    - essentials.enderchest.others
+    - essentials.enderchest.modify
+    - essentials.clearinventory
+    - essentials.clearinventory.others
+    - essentials.clearinventory.all
+    - essentials.tree
+    - essentials.bigtree
+    - essentials.burn
+    - essentials.antioch
+    - essentials.nuke
+    - essentials.fireball
+    - essentials.thunder
+    - essentials.weather
+=========================================
+============  Comandos ADM  =============
+=========================================
+    - essentials.kill
+    - essentials.kill.force
+    - essentials.kill.exempt
+    - essentials.kick
+    - essentials.kick.exempt
+    - essentials.kick.notify
+    - essentials.kickall
+    - essentials.mute
+    - essentials.mute.exempt
+    - essentials.mute.notify
+    - essentials.mute.offline
+    - essentials.spawnmob
+    - essentials.spawnmob.*
+    - essentials.spawnmob.stack
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.sudo
+    - essentials.sudo.exempt
+    - essentials.deljail
+    - essentials.jails
+    - essentials.jail.exempt
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    - essentials.setjail
+    - essentials.tempban
+    - essentials.tempban.exempt
+    - essentials.tempban.offline
+    - ssentials.tempban.unlimited
+    - essentials.ban
+	- essentials.banip
+	- essentials.ban.exempt
+    - essentials.ban.notify
+    - essentials.unbanip
+    - essentials.unban
+    - essentials.remove
+=========================================
+=============  Teleportes  ==============
+=========================================
+    - essentials.jump
+    - essentials.top
+    - essentials.warp
+    - essentials.setwarp
+    - essentials.warp.overwrite.*
+    - essentials.delwarp
+    - essentials.warp.list
+    - essentials.warps.*
+    - essentials.warp.otherplayers
+    - essentials.world
+    - essentials.worlds.*
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.keepxp
+    - essentials.tptoggle
+    - essentials.teleport.timer.bypass
+    - essentials.teleport.cooldown.bypass
+    - essentials.teleport.timer.move
+    - essentials.tptoggle.others
+    - essentials.vanish.interact
+    - essentials.tpall
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tpa
+    - essentials.tpaall
+    - essentials.tpahere
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.tppos
+=========================================
+=========== Essentials Home  ============
+=========================================
+    - essentials.sethome
+    - essentials.sethome.others
+    - essentials.sethome.multiple.unlimited
+    - essentials.sethome.bed
+    - essentials.delhome
+    - essentials.home
+    - essentials.home.others
+    - essentials.home.bed
+=========================================
+=========== Essentials Signs  ============
+=========================================
+    - essentials.signs.color
+    - essentials.signs.enchant.allowunsafe
+    - essentials.signs.format
+    - essentials.signs.magic
+    - essentials.signs.protection.override
+    - essentials.signs.trade.override
+    - essentials.signs.break.buy
+    - essentials.signs.break.disposal
+    - essentials.signs.break.enchant
+    - essentials.signs.break.free	
+    - essentials.signs.break.gamemode
+    - essentials.signs.break.heal
+    - essentials.signs.break.info	
+    - essentials.signs.break.kit
+    - essentials.signs.break.mail
+    - essentials.signs.break.repair
+    - essentials.signs.break.sell
+    - essentials.signs.break.spawnmob
+    - essentials.signs.break.time
+    - essentials.signs.break.trade
+    - essentials.signs.break.warp
+    - essentials.signs.break.weather
+    - essentials.signs.create.buy
+    - essentials.signs.create.disposal
+    - essentials.signs.create.enchant
+    - essentials.signs.create.free	
+    - essentials.signs.create.gamemode
+    - essentials.signs.create.heal
+    - essentials.signs.create.info	
+    - essentials.signs.create.kit
+    - essentials.signs.create.mail
+    - essentials.signs.create.repair
+    - essentials.signs.create.sell
+    - essentials.signs.create.spawnmob
+    - essentials.signs.create.time
+    - essentials.signs.create.trade
+    - essentials.signs.create.warp
+    - essentials.signs.create.weather
+    - essentials.signs.create.buy
+    - essentials.signs.create.disposal
+    - essentials.signs.create.enchant
+    - essentials.signs.create.free	
+    - essentials.signs.create.gamemode
+    - essentials.signs.create.heal
+    - essentials.signs.create.info	
+    - essentials.signs.create.kit
+    - essentials.signs.create.mail
+    - essentials.signs.create.repair
+    - essentials.signs.create.sell
+    - essentials.signs.create.spawnmob
+    - essentials.signs.create.time
+    - essentials.signs.create.trade
+    - essentials.signs.create.warp
+    - essentials.signs.create.weather
+=======================================================
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+============================================
+groups:
+  jogador:
+    default: true
+    permissions:
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.question
+    - essentials.chat.shout
+    - essentials.chat.url
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.url
+    - essentials.signs.use.*
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.eco.loan
+    - essentials.pay
+    - essentials.worth
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.whois
+    - essentials.suicide
+    - essentials.rules
+    - essentials.recipe
+    - essentials.list
+    - essentials.itemdb
+    - essentials.info
+    - essentials.helpop
+    - essentials.help
+    - essentials.compass
+    - essentials.depth
+    - essentials.getpos
+    - essentials.me
+    - essentials.vanish
+    - essentials.vanish.effect
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.tptoggle
+    - essentials.sethome
+    - essentials.delhome
+    - essentials.sethome.bed
+    - essentials.sethome.multiple.jogador
+    - essentials.home
+    - essentials.home.bed
+    - essentials.time
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    prefix: '&a'
+    suffix: ''
+    inheritance:
+  vip:
+    default: false
+    permissions:
+    - essentials.pay.multiple
+    - essentials.joinfullserver
+    - essentials.realname
+    - essentials.getpos.others
+    - essentials.msg.multiple
+    - essentials.vanish.interact
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.top
+    - essentials.teleport.cooldown.bypass
+    - essentials.teleport.timer.move
+    - essentials.warp.otherplayers
+    - essentials.home.others
+    - essentials.workbench
+    - essentials.enderchest
+    - essentials.skull
+    - essentials.skull.spawn
+    - essentials.skull.modify
+    - essentials.enderchest.others
+    - 
+    - 
+    - 
+    -   
+    prefix: '&a'
+    suffix: ''
+    inheritance:
+    - jogador
+  yt:
+    default: false
+    permissions:
+    - essentials.gamemode
+    - essentials.god
+    - essentials.speed
+    - essentials.invsee.preventmodify
+    prefix: '&a'
+    suffix: ''
+    inheritance:
+    - vip
+  mod:
+    default: false
+    permissions:
+    - essentials.chat.magic
+    - essentials.nick.magic
+    - essentials.nick.others
+    - essentials.msg.magic
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.seen.ipsearch
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.powertool.append
+    - essentials.backup
+    - essentials.ban
+    - essentials.ban.offline
+    - essentials.ban.notify
+    - essentials.kill
+    - essentials.kill.exempt
+    - essentials.kill.force
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.mute
+    - essentials.mute.exempt
+    - essentials.mute.notify
+    - essentials.mute.offline
+    - essentials.remove
+    - essentials.tempban
+    - essentials.tempban.exempt
+    - essentials.tempban.offline
+    - essentials.vanish.others
+    - essentials.vanish.pvp
+    - essentials.vanish.see
+    - essentials.god
+    - essentials.give
+    - essentials.oversizedstacks
+    - essentials.gamemode
+    - essentials.gamemode.others
+    - essentials.fly.others
+    - essentials.feed.others
+    - essentials.feed.cooldown.bypass
+    - essentials.heal.others
+    - essentials.heal.cooldown.bypass
+    - essentials.tp.others
+    - essentials.tpaall
+    - essentials.tppos
+    - essentials.jump
+    - essentials.keepxp
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.tp
+    - essentials.tphere
+    - essentials.speed.bypass
+    - essentials.speed.others
+    - essentials.speed.walk
+    - essentials.time.set
+    - essentials.enderchest.modify
+    - essentials.kick
+    - essentials.kick.exempt
+    - essentials.kick.notify
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.weather
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    prefix: '&a'
+    suffix: ''
+    inheritance:
+    - vip
+  adm:
+    default: false
+    permissions:
+    - essentials.*
+    - 
+    - 
+    -  
+    prefix: '&a'
+    suffix: ''
+    inheritance:
+  dono:
+    default: false
+    permissions:
+    - '*'
+    prefix: '&a'
+    suffix: ''
+    inheritance:
