@@ -1,4 +1,4 @@
-package me.wiljafor1.rpg.utils;
+package net.eduard.api.lib.advanced_testing;
 
 import java.io.File;
 import java.io.IOException;
@@ -848,9 +848,9 @@ public class SimpleAPI {
 			for (int i = 0; i < lore.length; i++) {
 				if (lore[i].contains("\n")) {
 					for (String s : lore[i].split("\n"))
-						lr.add(s.replaceAll("&", "§"));
+						lr.add(s.replaceAll("&", "ï¿½"));
 				} else {
-					lr.add(lore[i].replaceAll("&", "§"));
+					lr.add(lore[i].replaceAll("&", "ï¿½"));
 				}
 			}
 			ItemMeta meta = a.getItemMeta();
@@ -974,7 +974,7 @@ public class SimpleAPI {
 			ItemMeta meta = itemStack.getItemMeta();
 			List lore = meta.hasLore() ? meta.getLore() : new ArrayList();
 			for (String s : toAdd)
-				lore.add(s.replaceAll("&", "§"));
+				lore.add(s.replaceAll("&", "ï¿½"));
 			meta.setLore(lore);
 			itemStack.setItemMeta(meta);
 			return itemStack;
