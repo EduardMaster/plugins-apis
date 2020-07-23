@@ -162,6 +162,45 @@ veredito da versão:
 - Monta um código derrepente tem que trocar importaçõ porque mudou as packages da api
 
 
+Versão seguinte:
+0.5:
+Data: "2015-12-17" - Quase 1 mês depois
+Descrição:
+- Nesta versão teve algumas Refratorações e a package mudou novamente para net/eduard/eduard_api/ e 
+- a classe Main se tornou Main na mesma package, package /packet continou mesmo jeito
+- Classes de alterações de Eventos modivdas para /edits/ e /extra/
+- Criação de tres classes de Cooldown uma usando Player como Key da HashMap, outra com UUID, e outra com String
+- Nova onda de nomeclatura em vez de sempre terminando com Setup terminando com Effect
+- Surgimento das primeiras classes proprias de Config, nesta versão para fazer um plugin se extendia a classe manager/EduardAPI
+- Surgimento da primeira classe com tudo dentro manager/API que se tornaria Mine no futuro
+- Tudo relacionado ao game foi jogado para a package /game/
+- Tendencia a colocar 's' no final de todos objetos para evitar bug de importação
+- Aos poucos a package /game/ começou a ser uma forte tendencia de centralização de classes
+
+class refratoradas:
+SaveSetup -> extra/Save
+TimeSetup -> time/util/TimedEffect
+GuiType -> player/gui/util/GuiType
+PlayerEffect -> player/gui/util/PlayerEffect
+Save -> manager/Information
+SoundSetup -> game/sound/Sounds
+Craft -> game/craft/normal/Craft
+Crafts -> game/craft/simples/Craft
+Arena -> /config/Arena
+Config -> /config/Config
+Minigame -> /config/Minigame
+Money -> /config/Money
+
+
+
+classes novas:
+extra/VaultSetup - Classe para controlar o Vault
+game/Jump - Efeito de impulso para cima ou para frente
+game/potion/Potions - Classe com Efeitos de poção configuravel desnecessária pois existe PotionEffect
+
+veredito da versão:
+- Ainda assim a api não é boa para utilização pois há muitas refratorações de classes isso é pessimo para manter
+- Códigos sempre funcionando porisso ainda continua sendo 0.5 em vez de ser a primeira 1.0
 
 
 
