@@ -60,7 +60,7 @@ Data: "2015-08-28" Quase um mês depois
 - que terminava tudo com Setup até mesmo coisas que não fazia sentido hoje
 - Vou marcar classes novas e como era na versão antiga, Package base do Jar /net/eduard/ , e Main class chamava Manager
 - ficava nesta package
-- Varias classes de reflection do NMS criado
+- Varias classes de reflection do NMS criado na package /packet/
 
 classes refratoradas: (classe Antiga -> package/classe Nova)
 Configs -> /config/ConfigSetup
@@ -203,5 +203,45 @@ veredito da versão:
 - Códigos sempre funcionando porisso ainda continua sendo 0.5 em vez de ser a primeira 1.0
 
 
+Versão seguinte:
+0.6:
+Data: "2016-05-14" - Quase 5 mês depois
+No ano de 2016 comecei a trabalhar diariamente então não programava mais com frequencia
+Descrição:
+- Nesta versão novamente foram feitas mais refratorações separando mais ainda as classes
+- Package net/eduard/tutorial/ criado onde ficava todo código Snippet de Listener ou CommandExecturo
+- Surgimento da package onde ficava classes que termina como API um padrão que ainda uso até hoje
+- na package /util/api/
+- Package packet/ divida em subpackages packet/game , packet/item/ , packet/player/
+- Surgimento da package Time, trazendo todasclasses relacionadas com Tempo para lá
+- Surgimento dos primeiros comandos dentro da package manager/command/
+
+classes refratoradas:
+Money -> /config/money/Money
+Minigame -> /config/minigame/Minigame
+Arena -> /config/Minigame/Arena
+VaultAPI -> /manager/vault/Vault
+Informatio -> Classe transformada em varias outras que ficaram na package /manager/information/info
+Craft -> game/craft/CraftNormal
+Craft -> game/craft/CraftSimples
+Fake -> game/Fakes
+
+classes novas:
+/config/money/Account -> Representa contas dos jogadores
+/manager/map/Maps - Surgimento da classe que um dia se tornaria Schematic
+/manager/map/util/MapParts - Representa partes do Mapa
+varias classes de comandos na packge /manager/command/
+Commands - Representa um comando CommandExecturo
+SubCommands - Representa um SubComando do Commands
+game/TabList - Aplicar uma mudança no tab
+/game/particle/ParticleEffect - Efeito de particula
+/game/particle/ParticleType - Tipo de Efeito de particula
 
 
+
+0.7: Embreve vou marcar as mudanças que rolou nesta versão.
+0.8: Embreve vou marcar as mudanças que rolou nesta versão.
+0.9: Embreve vou marcar as mudanças que rolou nesta versão.
+0.10: Embreve vou marcar as mudanças que rolou nesta versão.
+1.0: Parando de renomear package principal, Package setup/ fica as classes mais importantes
+1.7: Utilizando o Kotlin em boa parte do plugin EduardAPI
