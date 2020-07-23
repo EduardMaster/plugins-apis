@@ -74,7 +74,7 @@ ActionGUI -> /gui/ GuiOpenType
 Minigame -> /gui/MinigameSetup
 Arena -> /gui/MinigameSetup
 Scoreboards -> scoreboard/ScoreboardSetup - Scoreboard criada facilmente
-
+Explosion -> explosion/ExplosionSetup
 
 classes novas:
 explosion/ExplosionSetup - Explosão para ser configuravel
@@ -138,6 +138,13 @@ TagSetup -> /player/tag/Tags
 ScoreSetup -> /player/scoreboard/Scoreboard
 CraftSetup2 -> game/craft/Craft
 CraftSetup1 -> game/craft/Crafts
+ItemSetup -> game/item/Item
+ExplosionSetup -> game/explosion/Explosion
+FireworkSetup -> game/firework/Firework
+FireworkTypeSetup -> game/firework/FireworkType
+GUI -> player/gui/Gui
+GuiItemSetup -> player/gui/Slot
+GuiType -> player/gui/GuiType
 
 
 classes removidas:
@@ -145,7 +152,14 @@ ScoreSlotSetup
 
 classes novas:
 player/Fake - Controle de Fake /fake da vida
+game/effect/Effects - Efeito visual configuravel
+manager/extra/Eventos... 10 classes de Eventos
+manager/test/event... 6 classes de Eventos
+manager/util/... classes adicionais uteis
 
+veredito da versão:
+- Versão melhorada porem muitas mudanças de Packages ainda muita instabilidade
+- Monta um código derrepente tem que trocar importaçõ porque mudou as packages da api
 
 
 
