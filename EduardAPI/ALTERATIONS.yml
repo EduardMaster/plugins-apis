@@ -60,9 +60,9 @@ Data: "2015-08-28" Quase um mês depois
 - que terminava tudo com Setup até mesmo coisas que não fazia sentido hoje
 - Vou marcar classes novas e como era na versão antiga, Package base do Jar /net/eduard/ , e Main class chamava Manager
 - ficava nesta package
-- classes de reflection do NMS
+- Varias classes de reflection do NMS criado
 
-classes mudadas: (classe Antiga -> package/classe Nova)
+classes refratoradas: (classe Antiga -> package/classe Nova)
 Configs -> /config/ConfigSetup
 Cooldowns -> /cooldown/CooldownSetup1
 Cooldown -> /cooldown/CooldownSetup2
@@ -82,7 +82,10 @@ gui/GuiItemSetup - Item para gui
 gui/GuiType - Enum desnecessária
 item/ItemSetup - Extende ItemStack
 item/ItemMangaer - Interface desnecessária
-MoneySetup - Controle de economia direto com YamlConfiguration
+click/ClckSetup - Representa um clique executar uma ação expecifica
+click/ClickItemSetup - Representa qual item que tem que clicar e extende ItemSetup
+click/ClickItemManager - Representa o efeito do clique
+money/MoneySetup - Controle de economia direto com ConfigSetup
 packet/CraftItemStack -> CraftItemStack com Reflection
 packet/CraftPlayer 
 packe/EnumClientCommand
@@ -99,10 +102,49 @@ save/SaveSetup - Salva informações do servidor
 scoreboard/ScoreSlotSetup - Slot da scoreboard
 sound/SoundManager - Interface desnecessária
 sound/SoundSetup - Representa som
+tag/TagInfoSetup - Representa uma Tag
+tag/TagSetup - Sistema de Tag
+api/text/TextSetup - Representa um Texto com 16 letras
+api/create/CreateSetup - Api de criação de ItemStack
+api/locaion/LocationSetup - Api de utilização com Location
+api/random/RandomSetup - Api de geração de numeros aleatorios
+api/EduardAPI - Classe tipo Main porem extende ConfigSetup e implementa um monte de coisa
+
+veredito da versão:
+- Api usavel neste momento porem a nomeclatura de tudo esta meio confusa
+- E a package principal não esta do jeito mais correto
+- que é net.eduard.eduardapi.
+
+Versão seguinte:
+0.4:
+Data: "2015-11-23" - Tres mêses depois
+Descrição:
+- Resta versão houve novamente refratorações e movimento de classes de uma Package para outra, 
+- e a Package principal se tornou net/eduard_api/ e a main Eduard na mesma package, nesta versão
+- criei um sistema de LifeCycle manual, com métodos onEnable(), onDisable() e onLoad()
+- Foram removidos suffix "Setup" de quase todas as classes
 
 
+classes refratoradas:
+ConfigSetup -> /config/Config
+MoneySetup -> /money/Money
+MinigameSetup -> /minigame/Minigame
+ArenaSetup -> /minigame/Arena
+TimeSetup -> /time/EventSetup
+CooldownSetup1 -> /time/cooldown/Cooldown1
+CooldownSetup2 -> /time/cooldown/Cooldown2
+TagInfoSetup => /player/tag/Tag
+TagSetup -> /player/tag/Tags
+ScoreSetup -> /player/scoreboard/Scoreboard
+CraftSetup2 -> game/craft/Craft
+CraftSetup1 -> game/craft/Crafts
 
 
+classes removidas:
+ScoreSlotSetup
+
+classes novas:
+player/Fake - Controle de Fake /fake da vida
 
 
 
