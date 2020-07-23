@@ -1,0 +1,58 @@
+Iniciei estudos de programação bukkit em 2014 mês 10
+VERSÔES:
+
+0.1:
+Data: "2015-07-16"
+
+Descrição:
+- EduardAPI ainda era só uma Ideia tinha criado apenas uma classe chamado de Eduard com varias classes internas
+- dentro destas classes tinha varias ideias como controle proprio de Tempo tipo um BukkitRunnable proprio,
+- facilidade em criação de Scoreboard, criação de configuração com nome diferenciado alem do config.yml,
+- criação de craft simples e composto, criação de efeito de Fogos de artifico, criação de minigame e arenas
+- 
+classes: (Classes Internas) - Detalhes $Classe
+- GUI (Event $Listener)
+- Scoreboards - Scoreboard simples de fazer
+- FireworkType - Desnecessário
+- CraftExtra - CraftComposto $ShapedRecipe
+- CraftNormal - Craft simples $ShapelessRecipe
+- Fireworks - Tipo um Builder de FireworkEffect
+- Timers - Fazer timer de minigame
+- Time - Fazer uma Repetição de ação $BukkitRunnable
+- Delay - Fazer um Atraso de ação $BukkitRunnable
+- Delays - Armazenar delays de players
+- Cooldowns - Criar Cooldown com Ação executada ao terminar o cooldown
+- Cooldown - Criar Cooldown com apenas Timestamp
+- Minigame (Arena) - Minigame salvando e puxando dados diretamente de Config
+- Configs - Criar configs customizadas $YamlConfiguration com $File
+
+interfaces:
+- ITimer - 3 Funções de ações com inicio, meio e fim
+- IPlayer - Função para Placeholder de Scoreboard
+- Eduard - Varios métodos default do Java8 e com Método estatico getInstance() que gerava uma instancia nova da Interface
+veredito da versão:
+- Nesta ponto a api estava muito longe de ser uma api usavel tudo muito acomplato dificil de entender e atalizar
+
+Versão seguinte:
+0.2:
+Data: "2015-07-18" - Dois dias depois
+
+- Nesta versão já existia um JAR criado dele porem com muita repetição de classes e métodos
+- e o pior tinha varias packages
+, net/eduard/api/java7, net/eduard/api/java8_class, net/eduard/api/java8_interface, net/eduard/java7, net/eduard/java8, net/eduard/java8_interface
+- Isso gerava muita confusão na hora de usar, o mótivo de ter feito isso que estava em transição do Java 7 para o 8 e queria
+- continuar com as classes da maneira antiga, erro fatal porem né não sabia
+- Eu nem sei como fazia para o Eclipse entender que estava trabalhando com Java 8 e 7 ao mesmo tempo
+Mudanças:
+- Classe ActionGUI, para definir como o GUI seria aberto
+- Novos métodos na Interface Eduard
+
+veredito da versão:
+- Ainda não usavel e o pior varias classes repetidas
+
+Versão seguinte:
+0.3:
+
+
+
+
