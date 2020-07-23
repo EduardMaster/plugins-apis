@@ -1,5 +1,6 @@
 Iniciei estudos de programação bukkit em 2014 mês 10
 VERSÔES:
+- Não tem todas as versões que fiz
 
 0.1:
 Data: "2015-07-16"
@@ -9,7 +10,7 @@ Descrição:
 - dentro destas classes tinha varias ideias como controle proprio de Tempo tipo um BukkitRunnable proprio,
 - facilidade em criação de Scoreboard, criação de configuração com nome diferenciado alem do config.yml,
 - criação de craft simples e composto, criação de efeito de Fogos de artifico, criação de minigame e arenas
-- 
+- o objetivo de ser tudo junto era poder ficar facilmente arrastando deprojeto em projeto de plugin
 classes: (Classes Internas) - Detalhes $Classe
 - GUI (Event $Listener)
 - Scoreboards - Scoreboard simples de fazer
@@ -46,12 +47,65 @@ Data: "2015-07-18" - Dois dias depois
 Mudanças:
 - Classe ActionGUI, para definir como o GUI seria aberto
 - Novos métodos na Interface Eduard
+- IconEffect -> Efeito ao clique
 
 veredito da versão:
 - Ainda não usavel e o pior varias classes repetidas
 
 Versão seguinte:
 0.3:
+Data: "2015-08-28" Quase um mês depois
+
+- Nesta versão tudo ficou organizado em packges, varias, já estava começando a melhorar, porem criei um padrão de nomeclatura
+- que terminava tudo com Setup até mesmo coisas que não fazia sentido hoje
+- Vou marcar classes novas e como era na versão antiga, Package base do Jar /net/eduard/ , e Main class chamava Manager
+- ficava nesta package
+- classes de reflection do NMS
+
+classes mudadas: (classe Antiga -> package/classe Nova)
+Configs -> /config/ConfigSetup
+Cooldowns -> /cooldown/CooldownSetup1
+Cooldown -> /cooldown/CooldownSetup2
+CraftExtra -> /craft/CraftSetup1
+CraftNormal -> /craft/CraftSetup2
+FireworkType -> /firework/FireworkType
+Fireworks -> /firework/FireworkSetup
+ActionGUI -> /gui/ GuiOpenType
+Minigame -> /gui/MinigameSetup
+Arena -> /gui/MinigameSetup
+Scoreboards -> scoreboard/ScoreboardSetup - Scoreboard criada facilmente
+
+
+classes novas:
+explosion/ExplosionSetup - Explosão para ser configuravel
+gui/GuiItemSetup - Item para gui
+gui/GuiType - Enum desnecessária
+item/ItemSetup - Extende ItemStack
+item/ItemMangaer - Interface desnecessária
+MoneySetup - Controle de economia direto com YamlConfiguration
+packet/CraftItemStack -> CraftItemStack com Reflection
+packet/CraftPlayer 
+packe/EnumClientCommand
+packet/GameProfile
+packet/MineItemStack -> ItemStack NMS com Reflection
+packet/MinePlayer -> EntityPlayer NMS com Reflection
+packet/Packet
+packet/NBTTagList
+packet/NBTCompound
+packet/PacketPlayInClientCommand
+packet/PacketPlayOutNamedEntitySpawn
+packet/PlayerConnection
+save/SaveSetup - Salva informações do servidor
+scoreboard/ScoreSlotSetup - Slot da scoreboard
+sound/SoundManager - Interface desnecessária
+sound/SoundSetup - Representa som
+
+
+
+
+
+
+
 
 
 
