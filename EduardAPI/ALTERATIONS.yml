@@ -212,8 +212,8 @@ Descrição:
 - Package net/eduard/tutorial/ criado onde ficava todo código Snippet de Listener ou CommandExecturo
 - Surgimento da package onde ficava classes que termina como API um padrão que ainda uso até hoje
 - na package /util/api/
-- Package packet/ divida em subpackages packet/game , packet/item/ , packet/player/
-- Surgimento da package Time, trazendo todasclasses relacionadas com Tempo para lá
+- Package packet/ dividida em subpackages packet/game , packet/item/ , packet/player/
+- Surgimento da package Time, trazendo todas classes relacionadas com Tempo para lá
 - Surgimento dos primeiros comandos dentro da package manager/command/
 
 classes refratoradas:
@@ -231,7 +231,7 @@ classes novas:
 /manager/map/Maps - Surgimento da classe que um dia se tornaria Schematic
 /manager/map/util/MapParts - Representa partes do Mapa
 varias classes de comandos na packge /manager/command/
-Commands - Representa um comando CommandExecturo
+Commands - Representa um comando CommandExector
 SubCommands - Representa um SubComando do Commands
 game/TabList - Aplicar uma mudança no tab
 /game/particle/ParticleEffect - Efeito de particula
